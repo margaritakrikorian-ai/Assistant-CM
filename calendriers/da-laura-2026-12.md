@@ -124,7 +124,7 @@ Chaque semaine : 1 réel (Instagram + TikTok) et 1 carrousel. Avec les posts des
 
 **Réel · 18h30** · *Le savoir-faire*
 
-- **Photo / vidéo :** à fournir : `reels/da-laura/2026-12-09-geste-du-chef.mp4` (montage prêt (version TikTok : reels/da-laura/2026-12-09-geste-du-chef-tiktok.mp4))
+- **Photo / vidéo :** prête : `reels/da-laura/2026-12-09-geste-du-chef.mp4` (montage prêt (version TikTok : reels/da-laura/2026-12-09-geste-du-chef-tiktok.mp4))
 - **Texte sur le visuel :** Le geste du chef
 - **Légende :**
 
@@ -156,7 +156,7 @@ Chaque semaine : 1 réel (Instagram + TikTok) et 1 carrousel. Avec les posts des
 
 **Réel · 18h30** · *La carte*
 
-- **Photo / vidéo :** à fournir : `reels/da-laura/2026-12-16-pause-douceur.mp4` (montage prêt (version TikTok : reels/da-laura/2026-12-16-pause-douceur-tiktok.mp4))
+- **Photo / vidéo :** prête : `reels/da-laura/2026-12-16-pause-douceur.mp4` (montage prêt (version TikTok : reels/da-laura/2026-12-16-pause-douceur-tiktok.mp4))
 - **Texte sur le visuel :** La pause douceur
 - **Légende :**
 
@@ -188,7 +188,7 @@ Chaque semaine : 1 réel (Instagram + TikTok) et 1 carrousel. Avec les posts des
 
 **Réel · 18h30** · *L'ambiance*
 
-- **Photo / vidéo :** à fournir : `reels/da-laura/2026-12-23-fetes-da-laura.mp4` (montage prêt (version TikTok : reels/da-laura/2026-12-23-fetes-da-laura-tiktok.mp4))
+- **Photo / vidéo :** prête : `reels/da-laura/2026-12-23-fetes-da-laura.mp4` (montage prêt (version TikTok : reels/da-laura/2026-12-23-fetes-da-laura-tiktok.mp4))
 - **Texte sur le visuel :** Pour les fêtes
 - **Légende :**
 
@@ -204,7 +204,7 @@ Chaque semaine : 1 réel (Instagram + TikTok) et 1 carrousel. Avec les posts des
 
 **Post · 10h00** · *La communauté*
 
-- **Photo / vidéo :** à fournir : `photos/da-laura/ambiance/table-noel.jpg` (table de fête dressée, lumière dorée)
+- **Photo / vidéo :** prête : `photos/da-laura/compte-instagram/recadrees/lustre-bougies.jpg` (le lustre aux bougies de la salle, ambiance de fête)
 - **Texte sur le visuel :** Buon Natale
 - **Légende :**
 
@@ -235,7 +235,7 @@ Chaque semaine : 1 réel (Instagram + TikTok) et 1 carrousel. Avec les posts des
 
 **Réel · 18h30** · *La communauté*
 
-- **Photo / vidéo :** à fournir : `reels/da-laura/2026-12-30-merci-2026.mp4` (montage prêt (version TikTok : reels/da-laura/2026-12-30-merci-2026-tiktok.mp4))
+- **Photo / vidéo :** prête : `reels/da-laura/2026-12-30-merci-2026.mp4` (montage prêt (version TikTok : reels/da-laura/2026-12-30-merci-2026-tiktok.mp4))
 - **Texte sur le visuel :** Merci pour 2026
 - **Légende :**
 
@@ -251,7 +251,7 @@ Chaque semaine : 1 réel (Instagram + TikTok) et 1 carrousel. Avec les posts des
 - **Réels** : 5 au lieu des 2 prévus par la formule Essentielle : les présenter à Laura comme un cadeau de lancement (décembre seulement) ou les facturer en option (90 € l'unité selon votre grille).
 - **Ouverture et horaires** les 24, 25 et 31 décembre ; **menus de fêtes** et prix pour le post du 3 décembre.
 - **Histoire de Laura** (post du 6 décembre) ; **desserts** : noms exacts et « faits maison » à confirmer.
-- **Photos en attente** : décoration de Noël (post du 25), lentilles et cotechino (carrousel du 29), sinon remplacement par des photos existantes.
+- **Photos en attente** : lentilles et cotechino (carrousel du 29), sinon remplacement par des photos existantes. Le post du 25 utilise le lustre aux bougies de la salle.
 - **Qualité** : plusieurs photos viennent de la grille du compte (374 px de large) : demander les originaux pour une netteté parfaite.
 - **Loi Évin** : les photos avec spritz ou coupe de champagne sont écartées.
 
@@ -271,6 +271,6 @@ Voici la liste des prises de vue à réaliser, à déposer dans les sous-dossier
 | `reels/da-laura/2026-12-16-pause-douceur.mp4` | montage prêt (version TikTok : reels/da-laura/2026-12-16-pause-douceur-tiktok.mp4) | 16/12 |
 | `plats/spaghetti-crevettes.jpg + compte-instagram/recadrees/risotto-crevettes.jpg + compte-instagram/recadrees/spaghetti-crevettes-sauce.jpg` | les plats de la mer de Da Laura | 21/12 |
 | `reels/da-laura/2026-12-23-fetes-da-laura.mp4` | montage prêt (version TikTok : reels/da-laura/2026-12-23-fetes-da-laura-tiktok.mp4) | 23/12 |
-| `ambiance/table-noel.jpg` | table de fête dressée, lumière dorée | 25/12 |
+| `compte-instagram/recadrees/lustre-bougies.jpg` | le lustre aux bougies de la salle, ambiance de fête | 25/12 |
 | `plats/capodanno-01.jpg à -04.jpg` | lentilles, cotechino, touche de rouge dans la déco | 29/12 |
 | `reels/da-laura/2026-12-30-merci-2026.mp4` | montage prêt (version TikTok : reels/da-laura/2026-12-30-merci-2026-tiktok.mp4) | 30/12 |

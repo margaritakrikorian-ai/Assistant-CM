@@ -327,6 +327,7 @@ PHOTOS_REELLES = {
  6: "photos/da-laura/ambiance/ardoise-piatti-del-giorno.jpg — Laura et son ardoise sur la terrasse",
  14: "photos/da-laura/plats/planche-fromages-charcuterie.jpg + photos/da-laura/plats/ravioli-truffe.jpg + photos/da-laura/plats/pappardelle-prosciutto-huile.jpg — fromages et charcuterie, truffe, huile d'olive",
  21: "photos/da-laura/plats/spaghetti-crevettes.jpg + "+R+"risotto-crevettes.jpg + "+R+"spaghetti-crevettes-sauce.jpg — les plats de la mer de Da Laura",
+ 25: R+"lustre-bougies.jpg — le lustre aux bougies de la salle, ambiance de fête",
 }
 FEED = [r[:5] + (PHOTOS_REELLES.get(r[0], r[5]),) + r[6:] for r in FEED]
 STORIES = []
@@ -342,7 +343,7 @@ A_VALIDER = [
     "**Réels** : 5 au lieu des 2 prévus par la formule Essentielle : les présenter à Laura comme un cadeau de lancement (décembre seulement) ou les facturer en option (90 € l'unité selon votre grille).",
     "**Ouverture et horaires** les 24, 25 et 31 décembre ; **menus de fêtes** et prix pour le post du 3 décembre.",
     "**Histoire de Laura** (post du 6 décembre) ; **desserts** : noms exacts et « faits maison » à confirmer.",
-    "**Photos en attente** : décoration de Noël (post du 25), lentilles et cotechino (carrousel du 29), sinon remplacement par des photos existantes.",
+    "**Photos en attente** : lentilles et cotechino (carrousel du 29), sinon remplacement par des photos existantes. Le post du 25 utilise le lustre aux bougies de la salle.",
     "**Qualité** : plusieurs photos viennent de la grille du compte (374 px de large) : demander les originaux pour une netteté parfaite.",
     "**Loi Évin** : les photos avec spritz ou coupe de champagne sont écartées.",
 ]
