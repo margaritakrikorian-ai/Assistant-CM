@@ -44,6 +44,6 @@ Le lien ouvre WhatsApp avec le message « Bonjour Da Laura, je souhaite réserve
 2. Instagram, Modifier le profil, Liens : coller le lien ci-dessus, avec le titre « Réserver sur WhatsApp ».
 3. Instagram, Modifier le profil, Options de contact : ajouter le bouton WhatsApp (compte professionnel nécessaire).
 4. Coller la bio choisie et mettre « Da Laura » en nom.
-5. Créer les stories à la une : Piatti, Les fêtes, La cucina, Terrasse, Réserver.
+5. Créer les stories à la une : Piatti, Menu, Ambiance, La cucina, Fêtes, Réserver, avec les couvertures sobres (Drive : 02 - Stories › Couvertures stories à la une, fond crème recommandé).
 
 Sources : Taplink (https://taplink.at/fr/blog/comment-ajouter-un-lien-whatsapp-sur-instagram-4-methodes.html), Trengo (https://trengo.com/fr/blog/whatsapp-business-landline), Journal du Freenaute (https://www.journaldufreenaute.fr/?p=23974).

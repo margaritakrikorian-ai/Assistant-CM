@@ -57,6 +57,7 @@ h1 { font: 700 clamp(2.4rem, 6vw, 3.6rem)/1 var(--display); color: var(--rouge);
 .une { display: flex; gap: 14px; overflow-x: auto; padding: 6px 2px 4px; scrollbar-width: none; }
 .une figure { margin: 0; display: grid; justify-items: center; gap: 4px; flex: none; width: 66px; }
 .une img { width: 62px; height: 62px; border-radius: 50%; object-fit: cover; border: 1px solid var(--ecran-trait); padding: 2px; background: var(--ecran); }
+.une figure { cursor: default; }
 .une figcaption { font-size: 11px; max-width: 66px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .onglets { display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid var(--ecran-trait); margin-top: 8px; }
 .onglets span { text-align: center; padding: 10px 0 8px; color: var(--ecran-gris); font-size: 12px; font-weight: 700; letter-spacing: .04em; }
@@ -164,14 +165,25 @@ h2 { font: 700 clamp(1.6rem, 3.4vw, 2.1rem)/1.1 var(--serif); margin: 0; text-wr
       </section>
 
       <section class="bloc">
-        <p class="eyebrow">3 · La mise en place</p>
+        <p class="eyebrow">3 · Les stories à la une</p>
+        <h2>Des couvertures sobres, un mot écrit</h2>
+        <p>Six bulles sous la bio, comme les rubriques d'une carte : Piatti (les plats du jour), Menu, Ambiance, La cucina (le savoir-faire), Fêtes et Réserver. Même police que les titres, un cercle fin et un petit losange : on lit le mot même en tout petit. Deux couleurs au choix :</p>
+        <div class="actions" role="group" aria-label="Couleur des couvertures">
+          <button class="btn" type="button" id="v-creme" aria-pressed="true">Fond crème</button>
+          <button class="btn secondaire" type="button" id="v-rouge" aria-pressed="false">Fond rouge</button>
+        </div>
+        <p style="margin:0;color:var(--brun)">Je recommande le fond crème : il reste léger à côté des photos du feed, et le rouge garde sa force pour les titres.</p>
+      </section>
+
+      <section class="bloc">
+        <p class="eyebrow">4 · La mise en place</p>
         <h2>Ce qu'on fait ensemble sur son téléphone</h2>
         <ol class="etapes">
           <li><strong>Installer WhatsApp Business</strong> avec le numéro du restaurant (choisir « M'appeler » pour recevoir le code), puis ajouter le logo, l'adresse et les horaires.</li>
           <li><strong>Instagram, Modifier le profil, Liens</strong> : coller le lien ci-dessus, avec le titre « Réserver sur WhatsApp ».</li>
           <li><strong>Instagram, Modifier le profil, Options de contact</strong> : ajouter le bouton <strong>WhatsApp</strong>, qui apparaît sous la bio (compte professionnel nécessaire).</li>
           <li><strong>Coller la bio</strong> choisie, et mettre « Da Laura » en nom.</li>
-          <li><strong>Créer les stories à la une</strong> : Piatti, Les fêtes, La cucina, Terrasse, Réserver.</li>
+          <li><strong>Créer les stories à la une</strong> : Piatti, Menu, Ambiance, La cucina, Fêtes, Réserver, avec les couvertures sobres ci-dessous.</li>
         </ol>
         <label class="bascule" for="dates"><input type="checkbox" id="dates" checked> Afficher les dates sur les vignettes du feed</label>
         <p class="sources">Sources : <a href="https://taplink.at/fr/blog/comment-ajouter-un-lien-whatsapp-sur-instagram-4-methodes.html" target="_blank" rel="noopener">Taplink, ajouter un lien WhatsApp sur Instagram</a> · <a href="https://trengo.com/fr/blog/whatsapp-business-landline" target="_blank" rel="noopener">Trengo, WhatsApp Business sur un fixe</a> · <a href="https://www.journaldufreenaute.fr/?p=23974" target="_blank" rel="noopener">Journal du Freenaute, lien wa.me</a></p>
@@ -216,8 +228,13 @@ function rendreMosaique() {
     m.appendChild(c);
   });
   document.getElementById("nb-pub").textContent = "—";
+  rendreUne();
+}
+var variante = "creme";
+function rendreUne() {
   var u = document.getElementById("une");
-  HL.forEach(function (h) {
+  u.innerHTML = "";
+  HL[variante].forEach(function (h) {
     var f = document.createElement("figure");
     f.innerHTML = '<img src="' + h.src + '" alt=""><figcaption>' + h.l + "</figcaption>";
     u.appendChild(f);
@@ -263,6 +280,16 @@ document.getElementById("copier-bio").addEventListener("click", function () {
 document.getElementById("copier-lien").addEventListener("click", function () {
   var el = document.getElementById("lien-complet");
   copier(el.textContent, "ok-lien", el);
+});
+["creme", "rouge"].forEach(function (v) {
+  document.getElementById("v-" + v).addEventListener("click", function () {
+    variante = v; rendreUne();
+    ["creme", "rouge"].forEach(function (w) {
+      var b = document.getElementById("v-" + w);
+      b.setAttribute("aria-pressed", w === v ? "true" : "false");
+      b.className = "btn" + (w === v ? "" : " secondaire");
+    });
+  });
 });
 document.getElementById("dates").addEventListener("change", function (e) {
   document.getElementById("ecran").classList.toggle("sans-dates", !e.target.checked);

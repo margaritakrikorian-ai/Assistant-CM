@@ -30,12 +30,9 @@ T=[]
 for kind,path,date,lab in tiles:
     c=(0.5,0.42) if kind in('reel',) else (0.5,0.5)
     T.append({'k':kind,'src':uri(path,centering=c) if path else '','d':date,'l':lab})
-hl=[('Piatti','stories/da-laura/plats-du-jour/proposition-2026-12/2026-12-01.jpg',(0.5,0.6)),
-    ('Les fêtes',RT+'lustre-bougies.jpg',(0.5,0.4)),
-    ('La cucina',RT+'ravioli-faconnes-main.jpg',(0.5,0.5)),
-    ('Terrasse',RT+'facade-terrasse.jpg',(0.5,0.5)),
-    ('Réserver',RT+'porte-da-laura.jpg',(0.5,0.5))]
-H=[{'l':l,'src':uri(p,(140,140),c,82)} for l,p,c in hl]
+A='stories/da-laura/a-la-une/'
+MOTS=[('Piatti','piatti'),('Menu','menu'),('Ambiance','ambiance'),('La cucina','la-cucina'),('Fêtes','fetes'),('Réserver','reserver')]
+H={v:[{'l':l,'src':uri(A+v+'/'+f+'.jpg',(140,140),(0.5,0.5),85)} for l,f in MOTS] for v in ('creme','rouge')}
 avatar=uri(RT+'enseigne-murale.jpg',(160,160),(0.5,0.5),85)
 tpl=open(sys.argv[1]).read()
 html=tpl.replace('__TILES__',json.dumps(T)).replace('__HL__',json.dumps(H)).replace('__AVATAR__',avatar)
