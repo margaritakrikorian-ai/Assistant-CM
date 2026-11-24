@@ -67,3 +67,8 @@ Skill du projet : `.claude/skills/contenu-semaine/SKILL.md` (aussi `/contenu-sem
 - Toute photo reçue est passée au **même filtre** (`outils/charte_photo.py`, appliqué automatiquement par `plats_du_jour.py`, `generer_visuels.py` et `generer_reels.py`). Ne jamais publier une photo sans ce filtre.
 - Référence complète : `docs/charte-da-laura.md` (identité, couleurs, polices, filtre, 4 mises en page des stories, règles).
 - Photos reçues : les ranger dans `photos/da-laura/{plats,cuisine,ambiance}/` avec un nom parlant, en vérifiant visuellement que le nom correspond bien à l'image.
+
+## Pages de présentation (artifacts)
+
+- Toujours **intégrer les images dans la page** (data URI), jamais en fichiers séparés : certaines applications (iPad) ne les affichent pas sinon. Vérifier avant publication que toutes les images se chargent avec la page seule.
+- Le partage d'une page (ex. avec Laura) ne peut pas être fait par l'assistant : il se fait depuis le menu **Partager** de la page. Le rappeler à l'utilisatrice à chaque nouvelle page destinée à quelqu'un d'autre.
