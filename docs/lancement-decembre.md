@@ -18,7 +18,7 @@ Un **rétroplanning**, c'est un planning construit à l'envers : on part de la d
 | Date | À faire |
 |---|---|
 | **Mar 24 nov.** | **Partager la page de présentation** avec Laura (menu Partager de la page), puis **envoyer l'e-mail** depuis le brouillon Gmail en ajoutant son adresse. |
-| **Mer 25 nov.** | **Appel de 5 minutes** avec Laura pour obtenir l'accès à la page Facebook et au compte Instagram dans Meta Business Suite. |
+| **Mer 25 nov.** | **Appel de 5 minutes** avec Laura pour obtenir l'accès à Instagram et à TikTok (et à la page Facebook si elle prend l'option à 100 €). Lui demander sa réponse pour l'option Facebook. |
 | Jeu 26 nov. | L'assistant prépare le calendrier de décembre à faire valider (posts, réels, légendes), avec les photos reçues. **Vous l'envoyez à Laura.** |
 | **Ven 27 nov.** | Date limite des photos, du logo et des informations (horaires, menus de fêtes, histoire). **Transmettez-les à l'assistant dès réception** : il range les photos, applique la charte et régénère tous les visuels, les réels et les stories. |
 | **Sam 28 nov.** | **Validation de Laura.** Dites à l'assistant « Laura a validé… » : il passe les statuts à « validé client », prépare le pack et vous envoie les fichiers. |

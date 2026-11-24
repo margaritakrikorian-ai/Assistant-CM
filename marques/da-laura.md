@@ -14,8 +14,8 @@
 - **Réservations :** 04 93 38 40 51 (à ajouter à chaque légende de post et de réel)
 - **Comptes réseaux sociaux :**
   - Instagram : **@dalaura.cannes**
-  - Facebook : *(à compléter)*
-  - TikTok : *(à compléter)*
+  - Facebook : page *(à compléter)*, seulement si l'option à 100 € est acceptée
+  - TikTok : compte inclus dans le contrat (identifiant *(à compléter)*)
 
 ## Présentation
 
@@ -87,7 +87,8 @@ Da Laura est un restaurant italien à Cannes. On y sert une cuisine italienne g�
 ## Stratégie de contenu
 
 - **Objectifs :** **notoriété** (se faire connaître à Cannes et auprès des visiteurs) et **communauté** (créer du lien, de l'engagement et fidéliser).
-- **Contrat en cours : formule Essentielle (490 € / mois)**, adaptée : Instagram et Facebook, charte visuelle et gabarits, légendes et hashtags, calendrier éditorial validé chaque mois, bilan mensuel des statistiques.
+- **Contrat en cours : formule Essentielle (490 € / mois)**, adaptée : **Instagram et TikTok** (pas Facebook), charte visuelle et gabarits, légendes et hashtags, calendrier éditorial validé chaque mois, bilan mensuel des statistiques.
+- **Option proposée le 24/11/2026 (en attente de réponse) : Facebook pour 100 € de plus par mois (590 €)**, avec les mêmes contenus publiés sur la page Facebook. Tant que Laura n'a pas accepté, ne rien prévoir ni publier sur Facebook.
 - **Fréquence de publication prévue au contrat (par mois) :**
   - Publications (posts et carrousels) : **8**
   - Réels : **2**
