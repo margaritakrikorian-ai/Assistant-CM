@@ -12,7 +12,9 @@ Assistant-CM/
 ├── calendriers/     Les calendriers éditoriaux générés
 ├── publications/    Les posts prêts à publier (visuel + légende)
 ├── stories/         Les stories au format 1080x1920
-└── reels/           Les réels en vidéo MP4 verticale
+├── reels/           Les réels en vidéo MP4 verticale
+├── outils/          Les scripts (visuels, réels, import Instagram)
+└── docs/            Les guides (connexion Instagram…)
 ```
 
 ## Démarrage rapide
