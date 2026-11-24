@@ -143,7 +143,7 @@ h2 { font: 700 clamp(1.6rem, 3.4vw, 2.1rem)/1.1 var(--serif); margin: 0; text-wr
       <section class="bloc">
         <p class="eyebrow">1 · La bio</p>
         <h2>Trois propositions de bio</h2>
-        <p>Une bio de restaurant doit répondre en une seconde à trois questions : quoi, où, et comment réserver. Les trois versions respectent la fiche marque (tutoiement, emojis avec modération) et finissent par l'appel à réserver, juste au-dessus du lien.</p>
+        <p>Une bio de restaurant doit répondre en une seconde à trois questions : quoi, où, et comment réserver. Chaque ligne commence par un emoji, pour un ton convivial et une lecture rapide. Les trois versions tutoient et finissent par l'appel à réserver, juste au-dessus du lien.</p>
         <div class="propositions" id="propositions"></div>
         <div class="actions">
           <button class="btn" type="button" id="copier-bio">Copier la bio choisie</button>
@@ -197,14 +197,14 @@ var TILES = __TILES__;
 var HL = __HL__;
 var BIOS = [
   { titre: "Chaleureuse", reco: true,
-    texte: "Restaurant italien à Cannes depuis 1992 🇮🇹\nPâtes fraîches · Piatti del giorno · Terrasse\n📍 8 rue du 24 Août\nRéserve ta table sur WhatsApp 👇",
-    pourquoi: "La plus complète : ce qu'on mange, l'ancienneté, l'adresse et l'action. Celle que je recommande pour le lancement." },
+    texte: "🇮🇹 L'Italie à table, à Cannes depuis 1992\n🍝 Pâtes fraîches et Piatti del giorno\n📍 8 rue du 24 Août, Cannes\n📲 Réserve ta table sur WhatsApp",
+    pourquoi: "La plus complète : ce qu'on mange, depuis quand, où, et comment réserver. Un emoji ouvre chaque ligne, comme une petite carte. Celle que je recommande." },
   { titre: "La signature", reco: false,
-    texte: "La cucina autentica, dal 1992 🤌\nChaque jour, les suggestions de Laura en story\n📍 8 rue du 24 Août, Cannes\nRéserve ta table sur WhatsApp 👇",
-    pourquoi: "Reprend la devise de l'enseigne et met en avant les stories « Piatti del giorno » : donne envie de revenir voir le menu du jour." },
+    texte: "🤌 La cucina autentica, dal 1992\n🍋 Chaque jour, les suggestions en story\n☀️ Une terrasse où l'on prend son temps\n📲 Réserve ta table sur WhatsApp",
+    pourquoi: "Reprend la devise de l'enseigne, met en avant les stories « Piatti del giorno » et la terrasse : on a envie d'y passer un moment." },
   { titre: "Courte et directe", reco: false,
-    texte: "🍝 Italien · Cannes · Dal 1992\nTerrasse · Pâtes faites maison\n📲 Réservation en 1 clic sur WhatsApp ↓",
-    pourquoi: "Se lit en deux secondes sur un téléphone : idéale pour les touristes et les clients pressés." }
+    texte: "🍝 Italien à Cannes, dal 1992\n☀️ Terrasse et pâtes faites maison\n📲 Ta table en 1 clic sur WhatsApp",
+    pourquoi: "Trois lignes qui se lisent en deux secondes : idéale pour les touristes et les clients pressés." }
 ];
 var choix = 0;
 var ICONES = {
