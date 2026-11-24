@@ -67,6 +67,16 @@ publications/
         └── legende.txt       (légende et hashtags, prêts à copier-coller)
 ```
 
+### Récupérer les photos de vos publications Instagram
+
+Le script `outils/telecharger_instagram.py` télécharge les photos de **vos** publications Instagram dans `photos/<marque>/instagram/`, via l'API officielle de Meta :
+
+```
+python3 outils/telecharger_instagram.py da-laura
+```
+
+Il faut d'abord connecter le compte : suivez le guide pas à pas [`docs/connecter-instagram.md`](docs/connecter-instagram.md). Le jeton d'accès se range dans un fichier `.env` qui n'est jamais publié sur GitHub (voir `.env.example`).
+
 ### Générer automatiquement les visuels
 
 Le script `outils/generer_visuels.py` crée les visuels des posts et des stories d'un calendrier, aux couleurs et aux polices de la marque (Python et Pillow) :

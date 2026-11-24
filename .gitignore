@@ -1,0 +1,8 @@
+# Secrets : ne jamais publier le jeton Instagram
+.env
+.env.*
+!.env.example
+
+# Fichiers système
+.DS_Store
+__pycache__/
