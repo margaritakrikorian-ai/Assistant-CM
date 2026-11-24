@@ -67,7 +67,7 @@ Da Laura est un restaurant italien à Cannes. On y sert une cuisine italienne g�
   - **l'ardoise « Piatti del giorno »** de la terrasse, écrite à la main à la craie → police manuscrite **Caveat** ;
   - **les nappes et serviettes en vichy** (rouge, orange ou jaune) → motif vichy en bordure.
   Ces trois éléments sont la signature visuelle des stories « Piatti del giorno » (voir `outils/plats_du_jour.py`).
-- **Style photo :** lumière chaude et naturelle, souvent **plein soleil en terrasse**, tons dorés, gros plans gourmands (pâtes fraîches, truffe, burrata, planches), **mains du chef en action**, céramiques artisanales, serviettes en vichy, basilic flou au premier plan, ambiance du soir avec guirlandes lumineuses. Pas de flash, pas de photos sombres ou froides. Références : les photos rangées dans `photos/da-laura/` (novembre 2026).
+- **Style photo :** lumière naturelle, souvent **plein soleil en terrasse**, couleurs fidèles aux photos du compte (pas de filtre jaune ni doré), gros plans gourmands (pâtes fraîches, truffe, burrata, planches), **mains du chef en action**, céramiques artisanales, serviettes en vichy, basilic flou au premier plan, ambiance du soir avec guirlandes lumineuses. Pas de flash, pas de photos sombres ou froides. Références : les photos rangées dans `photos/da-laura/` (novembre 2026).
 - **Logo :** *(à compléter)*, dans `photos/da-laura/logo/`
   - Version claire : *(à compléter)*
   - Version foncée : *(à compléter)*

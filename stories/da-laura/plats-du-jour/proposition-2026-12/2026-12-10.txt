@@ -1,4 +1,5 @@
 Story « Piatti del giorno » · Jeudi 10 décembre · style polaroid
+Photo de fond : photos/da-laura/plats/tiramisu-fraise.jpg
 
 Texte alternatif : Les plats du jour de Da Laura.
 - Pappardelle au prosciutto · roquette, huile d'olive

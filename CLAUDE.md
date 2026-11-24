@@ -96,7 +96,8 @@ Skill du projet : `.claude/skills/contenu-semaine/SKILL.md` (aussi `/contenu-sem
 
 ## Charte photo Da Laura
 
-- Toute photo reçue est passée au **même filtre** (`outils/charte_photo.py`, appliqué automatiquement par `plats_du_jour.py`, `generer_visuels.py` et `generer_reels.py`). Ne jamais publier une photo sans ce filtre.
+- Toute photo reçue est passée au **même filtre** (`outils/charte_photo.py`, appliqué automatiquement par `plats_du_jour.py`, `generer_visuels.py`, `generer_reels.py` et `monter_reel.py`). Ne jamais publier une photo sans ce filtre.
+- Le filtre est **naturel** (choix de l'utilisatrice, 24/11/2026 : l'ancien filtre chaud était « trop jaune ») : couleurs d'origine du compte, léger contraste, légère vibrance. **Jamais** de réchauffement, de teinte jaune, dorée ou crème ajoutée. Après toute modification du filtre : `python3 outils/charte_photo.py --hald` (table vidéo), puis régénérer photos retouchées, posts, stories et réels, et remplacer les fichiers dans Drive.
 - Référence complète : `docs/charte-da-laura.md` (identité, couleurs, polices, filtre, 4 mises en page des stories, règles).
 - Photos reçues : les ranger dans `photos/da-laura/{plats,cuisine,ambiance}/` avec un nom parlant, en vérifiant visuellement que le nom correspond bien à l'image.
 
@@ -121,11 +122,11 @@ L'utilisatrice travaille sur iPad et ne navigue pas dans le dépôt Git. **Tout 
 |---|---|---|
 | 00 - SOMMAIRE (Google Doc) | `1K5qWt01T-Ob-2V2i1h2Stt76EgkbPt-6hBvtPpKZ8i0` | Index de tout ce qui a été livré : à mettre à jour à chaque livraison |
 | 01 - Réels | `1Nof5SKJ6b5YC_gx1bQqX8q8F4NQJ8LFL` | Vidéos, couvertures, légendes (Google Doc) |
-| 02 - Stories Piatti del giorno | `1SDTqA1B_4OsrdoYzQRLgQxMs1Ut-mcfy` | Stories de plats du jour |
-| 03 - Publications | `1xNlZbhv3DL6D-OH34vMUV1R-TxwJ9ROu` | Posts et carrousels prêts |
+| 02 - Stories Piatti del giorno | `17F4dgwTE_9mcdpDvi-GluDvMnKD2V2rl` | Stories de plats du jour |
+| 03 - Publications | `1-CvcCdnGGtEh6FZM34ESJ5kFjOqr4ZJg` | Posts et carrousels prêts |
 | 04 - Documents | `10fFNAWeq5ATqDy0P_nnCCN-yUj8_kL2C` | Charte, plans, calendriers, e-mails, guides (Markdown converti en Google Doc) |
-| 05 - Photos du restaurant (charte appliquée) | `1u5WEWuPOXbokoKBEx4qdV6CZRl66jkE4` | Photos filtrées |
-| 05 › Photos du compte Instagram (recadrées et retouchées) | `1HOOd_CGaTSJVm3Gv9OycJKjl7dQigrMa` | Photos extraites du profil, sans icônes, 1080x1350 |
+| 05 - Photos du restaurant (charte appliquée) | `1AtJYepSt_eqSD6IU0vlkLDDbjbzO1oj-` | Photos filtrées |
+| 05 › Photos du compte Instagram (recadrées et retouchées) | `1ufYnoKhx4RJZDhejhTZKRBrR5LrF_WMG` | Photos extraites du profil, sans icônes, 1080x1350 |
 
 - Envoi par `create_file` avec une référence de fichier (`sha256:<empreinte>:<chemin>`). Calculer l'empreinte **avant** l'appel, jamais en parallèle de celui-ci.
 - Le sommaire ne se modifie pas en place : en créer un nouveau, mettre le tableau à jour, puis mettre l'ancien à la corbeille.

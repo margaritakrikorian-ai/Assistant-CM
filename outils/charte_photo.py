@@ -1,11 +1,11 @@
 """Filtre photo « charte Da Laura » : le même rendu de couleur sur toutes les photos.
 
-Le rendu, inspiré des photos du restaurant (terrasse au soleil, vichy, enseigne rouge et crème) :
-- lumière chaude et dorée (balance des blancs réchauffée) ;
-- noirs légèrement relevés et adoucis (aspect « film », jamais de noir bouché) ;
-- hautes lumières teintées crème (#F1E6D3), ombres teintées brun chaud ;
-- rouges, oranges et jaunes préservés (sauce tomate, fraises, vichy), verts et bleus atténués ;
-- contraste doux en S, aucune perte de netteté (pas de flou).
+Rendu NATUREL, fidèle aux photos déjà publiées sur le compte (choix de l'utilisatrice, 24/11/2026 :
+l'ancien filtre chaud et doré était « trop jaune ») :
+- couleurs et balance des blancs d'origine conservées : AUCUN réchauffement, aucune teinte ajoutée ;
+- contraste doux en S, très léger (un peu plus de relief) ;
+- « vibrance » légère : seules les couleurs ternes sont un peu ravivées, les couleurs vives restent telles quelles ;
+- aucune perte de netteté (pas de flou).
 
 Utilisation :
     python3 outils/charte_photo.py photos/da-laura/plats/ravioli-truffe.jpg ...      # une ou plusieurs photos
@@ -26,15 +26,8 @@ EXT = {".jpg", ".jpeg", ".png", ".webp"}
 
 # Réglages de la charte (modifier ici pour faire évoluer le rendu de TOUTES les photos)
 CHARTE = {
-    "chaleur": (1.035, 1.012, 0.91),           # multiplicateurs R, V, B
-    "noir_releve": 0.045,                    # niveau du noir le plus profond (0 = noir pur)
-    "blanc_max": 0.975,                      # niveau du blanc le plus clair
-    "contraste_s": 0.30,                     # part de courbe en S (0 = aucune)
-    "teinte_ombres": (0.035, 0.012, -0.020),  # ajout R, V, B dans les ombres (brun chaud)
-    "teinte_lumieres": (0.010, 0.012, -0.030),  # ajout R, V, B dans les hautes lumières (crème)
-    "saturation": 0.95,                      # saturation générale
-    "verts_bleus": 0.72,                     # saturation des verts et des bleus
-    "chauds": 1.06,                          # saturation des rouges, oranges et jaunes
+    "contraste_s": 0.12,   # part de courbe en S (0 = aucune)
+    "vibrance": 0.10,      # ravive les couleurs ternes sans toucher les couleurs déjà vives
 }
 
 
@@ -60,25 +53,24 @@ def _rgb(h, s, v):
 
 
 def appliquer_charte(img, c=CHARTE):
-    """Renvoie une copie de l'image (PIL, RGB) avec le rendu de couleur de la charte."""
+    """Renvoie une copie de l'image (PIL, RGB) avec le rendu de couleur de la charte (naturel)."""
     x = np.asarray(img.convert("RGB"), dtype=np.float64) / 255.0
-    x = x * np.array(c["chaleur"])
-    # courbe en S douce
     s = x * x * (3 - 2 * x)
-    x = (1 - c["contraste_s"]) * x + c["contraste_s"] * np.clip(s, 0, 1)
-    # saturation sélective
+    x = (1 - c["contraste_s"]) * x + c["contraste_s"] * s
     h, sat, v = _hsv(np.clip(x, 0, 1))
-    deg = h * 360
-    chaud = (deg < 65) | (deg > 330)
-    froid = (deg > 75) & (deg < 300)
-    facteur = np.where(chaud, c["chauds"], np.where(froid, c["verts_bleus"], 1.0)) * c["saturation"]
-    x = _rgb(h, np.clip(sat * facteur, 0, 1), v)
-    # virage partiel : ombres brun chaud, lumières crème
-    lum = (0.299 * x[..., 0] + 0.587 * x[..., 1] + 0.114 * x[..., 2])[..., None]
-    x = x + (1 - lum) ** 2 * np.array(c["teinte_ombres"]) + lum ** 2 * np.array(c["teinte_lumieres"])
-    # noirs relevés et blancs adoucis
-    x = c["noir_releve"] + (c["blanc_max"] - c["noir_releve"]) * np.clip(x, 0, 1)
+    sat = np.clip(sat + c["vibrance"] * sat * (1 - sat), 0, 1)
+    x = _rgb(h, sat, v)
     return Image.fromarray((np.clip(x, 0, 1) * 255 + 0.5).astype(np.uint8))
+
+
+def creer_hald(chemin=RACINE / "outils" / "charte-da-laura-hald.png", niveau=8):
+    """Recrée la table de couleurs (HALD CLUT) qui applique le même filtre aux vidéos (ffmpeg haldclut)."""
+    n = niveau * niveau
+    i = np.arange(n ** 3)
+    r, g, b = i % n, (i // n) % n, i // (n * n)
+    px = (np.stack([r, g, b], -1) * 255.0 / (n - 1) + 0.5).astype(np.uint8)
+    taille = niveau ** 3
+    appliquer_charte(Image.fromarray(px.reshape(taille, taille, 3))).save(chemin)
 
 
 def exporter(chemins):
@@ -102,4 +94,6 @@ def exporter(chemins):
 
 
 if __name__ == "__main__":
+    if sys.argv[1:] == ["--hald"]:
+        creer_hald(); print("Table de couleurs vidéo recréée."); sys.exit()
     exporter(sys.argv[1:] or ["photos/da-laura"])

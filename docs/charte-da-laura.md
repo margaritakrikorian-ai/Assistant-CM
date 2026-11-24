@@ -25,12 +25,12 @@
 
 ## 3. Le filtre photo (même rendu sur toutes les photos)
 
-Chaque photo envoyée passe par le même filtre (`outils/charte_photo.py`), ce qui donne au compte une seule et même ambiance :
+Chaque photo envoyée passe par le même filtre (`outils/charte_photo.py`). Depuis le 24 novembre 2026, ce filtre est **naturel** : il respecte le rendu des photos déjà publiées sur le compte (l'ancien filtre, chaud et doré, rendait les photos trop jaunes).
 
-- lumière **chaude et dorée**, comme la terrasse au soleil ;
-- **blancs crème** (jamais rosés ni bleutés) et **noirs adoucis**, pour un aspect « film » ;
-- **rouges, oranges et jaunes préservés** (tomate, fraises, vichy), **verts et bleus atténués** ;
-- contraste doux, **aucun flou** : la netteté de la photo est conservée.
+- **couleurs et balance des blancs d'origine** : aucun réchauffement, aucune teinte ajoutée ;
+- **contraste doux** : un peu plus de relief, sans écraser les noirs ;
+- **couleurs ternes légèrement ravivées** (« vibrance »), les couleurs déjà vives restent telles quelles ;
+- **aucun flou** : la netteté de la photo est conservée.
 
 Il est appliqué automatiquement par tous les générateurs. Pour obtenir des copies filtrées à publier telles quelles :
 `python3 outils/charte_photo.py photos/da-laura` → `photos/da-laura/charte/`.
