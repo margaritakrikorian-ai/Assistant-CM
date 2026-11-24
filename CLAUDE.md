@@ -112,3 +112,23 @@ Skill du projet : `.claude/skills/contenu-semaine/SKILL.md` (aussi `/contenu-sem
 - « C'est programmé » : passer les lignes à `programmé` (sinon risque de double publication une fois l'automatique activé).
 - Publication automatique : `.github/workflows/publier-instagram.yml` + `outils/publier_instagram.py`, en mode test (`DRY_RUN`) tant que l'utilisatrice ne l'a pas activé. **Ne jamais** publier, ni passer à `validé client`, un contenu que Laura n'a pas validé. Guide : `docs/publication-automatique.md`.
 - Toutes les légendes de posts et de réels se terminent par l'adresse (8 rue du 24 Août, Cannes) et les réservations (04 93 38 40 51), ajoutées automatiquement.
+
+## Google Drive : là où l'utilisatrice retrouve TOUT (prioritaire)
+
+L'utilisatrice travaille sur iPad et ne navigue pas dans le dépôt Git. **Tout livrable doit aussi être rangé dans son Google Drive**, dossier **DA Laura** (`1Z8bKtDBsvRybTBql6VrBdMMV8dGjkkps`). Ses propres fichiers (tarifs, proposition, calendriers en PDF) sont à la racine : ne jamais les modifier.
+
+| Dossier | Identifiant | Contenu |
+|---|---|---|
+| 00 - SOMMAIRE (Google Doc) | `10QBHS8Kh6jJv9DnsNVq_2q2YQRZFEdRE0U5i1hPWLY4` | Index de tout ce qui a été livré : à mettre à jour à chaque livraison |
+| 01 - Réels | `1Nof5SKJ6b5YC_gx1bQqX8q8F4NQJ8LFL` | Vidéos, couvertures, légendes (Google Doc) |
+| 02 - Stories Piatti del giorno | `1SDTqA1B_4OsrdoYzQRLgQxMs1Ut-mcfy` | Stories de plats du jour |
+| 03 - Publications | `1xNlZbhv3DL6D-OH34vMUV1R-TxwJ9ROu` | Posts et carrousels prêts |
+| 04 - Documents | `10fFNAWeq5ATqDy0P_nnCCN-yUj8_kL2C` | Charte, plans, calendriers, e-mails, guides (Markdown converti en Google Doc) |
+| 05 - Photos du restaurant (charte appliquée) | `1u5WEWuPOXbokoKBEx4qdV6CZRl66jkE4` | Photos filtrées |
+
+- Envoi par `create_file` avec une référence de fichier (`sha256:<empreinte>:<chemin>`). Calculer l'empreinte **avant** l'appel, jamais en parallèle de celui-ci.
+- **Limite d'environ 3 Mo par fichier** : les vidéos passent par SendUserFile dans la conversation. Rappeler le geste : Partager, puis Enregistrer dans Fichiers, puis Drive, puis DA Laura, puis 01 - Réels.
+
+## Réels à partir des fichiers envoyés
+
+Dès que l'utilisatrice envoie des photos ou des vidéos, appliquer le skill `reels-depuis-photos` : **monter directement une version Instagram et une version TikTok**, les vérifier, les envoyer et les ranger dans Drive. Ne jamais se contenter de proposer.

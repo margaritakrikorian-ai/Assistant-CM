@@ -1,0 +1,158 @@
+{
+ "sortie": "reels/da-laura/decouverte-da-laura-tiktok.mp4",
+ "plans": [
+  {
+   "type": "video",
+   "source": "photos/da-laura/videos/ambiance-enseigne-terrasse.mov",
+   "debut": 10.0,
+   "fin": 11.3
+  },
+  {
+   "type": "photo",
+   "source": "photos/da-laura/cuisine/gnocchi-faits-main.jpg",
+   "duree": 0.8,
+   "mouvement": "zoom-avant",
+   "ampleur": 0.16
+  },
+  {
+   "type": "photo",
+   "source": "photos/da-laura/cuisine/pates-fraiches-rigatoni.jpg",
+   "duree": 0.8,
+   "mouvement": "gauche-droite",
+   "ampleur": 0.16
+  },
+  {
+   "type": "photo",
+   "source": "photos/da-laura/plats/ravioli-truffe.jpg",
+   "duree": 0.9,
+   "mouvement": "zoom-avant",
+   "ampleur": 0.16,
+   "centre": [
+    0.45,
+    0.6
+   ]
+  },
+  {
+   "type": "photo",
+   "source": "photos/da-laura/plats/spaghetti-crevettes.jpg",
+   "duree": 0.8,
+   "mouvement": "zoom-arriere",
+   "ampleur": 0.16,
+   "centre": [
+    0.55,
+    0.55
+   ]
+  },
+  {
+   "type": "photo",
+   "source": "photos/da-laura/plats/tagliolini-champignons.jpg",
+   "duree": 0.7,
+   "mouvement": "droite-gauche",
+   "ampleur": 0.16
+  },
+  {
+   "type": "photo",
+   "source": "photos/da-laura/plats/pates-piment-chapelure.jpg",
+   "duree": 0.7,
+   "mouvement": "zoom-avant",
+   "ampleur": 0.14,
+   "centre": [
+    0.5,
+    0.6
+   ]
+  },
+  {
+   "type": "photo",
+   "source": "photos/da-laura/plats/planche-fromages-charcuterie.jpg",
+   "duree": 0.8,
+   "mouvement": "gauche-droite",
+   "ampleur": 0.16,
+   "centre": [
+    0.45,
+    0.55
+   ]
+  },
+  {
+   "type": "video",
+   "source": "photos/da-laura/videos/ambiance-enseigne-terrasse.mov",
+   "debut": 0.1,
+   "fin": 0.9
+  },
+  {
+   "type": "video",
+   "source": "photos/da-laura/videos/ambiance-enseigne-terrasse.mov",
+   "debut": 5.45,
+   "fin": 6.15
+  },
+  {
+   "type": "photo",
+   "source": "photos/da-laura/plats/tiramisu-fraise.jpg",
+   "duree": 0.7,
+   "mouvement": "zoom-avant",
+   "ampleur": 0.14
+  },
+  {
+   "type": "video",
+   "source": "photos/da-laura/videos/ambiance-enseigne-terrasse.mov",
+   "debut": 3.4,
+   "fin": 4.3
+  },
+  {
+   "type": "photo",
+   "source": "photos/da-laura/ambiance/ardoise-piatti-del-giorno.jpg",
+   "duree": 1.4,
+   "mouvement": "zoom-avant",
+   "ampleur": 0.1,
+   "centre": [
+    0.5,
+    0.4
+   ]
+  },
+  {
+   "type": "video",
+   "source": "photos/da-laura/videos/ambiance-enseigne-terrasse.mov",
+   "debut": 2.45,
+   "fin": 3.2
+  }
+ ],
+ "textes": [
+  {
+   "texte": "POV : ta pause\nitalienne à Cannes",
+   "debut": 0.0,
+   "fin": 2.1,
+   "taille": 150,
+   "y": 360
+  },
+  {
+   "texte": "pâtes faites maison",
+   "debut": 2.1,
+   "fin": 3.8,
+   "taille": 140,
+   "y": 380
+  },
+  {
+   "texte": "et les desserts…",
+   "debut": 6.8,
+   "fin": 9.0,
+   "taille": 140,
+   "y": 380
+  },
+  {
+   "texte": "l'ardoise change\nchaque jour",
+   "debut": 9.9,
+   "fin": 11.3,
+   "taille": 128,
+   "y": 360
+  }
+ ],
+ "fin": {
+  "duree": 2.0,
+  "appel": "On t'attend !",
+  "lignes": [
+   "8 rue du 24 Août · Cannes",
+   "Réservations : 04 93 38 40 51"
+  ]
+ },
+ "legende": "Ta pause italienne à Cannes, c'est ici 🍝\nPâtes faites maison, truffe râpée minute, desserts maison et l'ardoise de Laura qui change chaque jour. Tu viens quand ? ✨",
+ "hashtags": "#DaLaura #RestaurantItalienCannes #PastaFresca #Cannes #CannesFood"
+}
