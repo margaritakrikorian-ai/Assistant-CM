@@ -10,8 +10,10 @@
 - **Secteur d'activité :** Restaurant italien
 - **Ville / zone :** Cannes (Côte d'Azur)
 - **Site web :** *(à compléter)*
+- **Adresse :** 8 rue du 24 Août, Cannes
+- **Réservations :** 04 93 38 40 51 (à ajouter à chaque légende de post et de réel)
 - **Comptes réseaux sociaux :**
-  - Instagram : *(à compléter)*
+  - Instagram : **@dalaura.cannes**
   - Facebook : *(à compléter)*
   - TikTok : *(à compléter)*
 

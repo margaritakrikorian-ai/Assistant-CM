@@ -90,3 +90,11 @@ Skill du projet : `.claude/skills/contenu-semaine/SKILL.md` (aussi `/contenu-sem
 
 - Toujours **intégrer les images dans la page** (data URI), jamais en fichiers séparés : certaines applications (iPad) ne les affichent pas sinon. Vérifier avant publication que toutes les images se chargent avec la page seule.
 - Le partage d'une page (ex. avec Laura) ne peut pas être fait par l'assistant : il se fait depuis le menu **Partager** de la page. Le rappeler à l'utilisatrice à chaque nouvelle page destinée à quelqu'un d'autre.
+
+## Programmation des publications (@dalaura.cannes)
+
+- Calendrier de programmation : `calendriers/dalaura-AAAA-MM.csv` (colonnes `date;heure;format;fichier;légende;statut`, statuts `à créer` → `validé client` → `programmé` / `publié`). Le construire ou le mettre à jour avec `python3 outils/construire_programmation.py AAAA-MM` (les statuts déjà saisis sont conservés). Contrat : 8 posts, 20 stories, 2 réels par mois.
+- « Laura a validé… » : passer les lignes concernées à `validé client`, lancer `python3 outils/pack_programmation.py`, puis **envoyer à l'utilisatrice les fichiers du pack** (`a-programmer/…`) avec SendUserFile pour qu'elle les enregistre sur l'iPad. Committer.
+- « C'est programmé » : passer les lignes à `programmé` (sinon risque de double publication une fois l'automatique activé).
+- Publication automatique : `.github/workflows/publier-instagram.yml` + `outils/publier_instagram.py`, en mode test (`DRY_RUN`) tant que l'utilisatrice ne l'a pas activé. **Ne jamais** publier, ni passer à `validé client`, un contenu que Laura n'a pas validé. Guide : `docs/publication-automatique.md`.
+- Toutes les légendes de posts et de réels se terminent par l'adresse (8 rue du 24 Août, Cannes) et les réservations (04 93 38 40 51), ajoutées automatiquement.

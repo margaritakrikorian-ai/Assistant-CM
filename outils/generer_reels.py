@@ -193,6 +193,11 @@ def main(csv_path, marque=None, sortie=None):
             couv.convert("RGB").save(dossier / f"{nom}-couverture.jpg", quality=95)
 
         (dossier / f"{nom}.txt").write_text(r["Légende"] + "\n\n" + r["Hashtags"] + "\n", encoding="utf-8")
+        attente = dossier / f"{nom}.attente"  # empêche la programmation tant que des photos manquent
+        if photos:
+            attente.unlink(missing_ok=True)
+        else:
+            attente.write_text("Réel monté avec des plans « photo à fournir ».\n", encoding="utf-8")
         bilan.append((nom, total, n, bool(photos)))
         print(f"{nom}.mp4 : {total:.1f} s, {n} plans" + ("" if photos else " (photos à fournir)"))
     return bilan

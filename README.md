@@ -18,7 +18,9 @@ Assistant-CM/
 ├── reels/           Les réels en vidéo MP4 verticale
 ├── outils/          Les scripts (visuels, réels, import Instagram)
 ├── plats-du-jour/    Les plats du jour du mois (pour les stories « Piatti del giorno »)
-└── docs/            Les guides (charte graphique, connexion Instagram…)
+├── a-programmer/    Le pack prêt à programmer (contenus validés par le client) + RECAP.md
+├── .github/         La publication automatique (GitHub Actions, en mode test par défaut)
+└── docs/            Les guides (charte, connexion Instagram, publication automatique…)
 ```
 
 ## En une phrase : « Propose-moi du contenu pour la semaine »
@@ -32,6 +34,13 @@ Dites simplement cette phrase à l'assistant, ou tapez `/contenu-semaine`. Il :
 Vous répondez ensuite, par exemple : *« valide R1, P2, S1 à S7 ; modifie P3 : … »*.
 
 Pour des propositions fondées sur ce qui marche, récupérez d'abord les statistiques : `python3 outils/stats_instagram.py da-laura`, ou déposez un export de Meta Business Suite dans `stats/da-laura/`.
+
+## Programmer les publications de Da Laura (@dalaura.cannes)
+
+1. **Calendrier** : `calendriers/dalaura-AAAA-MM.csv`, une ligne par contenu (date, heure, format, fichier, légende, statut). Pour le créer ou le mettre à jour : `python3 outils/construire_programmation.py AAAA-MM`.
+2. **Validation** : quand Laura valide un contenu, son statut passe à `validé client`.
+3. **Pack prêt à programmer** : `python3 outils/pack_programmation.py` remplit `a-programmer/` (un dossier par contenu, au bon format, avec `legende.txt`) et écrit `a-programmer/RECAP.md`, le pas-à-pas pour Meta Business Suite sur iPad.
+4. **Publication automatique** (facultative) : voir [`docs/publication-automatique.md`](docs/publication-automatique.md). Elle reste en mode test tant que vous ne l'activez pas.
 
 ## Démarrage rapide
 

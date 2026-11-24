@@ -273,6 +273,11 @@ def main(csv_path, marque=None, sortie=None):
             bilan["posts"] += 1
             bilan["attente"] += attente
         (dossier / "legende.txt").write_text(r["Légende"] + "\n\n" + r["Hashtags"] + "\n", encoding="utf-8")
+        marque_attente = dossier / "PHOTO-A-FOURNIR.txt"  # empêche la programmation tant qu'une photo manque
+        if any(trouver(c) is None for c in chemins):
+            marque_attente.write_text("Au moins un visuel utilise un cadre « photo à fournir ».\n", encoding="utf-8")
+        elif marque_attente.exists():
+            marque_attente.unlink()
 
     for r in rows:
         if not r["Format"].startswith("Story"):
