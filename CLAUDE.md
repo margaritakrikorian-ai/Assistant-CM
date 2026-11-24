@@ -27,3 +27,4 @@ Si une information nécessaire est marquée *(à compléter)*, la demander ou le
 Tout le contenu est rédigé en français, sauf indication contraire de la fiche marque.
 
 Visuels des posts (1080x1350) et des stories : générés avec `python3 outils/generer_visuels.py calendriers/<calendrier>.csv` (Pillow, polices dans `outils/polices/`).
+Réels (MP4 1080x1920, 15 à 30 s, piste audio silencieuse pour la musique ajoutée dans Instagram) : générés avec `python3 outils/generer_reels.py calendriers/<calendrier>.csv` (ffmpeg).

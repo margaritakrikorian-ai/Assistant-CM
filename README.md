@@ -80,6 +80,18 @@ python3 outils/generer_visuels.py calendriers/da-laura-2026-12.csv
 - Les photos des stories se déposent dans `photos/<marque>/stories/<AAAA-MM-JJ>-<n>.jpg`. À défaut, le script utilise la photo du post du même jour.
 - Les réels (vidéos) ne sont pas générés par ce script.
 
+### Générer automatiquement les réels
+
+Le script `outils/generer_reels.py` crée les réels du calendrier avec ffmpeg : une vidéo MP4 verticale en 1080x1920, de 15 à 30 secondes, avec un zoom lent sur chaque photo, des fondus enchaînés, un titre d'accroche dès la première seconde et une carte de fin aux couleurs de la marque.
+
+```
+python3 outils/generer_reels.py calendriers/da-laura-2026-12.csv
+```
+
+- Les photos se déposent à côté du fichier indiqué dans le calendrier, numérotées dans l'ordre du montage. Par exemple, pour `photos/da-laura/cuisine/pates-fraiches.mp4` : `pates-fraiches-01.jpg`, `pates-fraiches-02.jpg`…
+- La piste audio est silencieuse : la musique s'ajoute dans Instagram. Les ambiances conseillées sont dans `reels/<marque>/README.md`.
+- Chaque réel est livré avec sa légende (`.txt`) et une image de couverture (`-couverture.jpg`).
+
 ### 5. Créer les stories
 
 Les stories sont au format vertical **1080x1920 pixels** (ratio 9:16) :
