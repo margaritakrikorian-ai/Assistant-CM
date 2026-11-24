@@ -1,12 +1,12 @@
 # Calendrier éditorial : Da Laura, décembre 2026
 
-> Établi à partir de la fiche [`marques/da-laura.md`](../marques/da-laura.md). Version tableur : [`da-laura-2026-12.csv`](da-laura-2026-12.csv).
+> Établi à partir de la fiche [`marques/da-laura.md`](../marques/da-laura.md) et de la veille [`veille/2026-12.md`](../veille/2026-12.md). Version tableur : [`da-laura-2026-12.csv`](da-laura-2026-12.csv).
 
 ## Vue d'ensemble
 
 - **Posts :** 22 (16 posts simples et 6 carrousels), soit 5 par semaine
 - **Réels :** 9, soit 2 par semaine (mercredi et samedi)
-- **Stories :** tous les jours, en séquence de 3 stories (sondage, quiz, coulisses, partage du post du jour)
+- **Stories :** tous les jours, en séquence de 3 ou 4 stories (sondage, quiz, coulisses, partage du post du jour)
 - **Horaires :** 11h–11h30 avant le déjeuner, 18h–18h30 avant le dîner. Le jeudi et le vendredi en fin de journée pour les réservations du week-end.
 - **Rythme de la semaine :** lundi post, mardi post, mercredi réel, jeudi post, vendredi post, samedi réel, dimanche post.
 
@@ -20,12 +20,13 @@
 | 8 déc. | Immacolata | Tradition italienne du sapin, décoration du restaurant |
 | 10 déc. | Cadeaux de Noël | Carte cadeau (à confirmer) |
 | 17 → 20 déc. | Jeu-concours de Noël | Dîner pour deux à gagner, pour l'engagement et les abonnés |
-| 18 déc. | Illuminations de Cannes | Pilier « Cannes et la dolce vita » |
+| 18 déc. | Illuminations et village de Noël du Palm Beach (3 déc. → 3 janv.) | Pilier « Cannes et la dolce vita » |
 | 21 → 25 déc. | Vigilia et Noël | Tradition des sept poissons, panettone ou pandoro, vœux |
+| 23 déc. | Parade lumineuse de Noël (17h30, rue Meynadier) | Story « après la parade, viens te réchauffer » |
 | 26 → 27 déc. | Santo Stefano et bilan 2026 | Rétrospective et remerciements à l'équipe |
-| 28 → 31 déc. | Saint-Sylvestre | Dernières tables, traditions du Capodanno, vœux |
+| 28 → 31 déc. | Saint-Sylvestre et feu d'artifice sur la baie à minuit | Dernières tables, traditions du Capodanno, vœux |
 
-Non retenus : le Black Friday, déjà passé, et les soldes d'hiver, qui ne commencent que le 6 janvier 2027 et concernent surtout le commerce.
+Non retenus : le Black Friday, déjà passé ; les soldes d'hiver, qui ne commencent que le 6 janvier 2027 ; le Téléthon (4-5 déc.), éventuellement en simple story de soutien. Détail dans la veille.
 
 ## Calendrier jour par jour
 
@@ -48,7 +49,7 @@ Non retenus : le Black Friday, déjà passé, et les soldes d'hiver, qui ne comm
 | Mar 15/12 | 11h30 | Post | La communauté | Il y a des messages qui font notre journée. ✨ |
 | Mer 16/12 | 18h30 | Réel | L'ambiance | Nappe blanche, couverts alignés, bougies et branches d'olivier : on dresse la table des fêtes. 🕯️ |
 | Jeu 17/12 | 18h30 | Post | La communauté | Pour fêter Noël avec toi, on t'offre un dîner pour deux chez Da Laura. 🎁 |
-| Ven 18/12 | 18h30 | Post | Cannes et la dolce vita | Cannes en décembre a un charme particulier : les illuminations sur la Croisette, la mer d'hiver et cette douceur qui donne envie de sortir. ✨ |
+| Ven 18/12 | 18h30 | Post | Cannes et la dolce vita | Cannes en décembre a un charme particulier : les illuminations, le village de Noël du Palm Beach sur la Croisette, la mer d'hiver et cette douceur qui donne envie de sortir. ✨ |
 | Sam 19/12 | 18h00 | Réel | Le savoir-faire | 19h, la cuisine se met en marche. 🔥 |
 | Dim 20/12 | 11h30 | Post | La communauté | Le tirage au sort a parlé ! 🎉 |
 | Lun 21/12 | 18h30 | Carrousel | Cannes et la dolce vita | Le 24 décembre au soir, dans le sud de l'Italie, on ne sert pas de viande : c'est la Vigilia, le grand repas de poissons et de fruits de mer. 🐟 |
@@ -562,7 +563,7 @@ Une séquence de stories est prévue chaque jour en plus de ces publications (vo
 - **Appel à l'action :** Participe sur le post
 - ⚠️ **À valider :** Règlement
 
-### Vendredi 18 décembre · Illuminations de Noël à Cannes
+### Vendredi 18 décembre · Illuminations et village de Noël du Palm Beach
 
 **Post · 18h30** · *Cannes et la dolce vita*
 
@@ -570,7 +571,7 @@ Une séquence de stories est prévue chaque jour en plus de ces publications (vo
 - **Texte sur le visuel :** Cannes en décembre
 - **Légende :**
 
-  > Cannes en décembre a un charme particulier : les illuminations sur la Croisette, la mer d'hiver et cette douceur qui donne envie de sortir. ✨  
+  > Cannes en décembre a un charme particulier : les illuminations, le village de Noël du Palm Beach sur la Croisette, la mer d'hiver et cette douceur qui donne envie de sortir. ✨  
   > Après une balade au bord de l'eau, rien de tel qu'une table chaleureuse et une assiette de pâtes fraîches pour finir la soirée.  
   > Ta soirée cannoise se termine chez nous ? Réserve via le lien en bio. 🍝
 
@@ -718,17 +719,19 @@ Une séquence de stories est prévue chaque jour en plus de ces publications (vo
 - **Hashtags :** #DaLaura #CuisineItalienne #ItalianFood #FoodLover #CannesFood #CôteDAzur
 - **Appel à l'action :** Vote en commentaire
 
-**Stories · 11h30 · 15h · 18h30** · *Cannes et la dolce vita*
+**Stories · 11h30 · 15h · 16h · 18h30** · *Cannes et la dolce vita*
 
 - **Photo / vidéo :** À fournir : Panettone et pandoro
 - **Séquence :**
 
   1. Sondage « Panettone ou pandoro ? » 🎄
   2. Résultat du sondage en fin de journée
-  3. Partage du réel du jour
+  3. Photo des illuminations, texte « Parade de Noël à 17h30 : après, viens te réchauffer chez nous »
+  4. Partage du réel du jour
 
 - **Hashtags :** #DaLaura + sticker localisation « Cannes »
-- **Appel à l'action :** Sondage
+- **Appel à l'action :** Sondage + sticker lien « Réserver »
+- ⚠️ **À valider :** Horaire de la parade (17h30, départ rue Meynadier) à reconfirmer
 
 ### Jeudi 24 décembre · Réveillon de Noël
 
@@ -940,7 +943,7 @@ Une séquence de stories est prévue chaque jour en plus de ces publications (vo
 
   > Dernier soir de l'année. ✨  
   > Merci pour chaque table réservée, chaque message, chaque assiette partagée en 2026. On te souhaite une année 2027 pleine de bonheur, de gourmandise et de beaux moments.  
-  > Buon anno 🎉  
+  > À minuit, les yeux vers la baie de Cannes pour le feu d'artifice… Buon anno 🎉  
   > On se retrouve très vite chez Da Laura.
 
 - **Hashtags :** #DaLaura #DaLauraCannes #RestaurantCannes #DolceVita #Cannes #FrenchRiviera
@@ -967,12 +970,13 @@ Une séquence de stories est prévue chaque jour en plus de ces publications (vo
 - **Jeu-concours** : dotation (sans alcool), règlement accessible en bio, nom exact du compte Instagram.
 - **Histoire de Laura** (post du 6 décembre) : à ajouter aussi dans la fiche marque.
 - **Plats, vins et produits** cités : à vérifier par rapport à la carte réelle.
+- **Tournages (d'après la veille)** : dans chaque réel, au moins un plan avec une personne visible (Laura, le chef, une main en action) et le plan le plus gourmand dans les 3 premières secondes. Images naturelles, peu filtrées.
 - **Droit à l'image** : accord des clients et de l'équipe filmés ou photographiés.
 - **Loi Évin** : mention obligatoire sur le post du 11 décembre et sur son partage en story. Pas de bouteilles ni de coupes au premier plan dans les autres visuels.
 
 ## Photos et vidéos à prévoir
 
-Le dossier `photos/da-laura/` est encore vide. Voici la liste des prises de vue à réaliser, à déposer dans les sous-dossiers indiqués :
+Voici la liste des prises de vue à réaliser, à déposer dans les sous-dossiers indiqués :
 
 | Fichier | Contenu | Pour le |
 |---|---|---|

@@ -137,13 +137,14 @@ def ffmpeg_reel(plans, durees, accroche_png, sortie):
     return total
 
 
-def main(csv_path):
+def main(csv_path, marque=None, sortie=None):
+    """sortie : dossier où ranger reels/ (par défaut : reels/<marque>/ à la racine du projet)."""
     csv_path = Path(csv_path)
-    marque = re.match(r"(.+)-\d{4}-\d{2}$", csv_path.stem).group(1)
+    marque = marque or re.match(r"(.+)-\d{4}-\d{2}$", csv_path.stem).group(1)
     with open(csv_path if csv_path.is_absolute() else RACINE / csv_path, encoding="utf-8-sig") as fh:
         rows = [r for r in csv.DictReader(fh, delimiter=";") if r["Format"] == "Réel"]
 
-    dossier = RACINE / "reels" / marque
+    dossier = Path(sortie) / "reels" if sortie else RACINE / "reels" / marque
     dossier.mkdir(parents=True, exist_ok=True)
     bilan = []
     for r in rows:
@@ -151,9 +152,15 @@ def main(csv_path):
         champ = re.sub(r"^À fournir\s*:\s*", "", r["Photo / vidéo"])
         chemin, _, desc = champ.partition(" — ")
         chemin = chemin.strip()
-        sujet = Path(chemin).stem
+        if " + " in chemin:  # liste explicite de photos : « photos/a.jpg + photos/b.jpg + … »
+            liste = [c.strip() for c in chemin.split(" + ")]
+            photos = [p for p in (RACINE / c for c in liste) if p.exists()]
+            chemin = liste[0]
+            sujet = re.sub(r"-\d+$", "", Path(chemin).stem)
+        else:
+            sujet = Path(chemin).stem
+            photos = photos_reel(chemin)
         nom = f"{a}-{mo}-{j}-{sujet}"
-        photos = photos_reel(chemin)
         base = str(Path(chemin).with_suffix(""))
 
         with tempfile.TemporaryDirectory() as tmp:
@@ -190,4 +197,10 @@ def main(csv_path):
 
 
 if __name__ == "__main__":
-    main(sys.argv[1] if len(sys.argv) > 1 else "calendriers/da-laura-2026-12.csv")
+    import argparse
+    ap = argparse.ArgumentParser(description="Génère les réels MP4 d'un fichier CSV.")
+    ap.add_argument("csv", nargs="?", default="calendriers/da-laura-2026-12.csv")
+    ap.add_argument("--marque", help="nom de la marque (sinon déduit du nom du CSV <marque>-AAAA-MM.csv)")
+    ap.add_argument("--sortie", help="dossier de sortie (ex. propositions/2026-11-30)")
+    a = ap.parse_args()
+    main(a.csv, a.marque, a.sortie)

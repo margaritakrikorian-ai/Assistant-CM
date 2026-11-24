@@ -79,6 +79,8 @@ def photos_du_post(champ):
     """'À fournir : photos/x/salle-noel-01.jpg à -05.jpg — description' -> ([chemins], description)."""
     champ = re.sub(r"^À fournir\s*:\s*", "", champ)
     chemin, _, desc = champ.partition(" — ")
+    if " + " in chemin:  # liste explicite : « photos/a.jpg + photos/b.jpg »
+        return [c.strip() for c in chemin.split(" + ")], desc.strip()
     m = re.match(r"(.+)-(\d+)(\.\w+) à -(\d+)\.\w+$", chemin.strip())
     if m:
         base, debut, ext, fin = m.group(1), int(m.group(2)), m.group(3), int(m.group(4))
@@ -232,9 +234,14 @@ def a_ajouter(consigne):
 
 
 # ---------- programme principal ----------
-def main(csv_path):
+def main(csv_path, marque=None, sortie=None):
+    """sortie : dossier où ranger publications/ et stories/ (par défaut : racine du projet, rangé par marque)."""
     csv_path = Path(csv_path)
-    marque = re.match(r"(.+)-\d{4}-\d{2}$", csv_path.stem).group(1)
+    marque = marque or re.match(r"(.+)-\d{4}-\d{2}$", csv_path.stem).group(1)
+    if sortie:
+        base_pub, base_story = Path(sortie) / "publications", Path(sortie) / "stories"
+    else:
+        base_pub, base_story = RACINE / "publications" / marque, RACINE / "stories" / marque
     with open(RACINE / csv_path if not csv_path.is_absolute() else csv_path, encoding="utf-8-sig") as fh:
         rows = list(csv.DictReader(fh, delimiter=";"))
 
@@ -252,7 +259,7 @@ def main(csv_path):
         if r["Format"] not in ("Post", "Carrousel"):  # réel : vidéo, pas de visuel
             posts_du_jour[date] = (sujet, [])
             continue
-        dossier = RACINE / "publications" / marque / f"{date}-{sujet}"
+        dossier = base_pub / f"{date}-{sujet}"
         posts_du_jour[date] = (sujet, chemins)
         mention = EVIN if "abus d'alcool" in r["Légende"] else None
         for i, ch in enumerate(chemins, 1):
@@ -271,7 +278,7 @@ def main(csv_path):
         sujet, chemins_post = posts_du_jour.get(date, (slug(r["Thème"]), []))
         heures = [h.strip() for h in r["Heure"].split("·")]
         desc = re.sub(r"^À fournir\s*:\s*", "", r["Photo / vidéo"])
-        dossier = RACINE / "stories" / marque
+        dossier = base_story
         for n, consigne, txt in ecrans_story(r["Légende"]):
             base = dossier / f"{date}-{sujet}-{n}"
             heure = heures[n - 1] if n - 1 < len(heures) else heures[-1]
@@ -281,7 +288,9 @@ def main(csv_path):
                           "(bouton « Partager » sous la publication ou le réel du jour)."]
             else:
                 photo_story = f"photos/{marque}/stories/{date}-{n}.jpg"
-                photo = trouver(photo_story) or next((p for p in map(trouver, chemins_post) if p), None)
+                explicite = re.match(r"(photos/\S+?\.(?:jpe?g|png|webp|heic))", desc, re.I)  # photo précise indiquée
+                photo = ((trouver(explicite.group(1)) if explicite else None) or trouver(photo_story)
+                         or next((p for p in map(trouver, chemins_post) if p), None))
                 img, attente = fond(STORY, photo, photo_story, desc)
                 mention = EVIN if "Évin" in consigne else None
                 enregistrer(carte_story(img, txt, mention), base.with_suffix(".jpg"))
@@ -302,4 +311,10 @@ def main(csv_path):
 
 
 if __name__ == "__main__":
-    main(sys.argv[1] if len(sys.argv) > 1 else "calendriers/da-laura-2026-12.csv")
+    import argparse
+    ap = argparse.ArgumentParser(description="Génère les visuels des posts et des stories d'un fichier CSV.")
+    ap.add_argument("csv", nargs="?", default="calendriers/da-laura-2026-12.csv")
+    ap.add_argument("--marque", help="nom de la marque (sinon déduit du nom du CSV <marque>-AAAA-MM.csv)")
+    ap.add_argument("--sortie", help="dossier de sortie (ex. propositions/2026-11-30)")
+    a = ap.parse_args()
+    main(a.csv, a.marque, a.sortie)

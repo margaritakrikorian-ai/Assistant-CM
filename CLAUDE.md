@@ -12,6 +12,18 @@ Avant de produire **tout contenu** pour une marque (légende, calendrier éditor
 
 Si une information nécessaire est marquée *(à compléter)*, la demander ou le signaler plutôt que de l'inventer.
 
+## Veille avant chaque calendrier éditorial
+
+Avant de créer **chaque** calendrier éditorial, faire une recherche web et la résumer dans `veille/<AAAA>-<MM>.md`, avec les sources (liens) et leur niveau de fiabilité :
+
+1. les tendances Instagram et les formats de réels qui marchent ce mois-ci dans le secteur de la marque (pour Da Laura : restaurant italien) ;
+2. les dates clés et les événements du mois en France, dans le pays de la cuisine (Italie) et dans la ville de la marque (Cannes) ;
+3. ce que publient 3 concurrents (pour Da Laura : Scalini, Chez Franco Girasole, Tredici), en **analyse seulement**, sans jamais copier leurs contenus.
+
+Le calendrier s'appuie ensuite sur cette veille : il la cite en en-tête, reprend les dates retenues et applique les tendances aux formats. Ne jamais inventer une date ou un événement : ce qui n'est pas sourcé est signalé « à vérifier ».
+
+Les données de chaque calendrier sont dans `outils/calendrier/<marque>_<AAAA>_<MM>.py` (la mise en forme commune est dans `rendu.py`) : `python3 outils/calendrier/<fichier>.py calendriers`.
+
 ## Marques actives
 
 - **Da Laura** (restaurant italien, Cannes) : `marques/da-laura.md`
@@ -38,3 +50,7 @@ Réels (MP4 1080x1920, 15 à 30 s, piste audio silencieuse pour la musique ajout
 
 - Serveur MCP officiel de Canva déclaré dans `.mcp.json` (https://mcp.canva.com/mcp). Dossier Canva du mois : « Da Laura – Décembre 2026 ».
 - Toujours passer les couleurs, les polices et le ton de la fiche marque dans la description du design (pas de kit de marque Canva configuré).
+
+## Commande « Propose-moi du contenu pour la semaine »
+
+Skill du projet : `.claude/skills/contenu-semaine/SKILL.md` (aussi `/contenu-semaine`). La suivre à la lettre : `outils/semaine.py` (contexte), `propositions.csv`, `outils/verifier_contenus.py`, générateurs avec `--sortie propositions/<lundi>`, `A-VALIDER.md`, puis `--terminer`.

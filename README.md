@@ -9,13 +9,28 @@ Assistant-CM/
 ├── photos/          Les photos que vous ajoutez, rangées par client ou par marque
 ├── marques/         Une fiche par marque (ton, couleurs, cible, hashtags, logo)
 │   └── modele.md    Le modèle de fiche marque à copier
+├── veille/          La veille du mois (tendances, dates clés, concurrents) avec sources
 ├── calendriers/     Les calendriers éditoriaux générés
+├── propositions/    Les propositions de la semaine, à valider (une par lundi)
+├── stats/           Les statistiques Instagram (export ou script)
 ├── publications/    Les posts prêts à publier (visuel + légende)
 ├── stories/         Les stories au format 1080x1920
 ├── reels/           Les réels en vidéo MP4 verticale
 ├── outils/          Les scripts (visuels, réels, import Instagram)
 └── docs/            Les guides (connexion Instagram…)
 ```
+
+## En une phrase : « Propose-moi du contenu pour la semaine »
+
+Dites simplement cette phrase à l'assistant, ou tapez `/contenu-semaine`. Il :
+
+1. lit la fiche marque, les **nouvelles photos** (ajoutées depuis la dernière proposition), la **veille** du mois et les **statistiques** Instagram ;
+2. propose **3 réels, 5 publications et 7 stories**, chacun avec son visuel, sa légende et ses hashtags ;
+3. range le tout dans `propositions/<date du lundi>/`, avec un récapitulatif **`A-VALIDER.md`** à cocher.
+
+Vous répondez ensuite, par exemple : *« valide R1, P2, S1 à S7 ; modifie P3 : … »*.
+
+Pour des propositions fondées sur ce qui marche, récupérez d'abord les statistiques : `python3 outils/stats_instagram.py da-laura`, ou déposez un export de Meta Business Suite dans `stats/da-laura/`.
 
 ## Démarrage rapide
 
@@ -56,6 +71,8 @@ Le calendrier est enregistré dans `calendriers/`, sous la forme `<marque>-<anne
 ```
 calendriers/boulangerie-dupont-2026-12.md
 ```
+
+Avant chaque calendrier, l'assistant fait une **veille** (tendances Instagram du secteur, dates clés en France, en Italie et à Cannes, analyse de 3 concurrents), résumée avec ses sources dans `veille/<AAAA>-<MM>.md`.
 
 ### 4. Préparer les publications
 

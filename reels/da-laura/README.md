@@ -38,3 +38,17 @@ python3 outils/generer_reels.py calendriers/da-laura-2026-12.csv
 ```
 
 Vous pouvez ajouter jusqu'à 7 photos par réel. Le script adapte la durée de chaque plan pour que la vidéo dure entre 15 et 30 secondes.
+
+## Réels de janvier 2027
+
+| Date | Réel | Ambiance musicale |
+|---|---|---|
+| Sam 02/01 | Le 31 décembre en coulisses | Festif et élégant, swing |
+| Mer 06/01 | La Befana est passée | Tarentelle douce ou musique de conte, enjouée |
+| Sam 09/01 | Le risotto, de A à Z | Guitare acoustique, rythme posé |
+| Mer 13/01 | Une matinée en cuisine | Lo-fi matinal, doux |
+| Sam 16/01 | Le feu de nos cuisines | Percussions rythmées, énergie |
+| Mer 20/01 | Une forme, une sauce | Mandoline italienne légère |
+| Sam 23/01 | Avant… après | Jazz lounge qui monte en intensité |
+| Mer 27/01 | Le dessert de saison | Piano doux et lumineux |
+| Sam 30/01 | Le son de nos cuisines | **Pas de musique** : garder le son original de la vidéo filmée (ASMR) |

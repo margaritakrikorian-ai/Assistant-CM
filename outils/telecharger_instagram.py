@@ -30,7 +30,7 @@ RACINE = Path(__file__).resolve().parent.parent
 FICHIER_ENV = RACINE / ".env"
 VERSION = os.environ.get("INSTAGRAM_API_VERSION", "v23.0")
 API = f"https://graph.instagram.com/{VERSION}"
-CHAMPS = ("id,caption,media_type,media_url,thumbnail_url,permalink,timestamp,"
+CHAMPS = ("id,caption,media_type,media_url,thumbnail_url,permalink,timestamp,like_count,comments_count,"
           "children{id,media_type,media_url,thumbnail_url}")
 
 
