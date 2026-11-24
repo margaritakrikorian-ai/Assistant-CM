@@ -127,7 +127,7 @@ python3 outils/generer_reels.py calendriers/da-laura-2026-12.csv
 Le contrat de Da Laura prévoit **20 stories de plats du jour par mois**. Elles sont créées avec `outils/plats_du_jour.py`, dans l'écriture du restaurant : l'ardoise à la craie, l'enseigne rouge sur crème « La cucina autentica · dal 1992 » et le vichy des nappes.
 
 1. Copiez `plats-du-jour/exemple.txt` en `plats-du-jour/da-laura-AAAA-MM.txt`, puis ajoutez les plats de chaque jour (`Nom | description | prix`). Vous pouvez aussi simplement envoyer à l'assistant la photo de l'ardoise ou la liste des plats : il remplit le fichier pour vous.
-2. Lancez `python3 outils/plats_du_jour.py plats-du-jour/da-laura-AAAA-MM.txt` (option `--style ardoise`, `enseigne` ou `photo`).
+2. Lancez `python3 outils/plats_du_jour.py plats-du-jour/da-laura-AAAA-MM.txt` (style par défaut `suggestions` : une photo du restaurant en fond, différente chaque jour, avec les suggestions écrites dessus ; autres styles : `--style ardoise`, `enseigne` ou `photo`).
 3. Les stories arrivent dans `stories/da-laura/plats-du-jour/` (une image et un `.txt` par jour). Les trois modèles sont dans `stories/da-laura/plats-du-jour/modeles/`.
 
 ### 5. Créer les stories

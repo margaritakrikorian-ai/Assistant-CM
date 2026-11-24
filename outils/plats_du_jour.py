@@ -4,8 +4,10 @@ Utilisation (depuis la racine du projet) :
     python3 outils/plats_du_jour.py plats-du-jour/da-laura-2026-12.txt
     python3 outils/plats_du_jour.py plats-du-jour/da-laura-2026-12.txt --style enseigne
 
-Trois styles, tous tirés de l'identité réelle du restaurant :
-- ardoise  (défaut) : l'ardoise « Piatti del giorno » de la terrasse, écriture à la craie ;
+Quatre styles, tous tirés de l'identité réelle du restaurant :
+- suggestions (défaut, quotidien) : une photo du restaurant en fond, différente chaque jour, et les
+             suggestions écrites directement dessus (titre manuscrit comme l'ardoise, plats en Cormorant) ;
+- ardoise  : l'ardoise « Piatti del giorno » de la terrasse, écriture à la craie ;
 - enseigne : l'enseigne « Da Laura – La cucina autentica » et la plaque « Specialità italiane, dal 1992 »,
              rouge sur crème, avec une bande de vichy comme les nappes ;
 - photo    : une photo du restaurant en fond flouté, avec une carte crème.
@@ -272,7 +274,65 @@ def style_photo(jour, plats, photo):
     return img
 
 
-STYLES = {"ardoise": style_ardoise, "enseigne": style_enseigne, "photo": style_photo}
+# ---------- style 4 : les suggestions sur photo (style quotidien par défaut) ----------
+DOSSIERS_FOND = ["ambiance", "plats", "cuisine"]
+EXT = (".jpg", ".jpeg", ".png", ".webp")
+
+
+def photo_du_jour(jour, marque="da-laura"):
+    """Choisit une photo de fond différente chaque jour, en tournant sur les photos du restaurant."""
+    photos = sorted(p for d in DOSSIERS_FOND for p in (RACINE / "photos" / marque / d).glob("*")
+                    if p.suffix.lower() in EXT)
+    return photos[jour.toordinal() % len(photos)] if photos else None
+
+
+def style_suggestions(jour, plats, photo):
+    chemin = (RACINE / photo) if photo else photo_du_jour(jour)
+    if chemin and chemin.exists():
+        fond = ImageOps.fit(ImageOps.exif_transpose(Image.open(chemin)).convert("RGB"), (W, H), Image.LANCZOS,
+                            centering=(0.5, 0.45))
+        fond = fond.filter(ImageFilter.GaussianBlur(5))  # léger flou : la photo reste reconnaissable
+    else:
+        fond = Image.new("RGB", (W, H), (70, 48, 36))
+    # voile sombre, plus marqué derrière le texte, pour une lecture parfaite
+    voile = Image.new("L", (W, H), 0)
+    dv = ImageDraw.Draw(voile)
+    for y in range(H):
+        centre = 1 - min(1, abs(y - 960) / 900)
+        dv.line([(0, y), (W, y)], fill=int(70 + 80 * centre))
+    img = Image.composite(Image.new("RGB", (W, H), (18, 12, 8)), fond, voile)
+
+    # titre et plats : texte avec une ombre douce
+    ombre = Image.new("L", (W, H), 0)
+    c = Calque()
+
+    def ecrire(couleur, xy, txt, f):
+        c.texte(couleur, xy, txt, f)
+        ImageDraw.Draw(ombre).text((xy[0] + 2, xy[1] + 3), txt, font=f, fill=150, anchor="ma")
+
+    ecrire(CREME, (W / 2, 300), "Piatti del giorno", craie(140))
+    ecrire((232, 220, 198), (W / 2, 478), f"Les suggestions du {date_fr(jour).split(' ', 1)[1]}", serif_it(46))
+
+    lignes, h = ajuster_plats(plats, [(lambda t: serif(t, 600), 60), (lambda t: serif_it(t, 500), 46),
+                                      (lambda t: serif(t, 700), 50)], 860, 900)
+    y = 600 + (940 - h) / 2
+    for txt, f, role in lignes:
+        if role == "sep":
+            ecrire((214, 196, 160), (W / 2, y - 6), "~", craie(60))
+        else:
+            ecrire({"nom": (250, 246, 238), "desc": (230, 220, 202), "prix": (242, 217, 139)}[role], (W / 2, y), txt, f)
+        y += f.size * 1.18
+
+    img.paste(Image.new("RGB", (W, H), (0, 0, 0)), (0, 0), ombre.filter(ImageFilter.GaussianBlur(6)))
+    c.poser(img)
+    d = ImageDraw.Draw(img)
+    triangle(d, W / 2, 1548, 46, CREME, 2)
+    espace(d, 1606, "DA LAURA", serif(34, 700), CREME, 9)
+    d.text((W / 2, 1650), "la cucina autentica · dal 1992", font=serif_it(28), fill=(220, 208, 186), anchor="ma")
+    return img
+
+
+STYLES = {"suggestions": style_suggestions, "ardoise": style_ardoise, "enseigne": style_enseigne, "photo": style_photo}
 
 
 # ---------- lecture du fichier ----------
@@ -301,7 +361,7 @@ def lire(fichier):
 def main():
     ap = argparse.ArgumentParser(description="Stories « Piatti del giorno » de Da Laura.")
     ap.add_argument("fichier", help="ex. plats-du-jour/da-laura-2026-12.txt")
-    ap.add_argument("--style", choices=STYLES, default="ardoise")
+    ap.add_argument("--style", choices=STYLES, default="suggestions")
     ap.add_argument("--marque", default="da-laura")
     ap.add_argument("--sortie", help="dossier de sortie (défaut : stories/<marque>/plats-du-jour)")
     a = ap.parse_args()

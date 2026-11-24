@@ -1,7 +1,8 @@
 # Plats du jour — modèle à copier (un fichier par mois : da-laura-AAAA-MM.txt)
 # Une journée = une date AAAA-MM-JJ, puis une ligne par plat : Nom | description | prix
 # La description et le prix sont facultatifs. Laisser une ligne vide entre deux journées.
-# Lignes facultatives : « photo: chemin/vers/photo.jpg » (style photo) et « style: ardoise | enseigne | photo ».
+# Par défaut, la photo de fond change chaque jour (photos de photos/da-laura/ambiance, plats et cuisine).
+# Lignes facultatives : « photo: chemin/vers/photo.jpg » pour imposer une photo, « style: suggestions | ardoise | enseigne | photo ».
 # Exemple tiré de l'ardoise de la terrasse (à remplacer par les vrais plats du jour) :
 
 2026-12-01
