@@ -54,4 +54,4 @@ Règles :
 
 ## 5. Le rythme
 
-Contrat Essentielle adapté : **20 stories « Piatti del giorno » par mois**, du mardi au samedi (à confirmer). Les plats sont envoyés une fois par semaine avec leurs jours, puis les images sont livrées prêtes à publier.
+Contrat Essentielle adapté : **20 stories « Piatti del giorno » par mois**, du mardi au samedi (à confirmer). Les plats du jour sont récupérés au restaurant une fois par semaine, avec leurs jours, puis les images sont livrées prêtes à publier.

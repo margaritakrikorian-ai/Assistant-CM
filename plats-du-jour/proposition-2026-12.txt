@@ -1,7 +1,8 @@
 # PROPOSITION — 20 stories « Piatti del giorno » pour décembre 2026 (Da Laura)
 # Menus d'EXEMPLE composés uniquement avec les plats vus sur l'ardoise et sur les photos du restaurant.
 # Seuls les prix de l'ardoise sont connus (32 € et 34 €) : les autres plats sont sans prix.
-# À remplacer chaque semaine par les vrais plats du jour envoyés par le restaurant.
+# À remplacer chaque semaine par les vrais plats du jour (récupérés au restaurant par la community manager).
+# Une photo différente chaque jour (20 photos pour 20 stories).
 # Jours proposés : du mardi au samedi (à confirmer selon les jours d'ouverture, notamment les 24, 25 et 26).
 # Cadrage : « cadrage: centre_x centre_y zoom » (0 à 1) pour varier une photo réutilisée.
 
@@ -72,8 +73,7 @@ Panna cotta | fraises fraîches |
 
 2026-12-12
 style: vedette
-photo: photos/da-laura/plats/ravioli-truffe.jpg
-cadrage: 0.45 0.72 1.25
+photo: photos/da-laura/compte-instagram/recadrees/ravioli-truffe-assiette-pois.jpg
 Ravioli à la truffe noire | la truffe est râpée devant vous |
 
 2026-12-15
@@ -99,22 +99,19 @@ Tiramisù aux fraises | maison |
 
 2026-12-18
 style: suggestions
-photo: photos/da-laura/cuisine/gnocchi-faits-main.jpg
-cadrage: 0.62 0.72 1.2
+photo: photos/da-laura/plats/assiette-fraicheur-legumes.jpg
 Gnocchi faits main | préparés le matin même |
 Tagliolini aux champignons | champignons poêlés, persil |
 Tartelette aux fruits rouges | |
 
 2026-12-19
 style: vedette
-photo: photos/da-laura/plats/spaghetti-crevettes.jpg
-cadrage: 0.62 0.62 1.2
+photo: photos/da-laura/compte-instagram/recadrees/spaghetti-crevettes-sauce.jpg
 Spaghetti aux crevettes | sauce tomate, crevettes, menthe fraîche |
 
 2026-12-22
 style: duo
-photo: photos/da-laura/ambiance/salle-guirlandes.jpg
-cadrage: 0.5 0.6 1.0
+photo: photos/da-laura/compte-instagram/recadrees/tiramisu-fraise-2.jpg
 Polpo alla piastra | ratatouille du chef napolitain | 34 €
 Pâtes au piment | chapelure dorée, persil |
 Tiramisù aux fraises | maison |
@@ -128,7 +125,7 @@ Tartelette aux fruits rouges | |
 
 2026-12-24
 style: polaroid
-photo: photos/da-laura/plats/planche-fromages-charcuterie.jpg
+photo: photos/da-laura/compte-instagram/recadrees/planche-fromages-mains.jpg
 Planche fromages et charcuterie | figues, miel, framboises |
 Ravioli maison | pomodorini freschi e burrata | 32 €
 Panna cotta | fraises fraîches |
@@ -142,8 +139,7 @@ Tiramisù aux fraises | maison |
 
 2026-12-26
 style: duo
-photo: photos/da-laura/plats/tagliolini-champignons.jpg
-cadrage: 0.4 0.5 1.1
+photo: photos/da-laura/compte-instagram/recadrees/pates-poelees-fourchette.jpg
 Tagliolini aux champignons | champignons poêlés, persil |
 Spaghetti aux crevettes | sauce tomate, menthe fraîche |
 Tartelette aux fruits rouges | |
