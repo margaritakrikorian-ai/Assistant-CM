@@ -1,0 +1,149 @@
+# PROPOSITION — 20 stories « Piatti del giorno » pour décembre 2026 (Da Laura)
+# Menus d'EXEMPLE composés uniquement avec les plats vus sur l'ardoise et sur les photos du restaurant.
+# Seuls les prix de l'ardoise sont connus (32 € et 34 €) : les autres plats sont sans prix.
+# À remplacer chaque semaine par les vrais plats du jour envoyés par le restaurant.
+# Jours proposés : du mardi au samedi (à confirmer selon les jours d'ouverture, notamment les 24, 25 et 26).
+# Cadrage : « cadrage: centre_x centre_y zoom » (0 à 1) pour varier une photo réutilisée.
+
+2026-12-01
+style: suggestions
+photo: photos/da-laura/ambiance/salle-guirlandes.jpg
+Ravioli maison | pomodorini freschi e burrata | 32 €
+Polpo alla piastra | ratatouille du chef napolitain | 34 €
+Tiramisù aux fraises | maison |
+
+2026-12-02
+style: duo
+photo: photos/da-laura/plats/ravioli-truffe.jpg
+cadrage: 0.45 0.55 1.0
+Ravioli à la truffe noire | truffe râpée minute |
+Tagliolini aux champignons | champignons poêlés, persil |
+Panna cotta | fraises fraîches |
+
+2026-12-03
+style: polaroid
+photo: photos/da-laura/cuisine/gnocchi-faits-main.jpg
+Gnocchi faits main | préparés le matin même |
+Polpo alla piastra | ratatouille du chef napolitain | 34 €
+Tiramisù aux fraises | maison |
+
+2026-12-04
+style: suggestions
+photo: photos/da-laura/plats/spaghetti-crevettes.jpg
+Spaghetti aux crevettes | sauce tomate, menthe fraîche |
+Ravioli maison | pomodorini freschi e burrata | 32 €
+Tartelette aux fruits rouges | |
+
+2026-12-05
+style: vedette
+photo: photos/da-laura/plats/planche-fromages-charcuterie.jpg
+cadrage: 0.5 0.45 1.0
+Planche fromages et charcuterie | figues, miel, framboises · à partager |
+
+2026-12-08
+style: duo
+photo: photos/da-laura/ambiance/enseigne-da-laura.jpg
+cadrage: 0.5 0.35 1.0
+Ravioli maison | pomodorini freschi e burrata | 32 €
+Pâtes au piment | chapelure dorée, persil |
+Panna cotta | fraises fraîches |
+
+2026-12-09
+style: suggestions
+photo: photos/da-laura/plats/tagliolini-champignons.jpg
+Tagliolini aux champignons | champignons poêlés, persil |
+Polpo alla piastra | ratatouille du chef napolitain | 34 €
+Tiramisù aux fraises | maison |
+
+2026-12-10
+style: polaroid
+photo: photos/da-laura/plats/tiramisu-fraise.jpg
+Pappardelle au prosciutto | roquette, huile d'olive |
+Ravioli à la truffe noire | truffe râpée minute |
+Tiramisù aux fraises | maison |
+
+2026-12-11
+style: suggestions
+photo: photos/da-laura/cuisine/pates-fraiches-rigatoni.jpg
+cadrage: 0.45 0.65 1.15
+Rigatoni frais maison | pâte fraîche du jour |
+Spaghetti aux crevettes | sauce tomate, menthe fraîche |
+Panna cotta | fraises fraîches |
+
+2026-12-12
+style: vedette
+photo: photos/da-laura/plats/ravioli-truffe.jpg
+cadrage: 0.45 0.72 1.25
+Ravioli à la truffe noire | la truffe est râpée devant vous |
+
+2026-12-15
+style: suggestions
+photo: photos/da-laura/plats/pappardelle-prosciutto-huile.jpg
+Pappardelle au prosciutto | roquette, huile d'olive |
+Ravioli maison | pomodorini freschi e burrata | 32 €
+Tartelette aux fruits rouges | |
+
+2026-12-16
+style: duo
+photo: photos/da-laura/plats/panna-cotta-fraises.jpg
+Gnocchi faits main | préparés le matin même |
+Spaghetti aux crevettes | sauce tomate, menthe fraîche |
+Panna cotta | fraises fraîches |
+
+2026-12-17
+style: polaroid
+photo: photos/da-laura/ambiance/ardoise-piatti-del-giorno.jpg
+Ravioli maison | pomodorini freschi e burrata | 32 €
+Polpo alla piastra | ratatouille du chef napolitain | 34 €
+Tiramisù aux fraises | maison |
+
+2026-12-18
+style: suggestions
+photo: photos/da-laura/cuisine/gnocchi-faits-main.jpg
+cadrage: 0.62 0.72 1.2
+Gnocchi faits main | préparés le matin même |
+Tagliolini aux champignons | champignons poêlés, persil |
+Tartelette aux fruits rouges | |
+
+2026-12-19
+style: vedette
+photo: photos/da-laura/plats/spaghetti-crevettes.jpg
+cadrage: 0.62 0.62 1.2
+Spaghetti aux crevettes | sauce tomate, crevettes, menthe fraîche |
+
+2026-12-22
+style: duo
+photo: photos/da-laura/ambiance/salle-guirlandes.jpg
+cadrage: 0.5 0.6 1.0
+Polpo alla piastra | ratatouille du chef napolitain | 34 €
+Pâtes au piment | chapelure dorée, persil |
+Tiramisù aux fraises | maison |
+
+2026-12-23
+style: suggestions
+photo: photos/da-laura/plats/tartelette-fruits-rouges.jpg
+Ravioli à la truffe noire | truffe râpée minute |
+Pappardelle au prosciutto | roquette, huile d'olive |
+Tartelette aux fruits rouges | |
+
+2026-12-24
+style: polaroid
+photo: photos/da-laura/plats/planche-fromages-charcuterie.jpg
+Planche fromages et charcuterie | figues, miel, framboises |
+Ravioli maison | pomodorini freschi e burrata | 32 €
+Panna cotta | fraises fraîches |
+
+2026-12-25
+style: suggestions
+photo: photos/da-laura/plats/pates-piment-chapelure.jpg
+Pâtes au piment | chapelure dorée, persil |
+Polpo alla piastra | ratatouille du chef napolitain | 34 €
+Tiramisù aux fraises | maison |
+
+2026-12-26
+style: duo
+photo: photos/da-laura/plats/tagliolini-champignons.jpg
+cadrage: 0.4 0.5 1.1
+Tagliolini aux champignons | champignons poêlés, persil |
+Spaghetti aux crevettes | sauce tomate, menthe fraîche |
+Tartelette aux fruits rouges | |

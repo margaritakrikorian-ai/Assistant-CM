@@ -61,3 +61,9 @@ Skill du projet : `.claude/skills/contenu-semaine/SKILL.md` (aussi `/contenu-sem
 - Stories de plats du jour : `python3 outils/plats_du_jour.py plats-du-jour/da-laura-AAAA-MM.txt ` (style quotidien par défaut : `suggestions`, une photo du restaurant en fond, qui change chaque jour, avec les suggestions écrites dessus ; autres styles : `--style ardoise|enseigne|photo`). Pour imposer une photo un jour donné, ajouter `photo: chemin` sous la date.
 - **Rituel hebdomadaire** : une fois par semaine, l'utilisatrice envoie les plats du jour avec les jours précis. Les retranscrire fidèlement dans `plats-du-jour/da-laura-AAAA-MM.txt`, générer, vérifier chaque image (ouvrir au moins une story), puis **envoyer les images** à l'utilisatrice et committer.
 - **Qualité « pro »** : jamais de flou ajouté sur la photo. Le script avertit quand une photo est en basse résolution (ex. capture Instagram de 960 px) : le signaler et demander l'original. Les photos contenant déjà du texte (ardoise, menu) sont exclues des fonds automatiques. Quand l'utilisateur envoie une photo de l'ardoise ou une liste de plats, la retranscrire fidèlement dans le fichier du mois (sans inventer de plat ni de prix) puis générer.
+
+## Charte photo Da Laura
+
+- Toute photo reçue est passée au **même filtre** (`outils/charte_photo.py`, appliqué automatiquement par `plats_du_jour.py`, `generer_visuels.py` et `generer_reels.py`). Ne jamais publier une photo sans ce filtre.
+- Référence complète : `docs/charte-da-laura.md` (identité, couleurs, polices, filtre, 4 mises en page des stories, règles).
+- Photos reçues : les ranger dans `photos/da-laura/{plats,cuisine,ambiance}/` avec un nom parlant, en vérifiant visuellement que le nom correspond bien à l'image.

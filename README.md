@@ -18,7 +18,7 @@ Assistant-CM/
 ├── reels/           Les réels en vidéo MP4 verticale
 ├── outils/          Les scripts (visuels, réels, import Instagram)
 ├── plats-du-jour/    Les plats du jour du mois (pour les stories « Piatti del giorno »)
-└── docs/            Les guides (connexion Instagram…)
+└── docs/            Les guides (charte graphique, connexion Instagram…)
 ```
 
 ## En une phrase : « Propose-moi du contenu pour la semaine »

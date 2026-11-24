@@ -26,6 +26,7 @@ from pathlib import Path
 from PIL import Image, ImageDraw, ImageOps
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
+from charte_photo import appliquer_charte  # noqa: E402
 from generer_visuels import (CREME, EXT_PHOTO, OLIVE, OR, RACINE, ROUGE, STORY,  # noqa: E402
                              ajuster, espace, fond, lignes, texte, titre)
 
@@ -61,6 +62,7 @@ def image_plan(photo, chemin_attendu, description, sortie):
     if photo:
         img = ImageOps.exif_transpose(Image.open(photo)).convert("RGB")
         img = ImageOps.fit(img, (W * 2, H * 2), method=Image.LANCZOS, centering=(0.5, 0.45))
+        img = appliquer_charte(img)  # même rendu de couleur sur toutes les photos
     else:
         img, _ = fond(STORY, None, chemin_attendu, description)
         img = img.resize((W * 2, H * 2), Image.LANCZOS)

@@ -22,6 +22,9 @@ from pathlib import Path
 
 from PIL import Image, ImageDraw, ImageFont, ImageOps
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from charte_photo import appliquer_charte  # noqa: E402
+
 RACINE = Path(__file__).resolve().parent.parent
 POLICES = RACINE / "outils" / "polices"
 
@@ -131,7 +134,8 @@ def fond(taille, photo, chemin_attendu, description):
         img = Image.open(photo)
         img = ImageOps.exif_transpose(img).convert("RGB")
         # recadrage centré sans déformation, ré-échantillonnage de qualité (photo nette)
-        return ImageOps.fit(img, taille, method=Image.LANCZOS, centering=(0.5, 0.45)), False
+        img = ImageOps.fit(img, taille, method=Image.LANCZOS, centering=(0.5, 0.45))
+        return appliquer_charte(img), False  # même rendu de couleur sur toutes les photos
     w, h = taille
     img = Image.new("RGB", taille, CREME)
     d = ImageDraw.Draw(img)
