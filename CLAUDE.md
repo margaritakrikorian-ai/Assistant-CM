@@ -70,6 +70,7 @@ Tout le contenu est rédigé en français, sauf indication contraire de la fiche
 
 Visuels des posts (1080x1350) et des stories : générés avec `python3 outils/generer_visuels.py calendriers/<calendrier>.csv` (Pillow, polices dans `outils/polices/`).
 Réels (MP4 1080x1920, 15 à 30 s, piste audio silencieuse pour la musique ajoutée dans Instagram) : générés avec `python3 outils/generer_reels.py calendriers/<calendrier>.csv` (ffmpeg).
+**Réels à partir des photos et vidéos de l'utilisatrice (prioritaire)** : `python3 outils/monter_reel.py outils/reels/<plan>.json`. Photos animées (zoom, glissement), extraits de vidéo découpés, textes à la craie calés sur les plans, charte appliquée aussi à la vidéo (`outils/charte-da-laura-hald.png`), carte de fin avec adresse et réservations. Dès que des photos ou des vidéos réelles existent, **monter un vrai réel** au lieu de proposer des cadres « photo à fournir ». Exclure les plans d'alcool (loi Évin). Vérifier les images clés (textes sur le bon plan) avant d'envoyer la vidéo.
 
 ## Instagram et secrets
 

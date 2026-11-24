@@ -1,0 +1,173 @@
+{
+ "sortie": "reels/da-laura/decouverte-da-laura.mp4",
+ "plans": [
+  {
+   "type": "video",
+   "source": "photos/da-laura/videos/ambiance-enseigne-terrasse.mov",
+   "debut": 9.78,
+   "fin": 11.62
+  },
+  {
+   "type": "photo",
+   "source": "photos/da-laura/cuisine/gnocchi-faits-main.jpg",
+   "duree": 1.3,
+   "mouvement": "zoom-avant",
+   "ampleur": 0.12
+  },
+  {
+   "type": "photo",
+   "source": "photos/da-laura/cuisine/pates-fraiches-rigatoni.jpg",
+   "duree": 1.3,
+   "mouvement": "gauche-droite",
+   "ampleur": 0.14
+  },
+  {
+   "type": "photo",
+   "source": "photos/da-laura/plats/ravioli-truffe.jpg",
+   "duree": 1.4,
+   "mouvement": "zoom-avant",
+   "ampleur": 0.12,
+   "centre": [
+    0.45,
+    0.6
+   ]
+  },
+  {
+   "type": "video",
+   "source": "photos/da-laura/videos/ambiance-enseigne-terrasse.mov",
+   "debut": 3.36,
+   "fin": 4.5
+  },
+  {
+   "type": "photo",
+   "source": "photos/da-laura/plats/spaghetti-crevettes.jpg",
+   "duree": 1.3,
+   "mouvement": "zoom-arriere",
+   "ampleur": 0.12,
+   "centre": [
+    0.55,
+    0.55
+   ]
+  },
+  {
+   "type": "photo",
+   "source": "photos/da-laura/plats/tagliolini-champignons.jpg",
+   "duree": 1.2,
+   "mouvement": "droite-gauche",
+   "ampleur": 0.14
+  },
+  {
+   "type": "photo",
+   "source": "photos/da-laura/plats/pates-piment-chapelure.jpg",
+   "duree": 1.2,
+   "mouvement": "zoom-avant",
+   "ampleur": 0.1,
+   "centre": [
+    0.5,
+    0.6
+   ]
+  },
+  {
+   "type": "photo",
+   "source": "photos/da-laura/plats/planche-fromages-charcuterie.jpg",
+   "duree": 1.4,
+   "mouvement": "gauche-droite",
+   "ampleur": 0.14,
+   "centre": [
+    0.45,
+    0.55
+   ]
+  },
+  {
+   "type": "video",
+   "source": "photos/da-laura/videos/ambiance-enseigne-terrasse.mov",
+   "debut": 0.05,
+   "fin": 1.1
+  },
+  {
+   "type": "video",
+   "source": "photos/da-laura/videos/ambiance-enseigne-terrasse.mov",
+   "debut": 5.42,
+   "fin": 6.2
+  },
+  {
+   "type": "photo",
+   "source": "photos/da-laura/plats/tiramisu-fraise.jpg",
+   "duree": 1.2,
+   "mouvement": "zoom-avant",
+   "ampleur": 0.1
+  },
+  {
+   "type": "photo",
+   "source": "photos/da-laura/plats/cappuccino-cornetto.jpg",
+   "duree": 1.2,
+   "mouvement": "zoom-arriere",
+   "ampleur": 0.1
+  },
+  {
+   "type": "photo",
+   "source": "photos/da-laura/ambiance/ardoise-piatti-del-giorno.jpg",
+   "duree": 1.9,
+   "mouvement": "zoom-avant",
+   "ampleur": 0.08,
+   "centre": [
+    0.5,
+    0.4
+   ]
+  },
+  {
+   "type": "video",
+   "source": "photos/da-laura/videos/ambiance-enseigne-terrasse.mov",
+   "debut": 2.42,
+   "fin": 3.28
+  }
+ ],
+ "textes": [
+  {
+   "texte": "La cucina autentica",
+   "surtitre": "DA LAURA · CANNES",
+   "debut": 0.0,
+   "fin": 1.84,
+   "taille": 150,
+   "y": 300
+  },
+  {
+   "texte": "Pâtes faites maison",
+   "debut": 1.84,
+   "fin": 4.44,
+   "taille": 136,
+   "y": 330
+  },
+  {
+   "texte": "Truffe râpée minute",
+   "debut": 4.44,
+   "fin": 5.84,
+   "taille": 136,
+   "y": 330
+  },
+  {
+   "texte": "Desserts maison",
+   "debut": 12.08,
+   "fin": 15.11,
+   "taille": 136,
+   "y": 330
+  },
+  {
+   "texte": "Chaque jour,\nl'ardoise de Laura",
+   "debut": 16.31,
+   "fin": 18.21,
+   "taille": 124,
+   "y": 300
+  }
+ ],
+ "fin": {
+  "duree": 2.6,
+  "appel": "Réserve ta table",
+  "lignes": [
+   "8 rue du 24 Août · Cannes",
+   "Réservations : 04 93 38 40 51"
+  ]
+ },
+ "legende": "Depuis 1992, on cuisine à l'italienne à Cannes. 🍝\nPâtes faites maison, truffe râpée minute, desserts maison et l'ardoise de Laura qui change chaque jour.\nViens goûter la cucina autentica : réserve ta table via le lien en bio ✨",
+ "hashtags": "#DaLaura #DaLauraCannes #RestaurantItalienCannes #PastaFresca #FaitMaison #Cannes #CannesFood"
+}
