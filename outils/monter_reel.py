@@ -86,11 +86,16 @@ def calque_texte(t, sortie):
         if t.get("surtitre"):
             espace(ImageDraw.Draw(petit if calque is texte else ombre), y + dy, t["surtitre"], serif(44, 700), coul, 12)
         yy = y + (80 if t.get("surtitre") else 0)
+        # taille adaptée : aucune ligne ne doit dépasser la largeur utile (marges de 70 px)
+        taille = t.get("taille", 112)
+        while taille > 60 and max(dc.textlength(l, font=craie(taille)) for l in t["texte"].split("\n")) > W - 140:
+            taille -= 4
         for ligne in t["texte"].split("\n"):
-            dc.text((W / 2 + (3 if calque is ombre else 0), yy + dy), ligne, font=craie(t.get("taille", 112)),
+            dc.text((W / 2 + (3 if calque is ombre else 0), yy + dy), ligne, font=craie(taille),
                     fill=coul, anchor="ma")
-            yy += int(t.get("taille", 112) * 1.05)
-    img.paste((0, 0, 0, 255), (0, 0), ombre.filter(ImageFilter.GaussianBlur(10)).point(lambda v: v * 0.85))
+            yy += int(taille * 1.05)
+    img.paste((0, 0, 0, 255), (0, 0), ombre.filter(ImageFilter.GaussianBlur(18)).point(lambda v: min(255, v * 1.2)))
+    img.paste((0, 0, 0, 255), (0, 0), ombre.filter(ImageFilter.GaussianBlur(5)).point(lambda v: v * 0.9))
     img.paste(CREME + (255,), (0, 0), texte)
     img.paste((235, 222, 200, 255), (0, 0), petit)
     img.save(sortie)
@@ -112,20 +117,51 @@ def carte_fin(f, sortie):
     img.save(sortie)
 
 
-def main(fichier_plan):
+def version_tiktok(plan):
+    """Dérive la version TikTok d'un plan Instagram : plans ~40 % plus courts, textes plus gros,
+    accroche et légende propres à TikTok, carte de fin courte."""
+    import copy
+    t = copy.deepcopy(plan)
+    t["sortie"] = plan["sortie"].replace(".mp4", "-tiktok.mp4")
+    for p in t["plans"]:
+        if p["type"] == "photo":
+            p["duree"] = max(0.6, round(p["duree"] * 0.62, 2))
+            p["ampleur"] = p.get("ampleur", 0.1) + 0.04
+        else:
+            p["fin"] = round(p["debut"] + max(0.6, (p["fin"] - p["debut"]) * 0.65), 2)
+    for k, tx in enumerate(t.get("textes", [])):
+        tx["taille"] = tx.get("taille", 120) + 14
+        if k == 0 and plan.get("accroche_tiktok"):
+            tx["texte"] = plan["accroche_tiktok"]
+            tx.pop("surtitre", None)
+    t["fin"]["duree"] = 2.0
+    t["fin"]["appel"] = plan["fin"].get("appel_tiktok", "On t'attend !")
+    t["legende"] = plan.get("legende_tiktok", plan["legende"])
+    t["hashtags"] = plan.get("hashtags_tiktok", plan["hashtags"])
+    return t
+
+
+def main(fichier_plan, tiktok=False):
     plan = json.loads(Path(fichier_plan).read_text(encoding="utf-8"))
+    if tiktok:
+        plan = version_tiktok(plan)
     sortie = RACINE / plan["sortie"]
     sortie.parent.mkdir(parents=True, exist_ok=True)
     with tempfile.TemporaryDirectory() as tmp:
         tmp = Path(tmp)
-        clips, t = [], 0.0
+        clips, t, bornes = [], 0.0, []
         for i, p in enumerate(plan["plans"]):
             c = tmp / f"plan{i:02d}.mp4"
             (plan_photo if p["type"] == "photo" else plan_video)(p, c)
             dur = float(subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0",
                                         str(c)], capture_output=True, text=True).stdout)
             clips.append(c)
+            bornes.append((t, t + dur))
             t += dur
+        for tx in plan.get("textes", []):  # textes calés sur des plans : {"plans": [premier, dernier]}
+            if "plans" in tx:
+                tx["debut"] = round(bornes[tx["plans"][0]][0], 2)
+                tx["fin"] = round(bornes[tx["plans"][1]][1], 2)
         fin = tmp / "fin.png"
         carte_fin(plan["fin"], fin)
         c = tmp / "fin.mp4"
@@ -161,4 +197,5 @@ def main(fichier_plan):
 
 
 if __name__ == "__main__":
-    main(sys.argv[1])
+    # python3 outils/monter_reel.py <plan.json> [--tiktok]   (--tiktok : version TikTok dérivée automatiquement)
+    main(sys.argv[1], tiktok="--tiktok" in sys.argv[2:])

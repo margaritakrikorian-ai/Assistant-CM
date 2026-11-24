@@ -294,28 +294,57 @@ A_VALIDER = [
 
 
 # ---- Contrat Essentielle : 8 publications et 2 réels par mois, stories = plats du jour ----
-GARDER = {1, 2, 3, 6, 8, 14, 16, 21, 25, 31}
+# ---- Plan validé le 24/11/2026 : chaque semaine 1 réel + 1 carrousel (contrat : 8 publications par mois) ----
+R = "photos/da-laura/compte-instagram/recadrees/"
+H_IG = "#DaLaura #DaLauraCannes #RestaurantItalienCannes #DolceVita #Cannes #FrenchRiviera"
+import json as _json
+def _reel(j, nom, pilier, tf, av=""):
+    d = _json.load(open(f"outils/reels/{nom}.json", encoding="utf-8"))
+    return (j, "18h30", "Réel", pilier, tf,
+            f"reels/da-laura/{nom}.mp4 — montage prêt (version TikTok : reels/da-laura/{nom}-tiktok.mp4)",
+            d["legende"], d["hashtags"], "Réserve ta table via le lien en bio", av)
+REMPLACER = {
+ 1: (1, "18h30", "Carrousel", "L'ambiance", "Lancement du compte",
+     R+"facade-fiat-500-rouge.jpg + "+R+"facade-terrasse.jpg + photos/da-laura/ambiance/salle-guirlandes.jpg + "+R+"table-assiette-da-laura.jpg + photos/da-laura/ambiance/ardoise-piatti-del-giorno.jpg — la façade, la terrasse, la salle, la table et Laura",
+     "Bienvenue chez Da Laura. ✨\nDepuis 1992, on cuisine à l'italienne à Cannes : pâtes faites maison, ingrédients venus d'Italie et une terrasse où l'on aime prendre son temps.\nGlisse pour entrer dans la maison, et réserve ta table via le lien en bio. 🍝",
+     H_IG, "Réserve ta table via le lien en bio", ""),
+ 2: _reel(2, "2026-12-02-decouverte-da-laura", "L'ambiance", "Lancement du compte", "Desserts « maison » à confirmer avec Laura"),
+ 8: (8, "11h30", "Carrousel", "Le savoir-faire", "",
+     R+"ravioli-faconnes-main.jpg + photos/da-laura/cuisine/gnocchi-faits-main.jpg + photos/da-laura/cuisine/pates-fraiches-rigatoni.jpg + "+R+"pates-poele-flamme.jpg + photos/da-laura/plats/ravioli-truffe.jpg — les pâtes, de la main du chef à l'assiette",
+     "Ici, les pâtes sont faites maison. 🍝\nRavioli façonnés à la main, gnocchi, rigatoni tout juste sortis de la machine : chaque forme a sa recette et sa sauce.\nGlisse pour les découvrir, et dis-nous en commentaire laquelle tu préfères. 👇",
+     "#DaLaura #PastaFresca #PâtesFraîches #FaitMaison #CuisineItalienne #CannesFood", "Dis-nous en commentaire ta forme préférée", ""),
+ 9: _reel(9, "2026-12-09-geste-du-chef", "Le savoir-faire", ""),
+ 16: _reel(16, "2026-12-16-pause-douceur", "La carte", "", "Noms exacts des desserts à confirmer avec Laura"),
+ 23: _reel(23, "2026-12-23-fetes-da-laura", "L'ambiance", "Fêtes de fin d'année", "Ouverture les 24, 25 et 26 décembre"),
+ 30: _reel(30, "2026-12-30-merci-2026", "La communauté", "Fin d'année", ""),
+}
+TEXTES.update({1: "Bienvenue chez Da Laura", 2: "La cucina autentica", 8: "Nos pâtes faites maison", 9: "Le geste du chef",
+               16: "La pause douceur", 23: "Pour les fêtes", 30: "Merci pour 2026"})
+FEED = [REMPLACER.get(r[0], r) for r in FEED]
+GARDER = {1, 2, 3, 6, 8, 9, 14, 16, 21, 23, 25, 29, 30}
 FEED = [r for r in FEED if r[0] in GARDER]
-PHOTOS_REELLES = {2: "photos/da-laura/cuisine/pates-fraiches-rigatoni.jpg + photos/da-laura/cuisine/gnocchi-faits-main.jpg + photos/da-laura/plats/tagliolini-champignons.jpg + photos/da-laura/plats/ravioli-truffe.jpg — les pâtes faites maison, de la machine à l'assiette", 6: 'photos/da-laura/ambiance/ardoise-piatti-del-giorno.jpg — Laura et son ardoise sur la terrasse', 14: "photos/da-laura/plats/planche-fromages-charcuterie.jpg + photos/da-laura/plats/ravioli-truffe.jpg + photos/da-laura/plats/pappardelle-prosciutto-huile.jpg — fromages et charcuterie, truffe, huile d'olive"}
+PHOTOS_REELLES = {
+ 6: "photos/da-laura/ambiance/ardoise-piatti-del-giorno.jpg — Laura et son ardoise sur la terrasse",
+ 14: "photos/da-laura/plats/planche-fromages-charcuterie.jpg + photos/da-laura/plats/ravioli-truffe.jpg + photos/da-laura/plats/pappardelle-prosciutto-huile.jpg — fromages et charcuterie, truffe, huile d'olive",
+ 21: "photos/da-laura/plats/spaghetti-crevettes.jpg + "+R+"risotto-crevettes.jpg + "+R+"spaghetti-crevettes-sauce.jpg — les plats de la mer de Da Laura",
+}
 FEED = [r[:5] + (PHOTOS_REELLES.get(r[0], r[5]),) + r[6:] for r in FEED]
 STORIES = []
 TEMPS_FORTS = [
-    ("1er déc.", "Ouverture du mois des fêtes", "Carrousel de la salle décorée"),
-    ("3 déc.", "Menus de Noël et du 31", "Annonce tôt pour lancer les réservations"),
-    ("8 déc.", "Immacolata", "Tradition italienne du sapin"),
-    ("16 déc.", "La table des fêtes", "Réel de dressage"),
-    ("21 déc.", "La Vigilia", "Carrousel « fête des sept poissons »"),
-    ("25 déc.", "Noël", "Vœux"),
-    ("31 déc.", "Saint-Sylvestre et feu d'artifice sur la baie", "Vœux"),
+    ("Semaine 1 (1-6 déc.)", "Lancement du compte", "Carrousel « Bienvenue chez Da Laura » + réel « La cucina autentica »"),
+    ("Semaine 2 (7-13 déc.)", "Le savoir-faire", "Carrousel « Nos pâtes faites maison » + réel « Le geste du chef »"),
+    ("Semaine 3 (14-20 déc.)", "Produits et douceurs", "Carrousel « Les produits d'Italie » + réel « La pause douceur »"),
+    ("Semaine 4 (21-27 déc.)", "Vigilia et Noël", "Carrousel « La Vigilia » + réel « Pour les fêtes » + post « Buon Natale »"),
+    ("Semaine 5 (28-31 déc.)", "Saint-Sylvestre", "Carrousel « Le Nouvel An à l'italienne » + réel « Merci pour 2026 »"),
 ]
-NON_RETENUS = "Hors contrat (proposables en option) : jeu-concours de Noël, carte cadeau, accord mets-vins, coulisses du service et posts quotidiens. Les dates de la veille restent utilisables dans les stories « Piatti del giorno »."
+NON_RETENUS = "Chaque semaine : 1 réel (Instagram + TikTok) et 1 carrousel. Avec les posts des 3, 6 et 25 décembre : 8 publications (contrat) et 5 réels (le contrat en prévoit 2 : 3 réels offerts pour le lancement, à valider). Stories : les 20 « Piatti del giorno »."
 A_VALIDER = [
-    "**Ouverture et horaires** les 24, 25 et 31 décembre.",
-    "**Menus de fêtes** : contenu et prix, à insérer dans la légende du 3 décembre.",
-    "**Histoire de Laura** (post du 6 décembre) : à ajouter aussi dans la fiche marque.",
-    "**Plats et produits** cités : à vérifier par rapport à la carte réelle.",
-    "**Tournages** : dans chaque réel, au moins un plan avec une personne visible et le plan le plus gourmand dans les 3 premières secondes.",
-    "**Loi Évin** : pas de bouteilles ni de coupes au premier plan.",
+    "**Réels** : 5 au lieu des 2 prévus par la formule Essentielle : les présenter à Laura comme un cadeau de lancement (décembre seulement) ou les facturer en option (90 € l'unité selon votre grille).",
+    "**Ouverture et horaires** les 24, 25 et 31 décembre ; **menus de fêtes** et prix pour le post du 3 décembre.",
+    "**Histoire de Laura** (post du 6 décembre) ; **desserts** : noms exacts et « faits maison » à confirmer.",
+    "**Photos en attente** : décoration de Noël (post du 25), lentilles et cotechino (carrousel du 29), sinon remplacement par des photos existantes.",
+    "**Qualité** : plusieurs photos viennent de la grille du compte (374 px de large) : demander les originaux pour une netteté parfaite.",
+    "**Loi Évin** : les photos avec spritz ou coupe de champagne sont écartées.",
 ]
 
 if __name__ == '__main__':

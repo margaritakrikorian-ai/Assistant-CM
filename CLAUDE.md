@@ -119,16 +119,24 @@ L'utilisatrice travaille sur iPad et ne navigue pas dans le dépôt Git. **Tout 
 
 | Dossier | Identifiant | Contenu |
 |---|---|---|
-| 00 - SOMMAIRE (Google Doc) | `10QBHS8Kh6jJv9DnsNVq_2q2YQRZFEdRE0U5i1hPWLY4` | Index de tout ce qui a été livré : à mettre à jour à chaque livraison |
+| 00 - SOMMAIRE (Google Doc) | `1HmRxX7evgbqTNR2HrkUbifpJoAS526t-FL-a40QAPoo` | Index de tout ce qui a été livré : à mettre à jour à chaque livraison |
 | 01 - Réels | `1Nof5SKJ6b5YC_gx1bQqX8q8F4NQJ8LFL` | Vidéos, couvertures, légendes (Google Doc) |
 | 02 - Stories Piatti del giorno | `1SDTqA1B_4OsrdoYzQRLgQxMs1Ut-mcfy` | Stories de plats du jour |
 | 03 - Publications | `1xNlZbhv3DL6D-OH34vMUV1R-TxwJ9ROu` | Posts et carrousels prêts |
 | 04 - Documents | `10fFNAWeq5ATqDy0P_nnCCN-yUj8_kL2C` | Charte, plans, calendriers, e-mails, guides (Markdown converti en Google Doc) |
 | 05 - Photos du restaurant (charte appliquée) | `1u5WEWuPOXbokoKBEx4qdV6CZRl66jkE4` | Photos filtrées |
+| 05 › Photos du compte Instagram (recadrées et retouchées) | `1HOOd_CGaTSJVm3Gv9OycJKjl7dQigrMa` | Photos extraites du profil, sans icônes, 1080x1350 |
 
 - Envoi par `create_file` avec une référence de fichier (`sha256:<empreinte>:<chemin>`). Calculer l'empreinte **avant** l'appel, jamais en parallèle de celui-ci.
+- Le sommaire ne se modifie pas en place : en créer un nouveau, mettre le tableau à jour, puis mettre l'ancien à la corbeille.
 - **Limite d'environ 3 Mo par fichier** : les vidéos passent par SendUserFile dans la conversation. Rappeler le geste : Partager, puis Enregistrer dans Fichiers, puis Drive, puis DA Laura, puis 01 - Réels.
 
 ## Réels à partir des fichiers envoyés
 
 Dès que l'utilisatrice envoie des photos ou des vidéos, appliquer le skill `reels-depuis-photos` : **monter directement une version Instagram et une version TikTok**, les vérifier, les envoyer et les ranger dans Drive. Ne jamais se contenter de proposer.
+
+## Plan de décembre 2026 (choix de l'utilisatrice)
+
+- **1 réel + 1 carrousel par semaine** (5 réels, 5 carrousels) + posts des 3, 6 et 25 décembre = 8 publications. Le contrat Essentielle prévoit 2 réels : les 3 réels en plus sont à présenter à Laura (cadeau de lancement ou option à 90 € l'unité).
+- Photos du compte : `photos/da-laura/compte-instagram/recadrees/` (crop sans icônes, sans filtre : à utiliser comme sources des montages) et `retouchees/` (1080x1350, charte appliquée : à publier telles quelles). Basse définition (374 px de large) : demander les originaux.
+- Montages : `outils/reels/<date>-<sujet>.json` (textes calés par index de plans) ; `python3 outils/monter_reel.py <plan> [--tiktok]` donne la version TikTok automatiquement.

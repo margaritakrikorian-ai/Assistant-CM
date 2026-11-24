@@ -66,7 +66,9 @@ def rendre(OUT, ANNEE, MOIS, MOIS_NOM, NOM, FEED, STORIES, TEXTES, TEMPS_FORTS, 
             md.append(f"### {fr(cur)}" + (f" · {tf}" if tf else "") + "\n")
         if r["ordre"] == 0:
             md.append(f"**{r['format']} · {r['heure']}** · *{r['theme']}*\n")
-            md.append(f"- **Photo / vidéo :** à fournir : `{r['photo'].split(' — ')[0]}`" + (f" ({r['photo'].split(' — ')[1]})" if " — " in r['photo'] else ""))
+            _ch = r['photo'].split(' — ')[0]
+            _ok = all(__import__('os').path.exists(c.strip()) for c in _ch.split('+'))
+            md.append(f"- **Photo / vidéo :** {'prête' if _ok else 'à fournir'} : `{_ch}`" + (f" ({r['photo'].split(' — ')[1]})" if " — " in r['photo'] else ""))
             md.append(f"- **Texte sur le visuel :** {r['texte']}")
             md.append("- **Légende :**\n")
             md.append("  \n".join("  > " + l for l in r["legende"].split("\n")))

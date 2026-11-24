@@ -46,7 +46,7 @@ def main(mois):
             j, mo, an = r["Date"].split("/")
             date = f"{an}-{mo}-{j}"
             if r["Format"] == "Réel":
-                videos = sorted((RACINE / "reels" / "da-laura").glob(f"{date}-*.mp4"))
+                videos = sorted(v for v in (RACINE / "reels" / "da-laura").glob(f"{date}-*.mp4") if not v.stem.endswith("-tiktok"))
                 f = videos[0] if videos else None
                 leg = f.with_suffix(".txt").read_text(encoding="utf-8").strip() if f else ""
                 lignes.append({"date": date, "heure": heure(r["Heure"]), "format": "reel",
