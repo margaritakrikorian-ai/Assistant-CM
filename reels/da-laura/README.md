@@ -15,19 +15,14 @@ Chaque réel est livré avec trois fichiers :
 
 > Si le compte est un compte professionnel, certains titres connus ne sont pas proposés. Dans ce cas, prenez un morceau de la catégorie « Audio libre de droits ».
 
-## Ambiance musicale conseillée
+## Ambiance musicale conseillée (contrat : 2 réels par mois)
 
 | Date | Réel | Ambiance musicale |
 |---|---|---|
-| Mer 02/12 | Pâtes fraîches, faites main | Mandoline ou guitare acoustique italienne, légère et enjouée |
-| Sam 05/12 | Samedi soir | Jazz lounge ou swing italien des années 60, feutré |
-| Mer 09/12 | Le vrai tiramisu | Piano doux, tempo lent |
-| Sam 12/12 | Burrata | Lo-fi chaleureux, minimaliste |
-| Mer 16/12 | La table des fêtes | Jazz de Noël instrumental, clochettes discrètes |
-| Sam 19/12 | Dans nos cuisines | Rythmé, percussions légères, énergie du service |
-| Mer 23/12 | Panettone ou pandoro ? | Chant de Noël italien joyeux, en version instrumentale |
-| Sam 26/12 | 2026 en images | Cordes et piano émouvants, montée progressive |
-| Mer 30/12 | Réveillon : J-1 | Festif et élégant, swing ou électro-jazz |
+| Mer 02/12 | Pâtes fraîches, faites main (vos photos) | Mandoline ou guitare acoustique italienne, légère et enjouée |
+| Mer 16/12 | La table des fêtes (photos à fournir) | Jazz de Noël instrumental, clochettes discrètes |
+| Mer 06/01 | La Befana est passée (photos à fournir) | Tarentelle douce ou musique de conte, enjouée |
+| Mer 20/01 | Une forme, une sauce (vos photos) | Mandoline italienne légère |
 
 ## Remplacer les plans « photo à fournir »
 
@@ -38,17 +33,3 @@ python3 outils/generer_reels.py calendriers/da-laura-2026-12.csv
 ```
 
 Vous pouvez ajouter jusqu'à 7 photos par réel. Le script adapte la durée de chaque plan pour que la vidéo dure entre 15 et 30 secondes.
-
-## Réels de janvier 2027
-
-| Date | Réel | Ambiance musicale |
-|---|---|---|
-| Sam 02/01 | Le 31 décembre en coulisses | Festif et élégant, swing |
-| Mer 06/01 | La Befana est passée | Tarentelle douce ou musique de conte, enjouée |
-| Sam 09/01 | Le risotto, de A à Z | Guitare acoustique, rythme posé |
-| Mer 13/01 | Une matinée en cuisine | Lo-fi matinal, doux |
-| Sam 16/01 | Le feu de nos cuisines | Percussions rythmées, énergie |
-| Mer 20/01 | Une forme, une sauce | Mandoline italienne légère |
-| Sam 23/01 | Avant… après | Jazz lounge qui monte en intensité |
-| Mer 27/01 | Le dessert de saison | Piano doux et lumineux |
-| Sam 30/01 | Le son de nos cuisines | **Pas de musique** : garder le son original de la vidéo filmée (ASMR) |

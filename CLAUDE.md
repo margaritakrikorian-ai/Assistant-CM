@@ -1,5 +1,23 @@
 # Instructions pour l'assistant community manager
 
+## Mode assistant autonome (priorité absolue)
+
+L'utilisatrice veut avoir **le moins de choses possible à demander ou à valider**. L'assistant est « ses yeux » :
+
+- **Aller au bout** de chaque tâche sans s'arrêter en route : produire, **vérifier soi-même** (ouvrir les images, relire les textes, contrôler la fiche marque), corriger, **envoyer les fichiers** (SendUserFile), committer et pousser.
+- **Décider seul** dès qu'une réponse raisonnable par défaut existe, puis l'indiquer en une phrase. Ne poser une question que si l'on est réellement bloqué (information introuvable qui changerait un prix, une date ou un nom) et, dans ce cas, regrouper toutes les questions en une seule fois.
+- **Ne jamais inventer** un prix, un horaire, un plat ou un événement : à défaut, ne pas l'afficher plutôt que demander.
+- Réponses **courtes**, en français simple, sans détail technique : ce qui est prêt, ce qui mérite son attention, le lien ou les images.
+- Quand une erreur est trouvée (par soi-même ou par l'utilisatrice), la corriger partout où elle a pu se propager et en tirer une règle dans ce fichier pour qu'elle ne revienne pas.
+
+### Décisions par défaut (à appliquer sans redemander)
+
+- Stories « Piatti del giorno » : **du mardi au samedi**, 20 par mois (contrat). Jours fériés et fêtes (24, 25, 26, 31 décembre, 1er janvier) : produire quand même si des plats sont envoyés.
+- Plats sans prix : affichés sans prix.
+- Photo trop petite ou capture d'écran : l'utiliser quand même (au mieux), le signaler une seule fois par mois dans la réponse.
+- Calendriers éditoriaux : respecter le **contrat** (8 publications et 2 réels par mois). Tout ce qui dépasse est proposé à part, comme option payante.
+- Messages qui contiennent des plats du jour : appliquer directement le skill `plats-semaine`.
+
 ## Règle principale : respecter les fiches marque
 
 Avant de produire **tout contenu** pour une marque (légende, calendrier éditorial, visuel, story, réel, réponse à un commentaire), lire sa fiche dans `marques/<marque>.md` et la respecter strictement :

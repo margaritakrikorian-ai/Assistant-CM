@@ -286,6 +286,30 @@ A_VALIDER = [
     "**Loi Évin** : pas de bouteilles ni de coupes au premier plan, et peu de vin mis en avant pendant le Dry January.",
 ]
 
+
+# ---- Contrat Essentielle : 8 publications et 2 réels par mois, stories = plats du jour ----
+GARDER = {1, 3, 5, 6, 8, 14, 17, 20, 22, 28}
+FEED = [r for r in FEED if r[0] in GARDER]
+PHOTOS_REELLES = {20: 'photos/da-laura/plats/tagliolini-champignons.jpg + photos/da-laura/plats/ravioli-truffe.jpg + photos/da-laura/plats/spaghetti-crevettes.jpg + photos/da-laura/cuisine/pates-fraiches-rigatoni.jpg — une forme de pâtes, une sauce'}
+FEED = [r[:5] + (PHOTOS_REELLES.get(r[0], r[5]),) + r[6:] for r in FEED]
+STORIES = []
+TEMPS_FORTS = [
+    ("1er janv.", "Jour de l'an", "Vœux"),
+    ("3 janv.", "Épiphanie en France", "Carrousel « galette ou Befana »"),
+    ("6 janv.", "La Befana (Italie)", "Réel tradition"),
+    ("14 janv.", "MIDEM (19 → 21 janv.)", "Déjeuners d'affaires, une ligne en anglais"),
+    ("17 janv.", "Journée mondiale de la pizza", "Post culture"),
+    ("28 janv.", "Annonce de la Saint-Valentin (dim. 14 févr.)", "Lancement des réservations"),
+]
+NON_RETENUS = "Hors contrat (proposables en option) : Dry January, soldes, Blue Monday, Festival littéraire, posts quotidiens. Ces dates restent utilisables dans les stories « Piatti del giorno »."
+A_VALIDER = [
+    "**Ouverture** le 1er janvier.",
+    "**MIDEM** : offre déjeuner d'affaires ; ligne en anglais.",
+    "**Pizza** : est-elle à la carte ? Le post du 17 janvier s'adapte dans les deux cas.",
+    "**À compléter** : prénom et rôle du membre de l'équipe (8/01), plat signature (22/01), menu et prix de la Saint-Valentin (28/01).",
+    "**Plats et produits** cités : à vérifier par rapport à la carte réelle.",
+]
+
 if __name__ == '__main__':
     import sys
     from rendu import rendre

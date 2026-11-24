@@ -292,6 +292,32 @@ A_VALIDER = [
     "**Loi Évin** : mention obligatoire sur le post du 11 décembre et sur son partage en story. Pas de bouteilles ni de coupes au premier plan dans les autres visuels.",
 ]
 
+
+# ---- Contrat Essentielle : 8 publications et 2 réels par mois, stories = plats du jour ----
+GARDER = {1, 2, 3, 6, 8, 14, 16, 21, 25, 31}
+FEED = [r for r in FEED if r[0] in GARDER]
+PHOTOS_REELLES = {2: "photos/da-laura/cuisine/pates-fraiches-rigatoni.jpg + photos/da-laura/cuisine/gnocchi-faits-main.jpg + photos/da-laura/plats/tagliolini-champignons.jpg + photos/da-laura/plats/ravioli-truffe.jpg — les pâtes faites maison, de la machine à l'assiette", 6: 'photos/da-laura/ambiance/ardoise-piatti-del-giorno.jpg — Laura et son ardoise sur la terrasse', 14: "photos/da-laura/plats/planche-fromages-charcuterie.jpg + photos/da-laura/plats/ravioli-truffe.jpg + photos/da-laura/plats/pappardelle-prosciutto-huile.jpg — fromages et charcuterie, truffe, huile d'olive"}
+FEED = [r[:5] + (PHOTOS_REELLES.get(r[0], r[5]),) + r[6:] for r in FEED]
+STORIES = []
+TEMPS_FORTS = [
+    ("1er déc.", "Ouverture du mois des fêtes", "Carrousel de la salle décorée"),
+    ("3 déc.", "Menus de Noël et du 31", "Annonce tôt pour lancer les réservations"),
+    ("8 déc.", "Immacolata", "Tradition italienne du sapin"),
+    ("16 déc.", "La table des fêtes", "Réel de dressage"),
+    ("21 déc.", "La Vigilia", "Carrousel « fête des sept poissons »"),
+    ("25 déc.", "Noël", "Vœux"),
+    ("31 déc.", "Saint-Sylvestre et feu d'artifice sur la baie", "Vœux"),
+]
+NON_RETENUS = "Hors contrat (proposables en option) : jeu-concours de Noël, carte cadeau, accord mets-vins, coulisses du service et posts quotidiens. Les dates de la veille restent utilisables dans les stories « Piatti del giorno »."
+A_VALIDER = [
+    "**Ouverture et horaires** les 24, 25 et 31 décembre.",
+    "**Menus de fêtes** : contenu et prix, à insérer dans la légende du 3 décembre.",
+    "**Histoire de Laura** (post du 6 décembre) : à ajouter aussi dans la fiche marque.",
+    "**Plats et produits** cités : à vérifier par rapport à la carte réelle.",
+    "**Tournages** : dans chaque réel, au moins un plan avec une personne visible et le plan le plus gourmand dans les 3 premières secondes.",
+    "**Loi Évin** : pas de bouteilles ni de coupes au premier plan.",
+]
+
 if __name__ == '__main__':
     import sys
     from rendu import rendre

@@ -26,7 +26,7 @@ Assistant-CM/
 Dites simplement cette phrase à l'assistant, ou tapez `/contenu-semaine`. Il :
 
 1. lit la fiche marque, les **nouvelles photos** (ajoutées depuis la dernière proposition), la **veille** du mois et les **statistiques** Instagram ;
-2. propose **3 réels, 5 publications et 7 stories**, chacun avec son visuel, sa légende et ses hashtags ;
+2. propose le contenu de la semaine au rythme du contrat (2 publications, 1 réel une semaine sur deux ; version complète de 3 réels, 5 publications et 7 stories sur demande), chacun avec son visuel, sa légende et ses hashtags ;
 3. range le tout dans `propositions/<date du lundi>/`, avec un récapitulatif **`A-VALIDER.md`** à cocher.
 
 Vous répondez ensuite, par exemple : *« valide R1, P2, S1 à S7 ; modifie P3 : … »*.
@@ -123,6 +123,8 @@ python3 outils/generer_reels.py calendriers/da-laura-2026-12.csv
 - Chaque réel est livré avec sa légende (`.txt`) et une image de couverture (`-couverture.jpg`).
 
 ### Stories « Piatti del giorno » (plats du jour)
+
+**Le plus simple** : envoyez à l'assistant les plats de la semaine avec les jours (texte ou photo de l'ardoise). Il crée les stories, choisit la photo et la mise en page, vérifie et vous renvoie les images prêtes à publier.
 
 Le contrat de Da Laura prévoit **20 stories de plats du jour par mois**. Elles sont créées avec `outils/plats_du_jour.py`, dans l'écriture du restaurant : l'ardoise à la craie, l'enseigne rouge sur crème « La cucina autentica · dal 1992 » et le vichy des nappes.
 

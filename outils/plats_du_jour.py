@@ -286,11 +286,35 @@ A_EVITER_EN_FOND = ["ardoise", "menu", "carte-", "enseigne"]
 EXT = (".jpg", ".jpeg", ".png", ".webp")
 
 
-def photo_du_jour(jour, marque="da-laura"):
-    """Choisit une photo de fond différente chaque jour, en tournant sur les photos du restaurant."""
+RECENTES = []  # photos utilisées les jours précédents (pour ne pas les répéter)
+
+
+def _mots(txt):
+    t = txt.lower()
+    for a, b in (("àâä", "a"), ("éèêë", "e"), ("îï", "i"), ("ôö", "o"), ("ùûü", "u"), ("ç", "c")):
+        for c in a:
+            t = t.replace(c, b)
+    return {m[:5] for m in re.findall(r"[a-z]{4,}", t)}
+
+
+def photo_du_jour(jour, marque="da-laura", plats=(), texte_ok=False):
+    """Choisit automatiquement la photo de fond :
+    1. de préférence une photo du plat du jour (mots du nom du plat retrouvés dans le nom du fichier) ;
+    2. sinon une photo du restaurant, en tournant ;
+    jamais une photo utilisée les 3 derniers jours, ni (sauf texte_ok) une photo qui contient déjà du texte."""
     photos = sorted(p for d in DOSSIERS_FOND for p in (RACINE / "photos" / marque / d).glob("*")
-                    if p.suffix.lower() in EXT and not any(m in p.stem for m in A_EVITER_EN_FOND))
-    return photos[jour.toordinal() % len(photos)] if photos else None
+                    if p.suffix.lower() in EXT and (texte_ok or not any(m in p.stem for m in A_EVITER_EN_FOND)))
+    if not photos:
+        return None
+    libres = [p for p in photos if p not in RECENTES[-3:]] or photos
+    mots_plats = [_mots(nom) for nom, *_ in plats]
+    def score(p):
+        mp = _mots(p.stem.replace("-", " "))
+        return sum(len(mp & m) * (3 if i == 0 else 1) for i, m in enumerate(mots_plats))  # 1er plat prioritaire
+    meilleur = max(libres, key=score)
+    choix = meilleur if score(meilleur) > 0 else libres[jour.toordinal() % len(libres)]
+    RECENTES.append(choix)
+    return choix
 
 
 AVERTISSEMENTS = []
@@ -330,8 +354,16 @@ def fond_net(chemin, taille=(W, H)):
     return appliquer_charte(img)
 
 
+PLATS_DU_JOUR = ()
+TEXTE_OK = False
+
+
 def photo_choisie(jour, photo):
-    chemin = (RACINE / photo) if photo else photo_du_jour(jour)
+    if photo:
+        chemin = RACINE / photo
+        RECENTES.append(chemin)
+    else:
+        chemin = photo_du_jour(jour, plats=PLATS_DU_JOUR, texte_ok=TEXTE_OK)
     return chemin if chemin and chemin.exists() else None
 
 
@@ -520,26 +552,41 @@ def lire(fichier):
     return jours
 
 
+def style_auto(jour, plats):
+    """Rythme de la semaine : mardi Suggestions, mercredi Duo, jeudi Polaroid, vendredi Suggestions,
+    samedi Vedette (si un seul plat). Un seul plat, quel que soit le jour : Vedette."""
+    if len(plats) == 1:
+        return "vedette"
+    return {0: "duo", 1: "suggestions", 2: "duo", 3: "polaroid", 4: "suggestions", 5: "suggestions",
+            6: "polaroid"}[jour.weekday()]
+
+
 def main():
     ap = argparse.ArgumentParser(description="Stories « Piatti del giorno » de Da Laura.")
     ap.add_argument("fichier", help="ex. plats-du-jour/da-laura-2026-12.txt")
-    ap.add_argument("--style", choices=STYLES, default="suggestions")
+    ap.add_argument("--style", choices=["auto"] + list(STYLES), default="auto",
+                    help="auto (défaut) : mise en page choisie selon le jour et le nombre de plats")
     ap.add_argument("--marque", default="da-laura")
-    ap.add_argument("--sortie", help="dossier de sortie (défaut : stories/<marque>/plats-du-jour)")
+    ap.add_argument("--sortie", help="dossier de sortie (défaut : stories/<marque>/plats-du-jour/<AAAA-MM>)")
     a = ap.parse_args()
-    sortie = Path(a.sortie) if a.sortie else RACINE / "stories" / a.marque / "plats-du-jour"
-    sortie.mkdir(parents=True, exist_ok=True)
+    global CADRAGE, PLATS_DU_JOUR, TEXTE_OK
     jours = lire(a.fichier)
-    for j in jours:
+    for j in sorted(jours, key=lambda x: x["date"]):
         style = j["style"] or a.style
-        global CADRAGE
+        if style == "auto":
+            style = style_auto(j["date"], j["plats"])
         CADRAGE = j["cadrage"] or (0.5, 0.45, 1.0)
+        PLATS_DU_JOUR = j["plats"]
+        TEXTE_OK = style in ("duo", "polaroid")  # photo avec texte (ardoise, enseigne) possible hors du menu
         img = STYLES[style](j["date"], j["plats"], j["photo"])
+        sortie = Path(a.sortie) if a.sortie else RACINE / "stories" / a.marque / "plats-du-jour" / f"{j['date']:%Y-%m}"
+        sortie.mkdir(parents=True, exist_ok=True)
         nom = sortie / f"{j['date'].isoformat()}"
         img.save(nom.with_suffix(".jpg"), quality=97, subsampling=0, optimize=True)
         plats_txt = "\n".join("- " + " · ".join(p for p in pl if p) for pl in j["plats"])
         nom.with_suffix(".txt").write_text(
-            f"Story « Piatti del giorno » · {date_fr(j['date'])} · style {style}\n\n"
+            f"Story « Piatti del giorno » · {date_fr(j['date'])} · style {style}\n"
+            f"Photo de fond : {RECENTES[-1].relative_to(RACINE) if RECENTES else 'aucune'}\n\n"
             f"Texte alternatif : Les plats du jour de Da Laura.\n{plats_txt}\n\n"
             "À ajouter dans Instagram : sticker « Lien » vers la réservation, sticker « Lieu » : Cannes.\n"
             "Hashtags : #DaLaura + sticker localisation « Cannes »\n", encoding="utf-8")

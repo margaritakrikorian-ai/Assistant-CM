@@ -39,11 +39,11 @@ def rendre(OUT, ANNEE, MOIS, MOIS_NOM, NOM, FEED, STORIES, TEXTES, TEMPS_FORTS, 
     md.append(f"# Calendrier éditorial : Da Laura, {MOIS_NOM} {ANNEE}\n")
     md.append(f"> Établi à partir de la fiche [`marques/da-laura.md`](../marques/da-laura.md) et de la veille [`veille/{ANNEE}-{MOIS:02d}.md`](../veille/{ANNEE}-{MOIS:02d}.md). Version tableur : [`{NOM}.csv`]({NOM}.csv).\n")
     md.append("## Vue d'ensemble\n")
-    md.append(f"- **Posts :** {nb['Post'] + nb['Carrousel']} ({nb['Post']} posts simples et {nb['Carrousel']} carrousels), soit 5 par semaine")
-    md.append(f"- **Réels :** {nb['Réel']}, soit 2 par semaine (mercredi et samedi)")
-    md.append("- **Stories :** tous les jours, en séquence de 3 ou 4 stories (sondage, quiz, coulisses, partage du post du jour)")
+    md.append(f"- **Publications :** {nb['Post'] + nb['Carrousel']} ({nb['Post']} posts simples et {nb['Carrousel']} carrousels), conformément au contrat (8 par mois)")
+    md.append(f"- **Réels :** {nb['Réel']} (contrat : 2 par mois)")
+    md.append("- **Stories :** les 20 stories « Piatti del giorno » du mois (plats du jour, du mardi au samedi), créées chaque semaine à partir des plats envoyés : voir `stories/da-laura/plats-du-jour/`")
     md.append("- **Horaires :** 11h–11h30 avant le déjeuner, 18h–18h30 avant le dîner. Le jeudi et le vendredi en fin de journée pour les réservations du week-end.")
-    md.append("- **Rythme de la semaine :** lundi post, mardi post, mercredi réel, jeudi post, vendredi post, samedi réel, dimanche post.\n")
+    md.append("")
     md.append("### Temps forts retenus\n")
     md.append("| Date | Temps fort | Ce qu'on en fait |\n|---|---|---|")
     for a, b, c in TEMPS_FORTS:
@@ -55,7 +55,7 @@ def rendre(OUT, ANNEE, MOIS, MOIS_NOM, NOM, FEED, STORIES, TEXTES, TEMPS_FORTS, 
     for r in FEED:
         sujet = r[6].split("\n")[0]
         md.append(f"| {JOURS[d(r[0]).weekday()][:3]} {d(r[0]).strftime('%d/%m')} | {r[1]} | {r[2]} | {r[3]} | {sujet} |")
-    md.append("\nUne séquence de stories est prévue chaque jour en plus de ces publications (voir le détail).\n")
+    md.append("")
 
     md.append("## Détail des publications\n")
     cur = None
