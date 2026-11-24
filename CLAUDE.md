@@ -122,7 +122,7 @@ L'utilisatrice travaille sur iPad et ne navigue pas dans le dépôt Git. **Tout 
 
 | Dossier | Identifiant | Contenu |
 |---|---|---|
-| 00 - SOMMAIRE (Google Doc) | `17Kl1hF8FuOcORD9rY7Sjj0SBHLhaF2fWbAH0D3OF7UE` | Index de tout ce qui a été livré : à mettre à jour à chaque livraison |
+| 00 - SOMMAIRE (Google Doc) | `1CvGA8faZqwMpOl--3--ZNGPLlO6JQyPtnlClQVf6t2M` | Index de tout ce qui a été livré : à mettre à jour à chaque livraison |
 | 01 - Réels | `1Nof5SKJ6b5YC_gx1bQqX8q8F4NQJ8LFL` | Vidéos, couvertures, légendes (Google Doc) |
 | 02 - Stories Piatti del giorno | `17F4dgwTE_9mcdpDvi-GluDvMnKD2V2rl` | Stories de plats du jour |
 | 03 - Publications | `1-CvcCdnGGtEh6FZM34ESJ5kFjOqr4ZJg` | Posts et carrousels prêts |
