@@ -17,6 +17,7 @@ Assistant-CM/
 ├── stories/         Les stories au format 1080x1920
 ├── reels/           Les réels en vidéo MP4 verticale
 ├── outils/          Les scripts (visuels, réels, import Instagram)
+├── plats-du-jour/    Les plats du jour du mois (pour les stories « Piatti del giorno »)
 └── docs/            Les guides (connexion Instagram…)
 ```
 
@@ -120,6 +121,14 @@ python3 outils/generer_reels.py calendriers/da-laura-2026-12.csv
 - Les photos se déposent à côté du fichier indiqué dans le calendrier, numérotées dans l'ordre du montage. Par exemple, pour `photos/da-laura/cuisine/pates-fraiches.mp4` : `pates-fraiches-01.jpg`, `pates-fraiches-02.jpg`…
 - La piste audio est silencieuse : la musique s'ajoute dans Instagram. Les ambiances conseillées sont dans `reels/<marque>/README.md`.
 - Chaque réel est livré avec sa légende (`.txt`) et une image de couverture (`-couverture.jpg`).
+
+### Stories « Piatti del giorno » (plats du jour)
+
+Le contrat de Da Laura prévoit **20 stories de plats du jour par mois**. Elles sont créées avec `outils/plats_du_jour.py`, dans l'écriture du restaurant : l'ardoise à la craie, l'enseigne rouge sur crème « La cucina autentica · dal 1992 » et le vichy des nappes.
+
+1. Copiez `plats-du-jour/exemple.txt` en `plats-du-jour/da-laura-AAAA-MM.txt`, puis ajoutez les plats de chaque jour (`Nom | description | prix`). Vous pouvez aussi simplement envoyer à l'assistant la photo de l'ardoise ou la liste des plats : il remplit le fichier pour vous.
+2. Lancez `python3 outils/plats_du_jour.py plats-du-jour/da-laura-AAAA-MM.txt` (option `--style ardoise`, `enseigne` ou `photo`).
+3. Les stories arrivent dans `stories/da-laura/plats-du-jour/` (une image et un `.txt` par jour). Les trois modèles sont dans `stories/da-laura/plats-du-jour/modeles/`.
 
 ### 5. Créer les stories
 

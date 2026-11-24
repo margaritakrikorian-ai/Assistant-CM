@@ -54,3 +54,8 @@ Réels (MP4 1080x1920, 15 à 30 s, piste audio silencieuse pour la musique ajout
 ## Commande « Propose-moi du contenu pour la semaine »
 
 Skill du projet : `.claude/skills/contenu-semaine/SKILL.md` (aussi `/contenu-semaine`). La suivre à la lettre : `outils/semaine.py` (contexte), `propositions.csv`, `outils/verifier_contenus.py`, générateurs avec `--sortie propositions/<lundi>`, `A-VALIDER.md`, puis `--terminer`.
+
+## Contrat et stories « Piatti del giorno » (Da Laura)
+
+- Contrat : formule **Essentielle** adaptée, soit **8 publications, 2 réels et 20 stories « Piatti del giorno » par mois**. Ne pas proposer plus sans le présenter comme une option payante.
+- Stories de plats du jour : `python3 outils/plats_du_jour.py plats-du-jour/da-laura-AAAA-MM.txt --style ardoise|enseigne|photo`. Quand l'utilisateur envoie une photo de l'ardoise ou une liste de plats, la retranscrire fidèlement dans le fichier du mois (sans inventer de plat ni de prix) puis générer.

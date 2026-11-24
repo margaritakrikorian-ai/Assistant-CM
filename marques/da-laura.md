@@ -21,7 +21,7 @@ Da Laura est un restaurant italien à Cannes. On y sert une cuisine italienne g�
 
 **Valeurs :** générosité, convivialité, authenticité italienne, qualité des produits, élégance.
 
-**Slogan / signature :** *(à compléter)*, par exemple *(proposition)* « La dolce vita, à Cannes. »
+**Signature (enseigne) :** « Da Laura – **La cucina autentica** » et la plaque « **Specialità italiane – Dal 1992** ». Le restaurant existe depuis 1992 : c'est un argument d'authenticité à utiliser.
 
 **Plats signature :** *(à compléter : les 3 à 5 plats à mettre en avant)*
 
@@ -60,7 +60,12 @@ Da Laura est un restaurant italien à Cannes. On y sert une cuisine italienne g�
   - Or doux : `#B8925A`
 - **Utilisation :** fond crème pour la plupart des visuels, rouge vin pour les titres et les éléments forts, olive et or en touches discrètes (filets, pictogrammes, détails). Éviter les couleurs fluo et les dégradés criards.
 - **Typographies *(proposition)* :** titres en **Playfair Display**, textes en **Lato** (ou Montserrat Light)
-- **Style photo :** lumière chaude et naturelle, tons dorés, gros plans gourmands (pâtes, huile d'olive, parmesan, vin), mains en action en cuisine, tables dressées élégamment, ambiance du soir avec bougies. Pas de flash, pas de photos sombres ou froides.
+- **L'« écriture » Da Laura, tirée du restaurant lui-même :**
+  - **l'enseigne** : capitales romaines rouges sur fond crème (rouge de l'enseigne ≈ `#8E1D1D`, très proche du rouge vin), emblème triangulaire pointe en bas avec la silhouette de Laura → police **Cormorant Garamond** en capitales ;
+  - **l'ardoise « Piatti del giorno »** de la terrasse, écrite à la main à la craie → police manuscrite **Caveat** ;
+  - **les nappes et serviettes en vichy** (rouge, orange ou jaune) → motif vichy en bordure.
+  Ces trois éléments sont la signature visuelle des stories « Piatti del giorno » (voir `outils/plats_du_jour.py`).
+- **Style photo :** lumière chaude et naturelle, souvent **plein soleil en terrasse**, tons dorés, gros plans gourmands (pâtes fraîches, truffe, burrata, planches), **mains du chef en action**, céramiques artisanales, serviettes en vichy, basilic flou au premier plan, ambiance du soir avec guirlandes lumineuses. Pas de flash, pas de photos sombres ou froides. Références : les photos rangées dans `photos/da-laura/` (novembre 2026).
 - **Logo :** *(à compléter)*, dans `photos/da-laura/logo/`
   - Version claire : *(à compléter)*
   - Version foncée : *(à compléter)*
@@ -80,10 +85,12 @@ Da Laura est un restaurant italien à Cannes. On y sert une cuisine italienne g�
 ## Stratégie de contenu
 
 - **Objectifs :** **notoriété** (se faire connaître à Cannes et auprès des visiteurs) et **communauté** (créer du lien, de l'engagement et fidéliser).
-- **Fréquence de publication (rythme intensif) :**
-  - Posts : **5 par semaine**
-  - Stories : **tous les jours**, 3 à 5 par jour
-  - Réels : **2 par semaine**
+- **Contrat en cours : formule Essentielle (490 € / mois)**, adaptée : Instagram et Facebook, charte visuelle et gabarits, légendes et hashtags, calendrier éditorial validé chaque mois, bilan mensuel des statistiques.
+- **Fréquence de publication prévue au contrat (par mois) :**
+  - Publications (posts et carrousels) : **8**
+  - Réels : **2**
+  - Stories : **20 stories « Piatti del giorno »** (plats du jour), à la place des 8 stories de la formule. Elles présentent les plats du jour, avec ou sans photo.
+- *Rythme souhaité au départ (avant contrat) : 5 posts et 2 réels par semaine, stories tous les jours. Il dépasse la formule Essentielle : ne le proposer qu'en option (Signature, Visibilité ou Prestige).*
 - **Meilleurs jours et horaires *(proposition)* :** entre 11h et 12h (avant le déjeuner) et entre 18h et 19h30 (avant le dîner). Le jeudi et le vendredi en fin de journée pour donner envie de réserver le week-end.
 - **Thèmes récurrents (piliers de contenu) :**
   1. **La carte** : plats signature, suggestions du jour, desserts, vins italiens

@@ -1,0 +1,11 @@
+# Plats du jour — modèle à copier (un fichier par mois : da-laura-AAAA-MM.txt)
+# Une journée = une date AAAA-MM-JJ, puis une ligne par plat : Nom | description | prix
+# La description et le prix sont facultatifs. Laisser une ligne vide entre deux journées.
+# Lignes facultatives : « photo: chemin/vers/photo.jpg » (style photo) et « style: ardoise | enseigne | photo ».
+# Exemple tiré de l'ardoise de la terrasse (à remplacer par les vrais plats du jour) :
+
+2026-12-01
+Ravioli maison | pomodorini freschi e burrata | 32 €
+Polpo alla piastra | ratatouille du chef napolitain | 34 €
+Tiramisù alle fragole | fraises fraîches, mascarpone | 
+photo: photos/da-laura/plats/ravioli-truffe.jpg
