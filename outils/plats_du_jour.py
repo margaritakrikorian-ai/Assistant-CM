@@ -276,30 +276,57 @@ def style_photo(jour, plats, photo):
 
 # ---------- style 4 : les suggestions sur photo (style quotidien par défaut) ----------
 DOSSIERS_FOND = ["ambiance", "plats", "cuisine"]
+# photos qui contiennent déjà du texte (ardoise, menu…) : illisibles sous les suggestions
+A_EVITER_EN_FOND = ["ardoise", "menu", "carte-"]
 EXT = (".jpg", ".jpeg", ".png", ".webp")
 
 
 def photo_du_jour(jour, marque="da-laura"):
     """Choisit une photo de fond différente chaque jour, en tournant sur les photos du restaurant."""
     photos = sorted(p for d in DOSSIERS_FOND for p in (RACINE / "photos" / marque / d).glob("*")
-                    if p.suffix.lower() in EXT)
+                    if p.suffix.lower() in EXT and not any(m in p.stem for m in A_EVITER_EN_FOND))
     return photos[jour.toordinal() % len(photos)] if photos else None
+
+
+AVERTISSEMENTS = []
+
+
+def fond_net(chemin):
+    """Photo plein cadre 1080x1920, la plus nette possible (aucun flou ajouté).
+
+    - Photo plus grande que la story : réduction progressive de haute qualité + accentuation légère.
+    - Photo plus petite (ex. capture Instagram de 960 px) : agrandissement Lanczos + accentuation
+      adaptée, et un avertissement (seul l'original en pleine résolution donne une netteté parfaite).
+    """
+    img = ImageOps.exif_transpose(Image.open(chemin)).convert("RGB")
+    echelle = max(W / img.width, H / img.height)
+    if echelle < 1:
+        while img.width * echelle * 2 < img.width and img.height * echelle * 2 < img.height:
+            img = img.reduce(2)  # réduction par paliers : évite le crénelage
+        img = ImageOps.fit(img, (W, H), Image.LANCZOS, centering=(0.5, 0.45))
+        return img.filter(ImageFilter.UnsharpMask(radius=0.8, percent=45, threshold=1))
+    img = ImageOps.fit(img, (W, H), Image.LANCZOS, centering=(0.5, 0.45))
+    if echelle > 1.05:
+        AVERTISSEMENTS.append(f"{chemin.relative_to(RACINE)} : {Image.open(chemin).size[0]}x"
+                              f"{Image.open(chemin).size[1]} px, agrandie ×{echelle:.2f}. "
+                              "Fournir l'original en pleine résolution pour une netteté parfaite.")
+        img = img.filter(ImageFilter.UnsharpMask(radius=1.6, percent=80, threshold=2))
+    return img
 
 
 def style_suggestions(jour, plats, photo):
     chemin = (RACINE / photo) if photo else photo_du_jour(jour)
     if chemin and chemin.exists():
-        fond = ImageOps.fit(ImageOps.exif_transpose(Image.open(chemin)).convert("RGB"), (W, H), Image.LANCZOS,
-                            centering=(0.5, 0.45))
-        fond = fond.filter(ImageFilter.GaussianBlur(5))  # léger flou : la photo reste reconnaissable
+        fond = fond_net(chemin)
     else:
         fond = Image.new("RGB", (W, H), (70, 48, 36))
-    # voile sombre, plus marqué derrière le texte, pour une lecture parfaite
+    # voile sombre (sans flou : la photo reste nette), plus marqué derrière le texte pour une lecture parfaite
     voile = Image.new("L", (W, H), 0)
     dv = ImageDraw.Draw(voile)
     for y in range(H):
         centre = 1 - min(1, abs(y - 960) / 900)
-        dv.line([(0, y), (W, y)], fill=int(70 + 80 * centre))
+        bas = max(0, (y - 1420) / 500) * 110  # renfort sous la signature « DA LAURA »
+        dv.line([(0, y), (W, y)], fill=int(min(235, 60 + 110 * centre + bas)))
     img = Image.composite(Image.new("RGB", (W, H), (18, 12, 8)), fond, voile)
 
     # titre et plats : texte avec une ombre douce
@@ -323,7 +350,9 @@ def style_suggestions(jour, plats, photo):
             ecrire({"nom": (250, 246, 238), "desc": (230, 220, 202), "prix": (242, 217, 139)}[role], (W / 2, y), txt, f)
         y += f.size * 1.18
 
-    img.paste(Image.new("RGB", (W, H), (0, 0, 0)), (0, 0), ombre.filter(ImageFilter.GaussianBlur(6)))
+    # double ombre : une large et douce pour détacher le texte d'un fond net, une courte pour le relief
+    img.paste(Image.new("RGB", (W, H), (0, 0, 0)), (0, 0), ombre.filter(ImageFilter.GaussianBlur(16)).point(lambda v: min(255, v * 1.4)))
+    img.paste(Image.new("RGB", (W, H), (0, 0, 0)), (0, 0), ombre.filter(ImageFilter.GaussianBlur(4)))
     c.poser(img)
     d = ImageDraw.Draw(img)
     triangle(d, W / 2, 1548, 46, CREME, 2)
@@ -372,7 +401,7 @@ def main():
         style = j["style"] or a.style
         img = STYLES[style](j["date"], j["plats"], j["photo"])
         nom = sortie / f"{j['date'].isoformat()}"
-        img.save(nom.with_suffix(".jpg"), quality=95, subsampling=0)
+        img.save(nom.with_suffix(".jpg"), quality=97, subsampling=0, optimize=True)
         plats_txt = "\n".join("- " + " · ".join(p for p in pl if p) for pl in j["plats"])
         nom.with_suffix(".txt").write_text(
             f"Story « Piatti del giorno » · {date_fr(j['date'])} · style {style}\n\n"
@@ -381,6 +410,8 @@ def main():
             "Hashtags : #DaLaura + sticker localisation « Cannes »\n", encoding="utf-8")
         print(f"{nom.with_suffix('.jpg')} ({style}, {len(j['plats'])} plats)")
     print(f"{len(jours)} stories créées.")
+    for a_ in dict.fromkeys(AVERTISSEMENTS):
+        print("⚠️ Photo en basse résolution :", a_)
 
 
 if __name__ == "__main__":
