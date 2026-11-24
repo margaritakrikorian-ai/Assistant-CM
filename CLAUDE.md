@@ -33,3 +33,8 @@ Réels (MP4 1080x1920, 15 à 30 s, piste audio silencieuse pour la musique ajout
 
 - Photos des publications Instagram : `python3 outils/telecharger_instagram.py <marque>` (API Instagram Graph, `graph.instagram.com`). Guide : `docs/connecter-instagram.md`.
 - Le jeton d'accès n'est **jamais** écrit dans le code ni committé : il se trouve dans `.env` (ignoré par Git) ou dans les secrets de l'environnement. Ne jamais demander à l'utilisateur de le coller dans la conversation : utiliser le formulaire sécurisé.
+
+## Canva
+
+- Serveur MCP officiel de Canva déclaré dans `.mcp.json` (https://mcp.canva.com/mcp). Dossier Canva du mois : « Da Laura – Décembre 2026 ».
+- Toujours passer les couleurs, les polices et le ton de la fiche marque dans la description du design (pas de kit de marque Canva configuré).
