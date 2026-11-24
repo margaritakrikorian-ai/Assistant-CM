@@ -1,0 +1,271 @@
+<title>Feed Da Laura · décembre</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Cormorant+Garamond:wght@600;700&family=Lato:wght@400;700&display=swap">
+<style>
+/* Mise en page : à gauche, le téléphone avec le profil tel qu'il apparaîtra ; à droite, les choix à faire (bio, lien WhatsApp).
+   Un seul univers clair assumé : la carte du restaurant (crème, rouge de l'enseigne) autour d'un écran d'application blanc. */
+:root {
+  --papier: #F3ECE1;
+  --papier-2: #E6DACA;
+  --encre: #2A211C;
+  --brun: #5E4A3D;
+  --rouge: #8E1D1D;
+  --vert: #1F7A4D;
+  --ecran: #FFFFFF;
+  --ecran-texte: #111111;
+  --ecran-gris: #737373;
+  --ecran-trait: #DBDBDB;
+  --display: "Caveat", "Segoe Print", cursive;
+  --serif: "Cormorant Garamond", Garamond, "Times New Roman", serif;
+  --sans: "Lato", "Helvetica Neue", Arial, sans-serif;
+  --app: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color-scheme: light;
+}
+* { box-sizing: border-box; }
+body { background: var(--papier); color: var(--encre); font: 400 1rem/1.55 var(--sans); }
+.wrap { max-width: 1120px; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 2.2rem 3rem; }
+.tete { display: grid; gap: .4rem; margin-bottom: 2rem; }
+.eyebrow { font: 700 .75rem/1.2 var(--sans); letter-spacing: .18em; text-transform: uppercase; color: var(--rouge); margin: 0; }
+h1 { font: 700 clamp(2.4rem, 6vw, 3.6rem)/1 var(--display); color: var(--rouge); margin: 0; }
+.tete p { margin: 0; max-width: 64ch; color: var(--brun); }
+.grille { display: grid; grid-template-columns: minmax(0, 400px) minmax(0, 1fr); gap: clamp(1.5rem, 4vw, 3.5rem); align-items: start; }
+@media (max-width: 860px) { .grille { grid-template-columns: 1fr; } .telephone { justify-self: center; } }
+
+/* ---------- Téléphone ---------- */
+.telephone { width: 100%; max-width: 400px; background: #1C1A19; border-radius: 44px; padding: 12px; box-shadow: 0 30px 60px -30px rgba(42,33,28,.6); position: sticky; top: calc(env(safe-area-inset-top, 0px) + 16px); }
+@media (max-width: 860px) { .telephone { position: static; } }
+.ecran { background: var(--ecran); color: var(--ecran-texte); border-radius: 34px; overflow: hidden; font: 400 13px/1.35 var(--app); height: min(780px, 82vh); overflow-y: auto; scrollbar-width: none; }
+.ecran::-webkit-scrollbar { display: none; }
+.barre { display: flex; justify-content: space-between; align-items: center; padding: 14px 18px 8px; font-weight: 700; font-size: 16px; position: sticky; top: 0; background: var(--ecran); z-index: 2; }
+.barre small { font-weight: 400; color: var(--ecran-gris); font-size: 12px; }
+.profil { padding: 4px 16px 0; display: grid; gap: 10px; }
+.ligne1 { display: grid; grid-template-columns: 82px 1fr; gap: 18px; align-items: center; }
+.avatar { width: 82px; height: 82px; border-radius: 50%; padding: 3px; background: conic-gradient(var(--rouge), #D9A441, var(--rouge)); }
+.avatar img { width: 100%; height: 100%; border-radius: 50%; border: 3px solid var(--ecran); object-fit: cover; display: block; }
+.stats { display: grid; grid-template-columns: repeat(3, 1fr); text-align: center; }
+.stats b { display: block; font-size: 16px; }
+.stats span { font-size: 12px; }
+.nom { font-weight: 700; }
+.categorie { color: var(--ecran-gris); }
+.bio { white-space: pre-line; }
+.lien { color: #00376B; font-weight: 600; display: flex; gap: 4px; align-items: center; }
+.boutons { display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; }
+.boutons span { background: #EFEFEF; border-radius: 8px; text-align: center; padding: 7px 4px; font-weight: 600; font-size: 13px; }
+.boutons span.wa { background: #E7F6EE; color: var(--vert); }
+.une { display: flex; gap: 14px; overflow-x: auto; padding: 6px 2px 4px; scrollbar-width: none; }
+.une figure { margin: 0; display: grid; justify-items: center; gap: 4px; flex: none; width: 66px; }
+.une img { width: 62px; height: 62px; border-radius: 50%; object-fit: cover; border: 1px solid var(--ecran-trait); padding: 2px; background: var(--ecran); }
+.une figcaption { font-size: 11px; max-width: 66px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.onglets { display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid var(--ecran-trait); margin-top: 8px; }
+.onglets span { text-align: center; padding: 10px 0 8px; color: var(--ecran-gris); font-size: 12px; font-weight: 700; letter-spacing: .04em; }
+.onglets span.actif { color: var(--ecran-texte); border-bottom: 1.5px solid var(--ecran-texte); }
+.mosaique { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px; }
+.case { position: relative; aspect-ratio: 3 / 4; background: #F2F2F2; overflow: hidden; max-width: 100%; }
+.case img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.case .icone { position: absolute; top: 6px; right: 6px; width: 16px; height: 16px; color: #fff; filter: drop-shadow(0 0 2px rgba(0,0,0,.6)); }
+.case.attente { display: grid; place-items: center; text-align: center; padding: 8px; background: repeating-linear-gradient(135deg, #F7F2EA 0 8px, #EFE6D8 8px 16px); color: var(--brun); font: 600 11px/1.3 var(--app); }
+.case .date { position: absolute; left: 0; right: 0; bottom: 0; background: linear-gradient(transparent, rgba(0,0,0,.65)); color: #fff; font: 700 11px/1 var(--app); padding: 14px 6px 5px; }
+.case.ancien img { filter: saturate(.85); }
+.ecran.sans-dates .date { display: none; }
+.legende-tel { margin-top: 10px; color: #CFC6BB; font: 400 12px/1.4 var(--sans); text-align: center; padding: 0 8px 4px; }
+
+/* ---------- Colonne des choix ---------- */
+.choix { display: grid; gap: 2rem; min-width: 0; }
+.bloc { display: grid; gap: .9rem; }
+h2 { font: 700 clamp(1.6rem, 3.4vw, 2.1rem)/1.1 var(--serif); margin: 0; text-wrap: balance; }
+.bloc > p { margin: 0; color: var(--brun); max-width: 62ch; }
+.propositions { display: grid; gap: .8rem; }
+.prop { display: grid; grid-template-columns: auto 1fr; gap: .2rem .8rem; align-items: start; padding: 1rem 1.1rem; border: 1.5px solid var(--papier-2); border-radius: 10px; background: #FBF7F1; cursor: pointer; text-align: left; font: inherit; color: inherit; }
+.prop[aria-pressed="true"] { border-color: var(--rouge); background: #FFFDF9; box-shadow: 0 10px 24px -18px rgba(142,29,29,.6); }
+.prop:focus-visible, .btn:focus-visible { outline: 3px solid var(--rouge); outline-offset: 2px; }
+.pastille { width: 20px; height: 20px; border-radius: 50%; border: 2px solid var(--rouge); margin-top: 3px; display: grid; place-items: center; }
+.prop[aria-pressed="true"] .pastille::after { content: ""; width: 10px; height: 10px; border-radius: 50%; background: var(--rouge); }
+.prop strong { font: 700 1.2rem/1.2 var(--serif); }
+.prop .reco { font: 700 .7rem/1 var(--sans); letter-spacing: .12em; text-transform: uppercase; color: var(--vert); margin-left: .5rem; }
+.prop pre { grid-column: 2; margin: .2rem 0 0; white-space: pre-wrap; font: 400 .95rem/1.5 var(--sans); color: var(--encre); }
+.prop .pourquoi { grid-column: 2; font-size: .88rem; color: var(--brun); }
+.prop .compte { grid-column: 2; font: 400 .78rem/1 var(--sans); color: var(--brun); font-variant-numeric: tabular-nums; }
+.actions { display: flex; flex-wrap: wrap; gap: .6rem; align-items: center; }
+.btn { border: 0; border-radius: 999px; padding: .6rem 1.1rem; font: 700 .9rem/1 var(--sans); cursor: pointer; background: var(--rouge); color: #FFF8F0; }
+.btn.secondaire { background: var(--papier-2); color: var(--encre); }
+.btn.vert { background: var(--vert); color: #fff; }
+.ok { font-size: .85rem; color: var(--vert); min-height: 1.2em; }
+.code { display: block; padding: .8rem 1rem; background: #FBF7F1; border: 1px solid var(--papier-2); border-radius: 8px; font: 400 .88rem/1.45 ui-monospace, Menlo, Consolas, monospace; word-break: break-all; color: var(--encre); user-select: all; }
+.etapes { margin: 0; padding-left: 1.3rem; display: grid; gap: .55rem; color: var(--brun); max-width: 62ch; }
+.etapes strong { color: var(--encre); }
+.alerte { border-left: 3px solid #C98A1B; background: #FFF6E5; padding: .8rem 1rem; border-radius: 0 8px 8px 0; color: var(--encre); max-width: 62ch; }
+.bascule { display: flex; gap: .5rem; align-items: center; font-size: .9rem; color: var(--brun); }
+.bascule input { width: 18px; height: 18px; accent-color: var(--rouge); }
+.sources { font-size: .8rem; color: var(--brun); }
+.sources a { color: var(--rouge); }
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
+
+<div class="wrap">
+  <header class="tete">
+    <p class="eyebrow">@dalaura.cannes · aperçu du profil fin décembre 2026</p>
+    <h1>Le feed de Da Laura</h1>
+    <p>Voici à quoi ressemblera la page Instagram de Da Laura le 31 décembre, avec les publications du mois en haut et les anciennes photos du compte en dessous. Choisissez une bio à droite : le téléphone se met à jour.</p>
+  </header>
+
+  <div class="grille">
+    <div class="telephone" aria-label="Aperçu du profil Instagram">
+      <div class="ecran" id="ecran">
+        <div class="barre"><span>dalaura.cannes</span><small>Restaurant</small></div>
+        <div class="profil">
+          <div class="ligne1">
+            <div class="avatar"><img src="__AVATAR__" alt="Photo de profil : l'enseigne Da Laura"></div>
+            <div class="stats">
+              <div><b id="nb-pub">—</b><span>publications</span></div>
+              <div><b>—</b><span>followers</span></div>
+              <div><b>—</b><span>suivi(e)s</span></div>
+            </div>
+          </div>
+          <div>
+            <div class="nom" id="tel-nom">Da Laura</div>
+            <div class="categorie">Restaurant italien</div>
+            <div class="bio" id="tel-bio"></div>
+            <div class="lien"><span aria-hidden="true">🔗</span><span id="tel-lien">wa.me/33493384051</span></div>
+          </div>
+          <div class="boutons"><span>Suivre</span><span>Message</span><span class="wa">WhatsApp</span></div>
+          <div class="une" id="une"></div>
+        </div>
+        <div class="onglets"><span class="actif">PUBLICATIONS</span><span>RÉELS</span><span>IDENTIFIÉ</span></div>
+        <div class="mosaique" id="mosaique"></div>
+      </div>
+      <p class="legende-tel">Chiffres d'abonnés masqués : ils dépendront du compte réel.</p>
+    </div>
+
+    <div class="choix">
+      <section class="bloc">
+        <p class="eyebrow">1 · La bio</p>
+        <h2>Trois propositions de bio</h2>
+        <p>Une bio de restaurant doit répondre en une seconde à trois questions : quoi, où, et comment réserver. Les trois versions respectent la fiche marque (tutoiement, emojis avec modération) et finissent par l'appel à réserver, juste au-dessus du lien.</p>
+        <div class="propositions" id="propositions"></div>
+        <div class="actions">
+          <button class="btn" type="button" id="copier-bio">Copier la bio choisie</button>
+          <span class="ok" id="ok-bio" role="status"></span>
+        </div>
+      </section>
+
+      <section class="bloc">
+        <p class="eyebrow">2 · Le lien de réservation</p>
+        <h2>Réserver sur WhatsApp en un geste</h2>
+        <p>Ce lien ouvre directement une conversation WhatsApp avec le restaurant, avec un message déjà écrit. Le client n'a plus qu'à appuyer sur Envoyer, ou sur l'icône du téléphone pour appeler.</p>
+        <code class="code" id="lien-complet">https://wa.me/33493384051?text=Bonjour%20Da%20Laura%2C%20je%20souhaite%20r%C3%A9server%20une%20table%20pour%20</code>
+        <p style="margin:0;color:var(--brun)">Message pré-rempli : « Bonjour Da Laura, je souhaite réserver une table pour … »</p>
+        <div class="actions">
+          <button class="btn vert" type="button" id="copier-lien">Copier le lien</button>
+          <span class="ok" id="ok-lien" role="status"></span>
+        </div>
+        <div class="alerte"><strong>À vérifier avec Laura :</strong> le lien utilise le numéro du restaurant, 04 93 38 40 51. Il ne marche que si ce numéro a un compte <strong>WhatsApp Business</strong>. Un fixe peut l'avoir : WhatsApp vérifie le numéro par un appel vocal au lieu d'un SMS. Si elle préfère un portable, on change simplement le numéro dans le lien.</div>
+      </section>
+
+      <section class="bloc">
+        <p class="eyebrow">3 · La mise en place</p>
+        <h2>Ce qu'on fait ensemble sur son téléphone</h2>
+        <ol class="etapes">
+          <li><strong>Installer WhatsApp Business</strong> avec le numéro du restaurant (choisir « M'appeler » pour recevoir le code), puis ajouter le logo, l'adresse et les horaires.</li>
+          <li><strong>Instagram, Modifier le profil, Liens</strong> : coller le lien ci-dessus, avec le titre « Réserver sur WhatsApp ».</li>
+          <li><strong>Instagram, Modifier le profil, Options de contact</strong> : ajouter le bouton <strong>WhatsApp</strong>, qui apparaît sous la bio (compte professionnel nécessaire).</li>
+          <li><strong>Coller la bio</strong> choisie, et mettre « Da Laura » en nom.</li>
+          <li><strong>Créer les stories à la une</strong> : Piatti, Les fêtes, La cucina, Terrasse, Réserver.</li>
+        </ol>
+        <label class="bascule" for="dates"><input type="checkbox" id="dates" checked> Afficher les dates sur les vignettes du feed</label>
+        <p class="sources">Sources : <a href="https://taplink.at/fr/blog/comment-ajouter-un-lien-whatsapp-sur-instagram-4-methodes.html" target="_blank" rel="noopener">Taplink, ajouter un lien WhatsApp sur Instagram</a> · <a href="https://trengo.com/fr/blog/whatsapp-business-landline" target="_blank" rel="noopener">Trengo, WhatsApp Business sur un fixe</a> · <a href="https://www.journaldufreenaute.fr/?p=23974" target="_blank" rel="noopener">Journal du Freenaute, lien wa.me</a></p>
+      </section>
+    </div>
+  </div>
+</div>
+
+<script>
+var TILES = __TILES__;
+var HL = __HL__;
+var BIOS = [
+  { titre: "Chaleureuse", reco: true,
+    texte: "Restaurant italien à Cannes depuis 1992 🇮🇹\nPâtes fraîches · Piatti del giorno · Terrasse\n📍 8 rue du 24 Août\nRéserve ta table sur WhatsApp 👇",
+    pourquoi: "La plus complète : ce qu'on mange, l'ancienneté, l'adresse et l'action. Celle que je recommande pour le lancement." },
+  { titre: "La signature", reco: false,
+    texte: "La cucina autentica, dal 1992 🤌\nChaque jour, les suggestions de Laura en story\n📍 8 rue du 24 Août, Cannes\nRéserve ta table sur WhatsApp 👇",
+    pourquoi: "Reprend la devise de l'enseigne et met en avant les stories « Piatti del giorno » : donne envie de revenir voir le menu du jour." },
+  { titre: "Courte et directe", reco: false,
+    texte: "🍝 Italien · Cannes · Dal 1992\nTerrasse · Pâtes faites maison\n📲 Réservation en 1 clic sur WhatsApp ↓",
+    pourquoi: "Se lit en deux secondes sur un téléphone : idéale pour les touristes et les clients pressés." }
+];
+var choix = 0;
+var ICONES = {
+  reel: '<svg class="icone" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>',
+  carrousel: '<svg class="icone" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 3h12a2 2 0 0 1 2 2v12h-2V5H7z"/><rect x="3" y="7" width="14" height="14" rx="2"/></svg>'
+};
+
+function rendreMosaique() {
+  var m = document.getElementById("mosaique");
+  m.innerHTML = "";
+  TILES.forEach(function (t) {
+    var c = document.createElement("div");
+    c.className = "case" + (t.k === "attente" ? " attente" : "") + (t.k === "ancien" ? " ancien" : "");
+    c.title = t.d + " · " + t.l;
+    if (t.k === "attente") {
+      c.innerHTML = "<span>" + t.l.replace(/ \(.*\)/, "") + "<br><em>photo à venir</em></span>";
+    } else {
+      c.innerHTML = '<img src="' + t.src + '" alt="' + t.l.replace(/"/g, "&quot;") + '">' + (ICONES[t.k] || "");
+    }
+    if (t.k !== "ancien") c.innerHTML += '<span class="date">' + t.d + "</span>";
+    m.appendChild(c);
+  });
+  document.getElementById("nb-pub").textContent = "—";
+  var u = document.getElementById("une");
+  HL.forEach(function (h) {
+    var f = document.createElement("figure");
+    f.innerHTML = '<img src="' + h.src + '" alt=""><figcaption>' + h.l + "</figcaption>";
+    u.appendChild(f);
+  });
+}
+
+function rendreBios() {
+  var box = document.getElementById("propositions");
+  box.innerHTML = "";
+  BIOS.forEach(function (b, i) {
+    var btn = document.createElement("button");
+    btn.type = "button";
+    btn.className = "prop";
+    btn.id = "bio-" + i;
+    btn.setAttribute("aria-pressed", i === choix ? "true" : "false");
+    var n = Array.from(b.texte).length;
+    btn.innerHTML = '<span class="pastille" aria-hidden="true"></span><span><strong>' + b.titre + "</strong>" +
+      (b.reco ? '<span class="reco">Recommandée</span>' : "") + "</span>" +
+      "<pre></pre>" + '<span class="pourquoi">' + b.pourquoi + "</span>" +
+      '<span class="compte">' + n + " caractères</span>";
+    btn.querySelector("pre").textContent = b.texte;
+    btn.addEventListener("click", function () { choix = i; rendreBios(); majTel(); });
+    box.appendChild(btn);
+  });
+}
+
+function majTel() { document.getElementById("tel-bio").textContent = BIOS[choix].texte; }
+
+function copier(texte, cible, element) {
+  var ok = document.getElementById(cible);
+  function repli() {
+    var r = document.createRange(); r.selectNodeContents(element);
+    var s = window.getSelection(); s.removeAllRanges(); s.addRange(r);
+    ok.textContent = "Texte sélectionné : copiez-le avec le menu.";
+  }
+  try {
+    navigator.clipboard.writeText(texte).then(function () { ok.textContent = "Copié."; }, repli);
+  } catch (e) { repli(); }
+}
+document.getElementById("copier-bio").addEventListener("click", function () {
+  copier(BIOS[choix].texte, "ok-bio", document.querySelector('#bio-' + choix + ' pre'));
+});
+document.getElementById("copier-lien").addEventListener("click", function () {
+  var el = document.getElementById("lien-complet");
+  copier(el.textContent, "ok-lien", el);
+});
+document.getElementById("dates").addEventListener("change", function (e) {
+  document.getElementById("ecran").classList.toggle("sans-dates", !e.target.checked);
+});
+rendreMosaique(); rendreBios(); majTel();
+</script>

@@ -127,3 +127,13 @@ Da Laura est un restaurant italien à Cannes. On y sert une cuisine italienne g�
 - Restaurant à Cannes : prévoir aussi des contenus **en anglais** ou bilingues pendant les grands événements (Festival, MIPIM, Cannes Lions) et la saison touristique *(à valider)*.
 - Alcool : rester sobre dans la mise en avant du vin, sans incitation à la consommation excessive. Ajouter la mention « L'abus d'alcool est dangereux pour la santé, à consommer avec modération » sur toute publication qui promeut une boisson alcoolisée (loi Évin).
 - Horaires d'ouverture, jours de fermeture, capacité et terrasse : *(à compléter)*
+
+## Bio Instagram et lien de réservation (proposition du 24/11/2026, à valider avec Laura)
+
+- Bio recommandée :
+  > Restaurant italien à Cannes depuis 1992 🇮🇹
+  > Pâtes fraîches · Piatti del giorno · Terrasse
+  > 📍 8 rue du 24 Août
+  > Réserve ta table sur WhatsApp 👇
+- Lien de réservation : https://wa.me/33493384051?text=Bonjour%20Da%20Laura%2C%20je%20souhaite%20r%C3%A9server%20une%20table%20pour%20 (WhatsApp Business à activer sur le 04 93 38 40 51 ; à confirmer).
+- Bouton WhatsApp dans les options de contact du profil. Aperçu : https://claude.ai/artifact/Qbnvz1i5M4xu7jeyuMe9rc
