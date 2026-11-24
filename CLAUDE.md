@@ -104,6 +104,7 @@ Skill du projet : `.claude/skills/contenu-semaine/SKILL.md` (aussi `/contenu-sem
 ## Pages de présentation (artifacts)
 
 - Toujours **intégrer les images dans la page** (data URI), jamais en fichiers séparés : certaines applications (iPad) ne les affichent pas sinon. Vérifier avant publication que toutes les images se chargent avec la page seule.
+- Chaque page (artifact) est **aussi enregistrée en PDF dans Drive** (04 - Documents), rendue d'une seule page avec Playwright (`page.pdf`, fond imprimé) : l'utilisatrice la retrouve et peut l'envoyer sans lien. La remplacer à chaque mise à jour de la page.
 - Le partage d'une page (ex. avec Laura) ne peut pas être fait par l'assistant : il se fait depuis le menu **Partager** de la page. Le rappeler à l'utilisatrice à chaque nouvelle page destinée à quelqu'un d'autre.
 
 ## Programmation des publications (@dalaura.cannes)
@@ -120,7 +121,7 @@ L'utilisatrice travaille sur iPad et ne navigue pas dans le dépôt Git. **Tout 
 
 | Dossier | Identifiant | Contenu |
 |---|---|---|
-| 00 - SOMMAIRE (Google Doc) | `1Hl1YiLOtz0Uxe_N8YtXPml8032TmwiBm75awc4RBZzs` | Index de tout ce qui a été livré : à mettre à jour à chaque livraison |
+| 00 - SOMMAIRE (Google Doc) | `17Kl1hF8FuOcORD9rY7Sjj0SBHLhaF2fWbAH0D3OF7UE` | Index de tout ce qui a été livré : à mettre à jour à chaque livraison |
 | 01 - Réels | `1Nof5SKJ6b5YC_gx1bQqX8q8F4NQJ8LFL` | Vidéos, couvertures, légendes (Google Doc) |
 | 02 - Stories Piatti del giorno | `17F4dgwTE_9mcdpDvi-GluDvMnKD2V2rl` | Stories de plats du jour |
 | 03 - Publications | `1-CvcCdnGGtEh6FZM34ESJ5kFjOqr4ZJg` | Posts et carrousels prêts |
