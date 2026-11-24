@@ -72,6 +72,7 @@ Une séquence de stories est prévue chaque jour en plus de ces publications (vo
 **Carrousel · 18h30** · *L'ambiance*
 
 - **Photo / vidéo :** à fournir : `photos/da-laura/ambiance/salle-noel-01.jpg à -05.jpg` (salle décorée pour Noël, bougies, détails déco)
+- **Texte sur le visuel :** Noël chez Da Laura
 - **Légende :**
 
   > Décembre s'installe chez Da Laura. ✨  
@@ -102,6 +103,7 @@ Une séquence de stories est prévue chaque jour en plus de ces publications (vo
 **Réel · 18h30** · *Le savoir-faire*
 
 - **Photo / vidéo :** à fournir : `photos/da-laura/cuisine/pates-fraiches.mp4` (farine en fontaine, œufs, pétrissage, laminage, découpe des tagliatelle, assiette finale (20-30 s))
+- **Texte sur le visuel :** Pâtes fraîches, faites main
 - **Légende :**
 
   > Farine, œufs, patience. Et les mêmes gestes, répétés chaque matin. 🍝  
@@ -129,6 +131,7 @@ Une séquence de stories est prévue chaque jour en plus de ces publications (vo
 **Post · 11h30** · *La carte*
 
 - **Photo / vidéo :** à fournir : `photos/da-laura/plats/menu-fetes.jpg` (table de fête dressée avec un plat du menu de Noël)
+- **Texte sur le visuel :** Nos menus de fêtes
 - **Légende :**
 
   > Les fêtes approchent, et ta table chez Da Laura aussi. 🎄  
@@ -157,6 +160,7 @@ Une séquence de stories est prévue chaque jour en plus de ces publications (vo
 **Carrousel · 18h30** · *La carte*
 
 - **Photo / vidéo :** à fournir : `photos/da-laura/plats/carte-hiver-01.jpg à -06.jpg` (4 à 6 plats d'hiver (risotto, ragù, pâtes fraîches, dessert))
+- **Texte sur le visuel :** La carte d'hiver
 - **Légende :**
 
   > Quand les soirées fraîchissent sur la Croisette, la cuisine italienne sait réchauffer. 🌿  
@@ -186,6 +190,7 @@ Une séquence de stories est prévue chaque jour en plus de ces publications (vo
 **Réel · 18h00** · *L'ambiance*
 
 - **Photo / vidéo :** à fournir : `photos/da-laura/ambiance/samedi-soir.mp4` (bougies qu'on allume, salle qui se remplit, assiettes qui sortent (15-20 s))
+- **Texte sur le visuel :** Samedi soir
 - **Légende :**
 
   > Samedi soir chez Da Laura. 🕯️  
@@ -214,6 +219,7 @@ Une séquence de stories est prévue chaque jour en plus de ces publications (vo
 **Post · 11h30** · *L'équipe et Laura*
 
 - **Photo / vidéo :** à fournir : `photos/da-laura/equipe/laura-portrait.jpg` (Laura en cuisine, lumière chaude)
+- **Texte sur le visuel :** Laura, l'âme de la maison
 - **Légende :**
 
   > Derrière Da Laura, il y a Laura. ❤️  
@@ -242,6 +248,7 @@ Une séquence de stories est prévue chaque jour en plus de ces publications (vo
 **Post · 18h30** · *La carte*
 
 - **Photo / vidéo :** à fournir : `photos/da-laura/ambiance/grande-tablee.jpg` (grande table dressée pour un groupe)
+- **Texte sur le visuel :** Tes repas de fin d'année
 - **Légende :**
 
   > Repas d'équipe, dîner entre amis, retrouvailles en famille : décembre, c'est la saison des grandes tablées. 🍝  
@@ -270,6 +277,7 @@ Une séquence de stories est prévue chaque jour en plus de ces publications (vo
 **Carrousel · 11h30** · *Cannes et la dolce vita*
 
 - **Photo / vidéo :** à fournir : `photos/da-laura/ambiance/sapin-01.jpg à -04.jpg` (sapin, crèche et détails de décoration du restaurant)
+- **Texte sur le visuel :** L'Immacolata
 - **Légende :**
 
   > Le 8 décembre, en Italie, on fête l'Immacolata… et c'est le jour où l'on décore le sapin et installe la crèche. 🎄  
@@ -296,6 +304,7 @@ Une séquence de stories est prévue chaque jour en plus de ces publications (vo
 **Réel · 18h30** · *Le savoir-faire*
 
 - **Photo / vidéo :** à fournir : `photos/da-laura/cuisine/tiramisu.mp4` (mascarpone, café, biscuits trempés, couches, cacao saupoudré, première cuillère (20-30 s))
+- **Texte sur le visuel :** Le vrai tiramisu
 - **Légende :**
 
   > Le secret d'un vrai tiramisu ? Du mascarpone, un café bien serré, de la patience… et une nuit de repos au frais. ☕  
@@ -323,6 +332,7 @@ Une séquence de stories est prévue chaque jour en plus de ces publications (vo
 **Post · 18h30** · *La carte*
 
 - **Photo / vidéo :** à fournir : `photos/da-laura/plats/carte-cadeau.jpg` (carte cadeau posée sur une table, ruban, bougie)
+- **Texte sur le visuel :** Offre un dîner
 - **Légende :**
 
   > Et si cette année, tu offrais un moment plutôt qu'un objet ? 🎁  
@@ -351,6 +361,7 @@ Une séquence de stories est prévue chaque jour en plus de ces publications (vo
 **Post · 18h30** · *La carte*
 
 - **Photo / vidéo :** à fournir : `photos/da-laura/plats/accord-mets-vins.jpg` (plat de ragù et verre de vin rouge, visuel sobre)
+- **Texte sur le visuel :** L'accord parfait
 - **Légende :**
 
   > Un beau plat italien mérite un vin à sa hauteur. 🍷  
@@ -380,6 +391,7 @@ Une séquence de stories est prévue chaque jour en plus de ces publications (vo
 **Réel · 18h00** · *La carte*
 
 - **Photo / vidéo :** à fournir : `photos/da-laura/plats/burrata.mp4` (burrata coupée au ralenti, filet d'huile d'olive, basilic (10-15 s))
+- **Texte sur le visuel :** Burrata
 - **Légende :**
 
   > Ce moment où la burrata s'ouvre. 🤍  
@@ -407,6 +419,7 @@ Une séquence de stories est prévue chaque jour en plus de ces publications (vo
 **Post · 11h00** · *La communauté*
 
 - **Photo / vidéo :** à fournir : `photos/da-laura/ambiance/dejeuner-famille.jpg` (grands plats au centre de la table, mains qui se servent)
+- **Texte sur le visuel :** Le dimanche en famille
 - **Légende :**
 
   > Le dimanche, en Italie, c'est sacré : on se retrouve en famille, on prend le temps et on partage de grands plats au centre de la table. 🍝  
@@ -435,6 +448,7 @@ Une séquence de stories est prévue chaque jour en plus de ces publications (vo
 **Carrousel · 18h30** · *Le savoir-faire*
 
 - **Photo / vidéo :** à fournir : `photos/da-laura/plats/produits-italie-01.jpg à -05.jpg` (parmesan, huile d'olive, farine, mozzarella/burrata, chacun en gros plan)
+- **Texte sur le visuel :** Les produits d'Italie
 - **Légende :**
 
   > D'où viennent nos produits ? On t'emmène en Italie. 🇮🇹  
@@ -463,6 +477,7 @@ Une séquence de stories est prévue chaque jour en plus de ces publications (vo
 **Post · 11h30** · *La communauté*
 
 - **Photo / vidéo :** à fournir : `photos/da-laura/plats/avis-client.jpg` (plat signature + citation de l'avis en surimpression)
+- **Texte sur le visuel :** Merci pour vos mots
 - **Légende :**
 
   > Il y a des messages qui font notre journée. ✨  
@@ -492,6 +507,7 @@ Une séquence de stories est prévue chaque jour en plus de ces publications (vo
 **Réel · 18h30** · *L'ambiance*
 
 - **Photo / vidéo :** à fournir : `photos/da-laura/ambiance/table-fete.mp4` (dressage d'une table de fête en accéléré (15-20 s))
+- **Texte sur le visuel :** La table des fêtes
 - **Légende :**
 
   > Nappe blanche, couverts alignés, bougies et branches d'olivier : on dresse la table des fêtes. 🕯️  
@@ -518,6 +534,7 @@ Une séquence de stories est prévue chaque jour en plus de ces publications (vo
 **Post · 18h30** · *La communauté*
 
 - **Photo / vidéo :** à fournir : `photos/da-laura/plats/jeu-concours.jpg` (table pour deux dressée, bougie, carte « À gagner »)
+- **Texte sur le visuel :** Un dîner pour deux à gagner
 - **Légende :**
 
   > Pour fêter Noël avec toi, on t'offre un dîner pour deux chez Da Laura. 🎁  
@@ -550,6 +567,7 @@ Une séquence de stories est prévue chaque jour en plus de ces publications (vo
 **Post · 18h30** · *Cannes et la dolce vita*
 
 - **Photo / vidéo :** à fournir : `photos/da-laura/ambiance/croisette-illuminations.jpg` (la Croisette illuminée à la tombée de la nuit)
+- **Texte sur le visuel :** Cannes en décembre
 - **Légende :**
 
   > Cannes en décembre a un charme particulier : les illuminations sur la Croisette, la mer d'hiver et cette douceur qui donne envie de sortir. ✨  
@@ -576,6 +594,7 @@ Une séquence de stories est prévue chaque jour en plus de ces publications (vo
 **Réel · 18h00** · *Le savoir-faire*
 
 - **Photo / vidéo :** à fournir : `photos/da-laura/cuisine/coulisses-service.mp4` (mise en place, bons de commande, dressage à la minute, envoi en salle (20-30 s))
+- **Texte sur le visuel :** Dans nos cuisines
 - **Légende :**
 
   > 19h, la cuisine se met en marche. 🔥  
@@ -604,6 +623,7 @@ Une séquence de stories est prévue chaque jour en plus de ces publications (vo
 **Post · 11h30** · *La communauté*
 
 - **Photo / vidéo :** à fournir : `photos/da-laura/plats/jeu-concours-gagnant.jpg` (même visuel que le 17/12 avec « Félicitations ! »)
+- **Texte sur le visuel :** Félicitations !
 - **Légende :**
 
   > Le tirage au sort a parlé ! 🎉  
@@ -631,6 +651,7 @@ Une séquence de stories est prévue chaque jour en plus de ces publications (vo
 **Carrousel · 18h30** · *Cannes et la dolce vita*
 
 - **Photo / vidéo :** à fournir : `photos/da-laura/plats/vigilia-01.jpg à -04.jpg` (plats de poissons et fruits de mer)
+- **Texte sur le visuel :** La Vigilia
 - **Légende :**
 
   > Le 24 décembre au soir, dans le sud de l'Italie, on ne sert pas de viande : c'est la Vigilia, le grand repas de poissons et de fruits de mer. 🐟  
@@ -658,6 +679,7 @@ Une séquence de stories est prévue chaque jour en plus de ces publications (vo
 **Post · 11h30** · *La carte*
 
 - **Photo / vidéo :** à fournir : `photos/da-laura/plats/menu-fetes-2.jpg` (plat du menu de Noël, ambiance bougies)
+- **Texte sur le visuel :** Noël, c'est dans deux jours
 - **Légende :**
 
   > Noël, c'est dans deux jours. 🎄  
@@ -686,6 +708,7 @@ Une séquence de stories est prévue chaque jour en plus de ces publications (vo
 **Réel · 18h30** · *Cannes et la dolce vita*
 
 - **Photo / vidéo :** à fournir : `photos/da-laura/plats/panettone-pandoro.mp4` (panettone et pandoro côte à côte, tranchés, sucre glace (10-15 s))
+- **Texte sur le visuel :** Panettone ou pandoro ?
 - **Légende :**
 
   > Panettone ou pandoro ? En Italie, la question divise les familles chaque Noël. 🎄  
@@ -712,6 +735,7 @@ Une séquence de stories est prévue chaque jour en plus de ces publications (vo
 **Post · 11h00** · *L'équipe et Laura*
 
 - **Photo / vidéo :** à fournir : `photos/da-laura/equipe/equipe-noel.jpg` (l'équipe réunie devant le sapin du restaurant)
+- **Texte sur le visuel :** Buona Vigilia
 - **Légende :**
 
   > Ce soir, c'est la Vigilia. ✨  
@@ -741,6 +765,7 @@ Une séquence de stories est prévue chaque jour en plus de ces publications (vo
 **Post · 10h00** · *La communauté*
 
 - **Photo / vidéo :** à fournir : `photos/da-laura/ambiance/table-noel.jpg` (table de fête dressée, lumière dorée)
+- **Texte sur le visuel :** Buon Natale
 - **Légende :**
 
   > Buon Natale ! 🎄  
@@ -768,6 +793,7 @@ Une séquence de stories est prévue chaque jour en plus de ces publications (vo
 **Réel · 18h00** · *La communauté*
 
 - **Photo / vidéo :** à fournir : `photos/da-laura/ambiance/retrospective-2026.mp4` (montage des meilleurs moments de l'année (20-30 s))
+- **Texte sur le visuel :** 2026 en images
 - **Légende :**
 
   > 2026 chez Da Laura, en quelques secondes. ✨  
@@ -795,6 +821,7 @@ Une séquence de stories est prévue chaque jour en plus de ces publications (vo
 **Post · 11h30** · *L'équipe et Laura*
 
 - **Photo / vidéo :** à fournir : `photos/da-laura/equipe/equipe-cuisine-salle.jpg` (l'équipe de cuisine et de salle réunie)
+- **Texte sur le visuel :** Grazie mille
 - **Légende :**
 
   > Ils sont là à chaque service, souvent dans l'ombre. ❤️  
@@ -823,6 +850,7 @@ Une séquence de stories est prévue chaque jour en plus de ces publications (vo
 **Post · 18h30** · *La carte*
 
 - **Photo / vidéo :** à fournir : `photos/da-laura/plats/menu-reveillon.jpg` (plat du menu du 31, table élégante)
+- **Texte sur le visuel :** Réveillon : J-3
 - **Légende :**
 
   > Plus que trois jours avant le réveillon. ✨  
@@ -851,6 +879,7 @@ Une séquence de stories est prévue chaque jour en plus de ces publications (vo
 **Carrousel · 11h30** · *Cannes et la dolce vita*
 
 - **Photo / vidéo :** à fournir : `photos/da-laura/plats/capodanno-01.jpg à -04.jpg` (lentilles, cotechino, touche de rouge dans la déco)
+- **Texte sur le visuel :** Le Nouvel An à l'italienne
 - **Légende :**
 
   > Comment fête-t-on le Nouvel An en Italie ? 🇮🇹  
@@ -877,6 +906,7 @@ Une séquence de stories est prévue chaque jour en plus de ces publications (vo
 **Réel · 18h30** · *Le savoir-faire*
 
 - **Photo / vidéo :** à fournir : `photos/da-laura/cuisine/preparatifs-reveillon.mp4` (mise en place, nappes, cuisine en effervescence (sans bouteilles au premier plan))
+- **Texte sur le visuel :** Réveillon : J-1
 - **Légende :**
 
   > J-1 avant le réveillon : la maison se prépare. ✨  
@@ -905,6 +935,7 @@ Une séquence de stories est prévue chaque jour en plus de ces publications (vo
 **Post · 17h00** · *La communauté*
 
 - **Photo / vidéo :** à fournir : `photos/da-laura/ambiance/nouvel-an.jpg` (salle prête pour le réveillon, bougies, touches dorées)
+- **Texte sur le visuel :** Buon anno 2027
 - **Légende :**
 
   > Dernier soir de l'année. ✨  

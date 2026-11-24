@@ -63,9 +63,22 @@ Chaque post a son dossier dans `publications/`, avec son visuel et sa légende :
 publications/
 └── boulangerie-dupont/
     └── 2026-12-05-buche-de-noel/
-        ├── visuel.jpg        (1080x1350 en portrait, ou 1080x1080 en carré)
-        └── legende.md        (texte, emojis, hashtags, appel à l'action)
+        ├── visuel-01.jpg     (1080x1350 en portrait ; visuel-02, -03… pour un carrousel)
+        └── legende.txt       (légende et hashtags, prêts à copier-coller)
 ```
+
+### Générer automatiquement les visuels
+
+Le script `outils/generer_visuels.py` crée les visuels des posts et des stories d'un calendrier, aux couleurs et aux polices de la marque (Python et Pillow) :
+
+```
+python3 outils/generer_visuels.py calendriers/da-laura-2026-12.csv
+```
+
+- Il prend les photos indiquées dans la colonne « Photo / vidéo » du calendrier et ajoute le « Texte visuel » en surimpression.
+- Si une photo manque, il crée le visuel avec un cadre « PHOTO À FOURNIR » qui indique le fichier attendu. Déposez la photo à cet endroit (en .jpg, .png ou .webp), puis relancez le script.
+- Les photos des stories se déposent dans `photos/<marque>/stories/<AAAA-MM-JJ>-<n>.jpg`. À défaut, le script utilise la photo du post du même jour.
+- Les réels (vidéos) ne sont pas générés par ce script.
 
 ### 5. Créer les stories
 
@@ -74,7 +87,8 @@ Les stories sont au format vertical **1080x1920 pixels** (ratio 9:16) :
 ```
 stories/
 └── boulangerie-dupont/
-    └── 2026-12-05-coulisses-01.jpg
+    ├── 2026-12-05-coulisses-1.jpg
+    └── 2026-12-05-coulisses-1.txt   (consigne, texte, stickers à ajouter dans Instagram)
 ```
 
 Laissez environ 250 px libres en haut et en bas de l'image : c'est là que s'affichent le nom du compte et la barre de réponse.
@@ -99,7 +113,7 @@ Recommandations : codec H.264, 30 images par seconde, entre 15 et 90 secondes. G
 | Fiche marque | `marques/<marque>.md` | `marques/boulangerie-dupont.md` |
 | Calendrier | `<marque>-<AAAA>-<MM>.md` | `boulangerie-dupont-2026-12.md` |
 | Publication | `<AAAA>-<MM>-<JJ>-<sujet>/` | `2026-12-05-buche-de-noel/` |
-| Story | `<AAAA>-<MM>-<JJ>-<sujet>-<n>.jpg` | `2026-12-05-coulisses-01.jpg` |
+| Story | `<AAAA>-<MM>-<JJ>-<sujet>-<n>.jpg` | `2026-12-05-coulisses-1.jpg` |
 | Réel | `<AAAA>-<MM>-<JJ>-<sujet>.mp4` | `2026-12-10-fabrication-buche.mp4` |
 
 Les dates au format `AAAA-MM-JJ` permettent de trier les fichiers dans l'ordre chronologique.

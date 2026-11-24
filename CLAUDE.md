@@ -20,8 +20,10 @@ Si une information nécessaire est marquée *(à compléter)*, la demander ou le
 
 - Photos : `photos/<marque>/`
 - Calendriers : `calendriers/<marque>-<AAAA>-<MM>.md`
-- Publications : `publications/<marque>/<AAAA>-<MM>-<JJ>-<sujet>/` (visuel + `legende.md`)
-- Stories : `stories/<marque>/`, en 1080x1920
+- Publications : `publications/<marque>/<AAAA>-<MM>-<JJ>-<sujet>/` (`visuel-01.jpg`… + `legende.txt`)
+- Stories : `stories/<marque>/<AAAA>-<MM>-<JJ>-<sujet>-<n>.jpg` + `.txt`, en 1080x1920
 - Réels : `reels/<marque>/`, en MP4 vertical 1080x1920 (H.264, 30 images/s)
 
 Tout le contenu est rédigé en français, sauf indication contraire de la fiche marque.
+
+Visuels des posts (1080x1350) et des stories : générés avec `python3 outils/generer_visuels.py calendriers/<calendrier>.csv` (Pillow, polices dans `outils/polices/`).
