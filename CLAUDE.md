@@ -143,3 +143,7 @@ Dès que l'utilisatrice envoie des photos ou des vidéos, appliquer le skill `re
 - **1 réel + 1 carrousel par semaine** (5 réels, 5 carrousels) + posts des 3, 6 et 25 décembre = 8 publications. Le contrat Essentielle prévoit 2 réels : les 3 réels en plus sont à présenter à Laura (cadeau de lancement ou option à 90 € l'unité).
 - Photos du compte : `photos/da-laura/compte-instagram/recadrees/` (crop sans icônes, sans filtre : à utiliser comme sources des montages) et `retouchees/` (1080x1350, charte appliquée : à publier telles quelles). Basse définition (374 px de large) : demander les originaux.
 - Montages : `outils/reels/<date>-<sujet>.json` (textes calés par index de plans) ; `python3 outils/monter_reel.py <plan> [--tiktok]` donne la version TikTok automatiquement.
+
+## Prospection (hors Da Laura)
+
+- **Moorea Plage** (plage de Pampelonne, Ramatuelle, @moorea_plage) : présentation commerciale `prospection/moorea-plage/` (générateur `build.js`, pptxgenjs ; PowerPoint + PDF). Drive : dossier « Moorea Plage - Prospection » (`1wB3C6T6pdV15sDyzz3MoxyqrOTg_dl3B`), à la racine du Drive, séparé de DA Laura. Offre proposée : formule Prestige en saison (1 490 €, avril-octobre) + Essentielle l'hiver (490 €), soit 12 880 € par an, d'après la grille de l'utilisatrice.
