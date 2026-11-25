@@ -49,8 +49,8 @@ async function icon(Comp, color) {
     title: "SOMBRE",
     background: { color: C.text1 },
     objects: [
-      { placeholder: { options: { name: "title", type: "title", x: 0.8, y: 2.3, w: 11.7, h: 1.6, fontSize: 44, bold: true, color: C.background1, valign: "bottom", align: "left", margin: 0 }, text: "" } },
-      { placeholder: { options: { name: "body", type: "body", x: 0.8, y: 4.05, w: 11.7, h: 1.2, fontSize: 18, color: C.background2, valign: "top", align: "left", margin: 0 }, text: "" } },
+      { placeholder: { options: { name: "title", type: "title", x: 0.8, y: 2.3, w: 5.6, h: 1.6, fontSize: 40, bold: true, color: C.background1, valign: "bottom", align: "left", margin: 0 }, text: "" } },
+      { placeholder: { options: { name: "body", type: "body", x: 0.8, y: 4.05, w: 5.4, h: 1.6, fontSize: 18, color: C.background2, valign: "top", align: "left", margin: 0 }, text: "" } },
     ],
   });
 
@@ -58,6 +58,10 @@ async function icon(Comp, color) {
   const bulles = (s, x, y, d) => {
     [C.accent2, C.accent3, C.accent4, C.accent5].forEach((c, i) =>
       s.addShape(pres.shapes.OVAL, { x: x + i * (d * 1.18), y, w: d, h: d, fill: { color: c }, line: { color: c }, objectName: "bulle-" + i }));
+  };
+  const photoDroite = (s, nom) => {
+    s.addImage({ path: "photos/" + nom + ".jpg", x: 6.667, y: 0, w: 6.667, h: 7.5, altText: "Photo de Moorea Plage", objectName: "photo-" + nom });
+    s.addText("Photo : mooreaplage.fr", { x: 6.9, y: 7.05, w: 6.2, h: 0.3, fontSize: 10, color: C.background1, align: "right", margin: 0, isTextBox: true, objectName: "credit-" + nom });
   };
   const carte = (s, x, y, w, h, color, name) =>
     s.addShape(pres.shapes.ROUNDED_RECTANGLE, { x, y, w, h, rectRadius: 0.12, fill: { color: color || C.background2 }, line: { color: color || C.background2 }, objectName: name });
@@ -70,12 +74,13 @@ async function icon(Comp, color) {
   pres.addSection({ title: "Introduction" });
   let s = pres.addSlide({ masterName: "SOMBRE", sectionTitle: "Introduction" });
   bulles(s, 0.8, 1.2, 0.55);
+  photoDroite(s, "couverture");
   s.addText("Moorea Plage", { placeholder: "title" });
   s.addText([
     { text: "Happiness providers since 1952", options: { italic: true, breakLine: true } },
     { text: "Proposition d'accompagnement Instagram, TikTok et Facebook · saison 2027", options: { fontSize: 16 } },
   ], { placeholder: "body" });
-  s.addText("Margaux Krikorian · Community manager · 06 16 03 80 12", { x: 0.8, y: 6.5, w: 11.7, h: 0.4, fontSize: 14, color: C.accent5, margin: 0, isTextBox: true });
+  s.addText("Margaux Krikorian · Community manager · 06 16 03 80 12", { x: 0.8, y: 6.5, w: 5.6, h: 0.4, fontSize: 14, color: C.accent5, margin: 0, isTextBox: true });
   s.addNotes("Présentation de l'accompagnement réseaux sociaux proposé à Moorea Plage pour la saison 2027.");
 
   // ---------- 2. Ce que j'ai compris ----------
@@ -97,14 +102,13 @@ async function icon(Comp, color) {
     s.addText([{ text: t, options: { bold: true, fontSize: 16, breakLine: true } }, { text: d, options: { fontSize: 14 } }],
       { x: 7.65, y: y - 0.05, w: 5.1, h: 0.9, color: C.text1, margin: 0, isTextBox: true, valign: "middle" });
   }
-  carte(s, 0.6, 3.45, 5.6, 3.15, C.background2, "carte-chiffres");
+  s.addImage({ path: "photos/archive.jpg", x: 0.6, y: 3.3, w: 2.7, h: 3.3, altText: "Photo d'archive de Moorea Plage", objectName: "archive" });
+  s.addText("Archives Moorea · mooreaplage.fr", { x: 0.6, y: 6.62, w: 2.7, h: 0.25, fontSize: 10, italic: true, color: C.text2, margin: 0, isTextBox: true });
   const chiffres = [["1952", "année de création"], ["74 ans", "d'histoire en 2026"], ["2", "générations Coutal à la barre"]];
   chiffres.forEach(([n, l], i) => {
-    s.addText([{ text: n, options: { fontFace: "Bookman Old Style", fontSize: 30, bold: true, color: C.text2, breakLine: true } }, { text: l, options: { fontSize: 13, color: C.text1 } }],
-      { x: 0.9 + (i % 3) * 1.8, y: 3.85, w: 1.75, h: 1.2, margin: 0, isTextBox: true, valign: "top" });
+    s.addText([{ text: n, options: { fontFace: "Bookman Old Style", fontSize: 28, bold: true, color: C.text2, breakLine: true } }, { text: l, options: { fontSize: 14, color: C.text1 } }],
+      { x: 3.6, y: 3.3 + i * 1.12, w: 2.6, h: 1.0, margin: 0, isTextBox: true, valign: "top" });
   });
-  s.addText("Mon fil rouge : faire ressentir en ligne ce que les habitués vivent sur place, et rendre la réservation aussi simple qu'un sourire.",
-    { x: 0.9, y: 5.25, w: 5.0, h: 1.1, fontSize: 15, italic: true, color: C.text2, margin: 0, isTextBox: true });
   s.addNotes("Sources : mooreaplage.fr (histoire, plage, restaurant, bar, contact) ; SO Edition (Christophe Coutal, reprise depuis 1993, père aux commandes en 1980).");
 
   // ---------- 3. Divider diagnostic ----------
@@ -112,6 +116,7 @@ async function icon(Comp, color) {
   s = pres.addSlide({ masterName: "SOMBRE", sectionTitle: "Diagnostic" });
   s.background = { color: C.text2 };
   bulles(s, 0.8, 1.2, 0.55);
+  photoDroite(s, "div-diagnostic");
   s.addText("Le diagnostic", { placeholder: "title" });
   s.addText("Ce que dit aujourd'hui le compte @moorea_plage, et ce qu'il pourrait dire de plus", { placeholder: "body" });
 
@@ -177,14 +182,14 @@ async function icon(Comp, color) {
     s.addText([{ text: t, options: { bold: true, fontSize: 16, breakLine: true } }, { text: d, options: { fontSize: 13 } }],
       { x: 1.4, y, w: 5.4, h: 1.1, color: C.text1, margin: 0, isTextBox: true, valign: "middle" });
   });
-  carte(s, 7.3, 1.5, 5.4, 5.05, C.text2, "place-moorea");
+  carte(s, 7.3, 1.5, 5.4, 5.25, C.text2, "place-moorea");
+  s.addImage({ path: "photos/m-geant.jpg", x: 7.3, y: 1.5, w: 5.4, h: 1.9, altText: "Le grand M de Moorea Plage", objectName: "m-geant" });
   s.addText([
-    { text: "La place de Moorea", options: { fontFace: "Bookman Old Style", bold: true, fontSize: 22, color: C.accent5, breakLine: true } },
-    { text: " ", options: { fontSize: 8, breakLine: true } },
-    { text: "La plage d'origine, joyeuse et familiale.", options: { bold: true, fontSize: 18, color: C.background1, breakLine: true } },
-    { text: " ", options: { fontSize: 8, breakLine: true } },
-    { text: "Créée en 1952, trois ans avant le Club 55, et tenue par la même famille depuis plus de quarante ans. Là où d'autres misent sur la fête ou le luxe, Moorea peut incarner le bonheur simple de Pampelonne : on y vient en famille, on y revient chaque été.", options: { fontSize: 15, color: C.background1 } },
-  ], { x: 7.7, y: 1.85, w: 4.6, h: 4.4, margin: 0, isTextBox: true, valign: "top" });
+    { text: "La place de Moorea", options: { fontFace: "Bookman Old Style", bold: true, fontSize: 20, color: C.accent5, breakLine: true } },
+    { text: "La plage d'origine, joyeuse et familiale.", options: { bold: true, fontSize: 16, color: C.background1, breakLine: true } },
+    { text: " ", options: { fontSize: 6, breakLine: true } },
+    { text: "Créée en 1952, trois ans avant le Club 55, tenue par la même famille depuis plus de quarante ans : Moorea peut incarner le bonheur simple de Pampelonne, où l'on vient en famille et où l'on revient chaque été.", options: { fontSize: 14, color: C.background1 } },
+  ], { x: 7.65, y: 3.6, w: 4.7, h: 3.05, margin: 0, isTextBox: true, valign: "top" });
   s.addNotes("Sources : St Tropez House (Club 55, 1955) ; French Riviera Luxury Villas, guide 2026 (Club 55, Shellona, Nikki Beach) ; The Taste Edit (Club 55 sur Instagram) ; Acumen et Elite Traveler (plages des maisons de mode, Gucci à La Rose des Vents). Nombre d'abonnés des concurrents non publié par des sources fiables : à relever directement sur leurs comptes.");
 
   // ---------- 7. Tendances ----------
@@ -213,8 +218,9 @@ async function icon(Comp, color) {
   s = pres.addSlide({ masterName: "SOMBRE", sectionTitle: "Stratégie" });
   s.background = { color: C.text1 };
   bulles(s, 0.8, 1.2, 0.55);
+  photoDroite(s, "div-strategie");
   s.addText("La stratégie", { placeholder: "title" });
-  s.addText("Raconter le bonheur simple de Moorea, et le transformer en réservations", { placeholder: "body" });
+  s.addText("Faire ressentir en ligne ce que les habitués vivent sur place, et le transformer en réservations", { placeholder: "body" });
 
   // ---------- 9. Objectifs ----------
   s = pres.addSlide({ masterName: "CONTENU", sectionTitle: "Stratégie" });
@@ -239,16 +245,17 @@ async function icon(Comp, color) {
   s = pres.addSlide({ masterName: "CONTENU", sectionTitle: "Stratégie" });
   s.addText("Cinq piliers pour tout raconter", { placeholder: "title" });
   const pil = [
-    [fa.FaUmbrellaBeach, C.accent4, "La plage", "La mer, la lumière, les beds au petit matin"],
-    [fa.FaUtensils, C.accent1, "La table", "Les chefs, les plats à partager, la carte du jour"],
-    [fa.FaFaceSmile, C.accent3, "Les gens", "Les « happiness providers », Claudy, les habitués"],
-    [fa.FaBookOpen, C.accent5, "L'histoire", "1952, les archives, la famille, les anecdotes"],
-    [fa.FaMusic, C.accent2, "Les moments", "Sunset, DJ, live, boutiques, bien-être"],
+    ["p-plage", C.accent4, "La plage", "La mer, la lumière, les beds au petit matin"],
+    ["p-table", C.accent1, "La table", "Les chefs, les plats à partager, la carte du jour"],
+    ["p-gens", C.accent3, "Les gens", "Les « happiness providers », Claudy, les habitués"],
+    ["p-histoire", C.accent5, "L'histoire", "1952, les archives, la famille, les anecdotes"],
+    ["p-moments", C.accent2, "Les moments", "Sunset, DJ, live, boutiques, bien-être"],
   ];
   for (let i = 0; i < pil.length; i++) {
     const [ic, col, t, d] = pil[i];
     const x = 0.6 + i * 2.47;
-    await rondIcone(s, x + 0.45, 1.7, 1.35, col, ic, "pilier" + i);
+    s.addShape(pres.shapes.OVAL, { x: x + 0.35, y: 1.55, w: 1.55, h: 1.55, fill: { color: col }, line: { color: col }, objectName: "anneau-pilier" + i });
+    s.addImage({ path: "photos/" + ic + ".jpg", x: x + 0.43, y: 1.63, w: 1.39, h: 1.39, rounding: true, altText: t, objectName: "photo-pilier" + i });
     s.addText(t, { x, y: 3.25, w: 2.25, h: 0.6, fontSize: 20, bold: true, fontFace: "Bookman Old Style", color: C.text1, align: "center", margin: 0, isTextBox: true });
     s.addText(d, { x, y: 3.9, w: 2.25, h: 1.3, fontSize: 14, color: C.text1, align: "center", margin: 0, isTextBox: true, valign: "top" });
   }
@@ -288,6 +295,7 @@ async function icon(Comp, color) {
   s = pres.addSlide({ masterName: "SOMBRE", sectionTitle: "Contenus" });
   s.background = { color: C.text2 };
   bulles(s, 0.8, 1.2, 0.55);
+  photoDroite(s, "div-contenus");
   s.addText("Les contenus", { placeholder: "title" });
   s.addText("Des formats pensés pour chaque réseau, au rythme des saisons", { placeholder: "body" });
 
@@ -317,14 +325,18 @@ async function icon(Comp, color) {
     ["Carrousel", "1952 → 2027", "Une photo d'archive, puis la même vue aujourd'hui. Dernière image : « Réserve ton bed pour la saison ».", C.accent5],
     ["Story", "La météo du bonheur", "Chaque matin : la mer, le soleil, les beds encore libres et un bouton pour réserver.", C.accent4],
   ];
+  const exImg = ["ex-reel", "ex-carrousel", "ex-story"];
   ex.forEach(([type, t, d, col], i) => {
     const x = 0.6 + i * 4.1;
-    s.addShape(pres.shapes.ROUNDED_RECTANGLE, { x: x + 0.65, y: 1.45, w: 2.6, h: 3.6, rectRadius: 0.22, fill: { color: col }, line: { color: C.text1, width: 3 }, objectName: "maquette-" + i });
-    s.addText(type.toUpperCase(), { x: x + 0.65, y: 1.7, w: 2.6, h: 0.4, fontSize: 12, bold: true, charSpacing: 3, color: C.text1, align: "center", margin: 0, isTextBox: true });
-    s.addText(t, { x: x + 0.8, y: 2.5, w: 2.3, h: 1.5, fontSize: 22, italic: true, fontFace: "Bookman Old Style", color: C.text1, align: "center", valign: "middle", margin: 0, isTextBox: true });
-    s.addText("moorea_plage", { x: x + 0.65, y: 4.45, w: 2.6, h: 0.35, fontSize: 11, color: C.text1, align: "center", margin: 0, isTextBox: true });
-    s.addText(d, { x, y: 5.25, w: 3.9, h: 1.4, fontSize: 14, color: C.text1, margin: 0, isTextBox: true, valign: "top" });
+    s.addShape(pres.shapes.ROUNDED_RECTANGLE, { x: x + 0.57, y: 1.37, w: 2.76, h: 3.76, rectRadius: 0.22, fill: { color: C.text1 }, line: { color: C.text1 }, objectName: "cadre-" + i });
+    s.addImage({ path: "photos/" + exImg[i] + ".jpg", x: x + 0.65, y: 1.45, w: 2.6, h: 3.6, altText: "Exemple " + type, objectName: "maquette-" + i });
+    s.addShape(pres.shapes.ROUNDED_RECTANGLE, { x: x + 0.85, y: 1.65, w: 2.2, h: 0.4, rectRadius: 0.2, fill: { color: col }, line: { color: col }, objectName: "etiquette-" + i });
+    s.addText(type.toUpperCase(), { x: x + 0.85, y: 1.65, w: 2.2, h: 0.4, fontSize: 12, bold: true, charSpacing: 3, color: C.text1, align: "center", valign: "middle", margin: 0, isTextBox: true });
+    s.addShape(pres.shapes.ROUNDED_RECTANGLE, { x: x + 0.8, y: 3.95, w: 2.3, h: 0.9, rectRadius: 0.1, fill: { color: C.background1, transparency: 10 }, line: { color: C.background1 }, objectName: "titre-maquette-" + i });
+    s.addText(t, { x: x + 0.8, y: 3.95, w: 2.3, h: 0.9, fontSize: 18, italic: true, fontFace: "Bookman Old Style", color: C.text1, align: "center", valign: "middle", margin: 0, isTextBox: true });
+    s.addText(d, { x, y: 5.3, w: 3.9, h: 1.3, fontSize: 14, color: C.text1, margin: 0, isTextBox: true, valign: "top" });
   });
+  s.addNotes("Photos des maquettes : mooreaplage.fr (cuisine, archives, ponton). Elles illustrent l'idée ; les vrais contenus seront tournés sur place.");
 
   // ---------- 15. L'année ----------
   s = pres.addSlide({ masterName: "CONTENU", sectionTitle: "Contenus" });
@@ -353,6 +365,7 @@ async function icon(Comp, color) {
   s = pres.addSlide({ masterName: "SOMBRE", sectionTitle: "Offre" });
   s.background = { color: C.text1 };
   bulles(s, 0.8, 1.2, 0.55);
+  photoDroite(s, "div-offre");
   s.addText("Mon accompagnement", { placeholder: "title" });
   s.addText("Une formule pensée pour une plage : intense l'été, présente l'hiver", { placeholder: "body" });
 
@@ -442,10 +455,12 @@ async function icon(Comp, color) {
   // ---------- 20. Fin ----------
   s = pres.addSlide({ masterName: "SOMBRE", sectionTitle: "Offre" });
   bulles(s, 0.8, 1.2, 0.55);
+  photoDroite(s, "fin");
   s.addText("Faisons rayonner le bonheur de Moorea", { placeholder: "title" });
   s.addText([
     { text: "Prochaine étape : un rendez-vous sur place pour caler la saison 2027 ensemble.", options: { breakLine: true } },
-    { text: "Margaux Krikorian · Community manager · 06 16 03 80 12", options: { color: C.accent5 } },
+    { text: "Margaux Krikorian · Community manager", options: { color: C.accent5, breakLine: true } },
+    { text: "06\u00A016\u00A003\u00A080\u00A012", options: { color: C.accent5 } },
   ], { placeholder: "body" });
   s.addNotes("Sources de la présentation : mooreaplage.fr (pages histoire, plage, restaurant, bar, contact) ; so-edition.com/ambassadeurs/moorea ; lifemag.fr/moorea-plage ; blog.sttropezhouse.com (Club 55) ; frenchrivieraluxuryvillas.com (guide 2026) ; tourismembassy.com (clubs de plage 2026) ; wearejuno.fr ; magazine-acumen.com ; capture du profil Instagram @moorea_plage du 25/11/2026.");
 
