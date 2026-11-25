@@ -11,8 +11,8 @@ const HEX = {
 };
 const THEME = {
   name: "Moorea Happiness",
-  headFontFace: "Bookman Old Style",
-  bodyFontFace: "Calibri",
+  headFontFace: "Arial",
+  bodyFontFace: "Arial",
   colors: {
     dk1: HEX.nuit, lt1: HEX.blanc, dk2: HEX.vert, lt2: HEX.sable,
     accent1: HEX.saumon, accent2: HEX.feuille, accent3: HEX.rose, accent4: HEX.lagon, accent5: HEX.soleil, accent6: HEX.vert,
@@ -61,7 +61,7 @@ async function icon(Comp, color) {
   };
   const photoDroite = (s, nom) => {
     s.addImage({ path: "photos/" + nom + ".jpg", x: 6.667, y: 0, w: 6.667, h: 7.5, altText: "Photo de Moorea Plage", objectName: "photo-" + nom });
-    s.addText("Photo : mooreaplage.fr", { x: 6.9, y: 7.05, w: 6.2, h: 0.3, fontSize: 10, color: C.background1, align: "right", margin: 0, isTextBox: true, objectName: "credit-" + nom });
+    s.addText("Photo : mooreaplage.fr", { x: 0.8, y: 7.0, w: 3.0, h: 0.3, fontSize: 10, color: C.background2, margin: 0, isTextBox: true, objectName: "credit-" + nom });
   };
   const carte = (s, x, y, w, h, color, name) =>
     s.addShape(pres.shapes.ROUNDED_RECTANGLE, { x, y, w, h, rectRadius: 0.12, fill: { color: color || C.background2 }, line: { color: color || C.background2 }, objectName: name });
@@ -80,7 +80,7 @@ async function icon(Comp, color) {
     { text: "Happiness providers since 1952", options: { italic: true, breakLine: true } },
     { text: "Proposition d'accompagnement Instagram, TikTok et Facebook · saison 2027", options: { fontSize: 16 } },
   ], { placeholder: "body" });
-  s.addText("Margaux Krikorian · Community manager · 06 16 03 80 12", { x: 0.8, y: 6.5, w: 5.6, h: 0.4, fontSize: 14, color: C.accent5, margin: 0, isTextBox: true });
+  s.addText("Margaux Krikorian · Community manager · 06\u00A016\u00A003\u00A080\u00A012", { x: 0.8, y: 6.35, w: 5.6, h: 0.4, fontSize: 14, color: C.accent5, margin: 0, isTextBox: true });
   s.addNotes("Présentation de l'accompagnement réseaux sociaux proposé à Moorea Plage pour la saison 2027.");
 
   // ---------- 2. Ce que j'ai compris ----------
@@ -106,7 +106,7 @@ async function icon(Comp, color) {
   s.addText("Archives Moorea · mooreaplage.fr", { x: 0.6, y: 6.62, w: 2.7, h: 0.25, fontSize: 10, italic: true, color: C.text2, margin: 0, isTextBox: true });
   const chiffres = [["1952", "année de création"], ["74 ans", "d'histoire en 2026"], ["2", "générations Coutal à la barre"]];
   chiffres.forEach(([n, l], i) => {
-    s.addText([{ text: n, options: { fontFace: "Bookman Old Style", fontSize: 28, bold: true, color: C.text2, breakLine: true } }, { text: l, options: { fontSize: 14, color: C.text1 } }],
+    s.addText([{ text: n, options: { fontFace: "Arial", fontSize: 28, bold: true, color: C.text2, breakLine: true } }, { text: l, options: { fontSize: 14, color: C.text1 } }],
       { x: 3.6, y: 3.3 + i * 1.12, w: 2.6, h: 1.0, margin: 0, isTextBox: true, valign: "top" });
   });
   s.addNotes("Sources : mooreaplage.fr (histoire, plage, restaurant, bar, contact) ; SO Edition (Christophe Coutal, reprise depuis 1993, père aux commandes en 1980).");
@@ -127,7 +127,7 @@ async function icon(Comp, color) {
   s.addImage({ path: "insta.jpg", x: 0.72, y: 1.52, w: 2.51, h: 5.26, sizing: { type: "cover", w: 2.51, h: 5.26 }, altText: "Capture du profil Instagram @moorea_plage", objectName: "capture-profil" });
   const stats = [["34,5 K", "abonnés"], ["1 588", "publications"], ["405", "abonnements"]];
   stats.forEach(([n, l], i) => {
-    s.addText([{ text: n, options: { fontFace: "Bookman Old Style", fontSize: 34, bold: true, color: C.text2, breakLine: true } }, { text: l, options: { fontSize: 14, color: C.text1 } }],
+    s.addText([{ text: n, options: { fontFace: "Arial", fontSize: 34, bold: true, color: C.text2, breakLine: true } }, { text: l, options: { fontSize: 14, color: C.text1 } }],
       { x: 3.85 + i * 2.95, y: 1.45, w: 2.8, h: 1.1, margin: 0, isTextBox: true });
   });
   const forces = [
@@ -162,8 +162,8 @@ async function icon(Comp, color) {
     const x = 0.6 + (i % 3) * 4.1, y = 1.5 + Math.floor(i / 3) * 2.7;
     carte(s, x, y, 3.9, 2.45, C.background2, "piste" + i);
     await rondIcone(s, x + 0.25, y + 0.25, 0.7, col, ic, "piste" + i);
-    s.addText(t, { x: x + 1.1, y: y + 0.25, w: 2.6, h: 0.7, fontSize: 16, bold: true, color: C.text1, margin: 0, isTextBox: true, valign: "middle" });
-    s.addText(d, { x: x + 0.25, y: y + 1.1, w: 3.45, h: 1.2, fontSize: 14, color: C.text1, margin: 0, isTextBox: true, valign: "top" });
+    s.addText(t, { x: x + 1.1, y: y + 0.25, w: 2.65, h: 0.7, fontSize: 16, bold: true, color: C.text1, margin: 0, isTextBox: true, valign: "middle" });
+    s.addText(d, { x: x + 0.25, y: y + 1.05, w: 3.45, h: 1.3, fontSize: 15, color: C.text1, margin: 0, isTextBox: true, valign: "top" });
   }
   s.addNotes("Réservation par téléphone uniquement d'après mooreaplage.fr/contact (plage 04 94 97 06 09, restaurant 04 94 97 18 17). TikTok : aucun compte trouvé lors de la recherche du 25/11/2026, à confirmer avec l'équipe.");
 
@@ -179,17 +179,17 @@ async function icon(Comp, color) {
   conc.forEach(([t, d, col], i) => {
     const y = 1.5 + i * 1.3;
     s.addShape(pres.shapes.OVAL, { x: 0.6, y: y + 0.15, w: 0.55, h: 0.55, fill: { color: col }, line: { color: col }, objectName: "pastille-" + i });
-    s.addText([{ text: t, options: { bold: true, fontSize: 16, breakLine: true } }, { text: d, options: { fontSize: 13 } }],
-      { x: 1.4, y, w: 5.4, h: 1.1, color: C.text1, margin: 0, isTextBox: true, valign: "middle" });
+    s.addText([{ text: t, options: { bold: true, fontSize: 17, breakLine: true } }, { text: d, options: { fontSize: 15 } }],
+      { x: 1.4, y, w: 5.5, h: 1.15, color: C.text1, margin: 0, isTextBox: true, valign: "middle" });
   });
   carte(s, 7.3, 1.5, 5.4, 5.25, C.text2, "place-moorea");
-  s.addImage({ path: "photos/m-geant.jpg", x: 7.3, y: 1.5, w: 5.4, h: 1.9, altText: "Le grand M de Moorea Plage", objectName: "m-geant" });
+  s.addImage({ path: "photos/m-geant.jpg", x: 7.3, y: 1.5, w: 5.4, h: 2.1, altText: "Le grand M de Moorea Plage", objectName: "m-geant" });
   s.addText([
-    { text: "La place de Moorea", options: { fontFace: "Bookman Old Style", bold: true, fontSize: 20, color: C.accent5, breakLine: true } },
-    { text: "La plage d'origine, joyeuse et familiale.", options: { bold: true, fontSize: 16, color: C.background1, breakLine: true } },
+    { text: "La place de Moorea", options: { fontFace: "Arial", bold: true, fontSize: 22, color: C.accent5, breakLine: true } },
+    { text: "La plage d'origine, joyeuse et familiale.", options: { bold: true, fontSize: 17, color: C.background1, breakLine: true } },
     { text: " ", options: { fontSize: 6, breakLine: true } },
-    { text: "Créée en 1952, trois ans avant le Club 55, tenue par la même famille depuis plus de quarante ans : Moorea peut incarner le bonheur simple de Pampelonne, où l'on vient en famille et où l'on revient chaque été.", options: { fontSize: 14, color: C.background1 } },
-  ], { x: 7.65, y: 3.6, w: 4.7, h: 3.05, margin: 0, isTextBox: true, valign: "top" });
+    { text: "Créée en 1952, trois ans avant le Club 55, tenue par la même famille depuis plus de quarante ans : Moorea peut incarner le bonheur simple de Pampelonne, où l'on vient en famille et où l'on revient chaque été.", options: { fontSize: 15, color: C.background1 } },
+  ], { x: 7.65, y: 3.85, w: 4.7, h: 2.8, margin: 0, isTextBox: true, valign: "top" });
   s.addNotes("Sources : St Tropez House (Club 55, 1955) ; French Riviera Luxury Villas, guide 2026 (Club 55, Shellona, Nikki Beach) ; The Taste Edit (Club 55 sur Instagram) ; Acumen et Elite Traveler (plages des maisons de mode, Gucci à La Rose des Vents). Nombre d'abonnés des concurrents non publié par des sources fiables : à relever directement sur leurs comptes.");
 
   // ---------- 7. Tendances ----------
@@ -233,7 +233,7 @@ async function icon(Comp, color) {
   obj.forEach(([n, t, d, col], i) => {
     const x = 0.6 + i * 4.1;
     s.addShape(pres.shapes.OVAL, { x, y: 1.6, w: 1.2, h: 1.2, fill: { color: col }, line: { color: col }, objectName: "num-" + i });
-    s.addText(n, { x, y: 1.6, w: 1.2, h: 1.2, fontFace: "Bookman Old Style", fontSize: 30, bold: true, color: C.text1, align: "center", valign: "middle", margin: 0, isTextBox: true });
+    s.addText(n, { x, y: 1.6, w: 1.2, h: 1.2, fontFace: "Arial", fontSize: 30, bold: true, color: C.text1, align: "center", valign: "middle", margin: 0, isTextBox: true });
     s.addText(t, { x, y: 3.05, w: 3.8, h: 0.9, fontSize: 19, bold: true, color: C.text1, margin: 0, isTextBox: true, valign: "top" });
     s.addText(d, { x, y: 3.95, w: 3.8, h: 1.6, fontSize: 16, color: C.text1, margin: 0, isTextBox: true, valign: "top" });
   });
@@ -256,7 +256,7 @@ async function icon(Comp, color) {
     const x = 0.6 + i * 2.47;
     s.addShape(pres.shapes.OVAL, { x: x + 0.35, y: 1.55, w: 1.55, h: 1.55, fill: { color: col }, line: { color: col }, objectName: "anneau-pilier" + i });
     s.addImage({ path: "photos/" + ic + ".jpg", x: x + 0.43, y: 1.63, w: 1.39, h: 1.39, rounding: true, altText: t, objectName: "photo-pilier" + i });
-    s.addText(t, { x, y: 3.25, w: 2.25, h: 0.6, fontSize: 20, bold: true, fontFace: "Bookman Old Style", color: C.text1, align: "center", margin: 0, isTextBox: true });
+    s.addText(t, { x, y: 3.25, w: 2.25, h: 0.6, fontSize: 20, bold: true, fontFace: "Arial", color: C.text1, align: "center", margin: 0, isTextBox: true });
     s.addText(d, { x, y: 3.9, w: 2.25, h: 1.3, fontSize: 14, color: C.text1, align: "center", margin: 0, isTextBox: true, valign: "top" });
   }
   carte(s, 0.6, 5.5, 12.1, 1.15, C.background2, "ton");
@@ -266,7 +266,7 @@ async function icon(Comp, color) {
   // ---------- 11. Bio et réservation ----------
   s = pres.addSlide({ masterName: "CONTENU", sectionTitle: "Stratégie" });
   s.addText("Réserver en un geste, depuis le profil", { placeholder: "title" });
-  carte(s, 0.6, 1.5, 5.6, 4.5, C.text1, "bio");
+  carte(s, 0.6, 1.5, 5.6, 3.3, C.text1, "bio");
   s.addText([
     { text: "La bio proposée", options: { bold: true, fontSize: 14, color: C.accent5, breakLine: true } },
     { text: " ", options: { fontSize: 8, breakLine: true } },
@@ -274,8 +274,12 @@ async function icon(Comp, color) {
     { text: "🏖️ Plage, restaurant & Claudy's Bar", options: { breakLine: true } },
     { text: "📍 Pampelonne, Ramatuelle", options: { breakLine: true } },
     { text: "📲 Réserve ton bed en 1 clic 👇", options: {} },
-  ], { x: 0.95, y: 1.8, w: 5.0, h: 3.0, fontSize: 21, color: C.background1, margin: 0, isTextBox: true, valign: "top" });
-  s.addText("Un emoji en tête de chaque ligne : on lit la bio comme une petite carte.", { x: 0.95, y: 4.95, w: 5.0, h: 0.8, fontSize: 13, italic: true, color: C.background2, margin: 0, isTextBox: true });
+  ], { x: 0.95, y: 1.75, w: 5.0, h: 2.9, fontSize: 21, color: C.background1, margin: 0, isTextBox: true, valign: "top" });
+  carte(s, 0.6, 5.05, 5.6, 1.6, C.background2, "liens");
+  s.addText([
+    { text: "Les liens du profil", options: { bold: true, fontSize: 16, breakLine: true } },
+    { text: "Réserver un bed  ·  Réserver une table  ·  La carte de la saison", options: { fontSize: 15 } },
+  ], { x: 0.9, y: 5.2, w: 5.0, h: 1.3, color: C.text1, margin: 0, isTextBox: true, valign: "middle" });
   const etapes = [
     [fa.FaWhatsapp, C.accent2, "Un lien de réservation direct", "WhatsApp Business ou module de réservation : le client écrit ou réserve sans passer par une page intermédiaire."],
     [fa.FaLink, C.accent4, "Des liens clairs", "« Réserver un bed », « Réserver une table », « La carte » : chaque lien dit ce qu'il fait."],
@@ -283,10 +287,10 @@ async function icon(Comp, color) {
   ];
   for (let i = 0; i < etapes.length; i++) {
     const [ic, col, t, d] = etapes[i];
-    const y = 1.5 + i * 1.5;
-    await rondIcone(s, 6.7, y + 0.1, 0.8, col, ic, "etape" + i);
-    s.addText([{ text: t, options: { bold: true, fontSize: 16, breakLine: true } }, { text: d, options: { fontSize: 13 } }],
-      { x: 7.7, y, w: 5.0, h: 1.3, color: C.text1, margin: 0, isTextBox: true, valign: "middle" });
+    const y = 1.5 + i * 1.75;
+    await rondIcone(s, 6.7, y + 0.2, 0.8, col, ic, "etape" + i);
+    s.addText([{ text: t, options: { bold: true, fontSize: 17, breakLine: true } }, { text: d, options: { fontSize: 15 } }],
+      { x: 7.7, y, w: 5.0, h: 1.4, color: C.text1, margin: 0, isTextBox: true, valign: "middle" });
   }
   s.addNotes("Bio à valider avec l'équipe Moorea. Le choix entre WhatsApp Business et un module de réservation en ligne dépend de l'organisation de l'accueil.");
 
@@ -310,12 +314,14 @@ async function icon(Comp, color) {
   for (let i = 0; i < formats.length; i++) {
     const [ic, col, t, items] = formats[i];
     const x = 0.6 + i * 4.1;
-    carte(s, x, 1.5, 3.9, 5.1, C.background2, "format" + i);
+    carte(s, x, 1.5, 3.9, 4.45, C.background2, "format" + i);
     await rondIcone(s, x + 0.3, 1.8, 0.9, col, ic, "format" + i);
-    s.addText(t, { x: x + 1.4, y: 1.8, w: 2.3, h: 0.9, fontSize: 19, bold: true, fontFace: "Bookman Old Style", color: C.text1, margin: 0, isTextBox: true, valign: "middle" });
+    s.addText(t, { x: x + 1.4, y: 1.8, w: 2.3, h: 0.9, fontSize: 19, bold: true, fontFace: "Arial", color: C.text1, margin: 0, isTextBox: true, valign: "middle" });
     s.addText(items.map((it, k) => ({ text: it, options: { bullet: true, breakLine: k < items.length - 1 } })),
-      { x: x + 0.3, y: 3.0, w: 3.35, h: 3.3, fontSize: 17, color: C.text1, paraSpaceAfter: 14, margin: 0, isTextBox: true, valign: "top" });
+      { x: x + 0.3, y: 2.95, w: 3.35, h: 2.85, fontSize: 16, color: C.text1, paraSpaceAfter: 10, margin: 0, isTextBox: true, valign: "top" });
   }
+  s.addText("Chaque vidéo est livrée en deux versions, Instagram et TikTok, sous-titrée en français et en anglais.",
+    { x: 0.6, y: 6.15, w: 12.1, h: 0.55, fontSize: 15, italic: true, color: C.text2, margin: 0, isTextBox: true, valign: "middle" });
 
   // ---------- 14. Exemples ----------
   s = pres.addSlide({ masterName: "CONTENU", sectionTitle: "Contenus" });
@@ -328,13 +334,13 @@ async function icon(Comp, color) {
   const exImg = ["ex-reel", "ex-carrousel", "ex-story"];
   ex.forEach(([type, t, d, col], i) => {
     const x = 0.6 + i * 4.1;
-    s.addShape(pres.shapes.ROUNDED_RECTANGLE, { x: x + 0.57, y: 1.37, w: 2.76, h: 3.76, rectRadius: 0.22, fill: { color: C.text1 }, line: { color: C.text1 }, objectName: "cadre-" + i });
-    s.addImage({ path: "photos/" + exImg[i] + ".jpg", x: x + 0.65, y: 1.45, w: 2.6, h: 3.6, altText: "Exemple " + type, objectName: "maquette-" + i });
+    s.addShape(pres.shapes.ROUNDED_RECTANGLE, { x: x + 0.47, y: 1.37, w: 2.96, h: 4.06, rectRadius: 0.22, fill: { color: C.text1 }, line: { color: C.text1 }, objectName: "cadre-" + i });
+    s.addImage({ path: "photos/" + exImg[i] + ".jpg", x: x + 0.55, y: 1.45, w: 2.8, h: 3.9, sizing: { type: "cover", w: 2.8, h: 3.9 }, altText: "Exemple " + type, objectName: "maquette-" + i });
     s.addShape(pres.shapes.ROUNDED_RECTANGLE, { x: x + 0.85, y: 1.65, w: 2.2, h: 0.4, rectRadius: 0.2, fill: { color: col }, line: { color: col }, objectName: "etiquette-" + i });
     s.addText(type.toUpperCase(), { x: x + 0.85, y: 1.65, w: 2.2, h: 0.4, fontSize: 12, bold: true, charSpacing: 3, color: C.text1, align: "center", valign: "middle", margin: 0, isTextBox: true });
-    s.addShape(pres.shapes.ROUNDED_RECTANGLE, { x: x + 0.8, y: 3.95, w: 2.3, h: 0.9, rectRadius: 0.1, fill: { color: C.background1, transparency: 10 }, line: { color: C.background1 }, objectName: "titre-maquette-" + i });
-    s.addText(t, { x: x + 0.8, y: 3.95, w: 2.3, h: 0.9, fontSize: 18, italic: true, fontFace: "Bookman Old Style", color: C.text1, align: "center", valign: "middle", margin: 0, isTextBox: true });
-    s.addText(d, { x, y: 5.3, w: 3.9, h: 1.3, fontSize: 14, color: C.text1, margin: 0, isTextBox: true, valign: "top" });
+    s.addShape(pres.shapes.ROUNDED_RECTANGLE, { x: x + 0.8, y: 4.25, w: 2.3, h: 0.9, rectRadius: 0.1, fill: { color: C.background1, transparency: 10 }, line: { color: C.background1 }, objectName: "titre-maquette-" + i });
+    s.addText(t, { x: x + 0.8, y: 4.25, w: 2.3, h: 0.9, fontSize: 17, italic: true, fontFace: "Arial", color: C.text1, align: "center", valign: "middle", margin: 0, isTextBox: true });
+    s.addText(d, { x, y: 5.6, w: 3.9, h: 1.2, fontSize: 15, color: C.text1, margin: 0, isTextBox: true, valign: "top" });
   });
   s.addNotes("Photos des maquettes : mooreaplage.fr (cuisine, archives, ponton). Elles illustrent l'idée ; les vrais contenus seront tournés sur place.");
 
@@ -353,7 +359,7 @@ async function icon(Comp, color) {
     const x = 0.6 + i * 2.47;
     s.addShape(pres.shapes.OVAL, { x: x + 0.85, y: 2.45, w: 0.6, h: 0.6, fill: { color: col }, line: { color: col }, objectName: "etape-annee-" + i });
     s.addText(p, { x, y: 1.85, w: 2.3, h: 0.4, fontSize: 14, bold: true, color: C.text2, align: "center", margin: 0, isTextBox: true });
-    s.addText(t, { x, y: 3.3, w: 2.3, h: 0.5, fontSize: 19, bold: true, fontFace: "Bookman Old Style", color: C.text1, align: "center", margin: 0, isTextBox: true });
+    s.addText(t, { x, y: 3.3, w: 2.3, h: 0.5, fontSize: 19, bold: true, fontFace: "Arial", color: C.text1, align: "center", margin: 0, isTextBox: true });
     s.addText(d, { x: x + 0.05, y: 3.95, w: 2.2, h: 2.1, fontSize: 15, color: C.text1, margin: 0, isTextBox: true, valign: "top" });
   });
   s.addText("Les dates d'ouverture, de fermeture et les temps forts de Saint-Tropez seront calés avec vous dans le calendrier éditorial de chaque mois.",
@@ -394,12 +400,12 @@ async function icon(Comp, color) {
     const x = 0.6 + i * 6.15;
     carte(s, x, 1.45, 5.95, 5.3, C.background2, "offre" + i);
     s.addShape(pres.shapes.ROUNDED_RECTANGLE, { x: x + 0.3, y: 1.7, w: 5.35, h: 1.45, rectRadius: 0.1, fill: { color: col }, line: { color: col }, objectName: "entete-offre" + i });
-    s.addText([{ text: nom, options: { fontFace: "Bookman Old Style", bold: true, fontSize: 22, breakLine: true } }, { text: per, options: { fontSize: 14 } }],
+    s.addText([{ text: nom, options: { fontFace: "Arial", bold: true, fontSize: 22, breakLine: true } }, { text: per, options: { fontSize: 14 } }],
       { x: x + 0.55, y: 1.8, w: 2.6, h: 1.25, color: C.text1, margin: 0, isTextBox: true, valign: "middle" });
-    s.addText([{ text: prix, options: { fontFace: "Bookman Old Style", bold: true, fontSize: 30, breakLine: true } }, { text: sous, options: { fontSize: 12 } }],
+    s.addText([{ text: prix, options: { fontFace: "Arial", bold: true, fontSize: 30, breakLine: true } }, { text: sous, options: { fontSize: 12 } }],
       { x: x + 3.05, y: 1.8, w: 2.45, h: 1.25, color: C.text1, align: "right", margin: 0, isTextBox: true, valign: "middle" });
     s.addText(items.map((it, k) => ({ text: it, options: { bullet: true, breakLine: k < items.length - 1 } })),
-      { x: x + 0.45, y: 3.35, w: 5.1, h: 3.25, fontSize: 14, color: C.text1, paraSpaceAfter: 6, margin: 0, isTextBox: true, valign: "top" });
+      { x: x + 0.45, y: 3.4, w: 5.1, h: 3.2, fontSize: 16, color: C.text1, paraSpaceAfter: 6, margin: 0, isTextBox: true, valign: "top" });
   });
   s.addNotes("Tarifs repris de la grille de Margaux Krikorian (valable jusqu'au 30/06/2027). TVA non applicable, article 293 B du CGI. Budget publicitaire réglé directement par l'établissement à Meta (conseillé : 150 à 300 € par mois).");
 
@@ -411,9 +417,10 @@ async function icon(Comp, color) {
     { text: "7 mois de saison × 1 490 €", options: { breakLine: true } },
     { text: "5 mois d'hiver × 490 €", options: { breakLine: true } },
     { text: " ", options: { fontSize: 10, breakLine: true } },
-    { text: "12 880 €", options: { fontFace: "Bookman Old Style", bold: true, fontSize: 48, color: C.accent5, breakLine: true } },
-    { text: "pour l'année, TVA non applicable", options: { fontSize: 14 } },
-  ], { x: 1.0, y: 1.85, w: 4.7, h: 3.2, fontSize: 18, color: C.background1, margin: 0, isTextBox: true, valign: "top" });
+    { text: "12 880 €", options: { fontFace: "Arial", bold: true, fontSize: 48, color: C.accent5, breakLine: true } },
+    { text: "pour l'année, soit environ 1 073 € par mois en moyenne", options: { fontSize: 15, breakLine: true } },
+    { text: "TVA non applicable, article 293 B du CGI", options: { fontSize: 13 } },
+  ], { x: 1.0, y: 1.85, w: 4.7, h: 3.4, fontSize: 19, color: C.background1, margin: 0, isTextBox: true, valign: "top" });
   s.addText("Mise en place offerte (audit, charte, profils) pour un engagement de 6 mois", { x: 1.0, y: 5.1, w: 4.7, h: 0.8, fontSize: 14, italic: true, color: C.background2, margin: 0, isTextBox: true });
   const opts = [
     [fa.FaCamera, C.accent1, "Séance photo supplémentaire", "600 € la demi-journée"],
@@ -423,10 +430,10 @@ async function icon(Comp, color) {
   ];
   for (let i = 0; i < opts.length; i++) {
     const [ic, col, t, d] = opts[i];
-    const y = 1.5 + i * 1.18;
-    await rondIcone(s, 6.5, y + 0.1, 0.75, col, ic, "option" + i);
-    s.addText([{ text: t, options: { bold: true, fontSize: 16, breakLine: true } }, { text: d, options: { fontSize: 13 } }],
-      { x: 7.45, y, w: 5.25, h: 1.05, color: C.text1, margin: 0, isTextBox: true, valign: "middle" });
+    const y = 1.5 + i * 1.2;
+    await rondIcone(s, 6.5, y + 0.15, 0.75, col, ic, "option" + i);
+    s.addText([{ text: t, options: { bold: true, fontSize: 17, breakLine: true } }, { text: d, options: { fontSize: 15 } }],
+      { x: 7.45, y, w: 5.25, h: 1.1, color: C.text1, margin: 0, isTextBox: true, valign: "middle" });
   }
   s.addNotes("Calcul : 7 × 1 490 = 10 430 € ; 5 × 490 = 2 450 € ; total 12 880 €. Le découpage des mois sera ajusté aux dates réelles d'ouverture.");
 
@@ -443,7 +450,7 @@ async function icon(Comp, color) {
     const x = 0.6 + i * 3.08;
     const col = [C.accent4, C.accent3, C.accent5, C.accent2][i];
     s.addShape(pres.shapes.OVAL, { x: x + 0.95, y: 1.6, w: 1.0, h: 1.0, fill: { color: col }, line: { color: col }, objectName: "methode-" + i });
-    s.addText(String(i + 1), { x: x + 0.95, y: 1.6, w: 1.0, h: 1.0, fontSize: 28, bold: true, fontFace: "Bookman Old Style", color: C.text1, align: "center", valign: "middle", margin: 0, isTextBox: true });
+    s.addText(String(i + 1), { x: x + 0.95, y: 1.6, w: 1.0, h: 1.0, fontSize: 28, bold: true, fontFace: "Arial", color: C.text1, align: "center", valign: "middle", margin: 0, isTextBox: true });
     if (i < 3) s.addShape(pres.shapes.LINE, { x: x + 2.05, y: 2.1, w: 1.95, h: 0, line: { color: C.text2, width: 2, dashType: "dash" }, objectName: "fleche-" + i });
     s.addText(t, { x, y: 2.85, w: 2.9, h: 0.5, fontSize: 18, bold: true, color: C.text1, align: "center", margin: 0, isTextBox: true });
     s.addText(d, { x: x + 0.1, y: 3.4, w: 2.7, h: 1.8, fontSize: 16, color: C.text1, align: "center", margin: 0, isTextBox: true, valign: "top" });
