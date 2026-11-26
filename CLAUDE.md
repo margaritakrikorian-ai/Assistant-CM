@@ -144,6 +144,12 @@ Dès que l'utilisatrice envoie des photos ou des vidéos, appliquer le skill `re
 - Photos du compte : `photos/da-laura/compte-instagram/recadrees/` (crop sans icônes, sans filtre : à utiliser comme sources des montages) et `retouchees/` (1080x1350, charte appliquée : à publier telles quelles). Basse définition (374 px de large) : demander les originaux.
 - Montages : `outils/reels/<date>-<sujet>.json` (textes calés par index de plans) ; `python3 outils/monter_reel.py <plan> [--tiktok]` donne la version TikTok automatiquement.
 
+## Réels « montage pro » (demande de l'utilisatrice, 26/11/2026)
+
+- Sans rien lui demander : **choisir soi-même les thèmes**, appliquer la charte validée (filtre naturel, polices, couleurs) et **proposer surtout des réels**.
+- Montage pro par défaut : `python3 outils/monter_reel_pro.py outils/reels/pro-<sujet>.json [--tiktok]` (photos flottantes en carte, duo de cartes, transitions filées, zoom et fondu, textes animés, carte de fin). Plans existants : `pro-une-journee-da-laura`, `pro-in-cucina`, `pro-choisis-ta-table`.
+- Photos du shooting professionnel (Drive « Photo DA LAURA », dans Community management) : rangées dans `photos/da-laura/{plats,cuisine,ambiance}/`. Exclure les photos avec verre de vin ou flûte (loi Évin) : tartare, prosciutto-figues, desserts-balcon.
+
 ## Prospection (hors Da Laura)
 
 - **Moorea Plage** (plage de Pampelonne, Ramatuelle, @moorea_plage) : présentation commerciale `prospection/moorea-plage/` (générateur `build.js`, pptxgenjs ; PowerPoint + PDF). Drive : dossier « Moorea Plage - Prospection » (`1wB3C6T6pdV15sDyzz3MoxyqrOTg_dl3B`), à la racine du Drive, séparé de DA Laura. Offre proposée : formule Prestige en saison (1 490 €, avril-octobre) + Essentielle l'hiver (490 €), soit 12 880 € par an, d'après la grille de l'utilisatrice.

@@ -1,0 +1,159 @@
+{
+ "plans": [
+  {
+   "type": "photo",
+   "source": "photos/da-laura/ambiance/facade-fiat-500.jpg",
+   "duree": 1.7,
+   "mouvement": "zoom-avant",
+   "ampleur": 0.12,
+   "centre": [
+    0.45,
+    0.5
+   ]
+  },
+  {
+   "type": "photo",
+   "source": "photos/da-laura/ambiance/enseigne-triangle-dal-1992.jpg",
+   "duree": 1.4,
+   "mouvement": "zoom-arriere",
+   "ampleur": 0.12,
+   "centre": [
+    0.5,
+    0.4
+   ]
+  },
+  {
+   "type": "photo",
+   "source": "photos/da-laura/ambiance/terrasse-chaises-vertes.jpg",
+   "duree": 1.3,
+   "mouvement": "gauche-droite",
+   "ampleur": 0.14
+  },
+  {
+   "type": "photo",
+   "source": "photos/da-laura/ambiance/table-basilic-terrasse.jpg",
+   "duree": 1.3,
+   "mouvement": "zoom-avant",
+   "ampleur": 0.12
+  },
+  {
+   "type": "photo",
+   "source": "photos/da-laura/ambiance/salle-rouge.jpg",
+   "duree": 1.4,
+   "mouvement": "droite-gauche",
+   "ampleur": 0.14
+  },
+  {
+   "type": "photo",
+   "source": "photos/da-laura/ambiance/salle-orange-cadres.jpg",
+   "duree": 1.3,
+   "mouvement": "zoom-avant",
+   "ampleur": 0.12
+  },
+  {
+   "type": "photo",
+   "source": "photos/da-laura/ambiance/salle-bibliotheque.jpg",
+   "duree": 1.3,
+   "mouvement": "gauche-droite",
+   "ampleur": 0.14
+  },
+  {
+   "type": "photo",
+   "source": "photos/da-laura/ambiance/salon-fontaine.jpg",
+   "duree": 1.3,
+   "mouvement": "zoom-arriere",
+   "ampleur": 0.12
+  },
+  {
+   "type": "photo",
+   "source": "photos/da-laura/ambiance/balcon-vue-collines.jpg",
+   "duree": 1.7,
+   "mouvement": "zoom-avant",
+   "ampleur": 0.14
+  },
+  {
+   "type": "photo",
+   "source": "photos/da-laura/plats/burrata-prosciutto.jpg",
+   "duree": 1.4,
+   "mouvement": "zoom-avant",
+   "ampleur": 0.12,
+   "centre": [
+    0.5,
+    0.55
+   ]
+  },
+  {
+   "type": "photo",
+   "source": "photos/da-laura/ambiance/fiat-500-entree.jpg",
+   "duree": 1.6,
+   "mouvement": "zoom-arriere",
+   "ampleur": 0.12,
+   "centre": [
+    0.5,
+    0.55
+   ]
+  }
+ ],
+ "textes": [
+  {
+   "texte": "Bienvenue chez Da Laura",
+   "surtitre": "DAL 1992",
+   "plans": [
+    0,
+    1
+   ],
+   "taille": 130,
+   "y": 320
+  },
+  {
+   "texte": "Une terrasse au soleil",
+   "plans": [
+    2,
+    3
+   ],
+   "taille": 130,
+   "y": 340
+  },
+  {
+   "texte": "Des salles pleines de caractère",
+   "plans": [
+    4,
+    7
+   ],
+   "taille": 120,
+   "y": 340
+  },
+  {
+   "texte": "Et cette vue…",
+   "plans": [
+    8,
+    8
+   ],
+   "taille": 140,
+   "y": 340
+  },
+  {
+   "texte": "La cucina autentica",
+   "plans": [
+    9,
+    10
+   ],
+   "taille": 130,
+   "y": 340
+  }
+ ],
+ "accroche_tiktok": "POV : tu entres\nchez Da Laura",
+ "fin": {
+  "duree": 2.6,
+  "appel": "Réserve ta table",
+  "lignes": [
+   "8 rue du 24 Août · Cannes",
+   "Réservations : 04 93 38 40 51"
+  ]
+ },
+ "legende": "Bienvenue chez Da Laura 🇮🇹\n☀️ Une terrasse au soleil, des salles pleines de caractère et une vue qui donne envie de rester.\n🍝 La cucina autentica, dal 1992.\n📲 Réserve ta table via le lien en bio",
+ "hashtags": "#DaLaura #DaLauraCannes #RestaurantItalienCannes #CuisineItalienne #Terrasse #CannesFood #DolceVita",
+ "legende_tiktok": "Tu prends la terrasse, la salle rouge ou la bibliothèque ? 👇 Bienvenue chez Da Laura 🇮🇹",
+ "hashtags_tiktok": "#DaLaura #RestaurantItalien #Cannes #CannesFood #DolceVita",
+ "sortie": "reels/da-laura/shooting-bienvenue-da-laura.mp4"
+}

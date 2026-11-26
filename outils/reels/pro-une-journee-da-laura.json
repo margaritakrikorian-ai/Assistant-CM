@@ -1,0 +1,152 @@
+{
+ "scenes": [
+  {
+   "type": "flottant",
+   "duree": 2.3,
+   "source": "photos/da-laura/plats/cappuccino-cornetto-hd.jpg"
+  },
+  {
+   "type": "plein",
+   "duree": 1.9,
+   "source": "photos/da-laura/ambiance/terrasse-chaises-vertes.jpg",
+   "transition": "glisse",
+   "mouvement": "gauche-droite"
+  },
+  {
+   "type": "plein",
+   "duree": 1.9,
+   "source": "photos/da-laura/cuisine/chef-dresse-spaghetti.jpg",
+   "transition": "zoom",
+   "mouvement": "zoom-avant"
+  },
+  {
+   "type": "flottant",
+   "duree": 2.0,
+   "source": "photos/da-laura/cuisine/zeste-citron-pates.jpg",
+   "transition": "glisse",
+   "sens": -1
+  },
+  {
+   "type": "duo",
+   "duree": 2.3,
+   "sources": [
+    "photos/da-laura/plats/burrata-prosciutto.jpg",
+    "photos/da-laura/plats/tagliolini-champignons-hd.jpg"
+   ],
+   "transition": "fondu"
+  },
+  {
+   "type": "plein",
+   "duree": 2.1,
+   "source": "photos/da-laura/ambiance/balcon-vue-collines.jpg",
+   "transition": "zoom",
+   "mouvement": "zoom-avant"
+  },
+  {
+   "type": "flottant",
+   "duree": 2.1,
+   "source": "photos/da-laura/plats/tarte-peche-rose-serree.jpg",
+   "transition": "glisse"
+  },
+  {
+   "type": "plein",
+   "duree": 2.3,
+   "source": "photos/da-laura/ambiance/facade-fiat-500.jpg",
+   "transition": "fondu",
+   "mouvement": "zoom-arriere",
+   "centre": [
+    0.42,
+    0.5
+   ]
+  }
+ ],
+ "textes": [
+  {
+   "texte": "Une journée\nchez Da Laura",
+   "scenes": [
+    0,
+    0
+   ],
+   "y": 170,
+   "taille": 130,
+   "surtitre": "DAL 1992"
+  },
+  {
+   "texte": "Un cappuccino au soleil",
+   "scenes": [
+    1,
+    1
+   ],
+   "y": 300,
+   "taille": 120
+  },
+  {
+   "texte": "Puis la cucina s'anime",
+   "scenes": [
+    2,
+    2
+   ],
+   "y": 300,
+   "taille": 120
+  },
+  {
+   "texte": "Le geste juste",
+   "scenes": [
+    3,
+    3
+   ],
+   "y": 190,
+   "taille": 120
+  },
+  {
+   "texte": "Des assiettes à partager",
+   "scenes": [
+    4,
+    4
+   ],
+   "y": 120,
+   "taille": 110
+  },
+  {
+   "texte": "Une vue pour prendre son temps",
+   "scenes": [
+    5,
+    5
+   ],
+   "y": 300,
+   "taille": 115
+  },
+  {
+   "texte": "Et toujours un dolce",
+   "scenes": [
+    6,
+    6
+   ],
+   "y": 190,
+   "taille": 120
+  },
+  {
+   "texte": "À très vite !",
+   "scenes": [
+    7,
+    7
+   ],
+   "y": 300,
+   "taille": 140
+  }
+ ],
+ "accroche_tiktok": "Une journée entière\nchez Da Laura",
+ "fin": {
+  "duree": 2.6,
+  "appel": "Réserve ta table",
+  "lignes": [
+   "8 rue du 24 Août · Cannes",
+   "Réservations : 04 93 38 40 51"
+  ]
+ },
+ "legende": "Une journée chez Da Laura ☀️\n☕ Un cappuccino au soleil\n🍝 Des pâtes dressées à la minute\n🍑 Et toujours un dolce pour finir\n📲 Réserve ta table via le lien en bio",
+ "hashtags": "#DaLaura #DaLauraCannes #RestaurantItalienCannes #CuisineItalienne #DolceVita #CannesFood #Terrasse",
+ "legende_tiktok": "Une journée chez Da Laura ☀️🍝 Tu viens pour quel moment ? 👇",
+ "hashtags_tiktok": "#DaLaura #RestaurantItalien #Cannes #CannesFood #DolceVita",
+ "sortie": "reels/da-laura/pro-une-journee-da-laura.mp4"
+}

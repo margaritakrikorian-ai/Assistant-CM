@@ -1,0 +1,137 @@
+{
+ "scenes": [
+  {
+   "type": "flottant",
+   "duree": 2.2,
+   "source": "photos/da-laura/ambiance/enseigne-triangle-dal-1992.jpg",
+   "centre": [
+    0.5,
+    0.42
+   ]
+  },
+  {
+   "type": "plein",
+   "duree": 2.0,
+   "source": "photos/da-laura/ambiance/terrasse-chaises-vertes.jpg",
+   "transition": "glisse",
+   "mouvement": "zoom-avant"
+  },
+  {
+   "type": "plein",
+   "duree": 2.0,
+   "source": "photos/da-laura/ambiance/salle-rouge.jpg",
+   "transition": "glisse",
+   "mouvement": "droite-gauche"
+  },
+  {
+   "type": "plein",
+   "duree": 2.0,
+   "source": "photos/da-laura/ambiance/salle-bibliotheque.jpg",
+   "transition": "glisse",
+   "mouvement": "zoom-avant"
+  },
+  {
+   "type": "plein",
+   "duree": 2.0,
+   "source": "photos/da-laura/ambiance/salon-fontaine.jpg",
+   "transition": "glisse",
+   "mouvement": "gauche-droite"
+  },
+  {
+   "type": "plein",
+   "duree": 2.0,
+   "source": "photos/da-laura/ambiance/balcon-vue-collines.jpg",
+   "transition": "glisse",
+   "mouvement": "zoom-avant"
+  },
+  {
+   "type": "duo",
+   "duree": 2.3,
+   "sources": [
+    "photos/da-laura/ambiance/salle-orange-cadres.jpg",
+    "photos/da-laura/ambiance/table-basilic-terrasse.jpg"
+   ],
+   "transition": "zoom"
+  }
+ ],
+ "textes": [
+  {
+   "texte": "Tu t'assois où ?",
+   "scenes": [
+    0,
+    0
+   ],
+   "y": 170,
+   "taille": 140,
+   "surtitre": "CHEZ DA LAURA"
+  },
+  {
+   "texte": "1 · La terrasse",
+   "scenes": [
+    1,
+    1
+   ],
+   "y": 300,
+   "taille": 130
+  },
+  {
+   "texte": "2 · La salle rouge",
+   "scenes": [
+    2,
+    2
+   ],
+   "y": 300,
+   "taille": 130
+  },
+  {
+   "texte": "3 · La bibliothèque",
+   "scenes": [
+    3,
+    3
+   ],
+   "y": 300,
+   "taille": 130
+  },
+  {
+   "texte": "4 · Le salon",
+   "scenes": [
+    4,
+    4
+   ],
+   "y": 300,
+   "taille": 130
+  },
+  {
+   "texte": "5 · Le balcon",
+   "scenes": [
+    5,
+    5
+   ],
+   "y": 300,
+   "taille": 130
+  },
+  {
+   "texte": "Dis-le en commentaire",
+   "scenes": [
+    6,
+    6
+   ],
+   "y": 120,
+   "taille": 115
+  }
+ ],
+ "accroche_tiktok": "5 tables,\nune seule à choisir",
+ "fin": {
+  "duree": 2.6,
+  "appel": "Réserve ta table",
+  "lignes": [
+   "8 rue du 24 Août · Cannes",
+   "Réservations : 04 93 38 40 51"
+  ]
+ },
+ "legende": "Tu t'assois où ? 👇\n1️⃣ La terrasse\n2️⃣ La salle rouge\n3️⃣ La bibliothèque\n4️⃣ Le salon\n5️⃣ Le balcon\nDis-le en commentaire et réserve ta table via le lien en bio 📲",
+ "hashtags": "#DaLaura #DaLauraCannes #RestaurantItalienCannes #DecoRestaurant #Terrasse #CannesFood #DolceVita",
+ "legende_tiktok": "Tu choisis quelle table ? 1, 2, 3, 4 ou 5 ? 👇",
+ "hashtags_tiktok": "#DaLaura #RestaurantItalien #Cannes #CannesFood #DolceVita",
+ "sortie": "reels/da-laura/pro-choisis-ta-table.mp4"
+}

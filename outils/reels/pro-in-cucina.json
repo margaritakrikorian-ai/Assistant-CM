@@ -1,0 +1,132 @@
+{
+ "scenes": [
+  {
+   "type": "plein",
+   "duree": 1.7,
+   "source": "photos/da-laura/cuisine/pates-poele-feu.jpg",
+   "mouvement": "zoom-avant",
+   "centre": [
+    0.5,
+    0.55
+   ]
+  },
+  {
+   "type": "plein",
+   "duree": 1.5,
+   "source": "photos/da-laura/cuisine/poele-flambee.jpg",
+   "transition": "zoom",
+   "mouvement": "zoom-avant",
+   "centre": [
+    0.5,
+    0.55
+   ]
+  },
+  {
+   "type": "flottant",
+   "duree": 1.9,
+   "source": "photos/da-laura/cuisine/chef-dresse-spaghetti.jpg",
+   "transition": "glisse"
+  },
+  {
+   "type": "plein",
+   "duree": 1.6,
+   "source": "photos/da-laura/cuisine/zeste-citron-pates.jpg",
+   "transition": "zoom",
+   "mouvement": "zoom-avant"
+  },
+  {
+   "type": "plein",
+   "duree": 1.9,
+   "source": "photos/da-laura/cuisine/trancheuse-prosciutto.jpg",
+   "transition": "glisse",
+   "mouvement": "gauche-droite"
+  },
+  {
+   "type": "duo",
+   "duree": 2.2,
+   "sources": [
+    "photos/da-laura/plats/planche-fromages-hd.jpg",
+    "photos/da-laura/plats/burrata-prosciutto.jpg"
+   ],
+   "transition": "zoom"
+  },
+  {
+   "type": "flottant",
+   "duree": 2.0,
+   "source": "photos/da-laura/plats/tagliolini-champignons-hd.jpg",
+   "transition": "glisse",
+   "sens": -1
+  }
+ ],
+ "textes": [
+  {
+   "texte": "In cucina",
+   "scenes": [
+    0,
+    1
+   ],
+   "y": 300,
+   "taille": 150,
+   "surtitre": "DA LAURA"
+  },
+  {
+   "texte": "Dressé à la minute",
+   "scenes": [
+    2,
+    2
+   ],
+   "y": 190,
+   "taille": 120
+  },
+  {
+   "texte": "Le zeste au dernier moment",
+   "scenes": [
+    3,
+    3
+   ],
+   "y": 300,
+   "taille": 110
+  },
+  {
+   "texte": "Tranché sur place",
+   "scenes": [
+    4,
+    4
+   ],
+   "y": 300,
+   "taille": 120
+  },
+  {
+   "texte": "Fatto con amore",
+   "scenes": [
+    5,
+    5
+   ],
+   "y": 120,
+   "taille": 120
+  },
+  {
+   "texte": "Buon appetito !",
+   "scenes": [
+    6,
+    6
+   ],
+   "y": 190,
+   "taille": 130
+  }
+ ],
+ "accroche_tiktok": "Ce qui se passe\nen cuisine",
+ "fin": {
+  "duree": 2.6,
+  "appel": "Réserve ta table",
+  "lignes": [
+   "8 rue du 24 Août · Cannes",
+   "Réservations : 04 93 38 40 51"
+  ]
+ },
+ "legende": "In cucina 🔥\n🍝 Pâtes dressées à la minute\n🍋 Le zeste au dernier moment\n🥓 Prosciutto tranché sur place\n📲 Réserve ta table via le lien en bio",
+ "hashtags": "#DaLaura #DaLauraCannes #RestaurantItalienCannes #CuisineItalienne #Pasta #InCucina #CannesFood",
+ "legende_tiktok": "Ce qui se passe en cuisine chez Da Laura 🔥 Tu commences par quoi ? 👇",
+ "hashtags_tiktok": "#DaLaura #RestaurantItalien #Cannes #Pasta #CannesFood",
+ "sortie": "reels/da-laura/pro-in-cucina.mp4"
+}
