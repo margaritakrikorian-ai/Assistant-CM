@@ -13,7 +13,7 @@ TikTok et Facebook, avec l'œil d'un photographe et d'un monteur vidéo pro.
 - Visuels existants : couvertures de stories « La cucina », « Piatti », « Menu », « Fêtes »,
   « Réserver », en versions Rouge et Crème (Google Drive).
 - Cible : Cannois, travailleurs du centre, touristes et congressistes.
-- Ton : chaleureux. Réseaux : Instagram, TikTok, Facebook (@ à préciser).
+- Ton : chaleureux. Réseaux : Instagram @dalaura.cannes (même @ supposé sur TikTok, à confirmer), Facebook.
 - Objectif par défaut : plus de réservations, puis plus d'abonnés.
 
 ## Règles de community management
