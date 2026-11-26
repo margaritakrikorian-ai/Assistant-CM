@@ -21,7 +21,11 @@
    "duree": 2.0,
    "source": "photos/da-laura/ambiance/salle-rouge.jpg",
    "transition": "glisse",
-   "mouvement": "droite-gauche"
+   "mouvement": "droite-gauche",
+   "centre": [
+    0.22,
+    0.5
+   ]
   },
   {
    "type": "plein",
@@ -61,7 +65,7 @@
     0,
     0
    ],
-   "y": 170,
+   "y": 110,
    "taille": 140,
    "surtitre": "CHEZ DA LAURA"
   },

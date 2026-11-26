@@ -67,8 +67,8 @@
     0,
     0
    ],
-   "y": 170,
-   "taille": 130,
+   "y": 90,
+   "taille": 115,
    "surtitre": "DAL 1992"
   },
   {
@@ -108,13 +108,13 @@
    "taille": 110
   },
   {
-   "texte": "Une vue pour prendre son temps",
+   "texte": "Une vue pour\nprendre son temps",
    "scenes": [
     5,
     5
    ],
    "y": 300,
-   "taille": 115
+   "taille": 125
   },
   {
    "texte": "Et toujours un dolce",
