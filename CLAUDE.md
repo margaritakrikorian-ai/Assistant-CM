@@ -50,13 +50,34 @@ Réponds en français.
 - Instagram feed : 4:5 (1080×1350). Reels / TikTok / Stories : 9:16 (1080×1920).
 - Zones sûres 9:16 : garder le sujet et le texte hors des ~250 px du haut et ~350 px du bas.
 
-## Goût de l'utilisatrice et méthode qui marche (appris le 26/11/2026)
-- Style validé : son Reel Canva « Reel Instagram DA LAURA » (version Mougins) : grandes photos
-  plein cadre, petites phrases en minuscules serif fines, dégradés sombres doux, fin « DA LAURA »
-  espacé + « Réservez votre table ». Copie Cannes : « Reel Instagram DA LAURA - Cannes ».
-- Ce qui a déplu : pastilles/autocollants sur la vidéo, transitions variées, gros textes « TikTok »,
-  montages faits hors Canva. Partir de ses designs Canva existants (copy-design + edit-design).
-- Limites connues : le connecteur Canva refuse l'envoi de vidéos (MP4/MOV), seules les images
-  passent ; la génération IA Canva peut être bloquée par le quota. Instagram n'est pas lisible
-  depuis cet environnement.
+## CHARTE GRAPHIQUE VALIDÉE (à appliquer à TOUT ce qu'elle envoie)
+Validée le 26/11/2026 sur les 3 Reels « La cucina autentica », « Le geste du chef »,
+« La pause douceur ». Source : document « Charte graphique Da Laura » dans son Google Drive
+(dossier DA Laura > 04 - Documents). Outils prêts dans `outils/`, polices dans `charte/polices/`.
+
+- **Couleurs** : rouge enseigne #8E1D1D, crème #F1E6D3, brun chaud #4A3428, or craie #F2D98B,
+  or doux #B8925A, rouge vin #7A1F2B, vert olive #5C6B3C.
+- **Polices** : Caveat (manuscrit, comme l'ardoise) pour les titres ; Cormorant Garamond
+  (capitales espacées pour « DA LAURA », italique pour les petites phrases et la signature).
+- **Signature** : « DA LAURA · la cucina autentica · dal 1992 », triangle pointe en bas,
+  motif vichy rouge et crème.
+- **Filtre photo naturel** : couleurs et balance des blancs d'origine, contraste doux (+5 %),
+  vibrance légère (+6 %), netteté conservée. Jamais de rendu jaune/chaud, jamais de lissage.
+- **Photos** : `python3 outils/charte.py photo entrée.jpg sortie.jpg --format 4:5` (feed)
+  ou `--format 9:16` (story).
+- **Reels** : `python3 outils/reel.py plan.json sortie.mp4` → 9:16, 17-20 s, 8-9 plans de 2 s,
+  zoom lent alterné avant/arrière, fondus doux 0,45 s, titre Caveat + phrase Cormorant en crème
+  sur le 1er plan (bas de l'image, dégradé discret), carte de fin crème « DA LAURA · Réserve ta
+  table · 8 rue du 24 Août · Cannes · @dalaura.cannes » + bande vichy. Pas de musique intégrée :
+  elle l'ajoute dans l'app (mandoline/swing italien sur Instagram, son tendance sur TikTok).
+- **Contenus** : Cannes uniquement (ne jamais mélanger avec Mougins : balcon/collines,
+  salle aux perroquets = Mougins). Images Cannes : Drive > DA Laura > 05 - Photos du restaurant
+  > « Photos du compte Instagram (recadrées et retouchées) ».
+- Légendes et thèmes : Drive > DA Laura > 01 - Réels et le calendrier éditorial de décembre.
+
+## Ce qui a déplu (ne plus refaire)
+- Pastilles/autocollants, cadres crème sur la vidéo, gros textes « TikTok », transitions variées,
+  coupes trop rapides, le modèle Canva copié de Mougins (« horrible »).
+- Limites connues : le connecteur Canva refuse les vidéos ; Drive ne télécharge pas les
+  fichiers de plus de 10 Mo (demander l'envoi dans le chat) ; Instagram non lisible d'ici.
 - Parler simplement, réponses courtes, une seule question à la fois.
