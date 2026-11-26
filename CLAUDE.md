@@ -49,3 +49,14 @@ Réponds en français.
 ## Formats de référence
 - Instagram feed : 4:5 (1080×1350). Reels / TikTok / Stories : 9:16 (1080×1920).
 - Zones sûres 9:16 : garder le sujet et le texte hors des ~250 px du haut et ~350 px du bas.
+
+## Goût de l'utilisatrice et méthode qui marche (appris le 26/11/2026)
+- Style validé : son Reel Canva « Reel Instagram DA LAURA » (version Mougins) : grandes photos
+  plein cadre, petites phrases en minuscules serif fines, dégradés sombres doux, fin « DA LAURA »
+  espacé + « Réservez votre table ». Copie Cannes : « Reel Instagram DA LAURA - Cannes ».
+- Ce qui a déplu : pastilles/autocollants sur la vidéo, transitions variées, gros textes « TikTok »,
+  montages faits hors Canva. Partir de ses designs Canva existants (copy-design + edit-design).
+- Limites connues : le connecteur Canva refuse l'envoi de vidéos (MP4/MOV), seules les images
+  passent ; la génération IA Canva peut être bloquée par le quota. Instagram n'est pas lisible
+  depuis cet environnement.
+- Parler simplement, réponses courtes, une seule question à la fois.
