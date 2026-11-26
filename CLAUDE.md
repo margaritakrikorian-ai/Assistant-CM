@@ -122,7 +122,7 @@ L'utilisatrice travaille sur iPad et ne navigue pas dans le dépôt Git. **Tout 
 
 | Dossier | Identifiant | Contenu |
 |---|---|---|
-| 00 - SOMMAIRE (Google Doc) | `1ZrlVEKLfFCNMTYD5_DiuwucBrXZ-KSjFT1sQXfdTfps` | Index de tout ce qui a été livré : à mettre à jour à chaque livraison |
+| 00 - SOMMAIRE (Google Doc) | `1cc_PTCruMa9oZOFfbXqy_34mHAoer9RwX9ee-7tT3w0` | Index de tout ce qui a été livré : à mettre à jour à chaque livraison |
 | 01 - Réels | `1Nof5SKJ6b5YC_gx1bQqX8q8F4NQJ8LFL` | Vidéos, couvertures, légendes (Google Doc) |
 | 02 - Stories Piatti del giorno | `17F4dgwTE_9mcdpDvi-GluDvMnKD2V2rl` | Stories de plats du jour |
 | 03 - Publications | `1-CvcCdnGGtEh6FZM34ESJ5kFjOqr4ZJg` | Posts et carrousels prêts |
@@ -148,7 +148,8 @@ Dès que l'utilisatrice envoie des photos ou des vidéos, appliquer le skill `re
 
 - Sans rien lui demander : **choisir soi-même les thèmes**, appliquer la charte validée (filtre naturel, polices, couleurs) et **proposer surtout des réels**.
 - **Rien dans Drive tant que l'utilisatrice n'a pas validé le rendu** (26/11 : les réels « pro » ne lui ont pas plu, « ne range rien dans le drive »). Envoyer d'abord dans la conversation, ranger seulement après son accord.
-- Montage pro par défaut : `python3 outils/monter_reel_pro.py outils/reels/pro-<sujet>.json [--tiktok]` (photos flottantes en carte, duo de cartes, transitions filées, zoom et fondu, textes animés, carte de fin). Plans existants : `pro-une-journee-da-laura`, `pro-in-cucina`, `pro-choisis-ta-table`.
+- Ce style (cartes flottantes, craie, fond flou) a été rejeté en bloc : ne plus le proposer. Avant de remonter, partir d'un réel de référence envoyé par l'utilisatrice.
+- Outil (style rejeté) : `python3 outils/monter_reel_pro.py outils/reels/pro-<sujet>.json [--tiktok]` (photos flottantes en carte, duo de cartes, transitions filées, zoom et fondu, textes animés, carte de fin). Plans existants : `pro-une-journee-da-laura`, `pro-in-cucina`, `pro-choisis-ta-table`.
 - Photos du shooting professionnel (Drive « Photo DA LAURA », dans Community management) : rangées dans `photos/da-laura/{plats,cuisine,ambiance}/`. Exclure les photos avec verre de vin ou flûte (loi Évin) : tartare, prosciutto-figues, desserts-balcon.
 
 ## Prospection (hors Da Laura)
