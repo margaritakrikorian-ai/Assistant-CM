@@ -65,6 +65,10 @@ Validée le 26/11/2026 sur les 3 Reels « La cucina autentica », « Le geste du
   vibrance légère (+6 %), netteté conservée. Jamais de rendu jaune/chaud, jamais de lissage.
 - **Photos** : `python3 outils/charte.py photo entrée.jpg sortie.jpg --format 4:5` (feed)
   ou `--format 9:16` (story).
+- **Carrousels** : `python3 outils/carrousel.py plan.json dossier/` → 4:5, photos jamais agrandies,
+  titre Caveat sur la 1re, nom du plat discret en bas, carte de fin crème + vichy.
+- **NETTETÉ** : vérifier chaque photo à 100 % avant usage ; préférer les versions HD du
+  dossier « Shooting pro - photos retouchées (1080x1350) » aux copies du compte Instagram (floues).
 - **Reels** : `python3 outils/reel.py plan.json sortie.mp4` → 9:16, 17-20 s, 8-9 plans de 2 s,
   zoom lent alterné avant/arrière, fondus doux 0,45 s, titre Caveat + phrase Cormorant en crème
   sur le 1er plan (bas de l'image, dégradé discret), carte de fin crème « DA LAURA · Réserve ta
