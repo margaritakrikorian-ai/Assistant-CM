@@ -147,6 +147,7 @@ Dès que l'utilisatrice envoie des photos ou des vidéos, appliquer le skill `re
 ## Réels « montage pro » (demande de l'utilisatrice, 26/11/2026)
 
 - Sans rien lui demander : **choisir soi-même les thèmes**, appliquer la charte validée (filtre naturel, polices, couleurs) et **proposer surtout des réels**.
+- **Rien dans Drive tant que l'utilisatrice n'a pas validé le rendu** (26/11 : les réels « pro » ne lui ont pas plu, « ne range rien dans le drive »). Envoyer d'abord dans la conversation, ranger seulement après son accord.
 - Montage pro par défaut : `python3 outils/monter_reel_pro.py outils/reels/pro-<sujet>.json [--tiktok]` (photos flottantes en carte, duo de cartes, transitions filées, zoom et fondu, textes animés, carte de fin). Plans existants : `pro-une-journee-da-laura`, `pro-in-cucina`, `pro-choisis-ta-table`.
 - Photos du shooting professionnel (Drive « Photo DA LAURA », dans Community management) : rangées dans `photos/da-laura/{plats,cuisine,ambiance}/`. Exclure les photos avec verre de vin ou flûte (loi Évin) : tartare, prosciutto-figues, desserts-balcon.
 
