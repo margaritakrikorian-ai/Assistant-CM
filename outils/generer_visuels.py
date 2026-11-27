@@ -268,7 +268,10 @@ def main(csv_path, marque=None, sortie=None):
         mention = EVIN if "abus d'alcool" in r["Légende"] else None
         for i, ch in enumerate(chemins, 1):
             img, attente = fond(POST, trouver(ch), ch, desc)
-            img = bandeau_post(img, r["Texte visuel"], mention, petit=i > 1)
+            # Photos seules, sans bandeau ni texte (choix de l'utilisatrice, 27/11/2026).
+            # Seule exception : la mention loi Évin, obligatoire, ajoutée en petit bandeau.
+            if mention:
+                img = bandeau_post(img, r["Texte visuel"], mention, petit=True)
             enregistrer(img, dossier / f"visuel-{i:02d}.jpg")
             bilan["posts"] += 1
             bilan["attente"] += attente

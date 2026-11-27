@@ -149,6 +149,7 @@ L'utilisatrice travaille sur iPad et ne navigue pas dans le dépôt Git. **Tout 
 
 - 8 publications : carrousels des 1, 8, 14, 21 et 29 décembre + posts des 3, 6 et 25 décembre. **2 réels** (créneaux du 9 et du 23 décembre, réalisés par l'utilisatrice). 20 stories : modèles « Piatti del giorno » à remplir.
 - Fermetures : 24 décembre au soir, 25 décembre toute la journée.
+- **Publications = photos seules** (27/11/2026) : aucun bandeau « DA LAURA · CANNES », aucun titre écrit sur les photos des posts et carrousels (sauf mention loi Évin obligatoire). Le titre ne sert que dans le calendrier.
 - Rejeté par l'utilisatrice, à ne plus proposer : réels « cartes flottantes / craie / fond flou », textes à la craie sur les réels.
 
 ## Décembre refait avec le shooting (27/11/2026)

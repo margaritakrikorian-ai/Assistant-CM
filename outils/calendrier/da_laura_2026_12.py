@@ -361,7 +361,7 @@ NOUVELLES = {
      "Les produits d'Italie, à la table de Da Laura. 🇮🇹\nProsciutto tranché minute, burrata crémeuse, antipasti à partager, citrons ensoleillés et truffe râpée : de beaux produits, travaillés simplement.\nGlisse pour les découvrir, et enregistre ce post pour ta prochaine envie d'Italie. 🌿"),
  21: (_c("palourdes", "langoustines-pates", "chef-spaghetti-crevettes", "huile-spaghetti-crevettes", "poelee-mer") + " — les plats de la mer de Da Laura",
      None),
- 25: (_c("salle-banquette-jaune") + " — la salle chaleureuse de Da Laura", None),
+ 25: (_c("terrasse-fauteuils") + " — le salon chaleureux de Da Laura, ambiance de fête", None),
  29: (_c("fusilli-piment", "tiramisu-fraise", "risotto-safran-jambon", "table-bougie", "poele-flambee") + " — une touche de rouge porte-bonheur et des plats de fête",
      "Comment fête-t-on le Nouvel An en Italie ? 🇮🇹\nOn porte une touche de rouge pour la chance, on partage un grand repas et on finit sur une note sucrée.\nGlisse pour notre version Da Laura, et dis-nous en commentaire ta tradition du 31. ✨"),
 }

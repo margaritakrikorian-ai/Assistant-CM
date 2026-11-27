@@ -170,7 +170,7 @@ Formule Essentielle : 8 publications (5 carrousels, 3 posts), 2 réels (Instagra
 
 **Post · 10h00** · *La communauté*
 
-- **Photo / vidéo :** prête : `photos/da-laura/cannes/salle-banquette-jaune.jpg` (la salle chaleureuse de Da Laura)
+- **Photo / vidéo :** prête : `photos/da-laura/cannes/terrasse-fauteuils.jpg` (le salon chaleureux de Da Laura, ambiance de fête)
 - **Texte sur le visuel :** Buon Natale
 - **Légende :**
 
@@ -219,5 +219,5 @@ Voici la liste des prises de vue à réaliser, à déposer dans les sous-dossier
 | `cannes/trancheuse-prosciutto.jpg + cannes/burrata-prosciutto-gros-plan.jpg + cannes/planche-antipasti.jpg + cannes/burrata-tomates.jpg + cannes/chef-citrons.jpg + cannes/burrata-truffe.jpg` | prosciutto tranché, burrata, antipasti, citrons, truffe | 14/12 |
 | `cannes/palourdes.jpg + cannes/langoustines-pates.jpg + cannes/chef-spaghetti-crevettes.jpg + cannes/huile-spaghetti-crevettes.jpg + cannes/poelee-mer.jpg` | les plats de la mer de Da Laura | 21/12 |
 | `Réel réalisé par la community manager (Instagram + TikTok) : idée et légende proposées ci-dessous` |  | 23/12 |
-| `cannes/salle-banquette-jaune.jpg` | la salle chaleureuse de Da Laura | 25/12 |
+| `cannes/terrasse-fauteuils.jpg` | le salon chaleureux de Da Laura, ambiance de fête | 25/12 |
 | `cannes/fusilli-piment.jpg + cannes/tiramisu-fraise.jpg + cannes/risotto-safran-jambon.jpg + cannes/table-bougie.jpg + cannes/poele-flambee.jpg` | une touche de rouge porte-bonheur et des plats de fête | 29/12 |
