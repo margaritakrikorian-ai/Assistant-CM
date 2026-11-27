@@ -42,13 +42,14 @@ Formule Essentielle : 8 publications (5 carrousels, 3 posts), 2 réels (Instagra
 
 **Carrousel · 18h30** · *L'ambiance*
 
-- **Photo / vidéo :** prête : `photos/da-laura/cannes/facade-terrasse.jpg + photos/da-laura/cannes/enseigne-triangle.jpg + photos/da-laura/cannes/salle-banquette-jaune.jpg + photos/da-laura/cannes/terrasse-fauteuils.jpg + photos/da-laura/cannes/epicerie.jpg + photos/da-laura/cannes/facade-rue.jpg` (la terrasse, l'enseigne, la salle, l'épicerie : entrer chez Da Laura)
+- **Photo / vidéo :** prête : `photos/da-laura/cannes/facade-rue.jpg + photos/da-laura/cannes/enseigne-triangle.jpg + photos/da-laura/cannes/terrasse-rue.jpg + photos/da-laura/cannes/salle-banquette-jaune.jpg + photos/da-laura/cannes/epicerie.jpg + photos/da-laura/cannes/burrata-prosciutto-dessus.jpg` (on arrive au coin de la rue, l'enseigne, la terrasse, la salle, l'épicerie, puis à table)
 - **Texte sur le visuel :** Bienvenue chez Da Laura
 - **Légende :**
 
   > Bienvenue chez Da Laura. ✨  
-  > Une terrasse au cœur de Cannes, une salle où l'on prend son temps et la cucina autentica, dal 1992.  
-  > Glisse pour entrer dans la maison, et réserve ta table via le lien en bio. 🍝
+  > Au coin de la rue, une terrasse qui donne envie de s'arrêter. À l'intérieur, une salle pleine de couleurs, l'épicerie italienne… et la cucina autentica, dal 1992.  
+  > Glisse pour entrer dans la maison : la dernière photo t'attend à table. 🍝  
+  > 📍 8 rue du 24 Août, Cannes · Réservations : 04 93 38 40 51
 
 - **Hashtags :** #DaLaura #DaLauraCannes #RestaurantItalienCannes #DolceVita #Cannes #FrenchRiviera
 - **Appel à l'action :** Réserve ta table via le lien en bio
@@ -62,9 +63,9 @@ Formule Essentielle : 8 publications (5 carrousels, 3 posts), 2 réels (Instagra
 - **Légende :**
 
   > Les fêtes approchent, et ta table chez Da Laura aussi. 🎄  
-  > Pour la Saint-Sylvestre, la cuisine prépare un menu de fête à l'italienne : [détail du menu et prix à compléter].  
+  > Le 31 au soir, on fête la Saint-Sylvestre avec une carte réduite, pensée pour l'occasion.  
   > À noter : le 24 décembre, on t'accueille au déjeuner ; le 24 au soir et le jour de Noël, toute l'équipe est en famille.  
-  > Les places sont limitées : réserve dès maintenant via le lien en bio. ✨
+  > Les places sont limitées ce soir-là : réserve dès maintenant via le lien en bio. ✨
 
 - **Hashtags :** #DaLaura #DaLauraCannes #RestaurantItalienCannes #RestaurantCannes #DolceVita #Cannes #FrenchRiviera
 - **Appel à l'action :** Réserve ta soirée de fête via le lien en bio
@@ -201,8 +202,8 @@ Formule Essentielle : 8 publications (5 carrousels, 3 posts), 2 réels (Instagra
 - **Contrat Essentielle** : 8 publications, 2 réels, 20 stories. Rien de plus n'est prévu.
 - **Photos** : toutes viennent du shooting professionnel de Cannes (charte naturelle appliquée).
 - **Post du 6 décembre** : photo de Laura (shooting) et son histoire à compléter avec elle.
-- **Fêtes** : fermé le 24 au soir et le 25 toute la journée. À confirmer : ouverture du 26 et du 31, menu de la Saint-Sylvestre (post du 3).
 - **Loi Évin** : aucune photo avec verre de vin, spritz ou coupe de champagne.
+- **Fêtes** : fermé le 24 au soir et le 25 toute la journée ; ouvert le 26 et le 31 au soir (carte réduite).
 
 ## Photos et vidéos à prévoir
 
@@ -210,7 +211,7 @@ Voici la liste des prises de vue à réaliser, à déposer dans les sous-dossier
 
 | Fichier | Contenu | Pour le |
 |---|---|---|
-| `cannes/facade-terrasse.jpg + cannes/enseigne-triangle.jpg + cannes/salle-banquette-jaune.jpg + cannes/terrasse-fauteuils.jpg + cannes/epicerie.jpg + cannes/facade-rue.jpg` | la terrasse, l'enseigne, la salle, l'épicerie : entrer chez Da Laura | 01/12 |
+| `cannes/facade-rue.jpg + cannes/enseigne-triangle.jpg + cannes/terrasse-rue.jpg + cannes/salle-banquette-jaune.jpg + cannes/epicerie.jpg + cannes/burrata-prosciutto-dessus.jpg` | on arrive au coin de la rue, l'enseigne, la terrasse, la salle, l'épicerie, puis à table | 01/12 |
 | `cannes/table-dressee-chaises-jaunes.jpg` | une table dressée, prête pour les fêtes | 03/12 |
 | `laura/laura-portrait.jpg` | Laura dans sa salle | 06/12 |
 | `cannes/tagliatelle-machine.jpg + cannes/pappardelle-fraiches.jpg + cannes/gnocchi-roules.jpg + cannes/rigatoni-mains-chef.jpg + cannes/poele-flamme-pates.jpg + cannes/spaghetti-champignons.jpg` | des pâtes fraîches tirées le matin jusqu'à l'assiette | 08/12 |

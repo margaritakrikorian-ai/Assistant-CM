@@ -397,6 +397,15 @@ A_VALIDER = [
     "**Loi Évin** : aucune photo avec verre de vin, spritz ou coupe de champagne.",
 ]
 
+# ---- 27/11/2026 : carrousel du 1er décembre choisi dans le Drive « Photo Cannes » (_DSC8100, 7635, 8110, 8069, 7629, 0662) ----
+FEED = [r[:5] + (_c("facade-rue", "enseigne-triangle", "terrasse-rue", "salle-banquette-jaune", "epicerie", "burrata-prosciutto-dessus")
+         + " — on arrive au coin de la rue, l'enseigne, la terrasse, la salle, l'épicerie, puis à table",
+         "Bienvenue chez Da Laura. ✨\nAu coin de la rue, une terrasse qui donne envie de s'arrêter. À l'intérieur, une salle pleine de couleurs, l'épicerie italienne… et la cucina autentica, dal 1992.\nGlisse pour entrer dans la maison : la dernière photo t'attend à table. 🍝\n📍 8 rue du 24 Août, Cannes · Réservations : 04 93 38 40 51",
+         ) + r[7:] if r[0] == 1 else r for r in FEED]
+# Fêtes : ouvert le 26 et le 31 au soir (carte réduite le 31)
+FEED = [r[:6] + (r[6].replace("Pour la Saint-Sylvestre, la cuisine prépare un menu de fête à l'italienne : [détail du menu et prix à compléter].", "Le 31 au soir, on fête la Saint-Sylvestre avec une carte réduite, pensée pour l'occasion.").replace("Les places sont limitées : réserve", "Les places sont limitées ce soir-là : réserve"),) + r[7:] if r[0] == 3 else r for r in FEED]
+A_VALIDER = [a for a in A_VALIDER if not a.startswith("**Fêtes**")] + ["**Fêtes** : fermé le 24 au soir et le 25 toute la journée ; ouvert le 26 et le 31 au soir (carte réduite)."]
+
 if __name__ == '__main__':
     import sys
     from rendu import rendre
