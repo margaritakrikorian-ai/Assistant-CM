@@ -128,6 +128,9 @@ L'utilisatrice travaille sur iPad et ne navigue pas dans le dépôt Git. **Tout 
 | 03 - Publications | `1-CvcCdnGGtEh6FZM34ESJ5kFjOqr4ZJg` | Posts et carrousels prêts |
 | 04 - Documents | `10fFNAWeq5ATqDy0P_nnCCN-yUj8_kL2C` | Charte, plans, calendriers, e-mails, guides (Markdown converti en Google Doc) |
 | 05 - Photos du restaurant (charte appliquée) | `1AtJYepSt_eqSD6IU0vlkLDDbjbzO1oj-` | Photos filtrées |
+| 05 › Shooting Cannes (charte appliquée) | `1792Vb4IroMCDogLUvNZkf0K8zggLJDW0` | 42 photos choisies du shooting de Cannes |
+| 05 › Shooting Mougins (charte appliquée) | `1047FrU3n0pKxQujr46aq-PVlZvnY8XKo` | 60 photos choisies du shooting de Mougins |
+| Vidéos (dans le dossier Da Laura, à côté de DA Laura) | `1PTYN9l8EuKBVgyWlZ54MRj2sItHGxTww` | Les vidéos de l'utilisatrice (copies) |
 | 05 › Photos du compte Instagram (recadrées et retouchées) | `1ufYnoKhx4RJZDhejhTZKRBrR5LrF_WMG` | Photos extraites du profil, sans icônes, 1080x1350 |
 
 - Envoi par `create_file` avec une référence de fichier (`sha256:<empreinte>:<chemin>`). Calculer l'empreinte **avant** l'appel, jamais en parallèle de celui-ci.
@@ -151,6 +154,12 @@ Dès que l'utilisatrice envoie des photos ou des vidéos, appliquer le skill `re
 - Ce style (cartes flottantes, craie, fond flou) a été rejeté en bloc : ne plus le proposer. Avant de remonter, partir d'un réel de référence envoyé par l'utilisatrice.
 - Outil (style rejeté) : `python3 outils/monter_reel_pro.py outils/reels/pro-<sujet>.json [--tiktok]` (photos flottantes en carte, duo de cartes, transitions filées, zoom et fondu, textes animés, carte de fin). Plans existants : `pro-une-journee-da-laura`, `pro-in-cucina`, `pro-choisis-ta-table`.
 - Photos du shooting professionnel (Drive « Photo DA LAURA », dans Community management) : rangées dans `photos/da-laura/{plats,cuisine,ambiance}/`. Exclure les photos avec verre de vin ou flûte (loi Évin) : tartare, prosciutto-figues, desserts-balcon.
+
+## Photos du shooting (27/11/2026)
+
+- Sources de l'utilisatrice dans Drive, dossier « Da Laura » (`1doizDEHjP8w-9GaeKmik3iPGCgtMp--M`) : « Photo Cannes » (`11bzV2gK1AclWvBjjFmw01TXhO0Z_Q9Aa`, 152 photos, sous-dossier Pâtes) et « Photo DA LAURA » (`1NX2DrTVHAA3PJcU-XOCFiUuaqNfoIIWU`, 361 photos, surtout Mougins). Ne jamais les modifier.
+- Copies locales (non committées) : `photos/da-laura/shooting-originaux/` et `shooting-charte/` (charte naturelle appliquée aux 513).
+- Pour télécharger en masse, le partage par lien des deux dossiers a été ouvert le 27/11 : l'outil Drive ne sait pas le refermer, l'utilisatrice doit le faire (Partager › Accès général › Limité).
 
 ## Prospection (hors Da Laura)
 
