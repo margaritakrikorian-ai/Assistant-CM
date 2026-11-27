@@ -143,12 +143,13 @@ L'utilisatrice travaille sur iPad et ne navigue pas dans le dépôt Git. **Tout 
 ## Stories « Piatti del giorno » : modèles à remplir (27/11/2026)
 
 - L'utilisatrice écrit elle-même les suggestions : les stories sont des **modèles sans plats** (photo du shooting de Cannes, « Piatti del giorno », date, cadre crème vide). `python3 outils/stories_modeles.py` (20 JPG + programme) puis `node outils/stories_modeles.js` (PowerPoint modifiable, zones de texte en Arial, < 3 Mo pour Drive).
-- 20 stories : du mardi au samedi à 11h00, sauf le 25 (fermé) remplacé par le 29. Drive : 02 › « Stories Piatti del giorno - modèles à remplir (décembre) » (`19JlAk6WTsjRQ9QC34ZH9Ce1LwKEhkBGN`). Calendrier jour par jour en PDF : `python3 outils/calendrier_pdf.py` (vérifie 8 publications et 2 réels, sinon s’arrête) → 04 - Documents.
+- 20 stories : du mardi au samedi à 11h00, sauf le 25 (fermé) remplacé par le 29. Drive : 02 › « Stories Piatti del giorno - modèles à remplir (décembre) » (`19JlAk6WTsjRQ9QC34ZH9Ce1LwKEhkBGN`). Calendrier en cases par semaine (photo + légende + story) : `python3 outils/calendrier_semaines.py` (A3 paysage). Calendrier jour par jour en PDF : `python3 outils/calendrier_pdf.py` (vérifie 8 publications et 2 réels, sinon s’arrête) → 04 - Documents.
 
 ## Plan de décembre 2026 (contrat Essentielle)
 
-- 8 publications : carrousels des 1, 8, 14, 21 et 29 décembre + posts des 3, 6 et 25 décembre. **2 réels** (créneaux du 9 et du 23 décembre, réalisés par l'utilisatrice). 20 stories : modèles « Piatti del giorno » à remplir.
-- Fermetures : 24 décembre au soir, 25 décembre toute la journée.
+- 8 publications : carrousels des 1, 8, 14, 21 et 29 décembre + posts des 3 (décoration de Noël, photo ou réel fourni par l'utilisatrice : **pas de menu de fêtes**), 6 et 25 décembre. Le 24 : seulement la story « Piatti del giorno » du midi. **2 réels** (créneaux du 9 et du 23 décembre, réalisés par l'utilisatrice). 20 stories : modèles « Piatti del giorno » à remplir.
+- Fermetures : 24 décembre au soir, 25 décembre toute la journée. Ouvert le 26 et le 31 au soir (carte réduite).
+- À chaque changement : régénérer le calendrier (Markdown, PDF jour par jour, PDF en cases), l'aperçu du feed, et **remplacer les versions dans Drive** (04 - Documents) dans la même réponse : un calendrier pas à jour dans Drive a déjà été reproché (27/11/2026).
 - **Publications = photos seules** (27/11/2026) : aucun bandeau « DA LAURA · CANNES », aucun titre écrit sur les photos des posts et carrousels (sauf mention loi Évin obligatoire). Le titre ne sert que dans le calendrier.
 - Rejeté par l'utilisatrice, à ne plus proposer : réels « cartes flottantes / craie / fond flou », textes à la craie sur les réels.
 
