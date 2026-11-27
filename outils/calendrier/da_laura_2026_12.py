@@ -406,6 +406,15 @@ FEED = [r[:5] + (_c("facade-rue", "enseigne-triangle", "terrasse-rue", "salle-ba
 FEED = [r[:6] + (r[6].replace("Pour la Saint-Sylvestre, la cuisine prépare un menu de fête à l'italienne : [détail du menu et prix à compléter].", "Le 31 au soir, on fête la Saint-Sylvestre avec une carte réduite, pensée pour l'occasion.").replace("Les places sont limitées : réserve", "Les places sont limitées ce soir-là : réserve"),) + r[7:] if r[0] == 3 else r for r in FEED]
 A_VALIDER = [a for a in A_VALIDER if not a.startswith("**Fêtes**")] + ["**Fêtes** : fermé le 24 au soir et le 25 toute la journée ; ouvert le 26 et le 31 au soir (carte réduite)."]
 
+# ---- 27/11/2026 : légendes des carrousels relues et adaptées aux photos choisies ----
+_LEG = {
+ 8: ("Ici, les pâtes naissent le matin. 🍝\nLes tagliatelle sortent de la machine, les pappardelle sèchent sur le plan de travail, les gnocchi sont roulés un à un… puis tout passe à la poêle, sur le feu, juste avant d'arriver dans ton assiette.\nGlisse pour suivre le chemin, et dis-nous en commentaire : tu es plutôt tagliatelle, gnocchi ou rigatoni ? 👇\n📍 8 rue du 24 Août, Cannes · Réservations : 04 93 38 40 51", "#DaLaura #DaLauraCannes #PastaFresca #PâtesFraîches #FaitMaison #CuisineItalienne #RestaurantItalienCannes"),
+ 14: ("L'Italie, produit par produit. 🇮🇹\nLe prosciutto tranché à la minute, la burrata crémeuse, une belle planche d'antipasti à partager, les citrons du Sud et la truffe en fines lamelles : quand les produits sont beaux, on les travaille simplement.\nGlisse pour les découvrir, et enregistre ce post pour ta prochaine envie d'Italie. 🌿\n📍 8 rue du 24 Août, Cannes · Réservations : 04 93 38 40 51", "#DaLaura #DaLauraCannes #CuisineItalienne #ItalianFood #Antipasti #Burrata #RestaurantItalienCannes"),
+ 21: ("En Italie, le soir du 24 décembre, c'est la Vigilia : un grand repas de poissons et de fruits de mer, sans viande. 🐟\nDans certaines familles du Sud, on prépare jusqu'à sept plats : on l'appelle la « fête des sept poissons ».\nChez Da Laura, la mer s'invite à table : palourdes, langoustines, spaghetti aux crevettes… Glisse pour les découvrir, et dis-nous en commentaire : chez toi, Noël, c'est poisson ou viande ? 🎄\n📍 8 rue du 24 Août, Cannes · Réservations : 04 93 38 40 51", "#DaLaura #DaLauraCannes #CuisineItalienne #ItalianFood #FruitsDeMer #RestaurantItalienCannes #Cannes"),
+ 29: ("Comment fête-t-on le Nouvel An en Italie ? 🇮🇹\nOn porte une touche de rouge pour la chance, on partage un bon repas et on finit toujours sur une note sucrée.\nGlisse pour notre version Da Laura : du piment rouge, du safran, un dolce aux fraises et une flamme pour fêter 2027. ✨\nLe 31 au soir, on t'accueille avec une carte réduite, pensée pour l'occasion : réserve ta table via le lien en bio.\n📍 8 rue du 24 Août, Cannes · Réservations : 04 93 38 40 51", "#DaLaura #DaLauraCannes #CuisineItalienne #DolceVita #Capodanno #RestaurantItalienCannes #Cannes"),
+}
+FEED = [r[:6] + (_LEG[r[0]][0], _LEG[r[0]][1]) + r[8:] if r[0] in _LEG else r for r in FEED]
+
 if __name__ == '__main__':
     import sys
     from rendu import rendre

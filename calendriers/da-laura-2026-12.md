@@ -28,10 +28,10 @@ Formule Essentielle : 8 publications (5 carrousels, 3 posts), 2 réels (Instagra
 | Mar 01/12 | 18h30 | Carrousel | L'ambiance | Entre, tu es chez nous. ✨ |
 | Jeu 03/12 | 11h30 | Post | La carte | Les fêtes approchent, et ta table chez Da Laura aussi. 🎄 |
 | Dim 06/12 | 11h30 | Post | L'équipe et Laura | Derrière Da Laura, il y a Laura. ❤️ |
-| Mar 08/12 | 11h30 | Carrousel | Le savoir-faire | Ici, les pâtes sont faites maison. 🍝 |
+| Mar 08/12 | 11h30 | Carrousel | Le savoir-faire | Ici, les pâtes naissent le matin. 🍝 |
 | Mer 09/12 | 18h30 | Réel | Le savoir-faire | Il y a des gestes qui ne s'apprennent qu'en cuisine. 🍝 |
-| Lun 14/12 | 18h30 | Carrousel | Le savoir-faire | Les produits d'Italie, à la table de Da Laura. 🇮🇹 |
-| Lun 21/12 | 18h30 | Carrousel | Cannes et la dolce vita | Le 24 décembre au soir, dans le sud de l'Italie, on ne sert pas de viande : c'est la Vigilia, le grand repas de poissons et de fruits de mer. 🐟 |
+| Lun 14/12 | 18h30 | Carrousel | Le savoir-faire | L'Italie, produit par produit. 🇮🇹 |
+| Lun 21/12 | 18h30 | Carrousel | Cannes et la dolce vita | En Italie, le soir du 24 décembre, c'est la Vigilia : un grand repas de poissons et de fruits de mer, sans viande. 🐟 |
 | Mer 23/12 | 18h30 | Réel | L'ambiance | Les fêtes se vivent à table. ✨ |
 | Ven 25/12 | 10h00 | Post | La communauté | Buon Natale ! 🎄 |
 | Mar 29/12 | 11h30 | Carrousel | Cannes et la dolce vita | Comment fête-t-on le Nouvel An en Italie ? 🇮🇹 |
@@ -96,11 +96,12 @@ Formule Essentielle : 8 publications (5 carrousels, 3 posts), 2 réels (Instagra
 - **Texte sur le visuel :** Nos pâtes faites maison
 - **Légende :**
 
-  > Ici, les pâtes sont faites maison. 🍝  
-  > Tagliatelle tout juste sorties de la machine, gnocchi roulés à la main, rigatoni du jour… puis un passage à la poêle avant d'arriver dans ton assiette.  
-  > Glisse pour suivre le chemin, et dis-nous en commentaire ta forme préférée. 👇
+  > Ici, les pâtes naissent le matin. 🍝  
+  > Les tagliatelle sortent de la machine, les pappardelle sèchent sur le plan de travail, les gnocchi sont roulés un à un… puis tout passe à la poêle, sur le feu, juste avant d'arriver dans ton assiette.  
+  > Glisse pour suivre le chemin, et dis-nous en commentaire : tu es plutôt tagliatelle, gnocchi ou rigatoni ? 👇  
+  > 📍 8 rue du 24 Août, Cannes · Réservations : 04 93 38 40 51
 
-- **Hashtags :** #DaLaura #PastaFresca #PâtesFraîches #FaitMaison #CuisineItalienne #CannesFood
+- **Hashtags :** #DaLaura #DaLauraCannes #PastaFresca #PâtesFraîches #FaitMaison #CuisineItalienne #RestaurantItalienCannes
 - **Appel à l'action :** Dis-nous en commentaire ta forme préférée
 
 ### Mercredi 9 décembre
@@ -126,11 +127,12 @@ Formule Essentielle : 8 publications (5 carrousels, 3 posts), 2 réels (Instagra
 - **Texte sur le visuel :** Les produits d'Italie
 - **Légende :**
 
-  > Les produits d'Italie, à la table de Da Laura. 🇮🇹  
-  > Prosciutto tranché minute, burrata crémeuse, antipasti à partager, citrons ensoleillés et truffe râpée : de beaux produits, travaillés simplement.  
-  > Glisse pour les découvrir, et enregistre ce post pour ta prochaine envie d'Italie. 🌿
+  > L'Italie, produit par produit. 🇮🇹  
+  > Le prosciutto tranché à la minute, la burrata crémeuse, une belle planche d'antipasti à partager, les citrons du Sud et la truffe en fines lamelles : quand les produits sont beaux, on les travaille simplement.  
+  > Glisse pour les découvrir, et enregistre ce post pour ta prochaine envie d'Italie. 🌿  
+  > 📍 8 rue du 24 Août, Cannes · Réservations : 04 93 38 40 51
 
-- **Hashtags :** #DaLaura #CuisineItalienne #ItalianFood #FaitMaison #Antipasti #CannesFood
+- **Hashtags :** #DaLaura #DaLauraCannes #CuisineItalienne #ItalianFood #Antipasti #Burrata #RestaurantItalienCannes
 - **Appel à l'action :** Enregistre ce post
 - ⚠️ **À valider :** Produits, fournisseurs et régions d'origine exacts
 
@@ -142,11 +144,12 @@ Formule Essentielle : 8 publications (5 carrousels, 3 posts), 2 réels (Instagra
 - **Texte sur le visuel :** La Vigilia
 - **Légende :**
 
-  > Le 24 décembre au soir, dans le sud de l'Italie, on ne sert pas de viande : c'est la Vigilia, le grand repas de poissons et de fruits de mer. 🐟  
-  > Certaines familles préparent jusqu'à sept plats différents, d'où son surnom : la « fête des sept poissons ».  
-  > Glisse pour découvrir cette tradition, et dis-nous en commentaire : chez toi, le repas de Noël, c'est plutôt poisson ou viande ? 🎄
+  > En Italie, le soir du 24 décembre, c'est la Vigilia : un grand repas de poissons et de fruits de mer, sans viande. 🐟  
+  > Dans certaines familles du Sud, on prépare jusqu'à sept plats : on l'appelle la « fête des sept poissons ».  
+  > Chez Da Laura, la mer s'invite à table : palourdes, langoustines, spaghetti aux crevettes… Glisse pour les découvrir, et dis-nous en commentaire : chez toi, Noël, c'est poisson ou viande ? 🎄  
+  > 📍 8 rue du 24 Août, Cannes · Réservations : 04 93 38 40 51
 
-- **Hashtags :** #DaLaura #CuisineItalienne #ItalianFood #DolceVita #CannesFood #Cannes
+- **Hashtags :** #DaLaura #DaLauraCannes #CuisineItalienne #ItalianFood #FruitsDeMer #RestaurantItalienCannes #Cannes
 - **Appel à l'action :** Dis-nous en commentaire : poisson ou viande ?
 - ⚠️ **À valider :** Si le menu du 24 comporte des plats de poisson, le mentionner
 
@@ -191,10 +194,12 @@ Formule Essentielle : 8 publications (5 carrousels, 3 posts), 2 réels (Instagra
 - **Légende :**
 
   > Comment fête-t-on le Nouvel An en Italie ? 🇮🇹  
-  > On porte une touche de rouge pour la chance, on partage un grand repas et on finit sur une note sucrée.  
-  > Glisse pour notre version Da Laura, et dis-nous en commentaire ta tradition du 31. ✨
+  > On porte une touche de rouge pour la chance, on partage un bon repas et on finit toujours sur une note sucrée.  
+  > Glisse pour notre version Da Laura : du piment rouge, du safran, un dolce aux fraises et une flamme pour fêter 2027. ✨  
+  > Le 31 au soir, on t'accueille avec une carte réduite, pensée pour l'occasion : réserve ta table via le lien en bio.  
+  > 📍 8 rue du 24 Août, Cannes · Réservations : 04 93 38 40 51
 
-- **Hashtags :** #DaLaura #CuisineItalienne #ItalianFood #DolceVita #CannesFood #CôteDAzur
+- **Hashtags :** #DaLaura #DaLauraCannes #CuisineItalienne #DolceVita #Capodanno #RestaurantItalienCannes #Cannes
 - **Appel à l'action :** Dis-nous en commentaire quelle tradition tu adoptes
 
 ## À valider avant publication
