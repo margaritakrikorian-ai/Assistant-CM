@@ -49,7 +49,7 @@ td.d{{width:72px;color:#8E1D1D}} .pub{{display:flex;gap:8px;align-items:center}}
 <h1>Da Laura · Calendrier de décembre 2026</h1>
 <div class="sous">Formule Essentielle · jour par jour : publications et stories « Piatti del giorno » · @dalaura.cannes</div>
 <table><tr><th>Jour</th><th>Publication</th><th>Story</th></tr>{"".join(L)}</table>
-<div class="bilan"><b>Contrat Essentielle :</b> 8 publications (5 carrousels, 3 posts) · 2 réels (9 et 23 décembre, réalisés par toi) · 20 stories « Piatti del giorno » du mardi au samedi à 11h00.<br>
+<div class="bilan"><b>Contrat Essentielle :</b> 8 publications (5 carrousels, 3 posts) · 2 réels (9 et 16 décembre, réalisés par toi) · 20 stories « Piatti del giorno » du mardi au samedi à 11h00.<br>
 Fermetures : le 24 décembre au soir et le 25 toute la journée (pas de story le 25, remplacée par le mardi 29). À confirmer : ouverture le 26 et le 31.</div></body></html>'''
 tmp = Path(tempfile.mkdtemp()) / "c.html"; tmp.write_text(html, encoding="utf-8")
 out = R / "calendriers/Calendrier-Da-Laura-decembre-2026.pdf"

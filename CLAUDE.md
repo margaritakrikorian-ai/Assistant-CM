@@ -125,7 +125,7 @@ L'utilisatrice travaille sur iPad et ne navigue pas dans le dépôt Git. **Tout 
 
 | Dossier | Identifiant | Contenu |
 |---|---|---|
-| 00 - SOMMAIRE (Google Doc) | `1zt_MOmcmLKn-fFo_HFTXng4Mz_Su9ObvLnB_yJQrX_4` | Index de tout ce qui a été livré : à mettre à jour à chaque livraison |
+| 00 - SOMMAIRE (Google Doc) | `1Go6nzO1d43L2NA_NjNoeMDoMrz6N_M7ma47-ufyoDe0` | Index de tout ce qui a été livré : à mettre à jour à chaque livraison |
 | 01 - Réels | `1Nof5SKJ6b5YC_gx1bQqX8q8F4NQJ8LFL` | Vidéos, couvertures, légendes (Google Doc) |
 | 02 - Stories Piatti del giorno | `17F4dgwTE_9mcdpDvi-GluDvMnKD2V2rl` | Stories de plats du jour |
 | 03 - Publications | `1-CvcCdnGGtEh6FZM34ESJ5kFjOqr4ZJg` | Posts et carrousels prêts |
@@ -153,7 +153,8 @@ L'utilisatrice travaille sur iPad et ne navigue pas dans le dépôt Git. **Tout 
 
 ## Plan de décembre 2026 (contrat Essentielle)
 
-- 8 publications : carrousels des 1, 8, 14, 21 et 29 décembre + posts des 3 (décoration de Noël, photo ou réel fourni par l'utilisatrice : **pas de menu de fêtes**), 6 et 25 décembre. Le 24 : seulement la story « Piatti del giorno » du midi. **2 réels** (créneaux du 9 et du 23 décembre, réalisés par l'utilisatrice). 20 stories : modèles « Piatti del giorno » à remplir.
+- 8 publications (nouvelle répartition du 27/11/2026 au soir) : carrousels des 1 (Bienvenue), 8 (**décoration de Noël**, photos de l'utilisatrice), 14 (**nos pâtes faites maison**), 21 (Vigilia) et 29 (Capodanno) + posts des 6 (Laura), 11 (plat : risotto aux champignons) et 25 (Buon Natale). **Plus de carrousel « produits d'Italie », plus de post le 3.** **2 réels** réalisés par l'utilisatrice : 9 déc. « La décoration de Noël » et 16 déc. « Le geste du chef, pour les fêtes » (fond feu d'artifice). Le 24 : seulement la story « Piatti del giorno » du midi. 20 stories : modèles « Piatti del giorno » à remplir.
+- Sommaire Drive actuel : `1Go6nzO1d43L2NA_NjNoeMDoMrz6N_M7ma47-ufyoDe0` (tableau « Décembre en un coup d'œil » à tenir à jour à chaque changement de plan).
 - Fermetures : 24 décembre au soir, 25 décembre toute la journée. Ouvert le 26 et le 31 au soir (carte réduite).
 - À chaque changement : régénérer le calendrier (Markdown, PDF jour par jour, PDF en cases), l'aperçu du feed, et **remplacer les versions dans Drive** (04 - Documents) dans la même réponse : un calendrier pas à jour dans Drive a déjà été reproché (27/11/2026).
 - **Publications = photos seules** (27/11/2026) : aucun bandeau « DA LAURA · CANNES », aucun titre écrit sur les photos des posts et carrousels (sauf mention loi Évin obligatoire). Le titre ne sert que dans le calendrier.

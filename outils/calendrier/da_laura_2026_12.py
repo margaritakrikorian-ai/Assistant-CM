@@ -426,6 +426,49 @@ TEXTES[3] = "La décoration de Noël"
 FEED = [r[:9] + ("",) if r[0] == 21 else r for r in FEED]
 A_VALIDER = [a for a in A_VALIDER if "post du 3" not in a] + ["**3 décembre** : photo ou réel de la décoration de Noël, réalisé par la community manager (pas de menu de fêtes)."]
 
+# ---- 27/11/2026 (soir) : nouvelle répartition demandée par la community manager ----
+# Semaine 2 : carrousel « Décoration de Noël » (8) + réel n° 1 « La décoration » (9) + post plat (11).
+# Semaine 3 : carrousel « Nos pâtes faites maison » (14) + réel n° 2 « Le geste du chef, pour les fêtes » (16, fond feu d'artifice).
+# Supprimés : carrousel « Les produits d'Italie », post du 3 décembre, réel du 23. Toujours 8 publications et 2 réels.
+_PATES = [r for r in FEED if r[0] == 8][0]
+_DECO = (8, "18h30", "Carrousel", "L'ambiance", "Décoration de Noël",
+         "À fournir : photos/da-laura/noel/deco-noel-01.jpg à -06.jpg — la décoration de Noël du restaurant (sapin, guirlandes, lumières, tables), photos prises par la community manager",
+         "Da Laura s'habille pour Noël. 🎄✨\nLes lumières sont allumées, le sapin est en place et chaque table se met en fête : la maison est prête pour les plus belles soirées de l'année.\nGlisse pour faire le tour de la déco, et dis-nous en commentaire ton coin préféré. 👇\nPendant les fêtes, on t'accueille le 26 décembre et le 31 au soir (carte réduite). Le 24 au soir et le 25, toute l'équipe est en famille.\n📍 8 rue du 24 Août, Cannes · Réservations : 04 93 38 40 51",
+         "#DaLaura #DaLauraCannes #RestaurantItalienCannes #Noël #DécoDeNoël #DolceVita #Cannes",
+         "Réserve ta table via le lien en bio", "Photos de la décoration de Noël à fournir (5 ou 6)")
+_REEL_DECO = (9, "18h30", "Réel", "L'ambiance", "Décoration de Noël",
+         "Réel réalisé par la community manager (Instagram + TikTok) : la décoration de Noël du restaurant, en mouvement (lumières, sapin, détails des tables)",
+         "Noël est arrivé chez Da Laura. 🎄\nLes guirlandes brillent, les tables se parent de fête : viens partager un moment chaleureux à l'italienne.\nOn t'attend, réserve ta table via le lien en bio. ✨\n📍 8 rue du 24 Août, Cannes · Réservations : 04 93 38 40 51",
+         "#DaLaura #DaLauraCannes #RestaurantItalienCannes #Noël #ChristmasDecor #DolceVita #Cannes",
+         "Réserve ta table via le lien en bio", "")
+_PLAT = (11, "11h30", "Post", "La carte", "Plat d'hiver",
+         C + "risotto-champignons.jpg — risotto crémeux aux champignons",
+         "Un risotto crémeux, des champignons dorés à la poêle : le réconfort de l'hiver, à l'italienne. 🍄\nPréparé à la minute et remué jusqu'à la bonne texture, comme il se doit.\nTu le partages avec qui ? Identifie-le en commentaire. 👇\n📍 8 rue du 24 Août, Cannes · Réservations : 04 93 38 40 51",
+         "#DaLaura #DaLauraCannes #Risotto #CuisineItalienne #ItalianFood #RestaurantItalienCannes #Cannes",
+         "Réserve ta table via le lien en bio", "")
+_REEL_CHEF = (16, "18h30", "Réel", "Le savoir-faire", "Le geste du chef, pour les fêtes",
+         "Réel réalisé par la community manager (Instagram + TikTok) : le geste du chef (poêle, flamme, dressage des pâtes), avec un fond de feu d'artifice pour les fêtes",
+         "Pour les fêtes, le chef sort le grand jeu. 🎆\nLa poêle sur le feu, les pâtes faites maison sautées à la minute, le dressage au dernier moment : chez Da Laura, chaque assiette est une petite fête.\nOn t'accueille le 26 décembre et le 31 au soir (carte réduite) : réserve ta table via le lien en bio. ✨\n📍 8 rue du 24 Août, Cannes · Réservations : 04 93 38 40 51",
+         "#DaLaura #DaLauraCannes #PastaFresca #FaitMaison #CuisineItalienne #RestaurantItalienCannes #Cannes",
+         "Réserve ta table via le lien en bio", "")
+FEED = [r for r in FEED if r[0] not in (3, 8, 9, 14, 23)]
+FEED += [_DECO, _REEL_DECO, _PLAT, (14,) + _PATES[1:], _REEL_CHEF]
+FEED.sort(key=lambda r: r[0])
+for _k in (3, 14, 23):
+    TEXTES.pop(_k, None)
+TEXTES.update({8: "La décoration de Noël", 11: "Risotto aux champignons", 14: "Nos pâtes faites maison"})
+TEMPS_FORTS = [
+    ("Semaine 1 (1-6 déc.)", "Lancement du compte", "Carrousel « Bienvenue chez Da Laura » (1er) + post « Laura, l'âme de la maison » (6)"),
+    ("Semaine 2 (7-13 déc.)", "Noël chez Da Laura", "Carrousel « La décoration de Noël » (8) + réel n° 1 « La décoration » (9) + post « Risotto aux champignons » (11)"),
+    ("Semaine 3 (14-20 déc.)", "Le savoir-faire", "Carrousel « Nos pâtes faites maison » (14) + réel n° 2 « Le geste du chef, pour les fêtes », fond feu d'artifice (16)"),
+    ("Semaine 4 (21-27 déc.)", "Vigilia et Noël", "Carrousel « La Vigilia » (21) + post « Buon Natale » (25)"),
+    ("Semaine 5 (28-31 déc.)", "Nouvel An", "Carrousel « Capodanno » (29)"),
+]
+A_VALIDER = [a for a in A_VALIDER if not a.startswith("**3 décembre**")] + [
+    "**Décoration de Noël** : 5 ou 6 photos pour le carrousel du 8 et le réel du 9, réalisés par la community manager.",
+    "**Réel du 16** : le geste du chef avec un fond de feu d'artifice, réalisé par la community manager."]
+assert sum(r[2] in ("Post", "Carrousel") for r in FEED) == 8 and sum(r[2] == "Réel" for r in FEED) == 2
+
 if __name__ == '__main__':
     import sys
     from rendu import rendre
