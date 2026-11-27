@@ -366,6 +366,9 @@ NOUVELLES = {
  29: (_c("fusilli-piment", "tiramisu-fraise", "risotto-safran-jambon", "table-bougie", "poele-flambee") + " — une touche de rouge porte-bonheur et des plats de fête",
      "Comment fête-t-on le Nouvel An en Italie ? 🇮🇹\nOn porte une touche de rouge pour la chance, on partage un grand repas et on finit sur une note sucrée.\nGlisse pour notre version Da Laura, et dis-nous en commentaire ta tradition du 31. ✨"),
 }
+# Fermetures (info du 27/11/2026) : le 24 décembre au soir et le 25 décembre toute la journée.
+NOUVELLES[3] = (NOUVELLES[3][0], "Les fêtes approchent, et ta table chez Da Laura aussi. 🎄\nPour la Saint-Sylvestre, la cuisine prépare un menu de fête à l'italienne : [détail du menu et prix à compléter].\nÀ noter : le 24 décembre, on t'accueille au déjeuner ; le 24 au soir et le jour de Noël, toute l'équipe est en famille.\nLes places sont limitées : réserve dès maintenant via le lien en bio. ✨")
+NOUVELLES[25] = (NOUVELLES[25][0], "Buon Natale ! 🎄\nAujourd'hui, toute l'équipe de Da Laura est en famille, et on te souhaite d'en profiter autant que nous.\nQue cette journée soit douce, gourmande et pleine de beaux moments partagés. ❤️\nDis-nous en commentaire ce qu'il y a sur ta table aujourd'hui.")
 FEED = [r[:5] + ((NOUVELLES[r[0]][0], NOUVELLES[r[0]][1] or r[6]) if r[0] in NOUVELLES else (r[5], r[6])) + r[7:] for r in FEED]
 FEED = [REMPLACER[r[0]] if r[0] in (2, 9, 16, 23, 30) else r for r in FEED]  # réels : légendes relues dans les nouveaux plans
 TEXTES.update({14: "Les produits d'Italie", 21: "La Vigilia", 29: "Capodanno", 25: "Buon Natale"})
@@ -373,7 +376,7 @@ A_VALIDER = [
     "**Photos** : toutes viennent du shooting professionnel de Cannes (charte naturelle appliquée). Les photos de Mougins sont gardées à part (autre lieu).",
     "**Réels** : 5 réels sans aucun texte (photos, mouvements lents, transitions). Le contrat en prévoit 2 : 3 réels offerts pour le lancement ou en option (90 € l'unité).",
     "**Post du 6 décembre** : photo de Laura (shooting) et son histoire à compléter avec elle.",
-    "**Menus de fêtes** (post du 3) : contenu et prix ; **ouverture** les 24, 25 et 31 décembre.",
+    "**Fêtes** : fermé le 24 au soir et le 25 toute la journée (confirmé). Reste à confirmer : ouverture du 31 et menu de la Saint-Sylvestre (post du 3).",
     "**Loi Évin** : aucune photo avec verre de vin, spritz ou coupe de champagne.",
 ]
 

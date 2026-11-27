@@ -81,8 +81,9 @@ Chaque semaine : 1 réel (Instagram + TikTok) et 1 carrousel. Avec les posts des
 - **Légende :**
 
   > Les fêtes approchent, et ta table chez Da Laura aussi. 🎄  
-  > Pour Noël et la Saint-Sylvestre, la cuisine prépare des menus de fête à l'italienne : [détail des menus et prix à compléter].  
-  > Les places sont limitées pour ces soirées : réserve dès maintenant via le lien en bio. ✨
+  > Pour la Saint-Sylvestre, la cuisine prépare un menu de fête à l'italienne : [détail du menu et prix à compléter].  
+  > À noter : le 24 décembre, on t'accueille au déjeuner ; le 24 au soir et le jour de Noël, toute l'équipe est en famille.  
+  > Les places sont limitées : réserve dès maintenant via le lien en bio. ✨
 
 - **Hashtags :** #DaLaura #DaLauraCannes #RestaurantItalienCannes #RestaurantCannes #DolceVita #Cannes #FrenchRiviera
 - **Appel à l'action :** Réserve ta soirée de fête via le lien en bio
@@ -208,8 +209,8 @@ Chaque semaine : 1 réel (Instagram + TikTok) et 1 carrousel. Avec les posts des
 - **Légende :**
 
   > Buon Natale ! 🎄  
-  > Que cette journée soit douce, gourmande et pleine de beaux moments partagés.  
-  > Merci de faire partie de la famille Da Laura cette année. ❤️  
+  > Aujourd'hui, toute l'équipe de Da Laura est en famille, et on te souhaite d'en profiter autant que nous.  
+  > Que cette journée soit douce, gourmande et pleine de beaux moments partagés. ❤️  
   > Dis-nous en commentaire ce qu'il y a sur ta table aujourd'hui.
 
 - **Hashtags :** #DaLaura #DaLauraCannes #RestaurantItalienCannes #DolceVita #FrenchRiviera
@@ -250,7 +251,7 @@ Chaque semaine : 1 réel (Instagram + TikTok) et 1 carrousel. Avec les posts des
 - **Photos** : toutes viennent du shooting professionnel de Cannes (charte naturelle appliquée). Les photos de Mougins sont gardées à part (autre lieu).
 - **Réels** : 5 réels sans aucun texte (photos, mouvements lents, transitions). Le contrat en prévoit 2 : 3 réels offerts pour le lancement ou en option (90 € l'unité).
 - **Post du 6 décembre** : photo de Laura (shooting) et son histoire à compléter avec elle.
-- **Menus de fêtes** (post du 3) : contenu et prix ; **ouverture** les 24, 25 et 31 décembre.
+- **Fêtes** : fermé le 24 au soir et le 25 toute la journée (confirmé). Reste à confirmer : ouverture du 31 et menu de la Saint-Sylvestre (post du 3).
 - **Loi Évin** : aucune photo avec verre de vin, spritz ou coupe de champagne.
 
 ## Photos et vidéos à prévoir

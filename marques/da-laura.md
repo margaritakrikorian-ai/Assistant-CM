@@ -126,7 +126,8 @@ Da Laura est un restaurant italien à Cannes. On y sert une cuisine italienne g�
 
 - Restaurant à Cannes : prévoir aussi des contenus **en anglais** ou bilingues pendant les grands événements (Festival, MIPIM, Cannes Lions) et la saison touristique *(à valider)*.
 - Alcool : rester sobre dans la mise en avant du vin, sans incitation à la consommation excessive. Ajouter la mention « L'abus d'alcool est dangereux pour la santé, à consommer avec modération » sur toute publication qui promeut une boisson alcoolisée (loi Évin).
-- Horaires d'ouverture, jours de fermeture, capacité et terrasse : *(à compléter)*
+- Horaires d'ouverture, capacité et terrasse : *(à compléter)*
+- Fermetures de fin d'année 2026 : **24 décembre au soir** et **25 décembre toute la journée** (ouvert le 24 à midi). Ouverture du 31 : *(à confirmer)*.
 
 ## Bio Instagram et lien de réservation (proposition du 24/11/2026, à valider avec Laura)
 
