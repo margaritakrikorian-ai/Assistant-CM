@@ -25,7 +25,7 @@ Formule Essentielle : 8 publications (5 carrousels, 3 posts), 2 réels (Instagra
 
 | Date | Heure | Format | Thème | Sujet |
 |---|---|---|---|---|
-| Mar 01/12 | 18h30 | Carrousel | L'ambiance | Bienvenue chez Da Laura. ✨ |
+| Mar 01/12 | 18h30 | Carrousel | L'ambiance | Entre, tu es chez nous. ✨ |
 | Jeu 03/12 | 11h30 | Post | La carte | Les fêtes approchent, et ta table chez Da Laura aussi. 🎄 |
 | Dim 06/12 | 11h30 | Post | L'équipe et Laura | Derrière Da Laura, il y a Laura. ❤️ |
 | Mar 08/12 | 11h30 | Carrousel | Le savoir-faire | Ici, les pâtes sont faites maison. 🍝 |
@@ -42,13 +42,13 @@ Formule Essentielle : 8 publications (5 carrousels, 3 posts), 2 réels (Instagra
 
 **Carrousel · 18h30** · *L'ambiance*
 
-- **Photo / vidéo :** prête : `photos/da-laura/cannes/facade-rue.jpg + photos/da-laura/cannes/enseigne-triangle.jpg + photos/da-laura/cannes/terrasse-rue.jpg + photos/da-laura/cannes/salle-banquette-jaune.jpg + photos/da-laura/cannes/epicerie.jpg + photos/da-laura/cannes/burrata-prosciutto-dessus.jpg` (on arrive au coin de la rue, l'enseigne, la terrasse, la salle, l'épicerie, puis à table)
+- **Photo / vidéo :** prête : `photos/da-laura/cannes/facade-rue.jpg + photos/da-laura/cannes/enseigne-triangle.jpg + photos/da-laura/cannes/terrasse-rue.jpg + photos/da-laura/cannes/salle-banquette-jaune.jpg + photos/da-laura/cannes/epicerie.jpg + photos/da-laura/cannes/table-assiettes-peintes.jpg` (on arrive au coin de la rue, l'enseigne, la terrasse, la salle, l'épicerie, puis une table dressée qui t'attend)
 - **Texte sur le visuel :** Bienvenue chez Da Laura
 - **Légende :**
 
-  > Bienvenue chez Da Laura. ✨  
-  > Au coin de la rue, une terrasse qui donne envie de s'arrêter. À l'intérieur, une salle pleine de couleurs, l'épicerie italienne… et la cucina autentica, dal 1992.  
-  > Glisse pour entrer dans la maison : la dernière photo t'attend à table. 🍝  
+  > Entre, tu es chez nous. ✨  
+  > Une terrasse au coin de la rue, une salle pleine de couleurs, une épicerie remplie de produits italiens… Chez Da Laura, la cucina autentica se vit depuis 1992.  
+  > Glisse pour faire le tour de la maison, puis choisis ta table : elle est déjà dressée. 🇮🇹  
   > 📍 8 rue du 24 Août, Cannes · Réservations : 04 93 38 40 51
 
 - **Hashtags :** #DaLaura #DaLauraCannes #RestaurantItalienCannes #DolceVita #Cannes #FrenchRiviera
@@ -211,7 +211,7 @@ Voici la liste des prises de vue à réaliser, à déposer dans les sous-dossier
 
 | Fichier | Contenu | Pour le |
 |---|---|---|
-| `cannes/facade-rue.jpg + cannes/enseigne-triangle.jpg + cannes/terrasse-rue.jpg + cannes/salle-banquette-jaune.jpg + cannes/epicerie.jpg + cannes/burrata-prosciutto-dessus.jpg` | on arrive au coin de la rue, l'enseigne, la terrasse, la salle, l'épicerie, puis à table | 01/12 |
+| `cannes/facade-rue.jpg + cannes/enseigne-triangle.jpg + cannes/terrasse-rue.jpg + cannes/salle-banquette-jaune.jpg + cannes/epicerie.jpg + cannes/table-assiettes-peintes.jpg` | on arrive au coin de la rue, l'enseigne, la terrasse, la salle, l'épicerie, puis une table dressée qui t'attend | 01/12 |
 | `cannes/table-dressee-chaises-jaunes.jpg` | une table dressée, prête pour les fêtes | 03/12 |
 | `laura/laura-portrait.jpg` | Laura dans sa salle | 06/12 |
 | `cannes/tagliatelle-machine.jpg + cannes/pappardelle-fraiches.jpg + cannes/gnocchi-roules.jpg + cannes/rigatoni-mains-chef.jpg + cannes/poele-flamme-pates.jpg + cannes/spaghetti-champignons.jpg` | des pâtes fraîches tirées le matin jusqu'à l'assiette | 08/12 |
