@@ -148,6 +148,7 @@ L'utilisatrice travaille sur iPad et ne navigue pas dans le dépôt Git. **Tout 
 ## Fonds de stories « vierges » (27/11/2026)
 
 - Style demandé par l'utilisatrice (exemple d'un autre restaurant) : **zoom sur un détail** d'une photo du shooting, **léger flou volontaire** (exception à la règle « jamais de flou »), légèrement assombri, **aucun texte** ; elle écrit les suggestions dans Instagram. `python3 outils/fonds_flous.py` → `stories/da-laura/fonds-flous/`. Drive : 02 › « Stories vierges - fonds flous » (`19XL3pm1iXvZG0QGd1BVA7vQIq12uvTEw`). Pas de photo contenant déjà du texte (enseigne, menu).
+- Stories animées (exemple du 27/11/2026) : `python3 outils/story_anime.py <photo> dalaura|classique <sortie.mp4>` : flou léger (3,5, l'utilisatrice trouvait 9 « trop flou »), titre qui s'écrit (Caveat tracé à la main = typo Da Laura de la charte ; ou capitales Cormorant), clic de machine à écrire par lettre, petite valse originale très bas. **Aucune musique sous droits** (ex. Ratatouille) dans les fichiers : elle s'ajoute dans Instagram avec le sticker Musique. Drive : 02 - Stories.
 - Autre style validé à présenter : story beige (`#F4EDE1`), écriture bordeaux (`#7A1F2B`), logo Da Laura en haut (`outils/story_beige.py`, logo `photos/da-laura/logo/logo-da-laura-bordeaux.png`).
 
 ## Plan de décembre 2026 (contrat Essentielle)
