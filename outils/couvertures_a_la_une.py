@@ -11,7 +11,7 @@ RACINE = Path(__file__).resolve().parent.parent
 POL = RACINE / "outils" / "polices"
 SORTIE = RACINE / "stories" / "da-laura" / "a-la-une"
 W, H = 1080, 1920
-MOTS = ["Piatti", "Menu", "Ambiance", "La cucina", "Fêtes", "Réserver"]
+MOTS = ["Piatti", "Menu", "Ambiance", "La cucina", "Fêtes", "Réserver", "Jumping", "30 ans"]
 VARIANTES = {
     "creme": {"fond": "#F1E6D3", "texte": "#8E1D1D", "trait": "#B8925A", "petit": "#4A3428"},
     "rouge": {"fond": "#8E1D1D", "texte": "#F1E6D3", "trait": "#F2D98B", "petit": "#F1E6D3"},
