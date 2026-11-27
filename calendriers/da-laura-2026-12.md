@@ -13,7 +13,7 @@
 
 | Date | Temps fort | Ce qu'on en fait |
 |---|---|---|
-| Semaine 1 (1-6 déc.) | Lancement du compte | Carrousel « Bienvenue chez Da Laura » + posts « Nos menus de fêtes » et « Laura, l'âme de la maison » |
+| Semaine 1 (1-6 déc.) | Lancement du compte | Carrousel « Bienvenue chez Da Laura » + post « La décoration de Noël » (photo ou réel fourni par toi) + post « Laura, l'âme de la maison » |
 | Semaine 2 (7-13 déc.) | Le savoir-faire | Carrousel « Nos pâtes faites maison » + réel n° 1 « Le geste du chef » (9 déc.) |
 | Semaine 3 (14-20 déc.) | Les produits | Carrousel « Les produits d'Italie » |
 | Semaine 4 (21-27 déc.) | Vigilia et Noël | Carrousel « La Vigilia » + réel n° 2 « Pour les fêtes » (23 déc.) + post « Buon Natale » |
@@ -26,7 +26,7 @@ Formule Essentielle : 8 publications (5 carrousels, 3 posts), 2 réels (Instagra
 | Date | Heure | Format | Thème | Sujet |
 |---|---|---|---|---|
 | Mar 01/12 | 18h30 | Carrousel | L'ambiance | Entre, tu es chez nous. ✨ |
-| Jeu 03/12 | 11h30 | Post | La carte | Les fêtes approchent, et ta table chez Da Laura aussi. 🎄 |
+| Jeu 03/12 | 11h30 | Post | L'ambiance | Da Laura s'habille pour Noël. 🎄✨ |
 | Dim 06/12 | 11h30 | Post | L'équipe et Laura | Derrière Da Laura, il y a Laura. ❤️ |
 | Mar 08/12 | 11h30 | Carrousel | Le savoir-faire | Ici, les pâtes naissent le matin. 🍝 |
 | Mer 09/12 | 18h30 | Réel | Le savoir-faire | Il y a des gestes qui ne s'apprennent qu'en cuisine. 🍝 |
@@ -54,22 +54,23 @@ Formule Essentielle : 8 publications (5 carrousels, 3 posts), 2 réels (Instagra
 - **Hashtags :** #DaLaura #DaLauraCannes #RestaurantItalienCannes #DolceVita #Cannes #FrenchRiviera
 - **Appel à l'action :** Réserve ta table via le lien en bio
 
-### Jeudi 3 décembre · Menus de Noël et de la Saint-Sylvestre
+### Jeudi 3 décembre · Décoration de Noël
 
-**Post · 11h30** · *La carte*
+**Post · 11h30** · *L'ambiance*
 
-- **Photo / vidéo :** prête : `photos/da-laura/cannes/table-dressee-chaises-jaunes.jpg` (une table dressée, prête pour les fêtes)
-- **Texte sur le visuel :** Nos menus de fêtes
+- **Photo / vidéo :** à fournir : `photos/da-laura/noel/decoration-noel.jpg` (photo (ou réel) de la décoration de Noël du restaurant, fournie par la community manager)
+- **Texte sur le visuel :** La décoration de Noël
 - **Légende :**
 
-  > Les fêtes approchent, et ta table chez Da Laura aussi. 🎄  
-  > Le 31 au soir, on fête la Saint-Sylvestre avec une carte réduite, pensée pour l'occasion.  
-  > À noter : le 24 décembre, on t'accueille au déjeuner ; le 24 au soir et le jour de Noël, toute l'équipe est en famille.  
-  > Les places sont limitées ce soir-là : réserve dès maintenant via le lien en bio. ✨
+  > Da Laura s'habille pour Noël. 🎄✨  
+  > Les lumières sont allumées, la décoration est en place : la maison est prête pour les plus belles soirées de l'année.  
+  > Pendant les fêtes, on t'accueille le 26 décembre et le 31 au soir (carte réduite). Le 24 au soir et le 25, toute l'équipe est en famille.  
+  > Réserve ta table via le lien en bio.  
+  > 📍 8 rue du 24 Août, Cannes · Réservations : 04 93 38 40 51
 
-- **Hashtags :** #DaLaura #DaLauraCannes #RestaurantItalienCannes #RestaurantCannes #DolceVita #Cannes #FrenchRiviera
-- **Appel à l'action :** Réserve ta soirée de fête via le lien en bio
-- ⚠️ **À valider :** Ouverture les 24, 25 et 31 décembre ; contenu et prix des menus
+- **Hashtags :** #DaLaura #DaLauraCannes #RestaurantItalienCannes #Noël #DolceVita #Cannes
+- **Appel à l'action :** Réserve ta table via le lien en bio
+- ⚠️ **À valider :** Photo ou réel de la décoration de Noël à fournir
 
 ### Dimanche 6 décembre
 
@@ -151,7 +152,6 @@ Formule Essentielle : 8 publications (5 carrousels, 3 posts), 2 réels (Instagra
 
 - **Hashtags :** #DaLaura #DaLauraCannes #CuisineItalienne #ItalianFood #FruitsDeMer #RestaurantItalienCannes #Cannes
 - **Appel à l'action :** Dis-nous en commentaire : poisson ou viande ?
-- ⚠️ **À valider :** Si le menu du 24 comporte des plats de poisson, le mentionner
 
 ### Mercredi 23 décembre · Fêtes de fin d'année
 
@@ -209,6 +209,7 @@ Formule Essentielle : 8 publications (5 carrousels, 3 posts), 2 réels (Instagra
 - **Post du 6 décembre** : photo de Laura (shooting) et son histoire à compléter avec elle.
 - **Loi Évin** : aucune photo avec verre de vin, spritz ou coupe de champagne.
 - **Fêtes** : fermé le 24 au soir et le 25 toute la journée ; ouvert le 26 et le 31 au soir (carte réduite).
+- **3 décembre** : photo ou réel de la décoration de Noël, réalisé par la community manager (pas de menu de fêtes).
 
 ## Photos et vidéos à prévoir
 
@@ -217,7 +218,7 @@ Voici la liste des prises de vue à réaliser, à déposer dans les sous-dossier
 | Fichier | Contenu | Pour le |
 |---|---|---|
 | `cannes/facade-rue.jpg + cannes/enseigne-triangle.jpg + cannes/terrasse-rue.jpg + cannes/salle-banquette-jaune.jpg + cannes/epicerie.jpg + cannes/table-assiettes-peintes.jpg` | on arrive au coin de la rue, l'enseigne, la terrasse, la salle, l'épicerie, puis une table dressée qui t'attend | 01/12 |
-| `cannes/table-dressee-chaises-jaunes.jpg` | une table dressée, prête pour les fêtes | 03/12 |
+| `noel/decoration-noel.jpg` | photo (ou réel) de la décoration de Noël du restaurant, fournie par la community manager | 03/12 |
 | `laura/laura-portrait.jpg` | Laura dans sa salle | 06/12 |
 | `cannes/tagliatelle-machine.jpg + cannes/pappardelle-fraiches.jpg + cannes/gnocchi-roules.jpg + cannes/rigatoni-mains-chef.jpg + cannes/poele-flamme-pates.jpg + cannes/spaghetti-champignons.jpg` | des pâtes fraîches tirées le matin jusqu'à l'assiette | 08/12 |
 | `Réel réalisé par la community manager (Instagram + TikTok) : idée et légende proposées ci-dessous` |  | 09/12 |

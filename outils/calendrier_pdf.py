@@ -24,7 +24,10 @@ for d in range(1, 32):
     pub = ""
     if k in rows:
         r = rows[k]; leg = r["Légende"].split("\n")[0]
-        if r["Format"] == "Réel":
+        if r["Format"] == "Réel" or Path(pubs.get(k, "/x"), "PHOTO-A-FOURNIR.txt").exists():
+            quoi = "Réel" if r["Format"] == "Réel" else "Photo ou réel"
+            pub = f'<div class="pub"><div class="ph vide">{quoi}</div><div><b>{r["Heure"]} · {r["Format"]}</b><br><span class="t">{r["Texte visuel"]}</span><br><span class="m">Réalisé par toi</span></div></div>'
+        elif False:
             pub = f'<div class="pub"><div class="ph vide">Réel</div><div><b>{r["Heure"]} · Réel</b><br><span class="t">{r["Texte visuel"]}</span><br><span class="m">Réalisé par toi (Instagram + TikTok)</span></div></div>'
         else:
             n = len(glob.glob(pubs[k] + "/visuel-*.jpg"))

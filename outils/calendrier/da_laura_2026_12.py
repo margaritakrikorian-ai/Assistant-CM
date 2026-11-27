@@ -382,7 +382,7 @@ A_VALIDER = [
 FEED = [r for r in FEED if not (r[2] == "Réel" and r[0] not in (9, 23))]
 FEED = [r[:5] + ("Réel réalisé par la community manager (Instagram + TikTok) : idée et légende proposées ci-dessous",) + r[6:] if r[2] == "Réel" else r for r in FEED]
 TEMPS_FORTS = [
-    ("Semaine 1 (1-6 déc.)", "Lancement du compte", "Carrousel « Bienvenue chez Da Laura » + posts « Nos menus de fêtes » et « Laura, l'âme de la maison »"),
+    ("Semaine 1 (1-6 déc.)", "Lancement du compte", "Carrousel « Bienvenue chez Da Laura » + post « La décoration de Noël » (photo ou réel fourni par toi) + post « Laura, l'âme de la maison »"),
     ("Semaine 2 (7-13 déc.)", "Le savoir-faire", "Carrousel « Nos pâtes faites maison » + réel n° 1 « Le geste du chef » (9 déc.)"),
     ("Semaine 3 (14-20 déc.)", "Les produits", "Carrousel « Les produits d'Italie »"),
     ("Semaine 4 (21-27 déc.)", "Vigilia et Noël", "Carrousel « La Vigilia » + réel n° 2 « Pour les fêtes » (23 déc.) + post « Buon Natale »"),
@@ -414,6 +414,17 @@ _LEG = {
  29: ("Comment fête-t-on le Nouvel An en Italie ? 🇮🇹\nOn porte une touche de rouge pour la chance, on partage un bon repas et on finit toujours sur une note sucrée.\nGlisse pour notre version Da Laura : du piment rouge, du safran, un dolce aux fraises et une flamme pour fêter 2027. ✨\nLe 31 au soir, on t'accueille avec une carte réduite, pensée pour l'occasion : réserve ta table via le lien en bio.\n📍 8 rue du 24 Août, Cannes · Réservations : 04 93 38 40 51", "#DaLaura #DaLauraCannes #CuisineItalienne #DolceVita #Capodanno #RestaurantItalienCannes #Cannes"),
 }
 FEED = [r[:6] + (_LEG[r[0]][0], _LEG[r[0]][1]) + r[8:] if r[0] in _LEG else r for r in FEED]
+
+# ---- 27/11/2026 : pas de menu de fêtes. Le 3 décembre : photo ou réel de la décoration de Noël, fourni par la community manager ----
+FEED = [(3, "11h30", "Post", "L'ambiance", "Décoration de Noël",
+         "photos/da-laura/noel/decoration-noel.jpg — photo (ou réel) de la décoration de Noël du restaurant, fournie par la community manager",
+         "Da Laura s'habille pour Noël. 🎄✨\nLes lumières sont allumées, la décoration est en place : la maison est prête pour les plus belles soirées de l'année.\nPendant les fêtes, on t'accueille le 26 décembre et le 31 au soir (carte réduite). Le 24 au soir et le 25, toute l'équipe est en famille.\nRéserve ta table via le lien en bio.\n📍 8 rue du 24 Août, Cannes · Réservations : 04 93 38 40 51",
+         "#DaLaura #DaLauraCannes #RestaurantItalienCannes #Noël #DolceVita #Cannes",
+         "Réserve ta table via le lien en bio", "Photo ou réel de la décoration de Noël à fournir")
+        if r[0] == 3 else r for r in FEED]
+TEXTES[3] = "La décoration de Noël"
+FEED = [r[:9] + ("",) if r[0] == 21 else r for r in FEED]
+A_VALIDER = [a for a in A_VALIDER if "post du 3" not in a] + ["**3 décembre** : photo ou réel de la décoration de Noël, réalisé par la community manager (pas de menu de fêtes)."]
 
 if __name__ == '__main__':
     import sys
