@@ -145,6 +145,11 @@ L'utilisatrice travaille sur iPad et ne navigue pas dans le dépôt Git. **Tout 
 - L'utilisatrice écrit elle-même les suggestions : les stories sont des **modèles sans plats** (photo du shooting de Cannes, « Piatti del giorno », date, cadre crème vide). `python3 outils/stories_modeles.py` (20 JPG + programme) puis `node outils/stories_modeles.js` (PowerPoint modifiable, zones de texte en Arial, < 3 Mo pour Drive).
 - 20 stories : du mardi au samedi à 11h00, sauf le 25 (fermé) remplacé par le 29. Drive : 02 › « Stories Piatti del giorno - modèles à remplir (décembre) » (`19JlAk6WTsjRQ9QC34ZH9Ce1LwKEhkBGN`). Calendrier en cases par semaine (photo + légende + story) : `python3 outils/calendrier_semaines.py` (A3 paysage). Calendrier jour par jour en PDF : `python3 outils/calendrier_pdf.py` (vérifie 8 publications et 2 réels, sinon s’arrête) → 04 - Documents.
 
+## Fonds de stories « vierges » (27/11/2026)
+
+- Style demandé par l'utilisatrice (exemple d'un autre restaurant) : **zoom sur un détail** d'une photo du shooting, **léger flou volontaire** (exception à la règle « jamais de flou »), légèrement assombri, **aucun texte** ; elle écrit les suggestions dans Instagram. `python3 outils/fonds_flous.py` → `stories/da-laura/fonds-flous/`. Drive : 02 › « Stories vierges - fonds flous » (`19XL3pm1iXvZG0QGd1BVA7vQIq12uvTEw`). Pas de photo contenant déjà du texte (enseigne, menu).
+- Autre style validé à présenter : story beige (`#F4EDE1`), écriture bordeaux (`#7A1F2B`), logo Da Laura en haut (`outils/story_beige.py`, logo `photos/da-laura/logo/logo-da-laura-bordeaux.png`).
+
 ## Plan de décembre 2026 (contrat Essentielle)
 
 - 8 publications : carrousels des 1, 8, 14, 21 et 29 décembre + posts des 3 (décoration de Noël, photo ou réel fourni par l'utilisatrice : **pas de menu de fêtes**), 6 et 25 décembre. Le 24 : seulement la story « Piatti del giorno » du midi. **2 réels** (créneaux du 9 et du 23 décembre, réalisés par l'utilisatrice). 20 stories : modèles « Piatti del giorno » à remplir.
