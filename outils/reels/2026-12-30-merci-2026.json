@@ -1,141 +1,18 @@
 {
- "plans": [
-  {
-   "type": "photo",
-   "source": "photos/da-laura/compte-instagram/recadrees/feux-artifice.jpg",
-   "duree": 1.8,
-   "mouvement": "zoom-avant",
-   "ampleur": 0.1
-  },
-  {
-   "type": "video",
-   "source": "photos/da-laura/videos/ambiance-enseigne-terrasse.mov",
-   "debut": 9.78,
-   "fin": 10.9
-  },
-  {
-   "type": "photo",
-   "source": "photos/da-laura/compte-instagram/recadrees/ravioli-faconnes-main.jpg",
-   "duree": 1.0,
-   "mouvement": "zoom-avant",
-   "ampleur": 0.12
-  },
-  {
-   "type": "photo",
-   "source": "photos/da-laura/plats/ravioli-truffe.jpg",
-   "duree": 1.0,
-   "mouvement": "zoom-arriere",
-   "ampleur": 0.12,
-   "centre": [
-    0.45,
-    0.6
-   ]
-  },
-  {
-   "type": "photo",
-   "source": "photos/da-laura/compte-instagram/recadrees/risotto-crevettes.jpg",
-   "duree": 1.0,
-   "mouvement": "gauche-droite",
-   "ampleur": 0.14
-  },
-  {
-   "type": "photo",
-   "source": "photos/da-laura/compte-instagram/recadrees/salade-burrata-tomates.jpg",
-   "duree": 1.0,
-   "mouvement": "zoom-avant",
-   "ampleur": 0.12
-  },
-  {
-   "type": "video",
-   "source": "photos/da-laura/videos/ambiance-enseigne-terrasse.mov",
-   "debut": 3.36,
-   "fin": 4.3
-  },
-  {
-   "type": "photo",
-   "source": "photos/da-laura/plats/tiramisu-fraise.jpg",
-   "duree": 1.0,
-   "mouvement": "zoom-arriere",
-   "ampleur": 0.12
-  },
-  {
-   "type": "photo",
-   "source": "photos/da-laura/compte-instagram/recadrees/couple-terrasse-cafe.jpg",
-   "duree": 1.1,
-   "mouvement": "zoom-avant",
-   "ampleur": 0.12
-  },
-  {
-   "type": "photo",
-   "source": "photos/da-laura/ambiance/ardoise-piatti-del-giorno.jpg",
-   "duree": 1.3,
-   "mouvement": "zoom-avant",
-   "ampleur": 0.08,
-   "centre": [
-    0.5,
-    0.4
-   ]
-  },
-  {
-   "type": "photo",
-   "source": "photos/da-laura/compte-instagram/recadrees/feux-artifice.jpg",
-   "duree": 1.6,
-   "mouvement": "zoom-arriere",
-   "ampleur": 0.1
-  }
+ "photos": [
+  "photos/da-laura/cannes/facade-terrasse.jpg",
+  "photos/da-laura/cannes/chef-citrons.jpg",
+  "photos/da-laura/cannes/tagliatelle-machine.jpg",
+  "photos/da-laura/cannes/burrata-mains.jpg",
+  "photos/da-laura/cannes/palourdes.jpg",
+  "photos/da-laura/cannes/risotto-champignons.jpg",
+  "photos/da-laura/cannes/cappuccino-coeur.jpg",
+  "photos/da-laura/cannes/terrasse-rue.jpg",
+  "photos/da-laura/cannes/enseigne-terrasse.jpg"
  ],
- "textes": [
-  {
-   "texte": "Merci pour 2026",
-   "surtitre": "DA LAURA · CANNES",
-   "plans": [
-    0,
-    0
-   ],
-   "taille": 140,
-   "y": 320
-  },
-  {
-   "texte": "vos plus belles tablées",
-   "plans": [
-    1,
-    5
-   ],
-   "taille": 120,
-   "y": 340
-  },
-  {
-   "texte": "Rendez-vous en 2027",
-   "plans": [
-    9,
-    9
-   ],
-   "taille": 124,
-   "y": 320
-  },
-  {
-   "texte": "Buon anno !",
-   "plans": [
-    10,
-    10
-   ],
-   "taille": 150,
-   "y": 340
-  }
- ],
- "accroche_tiktok": "2026 chez Da Laura\nen 15 secondes",
- "fin": {
-  "duree": 2.6,
-  "appel": "Buon anno !",
-  "appel_tiktok": "Buon anno !",
-  "lignes": [
-   "8 rue du 24 Août · Cannes",
-   "Réservations : 04 93 38 40 51"
-  ]
- },
- "legende": "Merci pour cette année 2026 à nos côtés. ✨\nPour chaque table réservée, chaque assiette partagée et chaque sourire en terrasse : merci. On se retrouve en 2027 !\nBuon anno 🎉",
- "hashtags": "#DaLaura #DaLauraCannes #RestaurantCannes #DolceVita #Cannes #FrenchRiviera",
- "legende_tiktok": "2026 chez Da Laura en quelques secondes ✨ Merci pour chaque table, et rendez-vous en 2027. Buon anno 🎉",
- "hashtags_tiktok": "#DaLaura #RestaurantItalienCannes #Cannes #CannesFood #FrenchRiviera",
- "sortie": "reels/da-laura/2026-12-30-merci-2026.mp4"
+ "sortie": "reels/da-laura/2026-12-30-merci-2026.mp4",
+ "legende": "Merci pour 2026. ❤️\nChaque table, chaque assiette partagée, chaque sourire : c'est vous qui faites vivre Da Laura.\nOn se retrouve en 2027, à table. ✨",
+ "hashtags": "#DaLaura #DaLauraCannes #RestaurantItalienCannes #Merci2026 #DolceVita #Cannes",
+ "legende_tiktok": "Merci pour 2026 ❤️ On se retrouve à table en 2027 ✨",
+ "hashtags_tiktok": "#DaLaura #Cannes #RestaurantItalien #CannesFood"
 }

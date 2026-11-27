@@ -1,134 +1,18 @@
 {
- "plans": [
-  {
-   "type": "photo",
-   "source": "photos/da-laura/compte-instagram/recadrees/pates-poele-flamme.jpg",
-   "duree": 1.6,
-   "mouvement": "zoom-avant",
-   "ampleur": 0.12
-  },
-  {
-   "type": "photo",
-   "source": "photos/da-laura/plats/ravioli-truffe.jpg",
-   "duree": 1.4,
-   "mouvement": "zoom-avant",
-   "ampleur": 0.12,
-   "centre": [
-    0.45,
-    0.6
-   ]
-  },
-  {
-   "type": "photo",
-   "source": "photos/da-laura/compte-instagram/recadrees/ravioli-faconnes-main.jpg",
-   "duree": 1.3,
-   "mouvement": "gauche-droite",
-   "ampleur": 0.14
-  },
-  {
-   "type": "photo",
-   "source": "photos/da-laura/cuisine/gnocchi-faits-main.jpg",
-   "duree": 1.3,
-   "mouvement": "zoom-arriere",
-   "ampleur": 0.12
-  },
-  {
-   "type": "photo",
-   "source": "photos/da-laura/cuisine/pates-fraiches-rigatoni.jpg",
-   "duree": 1.2,
-   "mouvement": "droite-gauche",
-   "ampleur": 0.14
-  },
-  {
-   "type": "photo",
-   "source": "photos/da-laura/compte-instagram/recadrees/artichaut-mains.jpg",
-   "duree": 1.3,
-   "mouvement": "zoom-avant",
-   "ampleur": 0.12
-  },
-  {
-   "type": "photo",
-   "source": "photos/da-laura/plats/spaghetti-crevettes.jpg",
-   "duree": 1.4,
-   "mouvement": "zoom-arriere",
-   "ampleur": 0.12,
-   "centre": [
-    0.55,
-    0.55
-   ]
-  },
-  {
-   "type": "photo",
-   "source": "photos/da-laura/compte-instagram/recadrees/salade-burrata-tomates.jpg",
-   "duree": 1.3,
-   "mouvement": "zoom-avant",
-   "ampleur": 0.12
-  },
-  {
-   "type": "photo",
-   "source": "photos/da-laura/compte-instagram/recadrees/spaghetti-crevettes-sauce.jpg",
-   "duree": 1.4,
-   "mouvement": "gauche-droite",
-   "ampleur": 0.14
-  },
-  {
-   "type": "video",
-   "source": "photos/da-laura/videos/ambiance-enseigne-terrasse.mov",
-   "debut": 2.42,
-   "fin": 3.28
-  }
+ "photos": [
+  "photos/da-laura/cannes/poele-flamme-pates.jpg",
+  "photos/da-laura/cannes/chef-dressage-1.jpg",
+  "photos/da-laura/cannes/chef-dressage-2.jpg",
+  "photos/da-laura/cannes/chef-dressage-3.jpg",
+  "photos/da-laura/cannes/citron-zeste.jpg",
+  "photos/da-laura/cannes/huile-spaghetti-crevettes.jpg",
+  "photos/da-laura/cannes/chef-couteau-poele.jpg",
+  "photos/da-laura/cannes/gnocchi-roules.jpg",
+  "photos/da-laura/cannes/rigatoni-mains-chef.jpg"
  ],
- "textes": [
-  {
-   "texte": "Le geste du chef",
-   "surtitre": "DA LAURA · CANNES",
-   "plans": [
-    0,
-    0
-   ],
-   "taille": 140,
-   "y": 320
-  },
-  {
-   "texte": "Truffe râpée minute",
-   "plans": [
-    1,
-    1
-   ],
-   "taille": 130,
-   "y": 340
-  },
-  {
-   "texte": "Pâtes faites maison",
-   "plans": [
-    2,
-    4
-   ],
-   "taille": 130,
-   "y": 340
-  },
-  {
-   "texte": "Ingrédients italiens",
-   "plans": [
-    5,
-    7
-   ],
-   "taille": 130,
-   "y": 340
-  }
- ],
- "accroche_tiktok": "POV : tu regardes\nle chef cuisiner",
- "fin": {
-  "duree": 2.6,
-  "appel": "Réserve ta table",
-  "lignes": [
-   "8 rue du 24 Août · Cannes",
-   "Réservations : 04 93 38 40 51"
-  ]
- },
- "legende": "Il y a des gestes qui ne s'apprennent qu'en cuisine. 🍝\nPâtes faites maison, truffe râpée minute, ingrédients venus d'Italie : chez Da Laura, chaque assiette passe par les mains du chef.\nRéserve ta table via le lien en bio ✨",
+ "sortie": "reels/da-laura/2026-12-09-geste-du-chef.mp4",
+ "legende": "Il y a des gestes qui ne s'apprennent qu'en cuisine. 🍝\nLa poêle sur le feu, le dressage à la minute, un zeste de citron au dernier moment : chez Da Laura, chaque assiette passe par les mains du chef.\nRéserve ta table via le lien en bio ✨",
  "hashtags": "#DaLaura #DaLauraCannes #RestaurantItalienCannes #PastaFresca #FaitMaison #CuisineItalienne #CannesFood",
- "legende_tiktok": "Le geste du chef, version Da Laura 🍝 Pâtes faites maison et truffe râpée minute. Tu goûtes quoi en premier ? 👇",
- "hashtags_tiktok": "#DaLaura #RestaurantItalienCannes #PastaFresca #Cannes #CannesFood",
- "sortie": "reels/da-laura/2026-12-09-geste-du-chef.mp4"
+ "legende_tiktok": "Le geste du chef, version Da Laura 🍝 Tu goûtes quoi en premier ? 👇",
+ "hashtags_tiktok": "#DaLaura #RestaurantItalien #Cannes #Pasta #CannesFood"
 }

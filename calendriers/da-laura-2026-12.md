@@ -26,18 +26,18 @@ Chaque semaine : 1 réel (Instagram + TikTok) et 1 carrousel. Avec les posts des
 | Date | Heure | Format | Thème | Sujet |
 |---|---|---|---|---|
 | Mar 01/12 | 18h30 | Carrousel | L'ambiance | Bienvenue chez Da Laura. ✨ |
-| Mer 02/12 | 18h30 | Réel | L'ambiance | Depuis 1992, on cuisine à l'italienne à Cannes. 🍝 |
+| Mer 02/12 | 18h30 | Réel | L'ambiance | La cucina autentica, dal 1992. 🍝 |
 | Jeu 03/12 | 11h30 | Post | La carte | Les fêtes approchent, et ta table chez Da Laura aussi. 🎄 |
 | Dim 06/12 | 11h30 | Post | L'équipe et Laura | Derrière Da Laura, il y a Laura. ❤️ |
 | Mar 08/12 | 11h30 | Carrousel | Le savoir-faire | Ici, les pâtes sont faites maison. 🍝 |
 | Mer 09/12 | 18h30 | Réel | Le savoir-faire | Il y a des gestes qui ne s'apprennent qu'en cuisine. 🍝 |
-| Lun 14/12 | 18h30 | Carrousel | Le savoir-faire | D'où viennent nos produits ? On t'emmène en Italie. 🇮🇹 |
-| Mer 16/12 | 18h30 | Réel | La carte | Une douceur pour finir, ou juste un cappuccino en terrasse ? 🍓 |
+| Lun 14/12 | 18h30 | Carrousel | Le savoir-faire | Les produits d'Italie, à la table de Da Laura. 🇮🇹 |
+| Mer 16/12 | 18h30 | Réel | La carte | La pause douceur chez Da Laura. ☕ |
 | Lun 21/12 | 18h30 | Carrousel | Cannes et la dolce vita | Le 24 décembre au soir, dans le sud de l'Italie, on ne sert pas de viande : c'est la Vigilia, le grand repas de poissons et de fruits de mer. 🐟 |
-| Mer 23/12 | 18h30 | Réel | L'ambiance | Noël approche, et chez Da Laura la table est prête. ✨ |
+| Mer 23/12 | 18h30 | Réel | L'ambiance | Les fêtes se vivent à table. ✨ |
 | Ven 25/12 | 10h00 | Post | La communauté | Buon Natale ! 🎄 |
 | Mar 29/12 | 11h30 | Carrousel | Cannes et la dolce vita | Comment fête-t-on le Nouvel An en Italie ? 🇮🇹 |
-| Mer 30/12 | 18h30 | Réel | La communauté | Merci pour cette année 2026 à nos côtés. ✨ |
+| Mer 30/12 | 18h30 | Réel | La communauté | Merci pour 2026. ❤️ |
 
 ## Détail des publications
 
@@ -45,12 +45,12 @@ Chaque semaine : 1 réel (Instagram + TikTok) et 1 carrousel. Avec les posts des
 
 **Carrousel · 18h30** · *L'ambiance*
 
-- **Photo / vidéo :** prête : `photos/da-laura/compte-instagram/recadrees/facade-fiat-500-rouge.jpg + photos/da-laura/compte-instagram/recadrees/facade-terrasse.jpg + photos/da-laura/ambiance/salle-guirlandes.jpg + photos/da-laura/compte-instagram/recadrees/table-assiette-da-laura.jpg + photos/da-laura/ambiance/ardoise-piatti-del-giorno.jpg` (la façade, la terrasse, la salle, la table et Laura)
+- **Photo / vidéo :** prête : `photos/da-laura/cannes/facade-terrasse.jpg + photos/da-laura/cannes/enseigne-triangle.jpg + photos/da-laura/cannes/salle-banquette-jaune.jpg + photos/da-laura/cannes/terrasse-fauteuils.jpg + photos/da-laura/cannes/epicerie.jpg + photos/da-laura/cannes/facade-rue.jpg` (la terrasse, l'enseigne, la salle, l'épicerie : entrer chez Da Laura)
 - **Texte sur le visuel :** Bienvenue chez Da Laura
 - **Légende :**
 
   > Bienvenue chez Da Laura. ✨  
-  > Depuis 1992, on cuisine à l'italienne à Cannes : pâtes faites maison, ingrédients venus d'Italie et une terrasse où l'on aime prendre son temps.  
+  > Une terrasse au cœur de Cannes, une salle où l'on prend son temps et la cucina autentica, dal 1992.  
   > Glisse pour entrer dans la maison, et réserve ta table via le lien en bio. 🍝
 
 - **Hashtags :** #DaLaura #DaLauraCannes #RestaurantItalienCannes #DolceVita #Cannes #FrenchRiviera
@@ -64,11 +64,11 @@ Chaque semaine : 1 réel (Instagram + TikTok) et 1 carrousel. Avec les posts des
 - **Texte sur le visuel :** La cucina autentica
 - **Légende :**
 
-  > Depuis 1992, on cuisine à l'italienne à Cannes. 🍝  
-  > Pâtes faites maison, truffe râpée minute, desserts maison et l'ardoise de Laura qui change chaque jour.  
-  > Viens goûter la cucina autentica : réserve ta table via le lien en bio ✨
+  > La cucina autentica, dal 1992. 🍝  
+  > Une terrasse au cœur de Cannes, des pâtes qui sautent à la poêle et des assiettes à partager : bienvenue chez Da Laura.  
+  > Réserve ta table via le lien en bio ✨
 
-- **Hashtags :** #DaLaura #DaLauraCannes #RestaurantItalienCannes #PastaFresca #FaitMaison #Cannes #CannesFood
+- **Hashtags :** #DaLaura #DaLauraCannes #RestaurantItalienCannes #CuisineItalienne #DolceVita #Cannes #CannesFood
 - **Appel à l'action :** Réserve ta table via le lien en bio
 - ⚠️ **À valider :** Desserts « maison » à confirmer avec Laura
 
@@ -76,7 +76,7 @@ Chaque semaine : 1 réel (Instagram + TikTok) et 1 carrousel. Avec les posts des
 
 **Post · 11h30** · *La carte*
 
-- **Photo / vidéo :** à fournir : `photos/da-laura/plats/menu-fetes.jpg` (table de fête dressée avec un plat du menu de Noël)
+- **Photo / vidéo :** prête : `photos/da-laura/cannes/table-dressee-chaises-jaunes.jpg` (une table dressée, prête pour les fêtes)
 - **Texte sur le visuel :** Nos menus de fêtes
 - **Légende :**
 
@@ -92,7 +92,7 @@ Chaque semaine : 1 réel (Instagram + TikTok) et 1 carrousel. Avec les posts des
 
 **Post · 11h30** · *L'équipe et Laura*
 
-- **Photo / vidéo :** prête : `photos/da-laura/ambiance/ardoise-piatti-del-giorno.jpg` (Laura et son ardoise sur la terrasse)
+- **Photo / vidéo :** prête : `photos/da-laura/laura/laura-portrait.jpg` (Laura dans sa salle)
 - **Texte sur le visuel :** Laura, l'âme de la maison
 - **Légende :**
 
@@ -109,13 +109,13 @@ Chaque semaine : 1 réel (Instagram + TikTok) et 1 carrousel. Avec les posts des
 
 **Carrousel · 11h30** · *Le savoir-faire*
 
-- **Photo / vidéo :** prête : `photos/da-laura/compte-instagram/recadrees/ravioli-faconnes-main.jpg + photos/da-laura/cuisine/gnocchi-faits-main.jpg + photos/da-laura/cuisine/pates-fraiches-rigatoni.jpg + photos/da-laura/compte-instagram/recadrees/pates-poele-flamme.jpg + photos/da-laura/plats/ravioli-truffe.jpg` (les pâtes, de la main du chef à l'assiette)
+- **Photo / vidéo :** prête : `photos/da-laura/cannes/tagliatelle-machine.jpg + photos/da-laura/cannes/pappardelle-fraiches.jpg + photos/da-laura/cannes/gnocchi-roules.jpg + photos/da-laura/cannes/rigatoni-mains-chef.jpg + photos/da-laura/cannes/poele-flamme-pates.jpg + photos/da-laura/cannes/spaghetti-champignons.jpg` (des pâtes fraîches tirées le matin jusqu'à l'assiette)
 - **Texte sur le visuel :** Nos pâtes faites maison
 - **Légende :**
 
   > Ici, les pâtes sont faites maison. 🍝  
-  > Ravioli façonnés à la main, gnocchi, rigatoni tout juste sortis de la machine : chaque forme a sa recette et sa sauce.  
-  > Glisse pour les découvrir, et dis-nous en commentaire laquelle tu préfères. 👇
+  > Tagliatelle tout juste sorties de la machine, gnocchi roulés à la main, rigatoni du jour… puis un passage à la poêle avant d'arriver dans ton assiette.  
+  > Glisse pour suivre le chemin, et dis-nous en commentaire ta forme préférée. 👇
 
 - **Hashtags :** #DaLaura #PastaFresca #PâtesFraîches #FaitMaison #CuisineItalienne #CannesFood
 - **Appel à l'action :** Dis-nous en commentaire ta forme préférée
@@ -129,7 +129,7 @@ Chaque semaine : 1 réel (Instagram + TikTok) et 1 carrousel. Avec les posts des
 - **Légende :**
 
   > Il y a des gestes qui ne s'apprennent qu'en cuisine. 🍝  
-  > Pâtes faites maison, truffe râpée minute, ingrédients venus d'Italie : chez Da Laura, chaque assiette passe par les mains du chef.  
+  > La poêle sur le feu, le dressage à la minute, un zeste de citron au dernier moment : chez Da Laura, chaque assiette passe par les mains du chef.  
   > Réserve ta table via le lien en bio ✨
 
 - **Hashtags :** #DaLaura #DaLauraCannes #RestaurantItalienCannes #PastaFresca #FaitMaison #CuisineItalienne #CannesFood
@@ -139,14 +139,13 @@ Chaque semaine : 1 réel (Instagram + TikTok) et 1 carrousel. Avec les posts des
 
 **Carrousel · 18h30** · *Le savoir-faire*
 
-- **Photo / vidéo :** prête : `photos/da-laura/plats/planche-fromages-charcuterie.jpg + photos/da-laura/plats/ravioli-truffe.jpg + photos/da-laura/plats/pappardelle-prosciutto-huile.jpg` (fromages et charcuterie, truffe, huile d'olive)
+- **Photo / vidéo :** prête : `photos/da-laura/cannes/trancheuse-prosciutto.jpg + photos/da-laura/cannes/burrata-prosciutto-gros-plan.jpg + photos/da-laura/cannes/planche-antipasti.jpg + photos/da-laura/cannes/burrata-tomates.jpg + photos/da-laura/cannes/chef-citrons.jpg + photos/da-laura/cannes/burrata-truffe.jpg` (prosciutto tranché, burrata, antipasti, citrons, truffe)
 - **Texte sur le visuel :** Les produits d'Italie
 - **Légende :**
 
-  > D'où viennent nos produits ? On t'emmène en Italie. 🇮🇹  
-  > Parmigiano Reggiano affiné, huile d'olive extra vierge, farine pour nos pâtes fraîches, mozzarella et burrata : chaque ingrédient est choisi pour son origine et son goût.  
-  > Glisse pour découvrir leur histoire, région par région. 🌿  
-  > Enregistre ce post pour ta prochaine envie d'Italie.
+  > Les produits d'Italie, à la table de Da Laura. 🇮🇹  
+  > Prosciutto tranché minute, burrata crémeuse, antipasti à partager, citrons ensoleillés et truffe râpée : de beaux produits, travaillés simplement.  
+  > Glisse pour les découvrir, et enregistre ce post pour ta prochaine envie d'Italie. 🌿
 
 - **Hashtags :** #DaLaura #CuisineItalienne #ItalianFood #FaitMaison #Antipasti #CannesFood
 - **Appel à l'action :** Enregistre ce post
@@ -160,11 +159,11 @@ Chaque semaine : 1 réel (Instagram + TikTok) et 1 carrousel. Avec les posts des
 - **Texte sur le visuel :** La pause douceur
 - **Légende :**
 
-  > Une douceur pour finir, ou juste un cappuccino en terrasse ? 🍓  
-  > Desserts aux fraises, tiramisù, tartelette aux fruits rouges : la pause sucrée se prend chez Da Laura.  
-  > On t'attend ✨
+  > La pause douceur chez Da Laura. ☕  
+  > Un cappuccino au cœur de mousse, un cornetto encore tiède, et un dolce pour finir en beauté.  
+  > Tu viens pour le café ou pour le dessert ? Dis-le-nous en commentaire 👇
 
-- **Hashtags :** #DaLaura #DaLauraCannes #RestaurantItalienCannes #Tiramisu #FoodLover #Cannes #CannesFood
+- **Hashtags :** #DaLaura #DaLauraCannes #Cappuccino #Cornetto #DolceVita #CannesFood #Cannes
 - **Appel à l'action :** Réserve ta table via le lien en bio
 - ⚠️ **À valider :** Noms exacts des desserts à confirmer avec Laura
 
@@ -172,7 +171,7 @@ Chaque semaine : 1 réel (Instagram + TikTok) et 1 carrousel. Avec les posts des
 
 **Carrousel · 18h30** · *Cannes et la dolce vita*
 
-- **Photo / vidéo :** prête : `photos/da-laura/plats/spaghetti-crevettes.jpg + photos/da-laura/compte-instagram/recadrees/risotto-crevettes.jpg + photos/da-laura/compte-instagram/recadrees/spaghetti-crevettes-sauce.jpg` (les plats de la mer de Da Laura)
+- **Photo / vidéo :** prête : `photos/da-laura/cannes/palourdes.jpg + photos/da-laura/cannes/langoustines-pates.jpg + photos/da-laura/cannes/chef-spaghetti-crevettes.jpg + photos/da-laura/cannes/huile-spaghetti-crevettes.jpg + photos/da-laura/cannes/poelee-mer.jpg` (les plats de la mer de Da Laura)
 - **Texte sur le visuel :** La Vigilia
 - **Légende :**
 
@@ -192,11 +191,11 @@ Chaque semaine : 1 réel (Instagram + TikTok) et 1 carrousel. Avec les posts des
 - **Texte sur le visuel :** Pour les fêtes
 - **Légende :**
 
-  > Noël approche, et chez Da Laura la table est prête. ✨  
-  > Une façade rouge, une salle chaleureuse et des assiettes à partager : c'est ici qu'on se retrouve pour les fêtes, à Cannes.  
+  > Les fêtes se vivent à table. ✨  
+  > Une salle chaleureuse, des assiettes généreuses et tous ceux que tu aimes autour de toi : chez Da Laura, on t'attend pour les fêtes.  
   > Réserve ta table via le lien en bio 🎄
 
-- **Hashtags :** #DaLaura #DaLauraCannes #RestaurantItalienCannes #DolceVita #Cannes #FrenchRiviera
+- **Hashtags :** #DaLaura #DaLauraCannes #RestaurantItalienCannes #Noël #DolceVita #Cannes #FrenchRiviera
 - **Appel à l'action :** Réserve ta table via le lien en bio
 - ⚠️ **À valider :** Ouverture les 24, 25 et 26 décembre
 
@@ -204,7 +203,7 @@ Chaque semaine : 1 réel (Instagram + TikTok) et 1 carrousel. Avec les posts des
 
 **Post · 10h00** · *La communauté*
 
-- **Photo / vidéo :** prête : `photos/da-laura/compte-instagram/recadrees/lustre-bougies.jpg` (le lustre aux bougies de la salle, ambiance de fête)
+- **Photo / vidéo :** prête : `photos/da-laura/cannes/salle-banquette-jaune.jpg` (la salle chaleureuse de Da Laura)
 - **Texte sur le visuel :** Buon Natale
 - **Légende :**
 
@@ -220,13 +219,13 @@ Chaque semaine : 1 réel (Instagram + TikTok) et 1 carrousel. Avec les posts des
 
 **Carrousel · 11h30** · *Cannes et la dolce vita*
 
-- **Photo / vidéo :** à fournir : `photos/da-laura/plats/capodanno-01.jpg à -04.jpg` (lentilles, cotechino, touche de rouge dans la déco)
-- **Texte sur le visuel :** Le Nouvel An à l'italienne
+- **Photo / vidéo :** prête : `photos/da-laura/cannes/fusilli-piment.jpg + photos/da-laura/cannes/tiramisu-fraise.jpg + photos/da-laura/cannes/risotto-safran-jambon.jpg + photos/da-laura/cannes/table-bougie.jpg + photos/da-laura/cannes/poele-flambee.jpg` (une touche de rouge porte-bonheur et des plats de fête)
+- **Texte sur le visuel :** Capodanno
 - **Légende :**
 
   > Comment fête-t-on le Nouvel An en Italie ? 🇮🇹  
-  > Des lentilles pour la prospérité, du cotechino pour l'abondance et… une touche de rouge sur soi pour porter chance toute l'année.  
-  > Glisse pour découvrir ces traditions, et dis-nous laquelle tu vas adopter ce 31 décembre. ✨
+  > On porte une touche de rouge pour la chance, on partage un grand repas et on finit sur une note sucrée.  
+  > Glisse pour notre version Da Laura, et dis-nous en commentaire ta tradition du 31. ✨
 
 - **Hashtags :** #DaLaura #CuisineItalienne #ItalianFood #DolceVita #CannesFood #CôteDAzur
 - **Appel à l'action :** Dis-nous en commentaire quelle tradition tu adoptes
@@ -239,21 +238,20 @@ Chaque semaine : 1 réel (Instagram + TikTok) et 1 carrousel. Avec les posts des
 - **Texte sur le visuel :** Merci pour 2026
 - **Légende :**
 
-  > Merci pour cette année 2026 à nos côtés. ✨  
-  > Pour chaque table réservée, chaque assiette partagée et chaque sourire en terrasse : merci. On se retrouve en 2027 !  
-  > Buon anno 🎉
+  > Merci pour 2026. ❤️  
+  > Chaque table, chaque assiette partagée, chaque sourire : c'est vous qui faites vivre Da Laura.  
+  > On se retrouve en 2027, à table. ✨
 
-- **Hashtags :** #DaLaura #DaLauraCannes #RestaurantCannes #DolceVita #Cannes #FrenchRiviera
+- **Hashtags :** #DaLaura #DaLauraCannes #RestaurantItalienCannes #Merci2026 #DolceVita #Cannes
 - **Appel à l'action :** Réserve ta table via le lien en bio
 
 ## À valider avant publication
 
-- **Réels** : 5 au lieu des 2 prévus par la formule Essentielle : les présenter à Laura comme un cadeau de lancement (décembre seulement) ou les facturer en option (90 € l'unité selon votre grille).
-- **Ouverture et horaires** les 24, 25 et 31 décembre ; **menus de fêtes** et prix pour le post du 3 décembre.
-- **Histoire de Laura** (post du 6 décembre) ; **desserts** : noms exacts et « faits maison » à confirmer.
-- **Photos en attente** : lentilles et cotechino (carrousel du 29), sinon remplacement par des photos existantes. Le post du 25 utilise le lustre aux bougies de la salle.
-- **Qualité** : plusieurs photos viennent de la grille du compte (374 px de large) : demander les originaux pour une netteté parfaite.
-- **Loi Évin** : les photos avec spritz ou coupe de champagne sont écartées.
+- **Photos** : toutes viennent du shooting professionnel de Cannes (charte naturelle appliquée). Les photos de Mougins sont gardées à part (autre lieu).
+- **Réels** : 5 réels sans aucun texte (photos, mouvements lents, transitions). Le contrat en prévoit 2 : 3 réels offerts pour le lancement ou en option (90 € l'unité).
+- **Post du 6 décembre** : photo de Laura (shooting) et son histoire à compléter avec elle.
+- **Menus de fêtes** (post du 3) : contenu et prix ; **ouverture** les 24, 25 et 31 décembre.
+- **Loi Évin** : aucune photo avec verre de vin, spritz ou coupe de champagne.
 
 ## Photos et vidéos à prévoir
 
@@ -261,16 +259,16 @@ Voici la liste des prises de vue à réaliser, à déposer dans les sous-dossier
 
 | Fichier | Contenu | Pour le |
 |---|---|---|
-| `compte-instagram/recadrees/facade-fiat-500-rouge.jpg + compte-instagram/recadrees/facade-terrasse.jpg + ambiance/salle-guirlandes.jpg + compte-instagram/recadrees/table-assiette-da-laura.jpg + ambiance/ardoise-piatti-del-giorno.jpg` | la façade, la terrasse, la salle, la table et Laura | 01/12 |
+| `cannes/facade-terrasse.jpg + cannes/enseigne-triangle.jpg + cannes/salle-banquette-jaune.jpg + cannes/terrasse-fauteuils.jpg + cannes/epicerie.jpg + cannes/facade-rue.jpg` | la terrasse, l'enseigne, la salle, l'épicerie : entrer chez Da Laura | 01/12 |
 | `reels/da-laura/2026-12-02-decouverte-da-laura.mp4` | montage prêt (version TikTok : reels/da-laura/2026-12-02-decouverte-da-laura-tiktok.mp4) | 02/12 |
-| `plats/menu-fetes.jpg` | table de fête dressée avec un plat du menu de Noël | 03/12 |
-| `ambiance/ardoise-piatti-del-giorno.jpg` | Laura et son ardoise sur la terrasse | 06/12 |
-| `compte-instagram/recadrees/ravioli-faconnes-main.jpg + cuisine/gnocchi-faits-main.jpg + cuisine/pates-fraiches-rigatoni.jpg + compte-instagram/recadrees/pates-poele-flamme.jpg + plats/ravioli-truffe.jpg` | les pâtes, de la main du chef à l'assiette | 08/12 |
+| `cannes/table-dressee-chaises-jaunes.jpg` | une table dressée, prête pour les fêtes | 03/12 |
+| `laura/laura-portrait.jpg` | Laura dans sa salle | 06/12 |
+| `cannes/tagliatelle-machine.jpg + cannes/pappardelle-fraiches.jpg + cannes/gnocchi-roules.jpg + cannes/rigatoni-mains-chef.jpg + cannes/poele-flamme-pates.jpg + cannes/spaghetti-champignons.jpg` | des pâtes fraîches tirées le matin jusqu'à l'assiette | 08/12 |
 | `reels/da-laura/2026-12-09-geste-du-chef.mp4` | montage prêt (version TikTok : reels/da-laura/2026-12-09-geste-du-chef-tiktok.mp4) | 09/12 |
-| `plats/planche-fromages-charcuterie.jpg + plats/ravioli-truffe.jpg + plats/pappardelle-prosciutto-huile.jpg` | fromages et charcuterie, truffe, huile d'olive | 14/12 |
+| `cannes/trancheuse-prosciutto.jpg + cannes/burrata-prosciutto-gros-plan.jpg + cannes/planche-antipasti.jpg + cannes/burrata-tomates.jpg + cannes/chef-citrons.jpg + cannes/burrata-truffe.jpg` | prosciutto tranché, burrata, antipasti, citrons, truffe | 14/12 |
 | `reels/da-laura/2026-12-16-pause-douceur.mp4` | montage prêt (version TikTok : reels/da-laura/2026-12-16-pause-douceur-tiktok.mp4) | 16/12 |
-| `plats/spaghetti-crevettes.jpg + compte-instagram/recadrees/risotto-crevettes.jpg + compte-instagram/recadrees/spaghetti-crevettes-sauce.jpg` | les plats de la mer de Da Laura | 21/12 |
+| `cannes/palourdes.jpg + cannes/langoustines-pates.jpg + cannes/chef-spaghetti-crevettes.jpg + cannes/huile-spaghetti-crevettes.jpg + cannes/poelee-mer.jpg` | les plats de la mer de Da Laura | 21/12 |
 | `reels/da-laura/2026-12-23-fetes-da-laura.mp4` | montage prêt (version TikTok : reels/da-laura/2026-12-23-fetes-da-laura-tiktok.mp4) | 23/12 |
-| `compte-instagram/recadrees/lustre-bougies.jpg` | le lustre aux bougies de la salle, ambiance de fête | 25/12 |
-| `plats/capodanno-01.jpg à -04.jpg` | lentilles, cotechino, touche de rouge dans la déco | 29/12 |
+| `cannes/salle-banquette-jaune.jpg` | la salle chaleureuse de Da Laura | 25/12 |
+| `cannes/fusilli-piment.jpg + cannes/tiramisu-fraise.jpg + cannes/risotto-safran-jambon.jpg + cannes/table-bougie.jpg + cannes/poele-flambee.jpg` | une touche de rouge porte-bonheur et des plats de fête | 29/12 |
 | `reels/da-laura/2026-12-30-merci-2026.mp4` | montage prêt (version TikTok : reels/da-laura/2026-12-30-merci-2026-tiktok.mp4) | 30/12 |

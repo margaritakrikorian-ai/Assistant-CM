@@ -348,6 +348,35 @@ A_VALIDER = [
     "**Loi Évin** : les photos avec spritz ou coupe de champagne sont écartées.",
 ]
 
+# ---- 27/11/2026 : tout le mois refait avec les photos du shooting professionnel de Cannes ----
+C = "photos/da-laura/cannes/"
+def _c(*noms): return " + ".join(C + n + ".jpg" for n in noms)
+NOUVELLES = {
+ 1: (_c("facade-terrasse", "enseigne-triangle", "salle-banquette-jaune", "terrasse-fauteuils", "epicerie", "facade-rue") + " — la terrasse, l'enseigne, la salle, l'épicerie : entrer chez Da Laura",
+     "Bienvenue chez Da Laura. ✨\nUne terrasse au cœur de Cannes, une salle où l'on prend son temps et la cucina autentica, dal 1992.\nGlisse pour entrer dans la maison, et réserve ta table via le lien en bio. 🍝"),
+ 3: (_c("table-dressee-chaises-jaunes") + " — une table dressée, prête pour les fêtes", None),
+ 6: ("photos/da-laura/laura/laura-portrait.jpg — Laura dans sa salle", None),
+ 8: (_c("tagliatelle-machine", "pappardelle-fraiches", "gnocchi-roules", "rigatoni-mains-chef", "poele-flamme-pates", "spaghetti-champignons") + " — des pâtes fraîches tirées le matin jusqu'à l'assiette",
+     "Ici, les pâtes sont faites maison. 🍝\nTagliatelle tout juste sorties de la machine, gnocchi roulés à la main, rigatoni du jour… puis un passage à la poêle avant d'arriver dans ton assiette.\nGlisse pour suivre le chemin, et dis-nous en commentaire ta forme préférée. 👇"),
+ 14: (_c("trancheuse-prosciutto", "burrata-prosciutto-gros-plan", "planche-antipasti", "burrata-tomates", "chef-citrons", "burrata-truffe") + " — prosciutto tranché, burrata, antipasti, citrons, truffe",
+     "Les produits d'Italie, à la table de Da Laura. 🇮🇹\nProsciutto tranché minute, burrata crémeuse, antipasti à partager, citrons ensoleillés et truffe râpée : de beaux produits, travaillés simplement.\nGlisse pour les découvrir, et enregistre ce post pour ta prochaine envie d'Italie. 🌿"),
+ 21: (_c("palourdes", "langoustines-pates", "chef-spaghetti-crevettes", "huile-spaghetti-crevettes", "poelee-mer") + " — les plats de la mer de Da Laura",
+     None),
+ 25: (_c("salle-banquette-jaune") + " — la salle chaleureuse de Da Laura", None),
+ 29: (_c("fusilli-piment", "tiramisu-fraise", "risotto-safran-jambon", "table-bougie", "poele-flambee") + " — une touche de rouge porte-bonheur et des plats de fête",
+     "Comment fête-t-on le Nouvel An en Italie ? 🇮🇹\nOn porte une touche de rouge pour la chance, on partage un grand repas et on finit sur une note sucrée.\nGlisse pour notre version Da Laura, et dis-nous en commentaire ta tradition du 31. ✨"),
+}
+FEED = [r[:5] + ((NOUVELLES[r[0]][0], NOUVELLES[r[0]][1] or r[6]) if r[0] in NOUVELLES else (r[5], r[6])) + r[7:] for r in FEED]
+FEED = [REMPLACER[r[0]] if r[0] in (2, 9, 16, 23, 30) else r for r in FEED]  # réels : légendes relues dans les nouveaux plans
+TEXTES.update({14: "Les produits d'Italie", 21: "La Vigilia", 29: "Capodanno", 25: "Buon Natale"})
+A_VALIDER = [
+    "**Photos** : toutes viennent du shooting professionnel de Cannes (charte naturelle appliquée). Les photos de Mougins sont gardées à part (autre lieu).",
+    "**Réels** : 5 réels sans aucun texte (photos, mouvements lents, transitions). Le contrat en prévoit 2 : 3 réels offerts pour le lancement ou en option (90 € l'unité).",
+    "**Post du 6 décembre** : photo de Laura (shooting) et son histoire à compléter avec elle.",
+    "**Menus de fêtes** (post du 3) : contenu et prix ; **ouverture** les 24, 25 et 31 décembre.",
+    "**Loi Évin** : aucune photo avec verre de vin, spritz ou coupe de champagne.",
+]
+
 if __name__ == '__main__':
     import sys
     from rendu import rendre

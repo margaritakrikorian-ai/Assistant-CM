@@ -1,110 +1,16 @@
 {
- "plans": [
-  {
-   "type": "video",
-   "source": "photos/da-laura/videos/ambiance-enseigne-terrasse.mov",
-   "debut": 0.05,
-   "fin": 1.1
-  },
-  {
-   "type": "photo",
-   "source": "photos/da-laura/plats/tiramisu-fraise.jpg",
-   "duree": 1.3,
-   "mouvement": "zoom-avant",
-   "ampleur": 0.12
-  },
-  {
-   "type": "video",
-   "source": "photos/da-laura/videos/ambiance-enseigne-terrasse.mov",
-   "debut": 5.42,
-   "fin": 6.2
-  },
-  {
-   "type": "photo",
-   "source": "photos/da-laura/plats/cappuccino-cornetto.jpg",
-   "duree": 1.3,
-   "mouvement": "zoom-arriere",
-   "ampleur": 0.12
-  },
-  {
-   "type": "photo",
-   "source": "photos/da-laura/compte-instagram/recadrees/panna-cotta-fraises-2.jpg",
-   "duree": 1.2,
-   "mouvement": "gauche-droite",
-   "ampleur": 0.14
-  },
-  {
-   "type": "photo",
-   "source": "photos/da-laura/compte-instagram/recadrees/couple-terrasse-cafe.jpg",
-   "duree": 1.5,
-   "mouvement": "zoom-avant",
-   "ampleur": 0.12
-  },
-  {
-   "type": "photo",
-   "source": "photos/da-laura/compte-instagram/recadrees/facade-terrasse.jpg",
-   "duree": 1.3,
-   "mouvement": "droite-gauche",
-   "ampleur": 0.14
-  },
-  {
-   "type": "video",
-   "source": "photos/da-laura/videos/ambiance-enseigne-terrasse.mov",
-   "debut": 2.42,
-   "fin": 3.28
-  }
+ "photos": [
+  "photos/da-laura/cannes/cappuccino-croissants.jpg",
+  "photos/da-laura/cannes/cappuccino-coeur.jpg",
+  "photos/da-laura/cannes/croissant.jpg",
+  "photos/da-laura/cannes/croissant-trempe.jpg",
+  "photos/da-laura/cannes/petit-dejeuner-terrasse.jpg",
+  "photos/da-laura/cannes/tiramisu-fraise.jpg",
+  "photos/da-laura/cannes/table-assiettes-peintes.jpg"
  ],
- "textes": [
-  {
-   "texte": "La pause douceur",
-   "surtitre": "DA LAURA · CANNES",
-   "plans": [
-    0,
-    0
-   ],
-   "taille": 140,
-   "y": 320
-  },
-  {
-   "texte": "Côté desserts…",
-   "plans": [
-    1,
-    2
-   ],
-   "taille": 130,
-   "y": 340
-  },
-  {
-   "texte": "…ou un cappuccino",
-   "plans": [
-    3,
-    3
-   ],
-   "taille": 130,
-   "y": 340
-  },
-  {
-   "texte": "en terrasse",
-   "plans": [
-    5,
-    6
-   ],
-   "taille": 130,
-   "y": 340
-  }
- ],
- "accroche_tiktok": "POV : tu gardes de la\nplace pour le dessert",
- "fin": {
-  "duree": 2.6,
-  "appel": "On t'attend",
-  "lignes": [
-   "8 rue du 24 Août · Cannes",
-   "Réservations : 04 93 38 40 51"
-  ]
- },
- "legende": "Une douceur pour finir, ou juste un cappuccino en terrasse ? 🍓\nDesserts aux fraises, tiramisù, tartelette aux fruits rouges : la pause sucrée se prend chez Da Laura.\nOn t'attend ✨",
- "hashtags": "#DaLaura #DaLauraCannes #RestaurantItalienCannes #Tiramisu #FoodLover #Cannes #CannesFood",
- "legende_tiktok": "Toujours de la place pour le dessert 🍓 Tiramisù, tartelette ou cappuccino en terrasse : tu choisis quoi ? ✨",
- "hashtags_tiktok": "#DaLaura #RestaurantItalienCannes #Tiramisu #Cannes #CannesFood",
- "sortie": "reels/da-laura/2026-12-16-pause-douceur.mp4"
+ "sortie": "reels/da-laura/2026-12-16-pause-douceur.mp4",
+ "legende": "La pause douceur chez Da Laura. ☕\nUn cappuccino au cœur de mousse, un cornetto encore tiède, et un dolce pour finir en beauté.\nTu viens pour le café ou pour le dessert ? Dis-le-nous en commentaire 👇",
+ "hashtags": "#DaLaura #DaLauraCannes #Cappuccino #Cornetto #DolceVita #CannesFood #Cannes",
+ "legende_tiktok": "Cappuccino, cornetto et dolce : la pause douceur à Cannes ☕🥐 Team café ou team dessert ? 👇",
+ "hashtags_tiktok": "#DaLaura #Cappuccino #Cannes #CannesFood #DolceVita"
 }

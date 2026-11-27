@@ -1,115 +1,17 @@
 {
- "plans": [
-  {
-   "type": "photo",
-   "source": "photos/da-laura/compte-instagram/recadrees/facade-fiat-500-rouge.jpg",
-   "duree": 1.6,
-   "mouvement": "zoom-avant",
-   "ampleur": 0.1
-  },
-  {
-   "type": "photo",
-   "source": "photos/da-laura/compte-instagram/recadrees/terrasse-passants.jpg",
-   "duree": 1.2,
-   "mouvement": "gauche-droite",
-   "ampleur": 0.14
-  },
-  {
-   "type": "video",
-   "source": "photos/da-laura/videos/ambiance-enseigne-terrasse.mov",
-   "debut": 3.36,
-   "fin": 4.5
-  },
-  {
-   "type": "photo",
-   "source": "photos/da-laura/compte-instagram/recadrees/table-assiette-da-laura.jpg",
-   "duree": 1.2,
-   "mouvement": "zoom-arriere",
-   "ampleur": 0.12
-  },
-  {
-   "type": "photo",
-   "source": "photos/da-laura/compte-instagram/recadrees/burrata-jambon.jpg",
-   "duree": 1.3,
-   "mouvement": "zoom-avant",
-   "ampleur": 0.12
-  },
-  {
-   "type": "photo",
-   "source": "photos/da-laura/compte-instagram/recadrees/pates-poelees-fourchette.jpg",
-   "duree": 1.2,
-   "mouvement": "droite-gauche",
-   "ampleur": 0.14
-  },
-  {
-   "type": "photo",
-   "source": "photos/da-laura/ambiance/ardoise-piatti-del-giorno.jpg",
-   "duree": 1.6,
-   "mouvement": "zoom-avant",
-   "ampleur": 0.08,
-   "centre": [
-    0.5,
-    0.4
-   ]
-  },
-  {
-   "type": "video",
-   "source": "photos/da-laura/videos/ambiance-enseigne-terrasse.mov",
-   "debut": 2.42,
-   "fin": 3.28
-  }
+ "photos": [
+  "photos/da-laura/cannes/salle-banquette-jaune.jpg",
+  "photos/da-laura/cannes/table-bougie.jpg",
+  "photos/da-laura/cannes/table-dressee-chaises-jaunes.jpg",
+  "photos/da-laura/cannes/mur-rose-cadres.jpg",
+  "photos/da-laura/cannes/burrata-truffe.jpg",
+  "photos/da-laura/cannes/risotto-safran-jambon.jpg",
+  "photos/da-laura/cannes/table-assiettes-peintes.jpg",
+  "photos/da-laura/cannes/facade-passants.jpg"
  ],
- "textes": [
-  {
-   "texte": "Pour les fêtes,\nta table t'attend",
-   "surtitre": "DA LAURA · CANNES",
-   "plans": [
-    0,
-    0
-   ],
-   "taille": 124,
-   "y": 300
-  },
-  {
-   "texte": "une maison chaleureuse",
-   "plans": [
-    1,
-    2
-   ],
-   "taille": 120,
-   "y": 340
-  },
-  {
-   "texte": "des assiettes à partager",
-   "plans": [
-    3,
-    5
-   ],
-   "taille": 118,
-   "y": 340
-  },
-  {
-   "texte": "et l'ardoise de Laura",
-   "plans": [
-    6,
-    6
-   ],
-   "taille": 124,
-   "y": 320
-  }
- ],
- "accroche_tiktok": "POV : ton repas\nde fêtes à Cannes",
- "fin": {
-  "duree": 2.6,
-  "appel": "Réserve pour les fêtes",
-  "lignes": [
-   "8 rue du 24 Août · Cannes",
-   "Réservations : 04 93 38 40 51"
-  ]
- },
- "legende": "Noël approche, et chez Da Laura la table est prête. ✨\nUne façade rouge, une salle chaleureuse et des assiettes à partager : c'est ici qu'on se retrouve pour les fêtes, à Cannes.\nRéserve ta table via le lien en bio 🎄",
- "hashtags": "#DaLaura #DaLauraCannes #RestaurantItalienCannes #DolceVita #Cannes #FrenchRiviera",
- "legende_tiktok": "Ton repas de fêtes à Cannes, c'est ici 🎄 Salle chaleureuse, assiettes à partager et l'ardoise de Laura. On réserve ? ✨",
- "hashtags_tiktok": "#DaLaura #RestaurantItalienCannes #Cannes #CannesFood #FrenchRiviera",
- "sortie": "reels/da-laura/2026-12-23-fetes-da-laura.mp4"
+ "sortie": "reels/da-laura/2026-12-23-fetes-da-laura.mp4",
+ "legende": "Les fêtes se vivent à table. ✨\nUne salle chaleureuse, des assiettes généreuses et tous ceux que tu aimes autour de toi : chez Da Laura, on t'attend pour les fêtes.\nRéserve ta table via le lien en bio 🎄",
+ "hashtags": "#DaLaura #DaLauraCannes #RestaurantItalienCannes #Noël #DolceVita #Cannes #FrenchRiviera",
+ "legende_tiktok": "Les fêtes à l'italienne chez Da Laura 🎄✨ Tu réserves pour qui ? 👇",
+ "hashtags_tiktok": "#DaLaura #RestaurantItalien #Cannes #Noel #CannesFood"
 }

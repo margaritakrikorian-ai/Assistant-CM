@@ -122,7 +122,7 @@ L'utilisatrice travaille sur iPad et ne navigue pas dans le dépôt Git. **Tout 
 
 | Dossier | Identifiant | Contenu |
 |---|---|---|
-| 00 - SOMMAIRE (Google Doc) | `1cc_PTCruMa9oZOFfbXqy_34mHAoer9RwX9ee-7tT3w0` | Index de tout ce qui a été livré : à mettre à jour à chaque livraison |
+| 00 - SOMMAIRE (Google Doc) | `1wQY0qtFJtL1UdlBTQXHDqHuy64NTBXSFd8Ovo12ijwg` | Index de tout ce qui a été livré : à mettre à jour à chaque livraison |
 | 01 - Réels | `1Nof5SKJ6b5YC_gx1bQqX8q8F4NQJ8LFL` | Vidéos, couvertures, légendes (Google Doc) |
 | 02 - Stories Piatti del giorno | `17F4dgwTE_9mcdpDvi-GluDvMnKD2V2rl` | Stories de plats du jour |
 | 03 - Publications | `1-CvcCdnGGtEh6FZM34ESJ5kFjOqr4ZJg` | Posts et carrousels prêts |
@@ -154,6 +154,12 @@ Dès que l'utilisatrice envoie des photos ou des vidéos, appliquer le skill `re
 - Ce style (cartes flottantes, craie, fond flou) a été rejeté en bloc : ne plus le proposer. Avant de remonter, partir d'un réel de référence envoyé par l'utilisatrice.
 - Outil (style rejeté) : `python3 outils/monter_reel_pro.py outils/reels/pro-<sujet>.json [--tiktok]` (photos flottantes en carte, duo de cartes, transitions filées, zoom et fondu, textes animés, carte de fin). Plans existants : `pro-une-journee-da-laura`, `pro-in-cucina`, `pro-choisis-ta-table`.
 - Photos du shooting professionnel (Drive « Photo DA LAURA », dans Community management) : rangées dans `photos/da-laura/{plats,cuisine,ambiance}/`. Exclure les photos avec verre de vin ou flûte (loi Évin) : tartare, prosciutto-figues, desserts-balcon.
+
+## Décembre refait avec le shooting (27/11/2026)
+
+- Toutes les publications et réels de décembre utilisent les photos du **shooting de Cannes** (`photos/da-laura/cannes/`, noms parlants) ; Laura : `photos/da-laura/laura/`. Les photos de Mougins ne servent pas au compte de Cannes (autre lieu).
+- Réels : **sans aucun texte** (choix de l'utilisatrice), `python3 outils/monter_reel_sobre.py outils/reels/<plan>.json [--tiktok]` (photos plein écran, mouvements lents, fondus et glissés, charte, piste silencieuse).
+- Calendrier : bloc « NOUVELLES » à la fin de `outils/calendrier/da_laura_2026_12.py`, puis `generer_visuels.py`. Aperçu du feed : `scratchpad/feed/build.py` → artifact Qbnvz1i5M4xu7jeyuMe9rc + PDF dans 04.
 
 ## Photos du shooting (27/11/2026)
 
