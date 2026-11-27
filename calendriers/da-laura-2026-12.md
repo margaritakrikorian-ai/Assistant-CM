@@ -5,39 +5,36 @@
 ## Vue d'ensemble
 
 - **Publications :** 8 (3 posts simples et 5 carrousels), conformément au contrat (8 par mois)
-- **Réels :** 5 (contrat : 2 par mois)
-- **Stories :** les 20 stories « Piatti del giorno » du mois (plats du jour, du mardi au samedi), créées chaque semaine à partir des plats envoyés : voir `stories/da-laura/plats-du-jour/`
+- **Réels :** 2 (contrat : 2 par mois)
+- **Stories :** les 20 stories « Piatti del giorno » du mois (plats du jour, du mardi au samedi), à 11h00 : modèles « Piatti del giorno » sans plats, que la community manager remplit chaque jour avec les suggestions (`stories/da-laura/piatti-modeles/`)
 - **Horaires :** 11h–11h30 avant le déjeuner, 18h–18h30 avant le dîner. Le jeudi et le vendredi en fin de journée pour les réservations du week-end.
 
 ### Temps forts retenus
 
 | Date | Temps fort | Ce qu'on en fait |
 |---|---|---|
-| Semaine 1 (1-6 déc.) | Lancement du compte | Carrousel « Bienvenue chez Da Laura » + réel « La cucina autentica » |
-| Semaine 2 (7-13 déc.) | Le savoir-faire | Carrousel « Nos pâtes faites maison » + réel « Le geste du chef » |
-| Semaine 3 (14-20 déc.) | Produits et douceurs | Carrousel « Les produits d'Italie » + réel « La pause douceur » |
-| Semaine 4 (21-27 déc.) | Vigilia et Noël | Carrousel « La Vigilia » + réel « Pour les fêtes » + post « Buon Natale » |
-| Semaine 5 (28-31 déc.) | Saint-Sylvestre | Carrousel « Le Nouvel An à l'italienne » + réel « Merci pour 2026 » |
+| Semaine 1 (1-6 déc.) | Lancement du compte | Carrousel « Bienvenue chez Da Laura » + posts « Nos menus de fêtes » et « Laura, l'âme de la maison » |
+| Semaine 2 (7-13 déc.) | Le savoir-faire | Carrousel « Nos pâtes faites maison » + réel n° 1 « Le geste du chef » (9 déc.) |
+| Semaine 3 (14-20 déc.) | Les produits | Carrousel « Les produits d'Italie » |
+| Semaine 4 (21-27 déc.) | Vigilia et Noël | Carrousel « La Vigilia » + réel n° 2 « Pour les fêtes » (23 déc.) + post « Buon Natale » |
+| Semaine 5 (28-31 déc.) | Nouvel An | Carrousel « Capodanno » |
 
-Chaque semaine : 1 réel (Instagram + TikTok) et 1 carrousel. Avec les posts des 3, 6 et 25 décembre : 8 publications (contrat) et 5 réels (le contrat en prévoit 2 : 3 réels offerts pour le lancement, à valider). Stories : les 20 « Piatti del giorno ».
+Formule Essentielle : 8 publications (5 carrousels, 3 posts), 2 réels (Instagram + TikTok, réalisés par la community manager), 20 stories « Piatti del giorno » (du mardi au samedi à 11h, sauf le 25 décembre, fermé, remplacé par le 29).
 
 ## Calendrier jour par jour
 
 | Date | Heure | Format | Thème | Sujet |
 |---|---|---|---|---|
 | Mar 01/12 | 18h30 | Carrousel | L'ambiance | Bienvenue chez Da Laura. ✨ |
-| Mer 02/12 | 18h30 | Réel | L'ambiance | La cucina autentica, dal 1992. 🍝 |
 | Jeu 03/12 | 11h30 | Post | La carte | Les fêtes approchent, et ta table chez Da Laura aussi. 🎄 |
 | Dim 06/12 | 11h30 | Post | L'équipe et Laura | Derrière Da Laura, il y a Laura. ❤️ |
 | Mar 08/12 | 11h30 | Carrousel | Le savoir-faire | Ici, les pâtes sont faites maison. 🍝 |
 | Mer 09/12 | 18h30 | Réel | Le savoir-faire | Il y a des gestes qui ne s'apprennent qu'en cuisine. 🍝 |
 | Lun 14/12 | 18h30 | Carrousel | Le savoir-faire | Les produits d'Italie, à la table de Da Laura. 🇮🇹 |
-| Mer 16/12 | 18h30 | Réel | La carte | La pause douceur chez Da Laura. ☕ |
 | Lun 21/12 | 18h30 | Carrousel | Cannes et la dolce vita | Le 24 décembre au soir, dans le sud de l'Italie, on ne sert pas de viande : c'est la Vigilia, le grand repas de poissons et de fruits de mer. 🐟 |
 | Mer 23/12 | 18h30 | Réel | L'ambiance | Les fêtes se vivent à table. ✨ |
 | Ven 25/12 | 10h00 | Post | La communauté | Buon Natale ! 🎄 |
 | Mar 29/12 | 11h30 | Carrousel | Cannes et la dolce vita | Comment fête-t-on le Nouvel An en Italie ? 🇮🇹 |
-| Mer 30/12 | 18h30 | Réel | La communauté | Merci pour 2026. ❤️ |
 
 ## Détail des publications
 
@@ -55,22 +52,6 @@ Chaque semaine : 1 réel (Instagram + TikTok) et 1 carrousel. Avec les posts des
 
 - **Hashtags :** #DaLaura #DaLauraCannes #RestaurantItalienCannes #DolceVita #Cannes #FrenchRiviera
 - **Appel à l'action :** Réserve ta table via le lien en bio
-
-### Mercredi 2 décembre · Lancement du compte
-
-**Réel · 18h30** · *L'ambiance*
-
-- **Photo / vidéo :** prête : `reels/da-laura/2026-12-02-decouverte-da-laura.mp4` (montage prêt (version TikTok : reels/da-laura/2026-12-02-decouverte-da-laura-tiktok.mp4))
-- **Texte sur le visuel :** La cucina autentica
-- **Légende :**
-
-  > La cucina autentica, dal 1992. 🍝  
-  > Une terrasse au cœur de Cannes, des pâtes qui sautent à la poêle et des assiettes à partager : bienvenue chez Da Laura.  
-  > Réserve ta table via le lien en bio ✨
-
-- **Hashtags :** #DaLaura #DaLauraCannes #RestaurantItalienCannes #CuisineItalienne #DolceVita #Cannes #CannesFood
-- **Appel à l'action :** Réserve ta table via le lien en bio
-- ⚠️ **À valider :** Desserts « maison » à confirmer avec Laura
 
 ### Jeudi 3 décembre · Menus de Noël et de la Saint-Sylvestre
 
@@ -125,7 +106,7 @@ Chaque semaine : 1 réel (Instagram + TikTok) et 1 carrousel. Avec les posts des
 
 **Réel · 18h30** · *Le savoir-faire*
 
-- **Photo / vidéo :** prête : `reels/da-laura/2026-12-09-geste-du-chef.mp4` (montage prêt (version TikTok : reels/da-laura/2026-12-09-geste-du-chef-tiktok.mp4))
+- **Photo / vidéo :** à fournir : `Réel réalisé par la community manager (Instagram + TikTok) : idée et légende proposées ci-dessous`
 - **Texte sur le visuel :** Le geste du chef
 - **Légende :**
 
@@ -152,22 +133,6 @@ Chaque semaine : 1 réel (Instagram + TikTok) et 1 carrousel. Avec les posts des
 - **Appel à l'action :** Enregistre ce post
 - ⚠️ **À valider :** Produits, fournisseurs et régions d'origine exacts
 
-### Mercredi 16 décembre
-
-**Réel · 18h30** · *La carte*
-
-- **Photo / vidéo :** prête : `reels/da-laura/2026-12-16-pause-douceur.mp4` (montage prêt (version TikTok : reels/da-laura/2026-12-16-pause-douceur-tiktok.mp4))
-- **Texte sur le visuel :** La pause douceur
-- **Légende :**
-
-  > La pause douceur chez Da Laura. ☕  
-  > Un cappuccino au cœur de mousse, un cornetto encore tiède, et un dolce pour finir en beauté.  
-  > Tu viens pour le café ou pour le dessert ? Dis-le-nous en commentaire 👇
-
-- **Hashtags :** #DaLaura #DaLauraCannes #Cappuccino #Cornetto #DolceVita #CannesFood #Cannes
-- **Appel à l'action :** Réserve ta table via le lien en bio
-- ⚠️ **À valider :** Noms exacts des desserts à confirmer avec Laura
-
 ### Lundi 21 décembre · Tradition de la Vigilia
 
 **Carrousel · 18h30** · *Cannes et la dolce vita*
@@ -188,7 +153,7 @@ Chaque semaine : 1 réel (Instagram + TikTok) et 1 carrousel. Avec les posts des
 
 **Réel · 18h30** · *L'ambiance*
 
-- **Photo / vidéo :** prête : `reels/da-laura/2026-12-23-fetes-da-laura.mp4` (montage prêt (version TikTok : reels/da-laura/2026-12-23-fetes-da-laura-tiktok.mp4))
+- **Photo / vidéo :** à fournir : `Réel réalisé par la community manager (Instagram + TikTok) : idée et légende proposées ci-dessous`
 - **Texte sur le visuel :** Pour les fêtes
 - **Légende :**
 
@@ -231,27 +196,12 @@ Chaque semaine : 1 réel (Instagram + TikTok) et 1 carrousel. Avec les posts des
 - **Hashtags :** #DaLaura #CuisineItalienne #ItalianFood #DolceVita #CannesFood #CôteDAzur
 - **Appel à l'action :** Dis-nous en commentaire quelle tradition tu adoptes
 
-### Mercredi 30 décembre · Fin d'année
-
-**Réel · 18h30** · *La communauté*
-
-- **Photo / vidéo :** prête : `reels/da-laura/2026-12-30-merci-2026.mp4` (montage prêt (version TikTok : reels/da-laura/2026-12-30-merci-2026-tiktok.mp4))
-- **Texte sur le visuel :** Merci pour 2026
-- **Légende :**
-
-  > Merci pour 2026. ❤️  
-  > Chaque table, chaque assiette partagée, chaque sourire : c'est vous qui faites vivre Da Laura.  
-  > On se retrouve en 2027, à table. ✨
-
-- **Hashtags :** #DaLaura #DaLauraCannes #RestaurantItalienCannes #Merci2026 #DolceVita #Cannes
-- **Appel à l'action :** Réserve ta table via le lien en bio
-
 ## À valider avant publication
 
-- **Photos** : toutes viennent du shooting professionnel de Cannes (charte naturelle appliquée). Les photos de Mougins sont gardées à part (autre lieu).
-- **Réels** : 5 réels sans aucun texte (photos, mouvements lents, transitions). Le contrat en prévoit 2 : 3 réels offerts pour le lancement ou en option (90 € l'unité).
+- **Contrat Essentielle** : 8 publications, 2 réels, 20 stories. Rien de plus n'est prévu.
+- **Photos** : toutes viennent du shooting professionnel de Cannes (charte naturelle appliquée).
 - **Post du 6 décembre** : photo de Laura (shooting) et son histoire à compléter avec elle.
-- **Fêtes** : fermé le 24 au soir et le 25 toute la journée (confirmé). Reste à confirmer : ouverture du 31 et menu de la Saint-Sylvestre (post du 3).
+- **Fêtes** : fermé le 24 au soir et le 25 toute la journée. À confirmer : ouverture du 26 et du 31, menu de la Saint-Sylvestre (post du 3).
 - **Loi Évin** : aucune photo avec verre de vin, spritz ou coupe de champagne.
 
 ## Photos et vidéos à prévoir
@@ -261,15 +211,12 @@ Voici la liste des prises de vue à réaliser, à déposer dans les sous-dossier
 | Fichier | Contenu | Pour le |
 |---|---|---|
 | `cannes/facade-terrasse.jpg + cannes/enseigne-triangle.jpg + cannes/salle-banquette-jaune.jpg + cannes/terrasse-fauteuils.jpg + cannes/epicerie.jpg + cannes/facade-rue.jpg` | la terrasse, l'enseigne, la salle, l'épicerie : entrer chez Da Laura | 01/12 |
-| `reels/da-laura/2026-12-02-decouverte-da-laura.mp4` | montage prêt (version TikTok : reels/da-laura/2026-12-02-decouverte-da-laura-tiktok.mp4) | 02/12 |
 | `cannes/table-dressee-chaises-jaunes.jpg` | une table dressée, prête pour les fêtes | 03/12 |
 | `laura/laura-portrait.jpg` | Laura dans sa salle | 06/12 |
 | `cannes/tagliatelle-machine.jpg + cannes/pappardelle-fraiches.jpg + cannes/gnocchi-roules.jpg + cannes/rigatoni-mains-chef.jpg + cannes/poele-flamme-pates.jpg + cannes/spaghetti-champignons.jpg` | des pâtes fraîches tirées le matin jusqu'à l'assiette | 08/12 |
-| `reels/da-laura/2026-12-09-geste-du-chef.mp4` | montage prêt (version TikTok : reels/da-laura/2026-12-09-geste-du-chef-tiktok.mp4) | 09/12 |
+| `Réel réalisé par la community manager (Instagram + TikTok) : idée et légende proposées ci-dessous` |  | 09/12 |
 | `cannes/trancheuse-prosciutto.jpg + cannes/burrata-prosciutto-gros-plan.jpg + cannes/planche-antipasti.jpg + cannes/burrata-tomates.jpg + cannes/chef-citrons.jpg + cannes/burrata-truffe.jpg` | prosciutto tranché, burrata, antipasti, citrons, truffe | 14/12 |
-| `reels/da-laura/2026-12-16-pause-douceur.mp4` | montage prêt (version TikTok : reels/da-laura/2026-12-16-pause-douceur-tiktok.mp4) | 16/12 |
 | `cannes/palourdes.jpg + cannes/langoustines-pates.jpg + cannes/chef-spaghetti-crevettes.jpg + cannes/huile-spaghetti-crevettes.jpg + cannes/poelee-mer.jpg` | les plats de la mer de Da Laura | 21/12 |
-| `reels/da-laura/2026-12-23-fetes-da-laura.mp4` | montage prêt (version TikTok : reels/da-laura/2026-12-23-fetes-da-laura-tiktok.mp4) | 23/12 |
+| `Réel réalisé par la community manager (Instagram + TikTok) : idée et légende proposées ci-dessous` |  | 23/12 |
 | `cannes/salle-banquette-jaune.jpg` | la salle chaleureuse de Da Laura | 25/12 |
 | `cannes/fusilli-piment.jpg + cannes/tiramisu-fraise.jpg + cannes/risotto-safran-jambon.jpg + cannes/table-bougie.jpg + cannes/poele-flambee.jpg` | une touche de rouge porte-bonheur et des plats de fête | 29/12 |
-| `reels/da-laura/2026-12-30-merci-2026.mp4` | montage prêt (version TikTok : reels/da-laura/2026-12-30-merci-2026-tiktok.mp4) | 30/12 |

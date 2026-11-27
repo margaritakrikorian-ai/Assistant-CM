@@ -24,6 +24,9 @@ L'utilisatrice veut avoir **le moins de choses possible à demander ou à valide
 
 ### Décisions par défaut (à appliquer sans redemander)
 
+- **CONTRAT DA LAURA = FORMULE ESSENTIELLE, CHAQUE MOIS, SANS EXCEPTION : 8 publications (posts + carrousels), 2 réels, 20 stories « Piatti del giorno ».** Jamais 5 réels, jamais « réels offerts » ni « options » glissées dans un calendrier. Toute erreur sur ce point a déjà été reprochée (27/11/2026). Avant d'envoyer un calendrier, compter les lignes : 8 / 2 / 20.
+- **Les réels sont réalisés par l'utilisatrice** : je prévois seulement les 2 créneaux (date, idée, légende) ; je ne monte aucun réel sans demande explicite.
+
 - Stories « Piatti del giorno » : **du mardi au samedi**, 20 par mois (contrat). Jours fériés et fêtes (24, 25, 26, 31 décembre, 1er janvier) : produire quand même si des plats sont envoyés.
 - Plats sans prix : affichés sans prix.
 - Photo trop petite ou capture d'écran : l'utiliser quand même (au mieux), le signaler une seule fois par mois dans la réponse.
@@ -70,7 +73,7 @@ Tout le contenu est rédigé en français, sauf indication contraire de la fiche
 
 Visuels des posts (1080x1350) et des stories : générés avec `python3 outils/generer_visuels.py calendriers/<calendrier>.csv` (Pillow, polices dans `outils/polices/`).
 Réels (MP4 1080x1920, 15 à 30 s, piste audio silencieuse pour la musique ajoutée dans Instagram) : générés avec `python3 outils/generer_reels.py calendriers/<calendrier>.csv` (ffmpeg).
-**Réels à partir des photos et vidéos de l'utilisatrice (prioritaire)** : `python3 outils/monter_reel.py outils/reels/<plan>.json`. Photos animées (zoom, glissement), extraits de vidéo découpés, textes à la craie calés sur les plans, charte appliquée aussi à la vidéo (`outils/charte-da-laura-hald.png`), carte de fin avec adresse et réservations. Dès que des photos ou des vidéos réelles existent, **monter un vrai réel** au lieu de proposer des cadres « photo à fournir ». Exclure les plans d'alcool (loi Évin). Vérifier les images clés (textes sur le bon plan) avant d'envoyer la vidéo.
+**Réels (seulement sur demande explicite, l'utilisatrice les fait elle-même)** : `python3 outils/monter_reel.py outils/reels/<plan>.json`. Photos animées (zoom, glissement), extraits de vidéo découpés, textes à la craie calés sur les plans, charte appliquée aussi à la vidéo (`outils/charte-da-laura-hald.png`), carte de fin avec adresse et réservations. Exclure les plans d'alcool (loi Évin). Vérifier les images clés (textes sur le bon plan) avant d'envoyer la vidéo.
 
 ## Instagram et secrets
 
@@ -122,7 +125,7 @@ L'utilisatrice travaille sur iPad et ne navigue pas dans le dépôt Git. **Tout 
 
 | Dossier | Identifiant | Contenu |
 |---|---|---|
-| 00 - SOMMAIRE (Google Doc) | `1ChWuPkGTxb6_a4oyYL4C3R8NUwW5zccWom3r-gbN3AA` | Index de tout ce qui a été livré : à mettre à jour à chaque livraison |
+| 00 - SOMMAIRE (Google Doc) | `1zt_MOmcmLKn-fFo_HFTXng4Mz_Su9ObvLnB_yJQrX_4` | Index de tout ce qui a été livré : à mettre à jour à chaque livraison |
 | 01 - Réels | `1Nof5SKJ6b5YC_gx1bQqX8q8F4NQJ8LFL` | Vidéos, couvertures, légendes (Google Doc) |
 | 02 - Stories Piatti del giorno | `17F4dgwTE_9mcdpDvi-GluDvMnKD2V2rl` | Stories de plats du jour |
 | 03 - Publications | `1-CvcCdnGGtEh6FZM34ESJ5kFjOqr4ZJg` | Posts et carrousels prêts |
@@ -137,37 +140,20 @@ L'utilisatrice travaille sur iPad et ne navigue pas dans le dépôt Git. **Tout 
 - Le sommaire ne se modifie pas en place : en créer un nouveau, mettre le tableau à jour, puis mettre l'ancien à la corbeille.
 - **Limite d'environ 3 Mo par fichier** : les vidéos passent par SendUserFile dans la conversation. Rappeler le geste : Partager, puis Enregistrer dans Fichiers, puis Drive, puis DA Laura, puis 01 - Réels.
 
-## Réels à partir des fichiers envoyés
-
-Dès que l'utilisatrice envoie des photos ou des vidéos, appliquer le skill `reels-depuis-photos` : **monter directement une version Instagram et une version TikTok**, les vérifier, les envoyer et les ranger dans Drive. Ne jamais se contenter de proposer.
-
-## Plan de décembre 2026 (choix de l'utilisatrice)
-
-- **1 réel + 1 carrousel par semaine** (5 réels, 5 carrousels) + posts des 3, 6 et 25 décembre = 8 publications. Le contrat Essentielle prévoit 2 réels : les 3 réels en plus sont à présenter à Laura (cadeau de lancement ou option à 90 € l'unité).
-- Photos du compte : `photos/da-laura/compte-instagram/recadrees/` (crop sans icônes, sans filtre : à utiliser comme sources des montages) et `retouchees/` (1080x1350, charte appliquée : à publier telles quelles). Basse définition (374 px de large) : demander les originaux.
-- Montages : `outils/reels/<date>-<sujet>.json` (textes calés par index de plans) ; `python3 outils/monter_reel.py <plan> [--tiktok]` donne la version TikTok automatiquement.
-
-## Réels « montage pro » (demande de l'utilisatrice, 26/11/2026)
-
-- Sans rien lui demander : **choisir soi-même les thèmes**, appliquer la charte validée (filtre naturel, polices, couleurs) et **proposer surtout des réels**.
-- **Rien dans Drive tant que l'utilisatrice n'a pas validé le rendu** (26/11 : les réels « pro » ne lui ont pas plu, « ne range rien dans le drive »). Envoyer d'abord dans la conversation, ranger seulement après son accord.
-- Ce style (cartes flottantes, craie, fond flou) a été rejeté en bloc : ne plus le proposer. Avant de remonter, partir d'un réel de référence envoyé par l'utilisatrice.
-- Outil (style rejeté) : `python3 outils/monter_reel_pro.py outils/reels/pro-<sujet>.json [--tiktok]` (photos flottantes en carte, duo de cartes, transitions filées, zoom et fondu, textes animés, carte de fin). Plans existants : `pro-une-journee-da-laura`, `pro-in-cucina`, `pro-choisis-ta-table`.
-- Photos du shooting professionnel (Drive « Photo DA LAURA », dans Community management) : rangées dans `photos/da-laura/{plats,cuisine,ambiance}/`. Exclure les photos avec verre de vin ou flûte (loi Évin) : tartare, prosciutto-figues, desserts-balcon.
-
 ## Stories « Piatti del giorno » : modèles à remplir (27/11/2026)
 
 - L'utilisatrice écrit elle-même les suggestions : les stories sont des **modèles sans plats** (photo du shooting de Cannes, « Piatti del giorno », date, cadre crème vide). `python3 outils/stories_modeles.py` (20 JPG + programme) puis `node outils/stories_modeles.js` (PowerPoint modifiable, zones de texte en Arial, < 3 Mo pour Drive).
-- 20 stories : du mardi au samedi à 11h00, sauf le 25 (fermé) remplacé par le 29. Drive : 02 › « Stories Piatti del giorno - modèles à remplir (décembre) » (`19JlAk6WTsjRQ9QC34ZH9Ce1LwKEhkBGN`). Calendrier jour par jour en PDF : `calendriers/Calendrier-Da-Laura-decembre-2026.pdf` (04 - Documents).
+- 20 stories : du mardi au samedi à 11h00, sauf le 25 (fermé) remplacé par le 29. Drive : 02 › « Stories Piatti del giorno - modèles à remplir (décembre) » (`19JlAk6WTsjRQ9QC34ZH9Ce1LwKEhkBGN`). Calendrier jour par jour en PDF : `python3 outils/calendrier_pdf.py` (vérifie 8 publications et 2 réels, sinon s’arrête) → 04 - Documents.
 
-## Réels : c'est l'utilisatrice qui les fait (27/11/2026)
+## Plan de décembre 2026 (contrat Essentielle)
 
-- **Ne plus monter ni refaire de réels**, sauf demande explicite. Le calendrier garde les créneaux réels (dates, légendes, idées) pour qu'elle les réalise elle-même. Cette règle prime sur les sections « Réels à partir des fichiers envoyés » et « montage pro ».
+- 8 publications : carrousels des 1, 8, 14, 21 et 29 décembre + posts des 3, 6 et 25 décembre. **2 réels** (créneaux du 9 et du 23 décembre, réalisés par l'utilisatrice). 20 stories : modèles « Piatti del giorno » à remplir.
+- Fermetures : 24 décembre au soir, 25 décembre toute la journée.
+- Rejeté par l'utilisatrice, à ne plus proposer : réels « cartes flottantes / craie / fond flou », textes à la craie sur les réels.
 
 ## Décembre refait avec le shooting (27/11/2026)
 
 - Toutes les publications et réels de décembre utilisent les photos du **shooting de Cannes** (`photos/da-laura/cannes/`, noms parlants) ; Laura : `photos/da-laura/laura/`. Les photos de Mougins ne servent pas au compte de Cannes (autre lieu).
-- Réels : **sans aucun texte** (choix de l'utilisatrice), `python3 outils/monter_reel_sobre.py outils/reels/<plan>.json [--tiktok]` (photos plein écran, mouvements lents, fondus et glissés, charte, piste silencieuse).
 - Calendrier : bloc « NOUVELLES » à la fin de `outils/calendrier/da_laura_2026_12.py`, puis `generer_visuels.py`. Aperçu du feed : `scratchpad/feed/build.py` → artifact Qbnvz1i5M4xu7jeyuMe9rc + PDF dans 04.
 
 ## Photos du shooting (27/11/2026)

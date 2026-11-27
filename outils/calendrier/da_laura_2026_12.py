@@ -294,7 +294,7 @@ A_VALIDER = [
 
 
 # ---- Contrat Essentielle : 8 publications et 2 réels par mois, stories = plats du jour ----
-# ---- Plan validé le 24/11/2026 : chaque semaine 1 réel + 1 carrousel (contrat : 8 publications par mois) ----
+# ---- Contrat Essentielle : 8 publications, 2 réels, 20 stories (le bloc du 27/11 en fin de fichier fait foi) ----
 R = "photos/da-laura/compte-instagram/recadrees/"
 H_IG = "#DaLaura #DaLauraCannes #RestaurantItalienCannes #DolceVita #Cannes #FrenchRiviera"
 import json as _json
@@ -338,9 +338,8 @@ TEMPS_FORTS = [
     ("Semaine 4 (21-27 déc.)", "Vigilia et Noël", "Carrousel « La Vigilia » + réel « Pour les fêtes » + post « Buon Natale »"),
     ("Semaine 5 (28-31 déc.)", "Saint-Sylvestre", "Carrousel « Le Nouvel An à l'italienne » + réel « Merci pour 2026 »"),
 ]
-NON_RETENUS = "Chaque semaine : 1 réel (Instagram + TikTok) et 1 carrousel. Avec les posts des 3, 6 et 25 décembre : 8 publications (contrat) et 5 réels (le contrat en prévoit 2 : 3 réels offerts pour le lancement, à valider). Stories : les 20 « Piatti del giorno »."
+NON_RETENUS = ""  # remplacé plus bas (contrat Essentielle)
 A_VALIDER = [
-    "**Réels** : 5 au lieu des 2 prévus par la formule Essentielle : les présenter à Laura comme un cadeau de lancement (décembre seulement) ou les facturer en option (90 € l'unité selon votre grille).",
     "**Ouverture et horaires** les 24, 25 et 31 décembre ; **menus de fêtes** et prix pour le post du 3 décembre.",
     "**Histoire de Laura** (post du 6 décembre) ; **desserts** : noms exacts et « faits maison » à confirmer.",
     "**Photos en attente** : lentilles et cotechino (carrousel du 29), sinon remplacement par des photos existantes. Le post du 25 utilise le lustre aux bougies de la salle.",
@@ -374,9 +373,27 @@ FEED = [REMPLACER[r[0]] if r[0] in (2, 9, 16, 23, 30) else r for r in FEED]  # r
 TEXTES.update({14: "Les produits d'Italie", 21: "La Vigilia", 29: "Capodanno", 25: "Buon Natale"})
 A_VALIDER = [
     "**Photos** : toutes viennent du shooting professionnel de Cannes (charte naturelle appliquée). Les photos de Mougins sont gardées à part (autre lieu).",
-    "**Réels** : 5 réels sans aucun texte (photos, mouvements lents, transitions). Le contrat en prévoit 2 : 3 réels offerts pour le lancement ou en option (90 € l'unité).",
     "**Post du 6 décembre** : photo de Laura (shooting) et son histoire à compléter avec elle.",
     "**Fêtes** : fermé le 24 au soir et le 25 toute la journée (confirmé). Reste à confirmer : ouverture du 31 et menu de la Saint-Sylvestre (post du 3).",
+    "**Loi Évin** : aucune photo avec verre de vin, spritz ou coupe de champagne.",
+]
+
+# ---- 27/11/2026 : CONTRAT ESSENTIELLE = 2 RÉELS (jamais 5). Réels réalisés par l'utilisatrice : créneaux des 9 et 23 décembre. ----
+FEED = [r for r in FEED if not (r[2] == "Réel" and r[0] not in (9, 23))]
+FEED = [r[:5] + ("Réel réalisé par la community manager (Instagram + TikTok) : idée et légende proposées ci-dessous",) + r[6:] if r[2] == "Réel" else r for r in FEED]
+TEMPS_FORTS = [
+    ("Semaine 1 (1-6 déc.)", "Lancement du compte", "Carrousel « Bienvenue chez Da Laura » + posts « Nos menus de fêtes » et « Laura, l'âme de la maison »"),
+    ("Semaine 2 (7-13 déc.)", "Le savoir-faire", "Carrousel « Nos pâtes faites maison » + réel n° 1 « Le geste du chef » (9 déc.)"),
+    ("Semaine 3 (14-20 déc.)", "Les produits", "Carrousel « Les produits d'Italie »"),
+    ("Semaine 4 (21-27 déc.)", "Vigilia et Noël", "Carrousel « La Vigilia » + réel n° 2 « Pour les fêtes » (23 déc.) + post « Buon Natale »"),
+    ("Semaine 5 (28-31 déc.)", "Nouvel An", "Carrousel « Capodanno »"),
+]
+NON_RETENUS = "Formule Essentielle : 8 publications (5 carrousels, 3 posts), 2 réels (Instagram + TikTok, réalisés par la community manager), 20 stories « Piatti del giorno » (du mardi au samedi à 11h, sauf le 25 décembre, fermé, remplacé par le 29)."
+A_VALIDER = [
+    "**Contrat Essentielle** : 8 publications, 2 réels, 20 stories. Rien de plus n'est prévu.",
+    "**Photos** : toutes viennent du shooting professionnel de Cannes (charte naturelle appliquée).",
+    "**Post du 6 décembre** : photo de Laura (shooting) et son histoire à compléter avec elle.",
+    "**Fêtes** : fermé le 24 au soir et le 25 toute la journée. À confirmer : ouverture du 26 et du 31, menu de la Saint-Sylvestre (post du 3).",
     "**Loi Évin** : aucune photo avec verre de vin, spritz ou coupe de champagne.",
 ]
 

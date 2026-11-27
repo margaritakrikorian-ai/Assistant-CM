@@ -1,7 +1,9 @@
 ---
 name: reels-depuis-photos
-description: Dès que l'utilisatrice envoie des photos ou des vidéos (d'un restaurant, d'un plat, d'un événement…) avec ou sans consigne, ou demande un réel ou une vidéo TikTok, propose et MONTE directement des réels personnalisés : une version Instagram et une version TikTok, à partir de ses fichiers, puis les range dans Google Drive. À utiliser aussi avec « fais-moi un réel », « une vidéo avec ces photos », « quelque chose pour TikTok », /reels-depuis-photos.
+description: UNIQUEMENT quand l'utilisatrice demande explicitement de monter un réel (« fais-moi un réel ») : elle réalise ses réels elle-même depuis le 27/11/2026. Envoyer des photos ne déclenche PAS ce skill. Sur demande explicite d'un réel ou une vidéo TikTok, propose et MONTE directement des réels personnalisés : une version Instagram et une version TikTok, à partir de ses fichiers, puis les range dans Google Drive. À utiliser aussi avec « fais-moi un réel », « une vidéo avec ces photos », « quelque chose pour TikTok », /reels-depuis-photos.
 ---
+
+> **27/11/2026 : l'utilisatrice fait ses réels elle-même. N'utiliser ce skill que sur demande explicite. Contrat Essentielle : 2 réels par mois maximum.**
 
 # Photos ou vidéos reçues → réels Instagram et TikTok prêts à publier
 

@@ -41,7 +41,7 @@ def rendre(OUT, ANNEE, MOIS, MOIS_NOM, NOM, FEED, STORIES, TEXTES, TEMPS_FORTS, 
     md.append("## Vue d'ensemble\n")
     md.append(f"- **Publications :** {nb['Post'] + nb['Carrousel']} ({nb['Post']} posts simples et {nb['Carrousel']} carrousels), conformément au contrat (8 par mois)")
     md.append(f"- **Réels :** {nb['Réel']} (contrat : 2 par mois)")
-    md.append("- **Stories :** les 20 stories « Piatti del giorno » du mois (plats du jour, du mardi au samedi), créées chaque semaine à partir des plats envoyés : voir `stories/da-laura/plats-du-jour/`")
+    md.append("- **Stories :** les 20 stories « Piatti del giorno » du mois (plats du jour, du mardi au samedi), à 11h00 : modèles « Piatti del giorno » sans plats, que la community manager remplit chaque jour avec les suggestions (`stories/da-laura/piatti-modeles/`)")
     md.append("- **Horaires :** 11h–11h30 avant le déjeuner, 18h–18h30 avant le dîner. Le jeudi et le vendredi en fin de journée pour les réservations du week-end.")
     md.append("")
     md.append("### Temps forts retenus\n")
