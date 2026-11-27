@@ -155,6 +155,10 @@ Dès que l'utilisatrice envoie des photos ou des vidéos, appliquer le skill `re
 - Outil (style rejeté) : `python3 outils/monter_reel_pro.py outils/reels/pro-<sujet>.json [--tiktok]` (photos flottantes en carte, duo de cartes, transitions filées, zoom et fondu, textes animés, carte de fin). Plans existants : `pro-une-journee-da-laura`, `pro-in-cucina`, `pro-choisis-ta-table`.
 - Photos du shooting professionnel (Drive « Photo DA LAURA », dans Community management) : rangées dans `photos/da-laura/{plats,cuisine,ambiance}/`. Exclure les photos avec verre de vin ou flûte (loi Évin) : tartare, prosciutto-figues, desserts-balcon.
 
+## Réels : c'est l'utilisatrice qui les fait (27/11/2026)
+
+- **Ne plus monter ni refaire de réels**, sauf demande explicite. Le calendrier garde les créneaux réels (dates, légendes, idées) pour qu'elle les réalise elle-même. Cette règle prime sur les sections « Réels à partir des fichiers envoyés » et « montage pro ».
+
 ## Décembre refait avec le shooting (27/11/2026)
 
 - Toutes les publications et réels de décembre utilisent les photos du **shooting de Cannes** (`photos/da-laura/cannes/`, noms parlants) ; Laura : `photos/da-laura/laura/`. Les photos de Mougins ne servent pas au compte de Cannes (autre lieu).
