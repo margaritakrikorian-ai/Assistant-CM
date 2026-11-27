@@ -155,6 +155,11 @@ Dès que l'utilisatrice envoie des photos ou des vidéos, appliquer le skill `re
 - Outil (style rejeté) : `python3 outils/monter_reel_pro.py outils/reels/pro-<sujet>.json [--tiktok]` (photos flottantes en carte, duo de cartes, transitions filées, zoom et fondu, textes animés, carte de fin). Plans existants : `pro-une-journee-da-laura`, `pro-in-cucina`, `pro-choisis-ta-table`.
 - Photos du shooting professionnel (Drive « Photo DA LAURA », dans Community management) : rangées dans `photos/da-laura/{plats,cuisine,ambiance}/`. Exclure les photos avec verre de vin ou flûte (loi Évin) : tartare, prosciutto-figues, desserts-balcon.
 
+## Stories « Piatti del giorno » : modèles à remplir (27/11/2026)
+
+- L'utilisatrice écrit elle-même les suggestions : les stories sont des **modèles sans plats** (photo du shooting de Cannes, « Piatti del giorno », date, cadre crème vide). `python3 outils/stories_modeles.py` (20 JPG + programme) puis `node outils/stories_modeles.js` (PowerPoint modifiable, zones de texte en Arial, < 3 Mo pour Drive).
+- 20 stories : du mardi au samedi à 11h00, sauf le 25 (fermé) remplacé par le 29. Drive : 02 › « Stories Piatti del giorno - modèles à remplir (décembre) » (`19JlAk6WTsjRQ9QC34ZH9Ce1LwKEhkBGN`). Calendrier jour par jour en PDF : `calendriers/Calendrier-Da-Laura-decembre-2026.pdf` (04 - Documents).
+
 ## Réels : c'est l'utilisatrice qui les fait (27/11/2026)
 
 - **Ne plus monter ni refaire de réels**, sauf demande explicite. Le calendrier garde les créneaux réels (dates, légendes, idées) pour qu'elle les réalise elle-même. Cette règle prime sur les sections « Réels à partir des fichiers envoyés » et « montage pro ».
