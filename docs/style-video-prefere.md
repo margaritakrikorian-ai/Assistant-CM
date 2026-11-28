@@ -2,6 +2,10 @@
 
 > « J'aime ce style de vidéo, voilà ce que j'aime, maintenant tu le sais. » Quatre exemples dans `reels/da-laura/references-style/` (planche : `planche.jpg`). À appliquer à toute proposition de réel, story animée ou vidéo, en plus de la charte.
 
+## RÈGLE (28/11/2026) : l'esprit, pas la copie
+
+L'utilisatrice ne veut **pas les mêmes vidéos** : les références montrent une DA, pas des modèles. Ne jamais reproduire leurs formats (écran partagé, titre qui s'écrit sur un travelling, grande serif sur fond noir, révélation derrière un pilier). Inventer **de nouveaux procédés** dans le même esprit (court, une idée, élégant, cinématographique, typographie minimaliste). Exemples déjà réalisés : texte derrière un dessert détouré sur fond crème, stop-motion à partir d'une série de photos, coupes rythmées raccordées sur les mains.
+
 ## Les 4 références
 
 1. **Écran partagé macro / plat entier** (13 s, 3 plats × 4,5 s : risotto, tartare de bœuf, dolce). En haut, gros plan extrême sur la matière (champignon, betterave, huile), en bas, l'assiette entière. Petit nom du plat en haut à droite (« Risotto »), signature « Da Laura / Cannes » en sans-serif grasse et serrée, une phrase courte en bas (« Diet always starts tomorrow; today is for delicious food. »). Cadre de mise au point (viseur) qui apparaît sur le plat. Coupes franches entre les plats.

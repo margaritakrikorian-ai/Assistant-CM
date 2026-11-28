@@ -2,7 +2,9 @@
 une idée par vidéo, mouvement lent, typographie éditoriale minimaliste. MP4 1080x1920, 30 i/s, piste son muette
 (la musique s'ajoute dans Instagram).
 
-    python3 outils/videos_style.py [ecran-partage|coin-italie|cucina-autentica|tout]
+    python3 outils/videos_style.py [dolce|stop-motion|fatto-a-mano|tout]
+
+Ne jamais recopier les formats des vidéos de référence : en reprendre l'esprit avec de nouveaux procédés.
 """
 import math
 import subprocess
@@ -215,8 +217,118 @@ def cucina_autentica():
     v.fin()
 
 
+# ---- Nouveaux procédés (28/11/2026) : même esprit que les références, jamais les mêmes formats ----
+BORDEAUX = (122, 31, 43)
+CREME_BG = (244, 237, 225)
+
+
+def dolce():
+    """Texte derrière le dessert détouré, sur fond crème de la charte."""
+    from rembg import remove, new_session
+    v = Video("4-dolce-texte-derriere")
+    im = ImageOps.exif_transpose(Image.open(R / "photos/da-laura/cannes/tiramisu-fraise.jpg")).convert("RGB")
+    im.thumbnail((1600, 1600), Image.LANCZOS)
+    dec = remove(appliquer_charte(im), session=new_session("isnet-general-use"))
+    dec = dec.crop(dec.split()[3].point(lambda a: 255 if a > 60 else 0).getbbox())
+    lw = 720
+    dec = dec.resize((lw, int(dec.height * lw / dec.width)), Image.LANCZOS)
+    fond = Image.new("RGB", (W, H), CREME_BG)
+    vg = Image.new("L", (W, H), 0)
+    ImageDraw.Draw(vg).ellipse([-300, -200, W + 300, H + 200], fill=255)
+    fond = Image.composite(fond, Image.new("RGB", (W, H), (226, 214, 196)), vg.filter(ImageFilter.GaussianBlur(260)))
+    f_t = police("CormorantGaramond.ttf", 330, 400)
+    f_s, f_b = police("Lato-Regular.ttf", 34), police("Lato-Bold.ttf", 26)
+    mot = "Dolce"
+    d0 = ImageDraw.Draw(fond)
+    larg = [d0.textlength(c, font=f_t) for c in mot]
+    x0, yt = (W - sum(larg)) / 2, 780
+    duree = 7.0
+    for k in range(int(duree * FPS)):
+        t = k / FPS
+        img = fond.copy().convert("RGBA")
+        cal = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+        d = ImageDraw.Draw(cal)
+        x = x0
+        for i, c in enumerate(mot):  # les lettres montent une à une derrière le verre
+            a = lisse((t - 0.4 - i * 0.18) / 0.8)
+            if a > 0:
+                d.text((x, yt + 60 * (1 - a)), c, font=f_t, fill=BORDEAUX + (int(255 * a),), anchor="ls")
+            x += larg[i]
+        img = Image.alpha_composite(img, cal)
+        z = 0.94 + 0.08 * lisse(t / duree)
+        g = dec.resize((int(dec.width * z), int(dec.height * z)), Image.BICUBIC)
+        gx, gy = (W - g.width) // 2, int(yt - 85 - 20 * lisse(t / duree))
+        ombre = Image.new("L", (W, H), 0)
+        ImageDraw.Draw(ombre).ellipse([gx + 60, gy + g.height - 40, gx + g.width - 60, gy + g.height + 50], fill=120)
+        o = Image.new("RGBA", (W, H), (60, 40, 30, 0))
+        o.putalpha(ombre.filter(ImageFilter.GaussianBlur(35)))
+        img = Image.alpha_composite(img, o)
+        img.alpha_composite(g, (gx, gy))
+        a = lisse((t - 2.6) / 0.8)
+        if a > 0:
+            d2 = ImageDraw.Draw(img)
+            d2.text((W / 2, H - 150), "Tiramisù aux fraises", font=f_s, fill=BORDEAUX + (int(255 * a),), anchor="ms")
+            texte_espace(d2, (W / 2, H - 95), "DA LAURA  ·  CANNES", f_b, BORDEAUX + (int(200 * a),), 8, "m")
+        v.image(img)
+    v.fin()
+
+
+def stop_motion():
+    """Les 4 photos du dressage enchaînées image par image : le geste du chef prend vie."""
+    v = Video("5-stop-motion-dernier-geste")
+    ims = [photo(f"chef-dressage-{i}") for i in range(1, 5)]
+    seq = [0, 1, 2, 3, 2, 1, 0, 1, 2, 3]
+    f_t, f_b = police("CormorantGaramond-Italic.ttf", 92, 500), police("Lato-Bold.ttf", 26)
+    pas = 0.32
+    for k in range(int(len(seq) * pas * FPS)):
+        v.image(cadrage(ims[seq[int(k / FPS / pas)]], 0.55, 0.45, 1.12, W, H))
+    tenue = 3.0
+    for k in range(int(tenue * FPS)):
+        t = k / FPS
+        img = cadrage(ims[3], 0.58, 0.55, 1.12 + 0.18 * lisse(t / tenue), W, H).convert("RGBA")
+
+        def dessin(d):
+            a = lisse((t - 0.5) / 0.8)
+            if a > 0:
+                d.text((W / 2, 300), "Le dernier geste.", font=f_t, fill=BLANC + (int(255 * a),), anchor="ms")
+                texte_espace(d, (W / 2, H - 140), "DA LAURA  ·  CANNES", f_b, BLANC + (int(220 * a),), 8, "m")
+        v.image(Image.alpha_composite(img, calque_texte(dessin)))
+    v.fin()
+
+
+MAINS = [("rigatoni-main", 0.72, 0.38), ("gnocchi-roules", 0.30, 0.75), ("tagliatelle-machine", 0.45, 0.42),
+         ("chef-couteau-poele", 0.50, 0.33), ("chef-citrons", 0.50, 0.58), ("rigatoni-mains-chef", 0.50, 0.58)]
+
+
+def fatto_a_mano():
+    """Coupes rythmées sur les mains, toujours au même endroit de l'image (raccord), puis on recule."""
+    v = Video("6-fatto-a-mano")
+    ims = [(photo(n), cx, cy) for n, cx, cy in MAINS]
+    f_t, f_b = police("PlayfairDisplay-Italic.ttf", 104), police("Lato-Bold.ttf", 28)
+    pas = 0.45
+    for i, (im, cx, cy) in enumerate(ims[:-1]):
+        for k in range(int(pas * FPS)):
+            v.image(cadrage(im, cx, cy, 1.9 + 0.12 * k / (pas * FPS), W, H))
+    im, cx, cy = ims[-1]
+    tenue = 3.2
+    for k in range(int(tenue * FPS)):
+        t = k / FPS
+        z = 1.9 - 0.85 * lisse(t / 1.6)
+        img = cadrage(im, cx, cy - 0.08 * lisse(t / 1.6), z, W, H).convert("RGBA")
+
+        a = lisse((t - 1.2) / 0.8)
+        if a > 0:  # écriture bordeaux sur la veste blanche du chef
+            cal = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+            d = ImageDraw.Draw(cal)
+            d.text((W / 2, 330), "Fatto a mano", font=f_t, fill=BORDEAUX + (int(255 * a),), anchor="ms")
+            texte_espace(d, (W / 2, 400), "CHAQUE JOUR, CHEZ DA LAURA", f_b, BORDEAUX + (int(230 * a),), 7, "m")
+            img = Image.alpha_composite(img, cal)
+        v.image(img)
+    v.fin()
+
+
 if __name__ == "__main__":
     quoi = sys.argv[1] if len(sys.argv) > 1 else "tout"
-    for nom, fn in [("ecran-partage", ecran_partage), ("coin-italie", coin_italie), ("cucina-autentica", cucina_autentica)]:
+    for nom, fn in [("dolce", dolce), ("stop-motion", stop_motion), ("fatto-a-mano", fatto_a_mano)]:
         if quoi in (nom, "tout"):
             fn()
