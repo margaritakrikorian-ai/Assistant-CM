@@ -79,6 +79,13 @@ Validée le 26/11/2026 sur les 3 Reels « La cucina autentica », « Le geste du
   > « Photos du compte Instagram (recadrées et retouchées) ».
 - Légendes et thèmes : Drive > DA Laura > 01 - Réels et le calendrier éditorial de décembre.
 
+## Prompts enregistrés
+- **/flying-plating** : plat qui flotte devant le décor de Cannes → `.claude/skills/flying-plating/SKILL.md`
+  et `outils/flying_plating.py` (validé sur le tartare _DSC7697).
+- **Fond « table de Cannes »** : remplacer napperon/nappe par une table de Cannes (bois brun
+  patiné des tables de terrasse, ou métal sombre patiné de la photo _DSC7649), en gardant le reste
+  ou seulement l'assiette selon sa demande ; ombre douce sous l'assiette ; recadrage 4:5.
+
 ## Ce qui a déplu (ne plus refaire)
 - Pastilles/autocollants, cadres crème sur la vidéo, gros textes « TikTok », transitions variées,
   coupes trop rapides, le modèle Canva copié de Mougins (« horrible »).
